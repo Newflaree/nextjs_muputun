@@ -1,3 +1,7 @@
+// Next.js
+import NextLink from 'next/link';
+// Material UI
+import {IconButton, Link} from '@mui/material';
 // Mateial Icons
 import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
@@ -24,25 +28,30 @@ export const ButtonsBox = () => {
               fontSize: '35px',
               transition: 'all 0.3s ease',
               color: 'white',
-              ":hover": {
-                fontSize: '40px'
-              }
             }}
           />
       </button>
-      <button className="boton-circular wspp-btn" onClick={openWhatsApp}>
+      <IconButton className="boton-circular wspp-btn" onClick={openWhatsApp}>
+        <NextLink 
+          href={ 'https://wa.me/+56934456756' }
+          passHref 
+          legacyBehavior
+        >
+          <Link
+            target='_blank'
+          >
           <WhatsAppIcon
             sx={{
               paddingBottom: '2px',
               fontSize: '35px',
               transition: 'all 0.3s ease',
               color: 'white',
-              ":hover": {
-                fontSize: '40px'
-              }
+              mt: 0.5
             }}
           />
-      </button>
+          </Link>
+        </NextLink>
+      </IconButton>
     </div>
   );
 }
