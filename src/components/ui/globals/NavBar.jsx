@@ -35,12 +35,11 @@ export const NavBar = () => {
             color='black'
           >
             <Image 
-              src='https://res.cloudinary.com/newflare/image/upload/v1691769690/bustagrand/logo_g875py.png'
-              alt='aljflafdkj'
-              width={ 40 }
+              src='https://res.cloudinary.com/newflare/image/upload/v1694636551/demos/muputun/logotipo_color_png-fotor-2_zww9vj.png'
+              alt='Logo Müputun'
+              width={ 55 }
               height={ 40 }
             />
-            <Typography ml={ 1 } color='white'>Bustagrand</Typography>
           </Link>
         </NextLink>
 

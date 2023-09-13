@@ -35,7 +35,7 @@ export const Footer = () => {
               Sobre nosotros
             </Typography>
             <Typography variant="body2" color="text.secondary">
-              Somos líderes en diseño y construcción de estructuras metálicas y de madera. Fusionamos innovación y calidad para materializar proyectos únicos y funcionales, superando expectativas en cada estructura que creamos.
+              En Müputun, fusionamos innovación y precisión para entregar soluciones topográficas y de drones excepcionales, superando expectativas en cada proyecto.
             </Typography>
           </Grid>
           <Grid item xs={12} sm={4}>
@@ -46,7 +46,7 @@ export const Footer = () => {
               123 Indicar dirección, Ciudad, Pais
             </Typography>
             <Typography variant="body2" color="text.secondary">
-              Correo: info@example.com
+              Correo: info@ejemplo.com
             </Typography>
             <Typography variant="body2" color="text.secondary">
               Teléfono: +1 234 567 8901

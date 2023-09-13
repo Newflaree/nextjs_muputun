@@ -10,19 +10,19 @@ const cardContent = [
     id: 1,
     cardTitle: 'Servicio 1',
     cardDesc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus euismod, ipsum id blandit elementum, erat augue faucibus est,',
-    cardImg: 'https://res.cloudinary.com/newflare/image/upload//c_thumb,w_900,h_900,g_auto/v1692218033/bustagrand/banner/171317908_184296963525585_7864976729209806356_n_zqhecw.jpg'
+    cardImg: 'https://res.cloudinary.com/newflare/image/upload/v1694637816/demos/muputun/Copia_de_Copia_de_X5_RECEIVER_-_EN_CAMPO_-02_c4sm84.png'
   },
   {
     id: 2,
     cardTitle: 'Servicio 2',
     cardDesc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus euismod, ipsum id blandit elementum, erat augue faucibus est,',
-    cardImg: 'https://res.cloudinary.com/newflare/image/upload//c_thumb,w_900,h_900,g_auto/v1692218033/bustagrand/banner/278182265_397551982200081_2172593407620871580_n_txgz0c.jpg'
+    cardImg: 'https://res.cloudinary.com/newflare/image/upload/v1694637245/demos/muputun/Copia_de_20230210_131928_aq1hro.jpg'
   },
   {
     id: 3,
     cardTitle: 'Servicio 3',
     cardDesc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus euismod, ipsum id blandit elementum, erat augue faucibus est,',
-    cardImg: 'https://res.cloudinary.com/newflare/image/upload//c_thumb,w_900,h_900,g_auto/v1692218033/bustagrand/banner/262979003_322756166346330_7667277787421249266_n_vh47kv.jpg'
+    cardImg: 'https://res.cloudinary.com/newflare/image/upload/v1694637238/demos/muputun/Copia_de_X5_MOBILE_-_METTA_vinculado_a_07_00427_wwrzrn.jpg'
   }
 ]
 
@@ -37,6 +37,7 @@ export default function Home() {
       { /*Algunos servicios*/ }
       <Box margin={ 4 }>
         <Grid
+          display='flex'
           container
           direction='row'
           justifyContent='center'
@@ -47,7 +48,13 @@ export default function Home() {
           {
 
             cardContent.map( ({ id, cardTitle, cardDesc, cardImg })  => (
-              <Grid key={ id } item xs={ 12 } sm={ 6 }>
+              <Grid
+                key={ id }
+                item
+                xs={ 12 }
+                sm={ 6 }
+                md={ 4 }
+              >
                 <HomeCard
                   cardTitle={ cardTitle } 
                   cardDesc={ cardDesc }

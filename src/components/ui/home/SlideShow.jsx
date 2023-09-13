@@ -27,23 +27,23 @@ export const SlideShow = () => {
           clickable: true,
         }}
         autoplay={{
-          delay: 2500,
+          delay: 3500,
           disableOnInteraction: false,
         }}
         modules={[ Autoplay, EffectFade, Navigation, Pagination ]}
         className="mySwiper"
       >
         <SwiperSlide>
-          <img src="https://res.cloudinary.com/newflare/image/upload//c_thumb,w_1440,h_900,g_auto/v1692218033/bustagrand/banner/171317908_184296963525585_7864976729209806356_n_zqhecw.jpg" />
+          <img src="https://res.cloudinary.com/newflare/image/upload/c_fill,h_1440,w_1920/v1694637238/demos/muputun/Copia_de_X5_MOBILE_-_METTA_vinculado_a_07_00427_wwrzrn.jpg" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://res.cloudinary.com/newflare/image/upload//c_thumb,w_1440,h_900,g_auto/v1692218033/bustagrand/banner/278182265_397551982200081_2172593407620871580_n_txgz0c.jpg" />
+          <img src="https://res.cloudinary.com/newflare/image/upload/c_fill,w_1920/v1694637245/demos/muputun/Copia_de_20230210_131928_aq1hro.jpg" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://res.cloudinary.com/newflare/image/upload//c_thumb,w_1440,h_900,g_auto/v1692218033/bustagrand/banner/262979003_322756166346330_7667277787421249266_n_vh47kv.jpg" />
+          <img src="https://res.cloudinary.com/newflare/image/upload/c_fill,w_1920/v1694637636/demos/muputun/Copia_de_Copia_de_20230210_124315_pmjcb7.jpg" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://res.cloudinary.com/newflare/image/upload//c_thumb,w_1440,h_900,g_auto/v1692218033/bustagrand/banner/294628521_464183315536947_2309279060243524619_n_ufcn4m.jpg" />
+          <img src="" />
         </SwiperSlide>
       </Swiper>
     </Box>

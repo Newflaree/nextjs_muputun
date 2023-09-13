@@ -5,7 +5,7 @@ export const HomeCard = ({ cardTitle = '', cardDesc = '', cardImg }) => {
     <Card sx={{ maxWidth: 345 }}>
       <CardMedia
         component="img"
-        alt="green iguana"
+        alt="Imágen servicio"
         height="140"
         image={ cardImg }
       />

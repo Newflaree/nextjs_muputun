@@ -14,11 +14,11 @@
 }
 
 .swiper-button-prev:after {
-  color: red;
+  color: #1E1E1E;
 }
 
 .swiper-button-next:after {
-  color: red;
+  color: #1E1E1E;
 }
 
 .swiper-pagination-bullet-active {
@@ -55,7 +55,8 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-bottom: 4px;
+  margin-bottom: 7px;
+  margin-top: 7px;
 }
 
 .wspp-btn {
@@ -63,5 +64,5 @@
 }
 
 .toUp-btn {
-  background-color: blue;
+  background-color: darkgrey;
 }
