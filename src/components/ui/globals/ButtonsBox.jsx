@@ -42,6 +42,7 @@ export const ButtonsBox = () => {
           >
           <WhatsAppIcon
             sx={{
+              bgcolor: 'green',
               paddingBottom: '2px',
               fontSize: '35px',
               transition: 'all 0.3s ease',
