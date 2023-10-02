@@ -1,8 +1,7 @@
-// Components
-import { HomeCard, SlideShow } from '@/components/ui/home';
 // Layouts
-import { MainLayout } from '@/components/layouts';
-import {Box, Grid} from '@mui/material';
+import {MainLayout} from '@/components/layouts';
+//Views
+import {InBuilding} from '@/views';
 
 
 const cardContent = [
@@ -24,7 +23,7 @@ const cardContent = [
     cardDesc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus euismod, ipsum id blandit elementum, erat augue faucibus est,',
     cardImg: 'https://res.cloudinary.com/newflare/image/upload/v1694637238/demos/muputun/Copia_de_X5_MOBILE_-_METTA_vinculado_a_07_00427_wwrzrn.jpg'
   }
-]
+];
 
 export default function Home() {
   return (
@@ -32,39 +31,7 @@ export default function Home() {
       pageTitle='Inicio'
       pageDesc='Servicio de drones y equipos topográficos'
     >
-      { /*SlideShow*/ }
-      <SlideShow />
-      { /*Algunos servicios*/ }
-      <Box margin={ 4 }>
-        <Grid
-          display='flex'
-          container
-          direction='row'
-          justifyContent='center'
-          alignItems='center'
-          rowSpacing={ 2 }
-          columnSpacing={{ xs: 1, sm: 2, md: 3 }}
-        >
-          {
-
-            cardContent.map( ({ id, cardTitle, cardDesc, cardImg })  => (
-              <Grid
-                key={ id }
-                item
-                xs={ 12 }
-                sm={ 6 }
-                md={ 4 }
-              >
-                <HomeCard
-                  cardTitle={ cardTitle } 
-                  cardDesc={ cardDesc }
-                  cardImg={ cardImg }
-                />
-              </Grid>
-            ))
-          }
-        </Grid>
-      </Box>
+      <InBuilding />
     </MainLayout>
   )
 }

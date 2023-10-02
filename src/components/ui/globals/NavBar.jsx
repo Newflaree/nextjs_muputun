@@ -35,71 +35,18 @@ export const NavBar = () => {
             color='black'
           >
             <Image 
-              src='https://res.cloudinary.com/newflare/image/upload/v1694636551/demos/muputun/logotipo_color_png-fotor-2_zww9vj.png'
+              src='https://res.cloudinary.com/newflare/image/upload/v1696282160/demos/muputun/mx6toig9hs709ma4epqe.jpg'
               alt='Logo Müputun'
-              width={ 55 }
-              height={ 40 }
+              width={ 140 }
+              height={ 50 }
             />
           </Link>
         </NextLink>
 
         <Box flex={ 1 } />
 
-        <Box
-          sx={{
-            display: {
-              xs: 'none',
-              sm: 'block'
-            }
-          }}
-        >
-          <NextLink
-            href='/'
-            passHref
-            legacyBehavior
-          >
-            <Link>
-              <Button color='info'>
-                Quienes Somos
-              </Button>
-            </Link>
-          </NextLink>
-          <NextLink
-            href='/'
-            passHref
-            legacyBehavior
-          >
-            <Link>
-              <Button color='info'>
-                Servicios
-              </Button>
-            </Link>
-          </NextLink>
-          <NextLink
-            href='/'
-            passHref
-            legacyBehavior
-          >
-            <Link>
-              <Button color='info'>
-                Galería
-              </Button>
-            </Link>
-          </NextLink>
-          <NextLink
-            href='/'
-            passHref
-            legacyBehavior
-          >
-            <Link>
-              <Button color='info'>
-                Cotiza acá
-              </Button>
-            </Link>
-          </NextLink>
-        </Box>
-
-        <Button
+        {/*
+          <Button
           onClick={ toggleSideMenu }
           sx={{
             display: {
@@ -110,6 +57,10 @@ export const NavBar = () => {
         >
           <MenuIcon />
         </Button>
+
+        */}
+
+
       </Toolbar>
     </AppBar>
   );

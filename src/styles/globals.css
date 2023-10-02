@@ -22,11 +22,9 @@
 }
 
 .swiper-pagination-bullet-active {
-  color: red;
 }
 
 .swiper-pagination-bullet {
-  color: red;
 }
 
 
@@ -34,7 +32,7 @@
 /* Buttons Box */
 /* ============ */
 .caja-con-botones {
-  background-color: #1E1E1E;
+  background-color: #5C5D5F;
   padding: 7px;
   position: fixed;
   bottom: 20px;
@@ -60,9 +58,9 @@
 }
 
 .wspp-btn {
-  background-color: green;
+  background-color: #5C5D5F;
 }
 
 .toUp-btn {
-  background-color: darkgrey;
+  background-color: #5C5D5F;
 }

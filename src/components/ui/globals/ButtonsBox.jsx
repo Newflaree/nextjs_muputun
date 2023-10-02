@@ -21,16 +21,16 @@ export const ButtonsBox = () => {
 
   return (
     <div className="caja-con-botones">
-      <button className="boton-circular toUp-btn" onClick={scrollToTop}>
+      <IconButton className="boton-circular toUp-btn" onClick={scrollToTop}>
           <ArrowUpwardIcon
+            color='primary'
             sx={{
               paddingBottom: '2px',
               fontSize: '35px',
               transition: 'all 0.3s ease',
-              color: 'white',
             }}
           />
-      </button>
+      </IconButton>
       <IconButton className="boton-circular wspp-btn" onClick={openWhatsApp}>
         <NextLink 
           href={ 'https://wa.me/+56934456756' }
@@ -45,7 +45,6 @@ export const ButtonsBox = () => {
               paddingBottom: '2px',
               fontSize: '35px',
               transition: 'all 0.3s ease',
-              color: 'white',
               mt: 0.5
             }}
           />
