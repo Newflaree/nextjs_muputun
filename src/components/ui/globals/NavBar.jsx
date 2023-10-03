@@ -30,12 +30,13 @@ export const NavBar = () => {
           legacyBehavior
         >
           <Link
+            mt={ 1 }
             display='flex'
             alignItems='center'
             color='black'
           >
             <Image 
-              src='https://res.cloudinary.com/newflare/image/upload/v1696282160/demos/muputun/mx6toig9hs709ma4epqe.jpg'
+              src='https://res.cloudinary.com/newflare/image/upload/v1696360099/demos/muputun/iticvytqrtp6xn8svvzt.svg'
               alt='Logo Müputun'
               width={ 140 }
               height={ 50 }

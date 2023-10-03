@@ -13,8 +13,8 @@ export const MainLayout = ({ pageTitle = '', pageDesc = '', children }) => {
   return (
     <>
       <Head>
-        <title>Müputun | { pageTitle }</title>
-        <link rel='icon' href={ process.env.NEXT_PUBLIC_LOGO || 'https://res.cloudinary.com/newflare/image/upload/v1694636551/demos/muputun/logotipo_color_png-fotor-2_zww9vj.png' } />
+        <title>müpütun | { pageTitle }</title>
+        <link rel='icon' href={ process.env.NEXT_PUBLIC_LOGO || 'https://res.cloudinary.com/newflare/image/upload/v1696360940/demos/muputun/phdxc7fmejyjaiibkehy.svg' } />
         <meta name='description' content={ pageDesc } />
       </Head>
 

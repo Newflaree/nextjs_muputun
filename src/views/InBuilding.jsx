@@ -1,7 +1,7 @@
-import {Box, Typography} from '@mui/material';
+// Material UI
+import { Box, Typography } from '@mui/material';
+// Material Icons
 import ConstructionIcon from '@mui/icons-material/Construction';
-// Layouts
-import { MainLayout } from '@/components/layouts';
 
 export const InBuilding = () => {
   return (
@@ -11,7 +11,10 @@ export const InBuilding = () => {
       alignItems='center'
       height='calc( 100vh - 100px )'
       sx={{
-        flexDirection:{ xs: 'column', sm: 'row' }
+        flexDirection:{
+          xs: 'column',
+          sm: 'row'
+        }
       }}
     >
       <Typography
@@ -27,6 +30,7 @@ export const InBuilding = () => {
         component='h1'
         fontSize={ 50 }
         fontWeight={ 500 }
+        ml={ 1 }
       >
         Construcción
       </Typography>
