@@ -7,15 +7,10 @@ export const InBuilding = () => {
   return (
     <Box
       display='flex'
+      flexDirection='column'
       justifyContent='center'
       alignItems='center'
       height='calc( 100vh - 100px )'
-      sx={{
-        flexDirection:{
-          xs: 'column',
-          sm: 'row'
-        }
-      }}
     >
       <Typography
         variant='h4'
@@ -25,6 +20,7 @@ export const InBuilding = () => {
       >
         Sitio en
       </Typography>
+
       <Typography
         variant='h1'
         component='h1'

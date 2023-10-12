@@ -1,6 +1,6 @@
 // Reacto
 import { useContext } from 'react';
-// Next.js
+// NextJS
 import Image from 'next/image';
 import NextLink from 'next/link';
 // Material UI
@@ -46,22 +46,11 @@ export const NavBar = () => {
 
         <Box flex={ 1 } />
 
-        {/*
-          <Button
+        <Button
           onClick={ toggleSideMenu }
-          sx={{
-            display: {
-              xs: 'flex',
-              sm: 'none'
-            }
-          }}
         >
-          <MenuIcon />
+          <MenuIcon sx={{ color: 'white' }} />
         </Button>
-
-        */}
-
-
       </Toolbar>
     </AppBar>
   );
