@@ -20,6 +20,7 @@ import { UIContext } from '@/context';
 
 export const NavBar = () => {
   const { toggleSideMenu } = useContext( UIContext );
+  const logoUrl = 'https://res.cloudinary.com/newflare/image/upload/v1696360099/demos/muputun/iticvytqrtp6xn8svvzt.svg';
 
   return (
     <AppBar>
@@ -36,7 +37,7 @@ export const NavBar = () => {
             color='black'
           >
             <Image 
-              src='https://res.cloudinary.com/newflare/image/upload/v1696360099/demos/muputun/iticvytqrtp6xn8svvzt.svg'
+              src={ logoUrl }
               alt='Logo Müputun'
               width={ 140 }
               height={ 50 }

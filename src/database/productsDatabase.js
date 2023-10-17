@@ -7,6 +7,7 @@ export const productsDB = [
      { id: '', p: '' },
      { id: '', p: '' },
     ],
+    banner: '',
     imgs: [
       { id: '', name: '', url: '' },
       { id: '', name: '', url: '' },
@@ -22,6 +23,7 @@ export const productsDB = [
      { id: '', p: '' },
      { id: '', p: '' },
     ],
+    banner: '',
     imgs: [
       { id: '', name: '', url: '' },
       { id: '', name: '', url: '' },
@@ -37,6 +39,7 @@ export const productsDB = [
      { id: '', p: '' },
      { id: '', p: '' },
     ],
+    banner: '',
     imgs: [
       { id: '', name: '', url: '' },
       { id: '', name: '', url: '' },

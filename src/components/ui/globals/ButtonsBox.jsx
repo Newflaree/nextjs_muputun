@@ -19,12 +19,9 @@ export const ButtonsBox = () => {
     });
   };
 
-  const openWhatsApp = () => {
-    console.log( 'ToWspp' );
-  };
-
   return (
     <Box
+      zIndex={100}
       bgcolor={ '#5C5D5F' }
       display='flex'
       flexDirection='column'
@@ -44,7 +41,7 @@ export const ButtonsBox = () => {
             }}
           />
       </IconButton>
-      <IconButton onClick={openWhatsApp}>
+      <IconButton>
         <NextLink 
           href={ 'https://wa.me/+56934456756' }
           passHref 

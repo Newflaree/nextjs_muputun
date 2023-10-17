@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email de contacto</title>
+
+    <style>
+      body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+      }
+
+      .title {
+        text-align: end;
+      }
+
+      .email-container {
+        max-width: 600px;
+        margin: 40px auto;
+        background-color: #ffffff;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .header {
+        display: flex;
+        background-color: #1FBEE8;
+        color: #ffffff;
+        padding: 20px;
+        font-size: 24px;
+        text-align: center;
+      }
+
+      .header img {
+        padding: 8px;
+        top: 20px;
+        left: 20px;
+        height: 40px; /* Puedes ajustar según el tamaño de tu logo */
+      }
+
+      .content {
+        padding: 20px 40px;
+      }
+
+      .label {
+        font-weight: bold;
+        color: #1FBEE8;
+        margin-bottom: 5px;
+      }
+
+      .value {
+        margin-bottom: 20px;
+        color: #5C5D5F;
+      }
+
+      .title-box {
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        height: 50px;
+        width: 180px;
+        border-radius: 4px;
+      }
+
+      .footer {
+          background-color: #1FBEE8;
+          color: #ffffff;
+          text-align: center;
+          padding: 10px;
+          font-size: 12px;
+      }
+          </style>
+      </head>
+  <body>
+    <div class="email-container">
+      <div class="header">
+        <div class="title-box">
+          <img src="../public/favicon.svg" alt="Logo de la Empresa">
+        </div>
+        <p class="title">Nuevo mensaje de contacto</p>
+      </div>
+      <div class="content">
+        <div class="label">De:</div>
+        <div class="value">{{name}} &lt;{{emailAddress}}&gt;</div>
+
+        <div class="label">Asunto:</div>
+        <div class="value">{{subject}}</div>
+
+        <div class="label">Mensaje:</div>
+        <div class="value">{{message}}</div>
+      </div>
+      <div class="footer">Muputun</div>
+    </div>
+  </body>
+</html>
