@@ -37,6 +37,7 @@ export const NavBar = () => {
             color='black'
           >
             <Image 
+              loading='lazy'
               src={ logoUrl }
               alt='Logo Müputun'
               width={ 140 }

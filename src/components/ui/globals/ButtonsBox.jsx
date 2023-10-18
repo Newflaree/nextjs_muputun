@@ -21,8 +21,8 @@ export const ButtonsBox = () => {
 
   return (
     <Box
-      zIndex={100}
-      bgcolor={ '#5C5D5F' }
+      zIndex={ 100 }
+      bgcolor='#5C5D5F'
       display='flex'
       flexDirection='column'
       position='fixed'
@@ -38,12 +38,15 @@ export const ButtonsBox = () => {
               paddingBottom: '2px',
               fontSize: '35px',
               transition: 'all 0.3s ease',
+              ':hover': {
+                color: 'primary.light',
+              }
             }}
           />
       </IconButton>
       <IconButton>
         <NextLink 
-          href={ 'https://wa.me/+56934456756' }
+          href={ 'https://wa.me/+56987754953' }
           passHref 
           legacyBehavior
         >
@@ -55,7 +58,10 @@ export const ButtonsBox = () => {
               paddingBottom: '2px',
               fontSize: '35px',
               transition: 'all 0.3s ease',
-              mt: 0.5
+              mt: 0.5,
+              ':hover': {
+                color: 'primary.light',
+              }
             }}
           />
           </Link>

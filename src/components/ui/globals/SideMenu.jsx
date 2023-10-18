@@ -49,6 +49,7 @@ export const SideMenu = () => {
                     ml={ 2 }
                     fontSize='20px'
                     color={ ( pathname === path ) ? 'primary' : 'secondary' }
+                    sx={{ ':hover': { color: '#1FBEE8' } }}
                   >
                     { name }
                   </Link>

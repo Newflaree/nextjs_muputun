@@ -16,7 +16,7 @@ export const menuPaths = [
   },
   { 
     id: 'mi04',
-    name: 'Donde Estamos',
+    name: 'Dónde Estamos',
     path: '/donde-estamos'
   },
   { 

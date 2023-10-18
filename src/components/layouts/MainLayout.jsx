@@ -46,6 +46,7 @@ export const MainLayout = ({ pageTitle, pageDesc, children }) => {
       <SideMenu />
 
       <main
+        className='fadeIn'
         style={{
           margin: 'auto',
           marginTop: '35px',
