@@ -175,9 +175,9 @@ const ContactPage =() => {
               sx={{
                 color: 'white',
                 fontSize: 20,
-                width: '100%',
-                sm: {
-                  width: '250px'
+                width: {
+                  xs: '100%',
+                  sm: '250px'
                 },
                 ':hover': {
                   bgcolor: 'primary.dark'

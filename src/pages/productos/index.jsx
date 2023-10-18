@@ -1,11 +1,22 @@
 // Material UI
 import {
-  Box,
-  Typography
-} from "@mui/material";
+  Grid,
+} from '@mui/material';
 
+// Components
+import { ProductCard } from '@/components/ui';
 // Layouts
-import { MainLayout } from "@/components/layouts";
+import { MainLayout } from '@/components/layouts';
+
+
+const testProductData = [
+  { id: '01', name: 'Test Product 1' },
+  { id: '02', name: 'Test Product 2' },
+  { id: '03', name: 'Test Product 3' },
+  { id: '04', name: 'Test Product 4' },
+  { id: '05', name: 'Test Product 5' },
+  { id: '06', name: 'Test Product 6' },
+]
 
 
 const ProductsPage = () => {
@@ -13,14 +24,29 @@ const ProductsPage = () => {
     <MainLayout
       pageTitle='Nuestros Productos'
     >
-      <Box
-        height={'calc( 100vh - 100px )'}
-        display='flex'
-        justifyContent='center'
-        alignItems='center'
+      <Grid
+        my={10}
+        pb={ 10 }
+        container
+        spacing={ 4 }
       >
-        <Typography variant='h3'>ProductsPage</Typography>
-      </Box>
+        {
+          testProductData.map( ({ id, name }) => (
+            <Grid
+              key={ id }
+              item
+              xs={ 12 }
+              sm={ 4 }
+              display='flex'
+              justifyContent='center'
+              alignItems='center'
+            >
+              {/*TODO: Replace for ProductCard*/}
+              <ProductCard />
+            </Grid>
+          ))
+        }
+      </Grid>
     </MainLayout>
   );
 }

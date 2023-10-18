@@ -14,7 +14,7 @@ export const SlideShow = () => {
     <Box
       sx={{
         height: {
-          xs: '300px',
+          xs: 'calc( 100vh - 100px )',
           sm: '400px'
         }
       }}

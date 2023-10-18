@@ -50,8 +50,14 @@ export const NavBar = () => {
 
         <Button
           onClick={ toggleSideMenu }
+          sx={{
+            color: 'white',
+            ':hover': {
+              bgcolor: 'primary.dark'
+            }
+          }}
         >
-          <MenuIcon sx={{ color: 'white' }} />
+          <MenuIcon />
         </Button>
       </Toolbar>
     </AppBar>

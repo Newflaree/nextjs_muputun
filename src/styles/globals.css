@@ -14,11 +14,11 @@
 }
 
 .swiper-button-prev:after {
-  color: #1E1E1E;
+  color: #1FBEE8;
 }
 
 .swiper-button-next:after {
-  color: #1E1E1E;
+  color: #1FBEE8;
 }
 
 @keyframes fadeIn {

@@ -1,11 +1,9 @@
-// HomePage.js
-import {MainLayout} from '@/components/layouts';
-import { Box, Grid, Typography, Button, Carousel } from '@mui/material';
-// HomePage.js
-import SwiperCore, { Pagination } from 'swiper';
-import { Swiper, SwiperSlide } from 'swiper/react';
+// Material UI
+import { Box, Typography } from '@mui/material';
+// Layouts
+import { MainLayout } from '@/components/layouts';
+import {SlideShow} from '@/components/ui/home';
 
-SwiperCore.use([Pagination]);
 
 const HomePage = () => {
   return (
@@ -13,13 +11,8 @@ const HomePage = () => {
       pageTitle='Inicio'
       pageDesc=''
     >
-      <Box
-        height={'calc( 100vh - 100px )'}
-        display='flex'
-        justifyContent='center'
-        alignItems='center'
-      >
-        <Typography variant='h3'>HomePage</Typography>
+      <Box>
+        <SlideShow />
       </Box>
     </MainLayout>
   );
