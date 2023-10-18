@@ -25,11 +25,11 @@ const resetForm = () => {
 const ContactPage =() => {
   const { register, handleSubmit, formState: { errors }, reset } = useForm({
     defaultValues: {
-      name: 'Test Name',
-      lastName: 'Test Lastname',
-      emailAddress: 'test@email.com',
-      subject: 'Test Subject',
-      message: 'lorem sajdl jlsajd j lj jlas jlkdjsl kladj lkdj '
+      name: '',
+      lastName: '',
+      emailAddress: '',
+      subject: '',
+      message: ''
     }
   });
 

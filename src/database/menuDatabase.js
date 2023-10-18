@@ -14,11 +14,13 @@ export const menuPaths = [
     name: 'Productos',
     path: '/productos'
   },
+  /*
   { 
     id: 'mi04',
     name: 'Dónde Estamos',
     path: '/donde-estamos'
   },
+  * */
   { 
     id: 'mi05',
     name: 'Contacto',

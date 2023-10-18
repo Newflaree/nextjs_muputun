@@ -1,6 +1,33 @@
-import {Button, Card, CardContent, CardMedia, Typography} from '@mui/material';
+// Next.js
+import NextLink from 'next/link';
+import {useRouter} from 'next/router';
+import {
+  Button,
+  Card,
+  CardContent,
+  CardMedia,
+  Typography
+} from '@mui/material';
+import {productsDB} from '@/database';
+
+
+const testProduct = productsDB[0];
 
 export const ProductCard = () => {
+  const router = useRouter();
+  const {
+    name,
+    desc,
+    imgs,
+    price,
+    slug
+  } = testProduct;
+
+  const onNavigateTo = () => {
+    router.push( `/productos/${ slug }` )
+  }
+
+
   return (
     <Card
       sx={{
@@ -10,17 +37,30 @@ export const ProductCard = () => {
       }}
     >
       <CardMedia
-        sx={{ height: 270 }}
-        image='...'
-        title='...'
+        onClick={ onNavigateTo }
+        image={ imgs[0].url }
+        title={ name }
+        sx={{
+          height: 270,
+          ':hover': {
+            cursor: 'pointer',
+          }
+        }}
       />
 
       <CardContent>
         <Typography
+          onClick={ onNavigateTo }
           variant='h6'
           gutterBottom
+          sx={{
+            ':hover': {
+              cursor: 'pointer',
+              color: '#1FBEE8'
+            }
+          }}
         >
-          Title
+          { name }
         </Typography>
 
         <Typography
@@ -28,7 +68,7 @@ export const ProductCard = () => {
           component='p'
           color='secondary'
         >
-          Description
+          { desc }
         </Typography>
 
         <Typography
@@ -36,17 +76,30 @@ export const ProductCard = () => {
           mt='16px'
           color='primary'
         >
-          Price
+          { price }
         </Typography>
 
-        <Button
-          variant='contained'
-          color='primary'
-          fullWidth
-          sx={{ mt: '16px', color: 'white' }}
+        <NextLink
+          href='/contacto'
+          passHref
+          legacyBehavior
         >
-          Contactar
-        </Button>
+          <Button
+            variant='contained'
+            size='large'
+            color='primary'
+            fullWidth
+            sx={{
+              mt: '16px',
+              color: 'white',
+              ':hover': {
+                bgcolor: 'primary.dark'
+              }
+            }}
+          >
+            Contactar
+          </Button>
+        </NextLink>
       </CardContent>
     </Card>
   );
