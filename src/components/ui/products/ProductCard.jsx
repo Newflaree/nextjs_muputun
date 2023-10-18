@@ -75,6 +75,7 @@ export const ProductCard = () => {
           variant='h5'
           mt='16px'
           color='primary'
+          textAlign='end'
         >
           { price }
         </Typography>

@@ -2,31 +2,31 @@ export const productsDB = [
   {
     id: 'p-001',
     name: 'X5 Multi-band GNSS Receiver – PPK/RTK/NTRIP',
-    desc: 'The X5Mobile is a high-precision GNSS receiver that operates connected to an Android or Windows smartphone or tablet and features PPK and NTRIP corrections system that receives data via the Android/Windows device’s Internet connection via USB or Bluetooth. It has a red dot laser for ease of use in geodetic surveys.',
+    desc: 'El X5Mobile es un receptor GNSS de alta precisión que funciona conectado a un smartphone o tableta Android o Windows y cuenta con un sistema de correcciones PPK y NTRIP que recibe datos a través de la conexión a Internet del dispositivo Android/Windows mediante USB o Bluetooth. Tiene un láser de punto rojo para facilitar su uso en levantamientos geodésicos.',
     banner: 'https://mettatec.com/wp-content/uploads/2023/09/PPKNTRIP-GNSS-X5Mobile-for-Smartphones-using-on-field.webp',
     techSpecs: [
       {
-        primary: 'Uses the same GNSS L1/L2/e5 technology found in professional receivers with state-of-the-art components',
+        primary: 'Utiliza la misma tecnología GNSS L1/L2/e5 que se encuentra en receptores profesionales con componentes de última generación.',
         secondary: ''
       },
       {
-        primary: 'Simultaneous reception of all constellations: GPS, GLONASS, GALILEO and BEIDOU',
+        primary: 'Recepción simultánea de todas las constelaciones: GPS, GLONASS, GALILEO y BEIDOU.',
         secondary: ''
       },
       {
-        primary: 'Multi-band PPK & NTRIP corrections with fast convergence times and robust performance, offers centimeter-level accuracy with a Fix solution in seconds',
+        primary: 'Correcciones PPK y NTRIP multibanda con tiempos de convergencia rápidos y un rendimiento robusto, ofrece precisión a nivel de centímetros con una solución Fix en segundos.',
         secondary: ''
       },
       {
-        primary: 'Allows Geodetic Surveys and Photogrammetry with high-precision geotagging',
+        primary: 'Permite levantamientos geodésicos y fotogrametría con geotagging de alta precisión.',
         secondary: ''
       },
       {
-        primary: 'Includes its own multi-band helical GNSS antenna',
+        primary: 'Incluye su propia antena GNSS helicoidal multibanda.',
         secondary: ''
       },
       {
-        primary: 'Data transfer connection via USB port and Bluetooth',
+        primary: 'Conexión de transferencia de datos a través de puerto USB y Bluetooth.',
         secondary: ''
       },
     ],
