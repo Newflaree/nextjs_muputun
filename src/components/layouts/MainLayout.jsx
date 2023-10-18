@@ -1,9 +1,14 @@
+// React
+import {useEffect, useState} from 'react';
+
 // Next.js
 import Head from 'next/head';
+
 // Components
 import {
   ButtonsBox,
   Footer,
+  LoadingPage,
   NavBar,
   SideMenu
 } from '../ui';
@@ -11,6 +16,18 @@ import {
 
 export const MainLayout = ({ pageTitle, pageDesc, children }) => {
   const layoutPageTitle = `müpütun | ${ pageTitle }`;
+  const [ isLoading, setIsLoading ] = useState( true );
+
+  useEffect( () => {
+    loadingControl();
+  }, [] );
+
+  const loadingControl = () => {
+    setTimeout( () => {
+      setIsLoading( false );
+    }, 600 );
+  }
+
 
   return (
     <>
@@ -35,10 +52,13 @@ export const MainLayout = ({ pageTitle, pageDesc, children }) => {
           maxWidth: '1080px',
           padding: '0px',
           marginBottom: '40px'
-          
         }}
       >
-        { children }
+        {
+          ( isLoading )
+            ? <LoadingPage />
+            : <>{ children }</>
+        }
       </main>
 
       <Footer />

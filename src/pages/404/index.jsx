@@ -24,7 +24,7 @@ const NotFoundPage = () => {
           fontSize={ 80 }
           fontWeight={ 200 }
         >
-          404 |
+          404  <Typography sx={{ display: 'none' }}>|</Typography>
         </Typography>
         <Typography
           marginLeft={ 2 }

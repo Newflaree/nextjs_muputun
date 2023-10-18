@@ -23,17 +23,22 @@ const menuPaths = [
   { 
     id: 'mi02',
     name: 'Sobre Nosotros',
-    path: 'about'
+    path: 'sobre-nosotros'
   },
   { 
     id: 'mi03',
     name: 'Productos',
-    path: 'products'
+    path: 'productos'
   },
   { 
     id: 'mi04',
+    name: 'Donde Estamos',
+    path: 'donde-estamos'
+  },
+  { 
+    id: 'mi05',
     name: 'Contacto',
-    path: 'contact'
+    path: 'contacto'
   },
 ];
 
@@ -55,7 +60,10 @@ export const SideMenu = () => {
         <List >
           {
             menuPaths.map( ({ id, name, path }) => (
-              <ListItem key={ id }>
+              <ListItem
+                onClick={ toggleSideMenu }
+                key={ id }
+              >
                 <NextLink
                   href={ path }
                   passHref
