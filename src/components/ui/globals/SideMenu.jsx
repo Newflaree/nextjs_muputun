@@ -2,6 +2,7 @@
 import { useContext } from 'react';
 // NextJS
 import NextLink from 'next/link';
+import { useRouter } from 'next/router';
 // Material UI
 import {
   Box,
@@ -10,41 +11,16 @@ import {
   List,
   ListItem,
 } from '@mui/material';
+
 // Context
 import { UIContext } from '@/context';
-
-
-const menuPaths = [
-  { 
-    id: 'mi01',
-    name: 'Inicio',
-    path: '/'
-  },
-  { 
-    id: 'mi02',
-    name: 'Sobre Nosotros',
-    path: 'sobre-nosotros'
-  },
-  { 
-    id: 'mi03',
-    name: 'Productos',
-    path: 'productos'
-  },
-  { 
-    id: 'mi04',
-    name: 'Donde Estamos',
-    path: 'donde-estamos'
-  },
-  { 
-    id: 'mi05',
-    name: 'Contacto',
-    path: 'contacto'
-  },
-];
+// Database
+import { menuPaths } from '@/database';
 
 
 export const SideMenu = () => {
   const { toggleSideMenu, isMenuOpen } = useContext( UIContext );
+  const { pathname } = useRouter();
 
   return (
      <Drawer
@@ -69,7 +45,11 @@ export const SideMenu = () => {
                   passHref
                   legacyBehavior
                 >
-                  <Link ml={2} fontSize='20px'>
+                  <Link
+                    ml={ 2 }
+                    fontSize='20px'
+                    color={ ( pathname === path ) ? 'primary' : 'secondary' }
+                  >
                     { name }
                   </Link>
                 </NextLink>

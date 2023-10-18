@@ -9,8 +9,18 @@ SwiperCore.use([Pagination]);
 
 const HomePage = () => {
   return (
-    <MainLayout>
-      <h1>hoasflj</h1>
+    <MainLayout
+      pageTitle='Inicio'
+      pageDesc=''
+    >
+      <Box
+        height={'calc( 100vh - 100px )'}
+        display='flex'
+        justifyContent='center'
+        alignItems='center'
+      >
+        <Typography variant='h3'>HomePage</Typography>
+      </Box>
     </MainLayout>
   );
 }

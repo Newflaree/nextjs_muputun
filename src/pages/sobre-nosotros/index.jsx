@@ -1,13 +1,29 @@
-import {MainLayout} from "@/components/layouts";
-import {Box, Grid, Paper, Typography} from "@mui/material";
+// Material UI
+import {
+  Box,
+  Typography
+} from '@mui/material';
 
-const About = () => {
+// Layouts
+import { MainLayout } from '@/components/layouts';
 
+
+const AboutPage = () => {
   return (
-    <MainLayout pageTitle="Quiénes Somos" pageDesc="Conoce más sobre nosotros">
-      <h1>asdlfdjaslfj</h1>
+    <MainLayout
+      pageTitle="Quiénes Somos"
+      pageDesc="Conoce más sobre nosotros"
+    > 
+      <Box
+        height={ 'calc( 100vh - 100px )' }
+        display='flex'
+        justifyContent='center'
+        alignItems='center'
+      >
+        <Typography variant='h3'>AboutPage</Typography>
+      </Box>
     </MainLayout>
   );
 };
 
-export default About;
+export default AboutPage;

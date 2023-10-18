@@ -41,44 +41,11 @@ const ContactPage =() => {
       },
       body: JSON.stringify( formData ),
     });
-
-    const data = await response.json();
-    console.log({ data });
-
-    reset( resetForm );
+    //const data = await response.json();
+    //console.log({ data });
+    //reset( resetForm );
+    console.log( 'Enviar Email' );
   }
-
-  const handleCustomSubmit = async ( e ) => {
-    e.preventDefault();
-
-    try {
-      const response = await fetch('/api/contact', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify( formData ),
-      });
-
-      const data = await response.json();
-
-      if ( response.status === 200 ) {
-        setStatus( data.status );
-        // Limpiar formulario
-        setFormData({
-          name: '',
-          email: '',
-          subject: '',
-          message: '',
-        });
-      } else {
-        setStatus( 'Error al enviar el mensaje. Por favor, intenta nuevamente.' );
-      }
-    } catch (error) {
-      console.error( 'Hubo un error al enviar el formulario:', error );
-      setStatus( 'Error al enviar el mensaje. Por favor, intenta nuevamente.' );
-    }
-  };
 
   return (
     <MainLayout

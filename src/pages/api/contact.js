@@ -3,15 +3,14 @@ import fs from 'fs';
 import path from 'path';
 
 
+// TODO: Will Refactor this shit!
 export default async function handler( req, res ) {
   if ( req.method === 'POST' ) {
     const { name, emailAddress, subject, message } = req.body;
-    console.log( req.body );
 
     // Leer el template de email
     const templatePath = path.join( process.cwd(), 'email', 'emailTemplate.html' );
     let template = fs.readFileSync( templatePath, 'utf8' );
-    console.log( template );
     
 
     // Reemplazar placeholders con los valores reales
@@ -20,37 +19,42 @@ export default async function handler( req, res ) {
                        .replace( '{{subject}}', subject )
                        .replace( '{{message}}', message );
 
-    console.log( template );
-
     // Configura el transporte de nodemailer
     let transporter = nodemailer.createTransport({
-      host: 'tu-host-de-cpanel',
+      host: process.env.EMAIL_HOST,
       port: 465,
       secure: true,
       auth: {
-        user: 'info@muputun.cl',
-        pass: 'tu-contraseña',
+        user: process.env.EMAIL_USERNAME,
+        pass: process.env.EMAIL_PASSWORD,
       },
     });
 
     // Opciones del correo
     let mailOptions = {
       from: emailAddress,
-      to: 'info@muputun.cl',
+      to: process.env.EMAIL_USERNAME,
       subject: `Contacto: ${ subject }`,
-      html: template,  // Usar el template como HTML
+      html: template
     };
 
     // Envía el correo
     try {
-      /*
+      console.log( 'BEFORE EMAIL' );
       await transporter.sendMail( mailOptions );
-      res.status( 200 ).json({ status: 'Mensaje enviado' });
-        * */
-      console.log( 'Mail enviado', mailOptions );
+      console.log( 'AFTER EMAIL' );
+
+      res.status( 200 ).json({
+        status: 'Mensaje enviado'
+      });
     } catch ( error ) {
       console.error('Hubo un error al enviar el correo:', error);
-      res.status(500).json({ status: 'Error al enviar el mensaje' });
+      console.log( `[SEND-EMAIL]: ${ error }` );
+
+      res.status(500).json({
+        ok: false,
+        message: 'Error al enviar el mensaje'
+      });
     }
   } else {
     res.setHeader('Allow', ['POST']);

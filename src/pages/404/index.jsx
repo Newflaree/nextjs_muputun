@@ -1,5 +1,11 @@
-import {MainLayout} from "@/components/layouts";
-import {Box, Typography} from "@mui/material";
+// Material UI
+import {
+  Box,
+  Typography
+} from '@mui/material';
+// Layouts
+import { MainLayout } from '@/components/layouts';
+
 
 const NotFoundPage = () => {
   return (
