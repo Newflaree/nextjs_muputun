@@ -12,9 +12,11 @@ import {
   Typography
 } from '@mui/material';
 import { PictureAsPdf } from '@mui/icons-material';
+// Database
+import { productsDB } from '@/database';
 // Layouts
 import { MainLayout } from '@/components/layouts';
-import {productsDB} from '@/database';
+
 
 const testProduct = productsDB[0];
 
@@ -24,9 +26,6 @@ const ProductPage = () => {
     desc,
     banner,
     techSpecs,
-    imgs,
-    price,
-    slug
   } = testProduct;
 
   return (
@@ -50,7 +49,12 @@ const ProductPage = () => {
             color: 'white'
           }}
         >
-          <Typography variant='h2' align='center'>{ name }</Typography>
+          <Typography
+            variant='h2'
+            align='center'
+          >
+            { name }
+          </Typography>
           <NextLink
             href='/contacto'
             passHref
@@ -74,7 +78,11 @@ const ProductPage = () => {
         </Box>
         {/*Description*/}
         <Box my={ 10 }>
-          <Typography variant='h5'>Descripción</Typography>
+          <Typography
+            variant='h5'
+          >
+            Descripción
+          </Typography>
           <Typography
             variant='body1'
             paragraph
@@ -90,10 +98,13 @@ const ProductPage = () => {
             mt: '16px'
           }}
         >
-          <Typography variant='h5'>Especificaciones Técnicas</Typography>
+          <Typography
+            variant='h5'
+          >
+            Especificaciones Técnicas
+          </Typography>
           <List>
             {
-
               techSpecs.map( ({ primary, secondary }) => (
                 <ListItem key={ primary }>
                   <ListItemText
@@ -110,7 +121,11 @@ const ProductPage = () => {
           my={ 20 }
           textAlign='center'
         >
-          <Typography variant='h5'>Documentación Oficial</Typography>
+          <Typography
+            variant='h5'
+          >
+            Documentación Oficial
+          </Typography>
           <Button
             variant='contained'
             size='large'

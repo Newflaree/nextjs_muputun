@@ -27,12 +27,11 @@ export const ProductCard = () => {
     router.push( `/productos/${ slug }` )
   }
 
-
   return (
     <Card
       sx={{
         maxWidth: 300,
-        width: 300,
+        width: 350,
         boxShadow: '0 4px 8px rgba(0,0,0,0.1)'
       }}
     >

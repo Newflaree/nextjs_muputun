@@ -23,7 +23,12 @@ const resetForm = () => {
 }
 
 const ContactPage =() => {
-  const { register, handleSubmit, formState: { errors }, reset } = useForm({
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+    reset
+  } = useForm({
     defaultValues: {
       name: '',
       lastName: '',
@@ -43,8 +48,7 @@ const ContactPage =() => {
     });
     const data = await response.json();
     console.log({ data });
-    //reset( resetForm );
-    console.log( 'Enviar Email' );
+    reset( resetForm );
   }
 
   return (
