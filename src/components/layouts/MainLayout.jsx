@@ -1,6 +1,8 @@
 // React
-import {useEffect, useState} from 'react';
-
+import {
+  useEffect,
+  useState
+} from 'react';
 // Next.js
 import Head from 'next/head';
 
@@ -14,7 +16,7 @@ import {
 } from '../ui';
 
 
-export const MainLayout = ({ pageTitle, pageDesc, children }) => {
+export const MainLayout = ({ pageTitle, pageDesc, pageKeywords, children }) => {
   const layoutPageTitle = `müpütun | ${ pageTitle }`;
   const [ isLoading, setIsLoading ] = useState( true );
 
@@ -35,17 +37,15 @@ export const MainLayout = ({ pageTitle, pageDesc, children }) => {
         <title>{ layoutPageTitle }</title>
         <link rel='icon' href={ process.env.NEXT_PUBLIC_LOGO || 'https://res.cloudinary.com/newflare/image/upload/v1696360940/demos/muputun/phdxc7fmejyjaiibkehy.svg' } 
         /> 
-          {/*
         <meta name='description' content={ pageDesc } />
-        <meta name="keywords" content={ keywordsPage } />
+        <meta name="keywords" content={ pageKeywords } />
         <meta name="robots" content="index" />
         <meta name="language" content="es" />
 
-        <meta property="og:title" content={ titlePage } />
-        <meta property="og:description" content={ descPage } />
+        <meta property="og:title" content={ layoutPageTitle } />
+        <meta property="og:description" content={ pageDesc } />
         <meta property="og:image" content={ '' } />
         <meta property="og:url" content={ '' } />
-              */}
       </Head>
 
       <ButtonsBox />

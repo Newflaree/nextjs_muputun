@@ -39,7 +39,7 @@ export const Footer = () => {
               Sobre nosotros
             </Typography>
             <Typography variant="body1" color="text.secondary">
-              Somos una empresa emergente, con equipo de profesionales de espíritu emprendedor, cuyo objetivo es modernizar la operación de la industria en CHILE <img src='download.png' width='17px' />, expandiendo el acceso a las nuevas tecnologías, brindando acompañamiento en la implementación de estas a quienes sean parte de este grupo hermano.
+              Somos una empresa emergente, con equipo de profesionales de espíritu emprendedor, cuyo objetivo es modernizar la operación de la industria en CHILE <img src='download.png' width='17px' />, expandiendo el acceso a las nuevas tecnologías, brindando acompañamiento en la implementación de estas a quienes sean parte de este grupo humano.
             </Typography>
           </Grid>
 
