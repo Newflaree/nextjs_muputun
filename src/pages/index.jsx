@@ -18,6 +18,7 @@ const HomePage = () => {
 
       <Box py={ 10 }>
         <Typography variant='h2' textAlign='center' py={4}>Productos Destacados</Typography>
+
         <Grid container spacing={ 4 }>
           <Grid
             item

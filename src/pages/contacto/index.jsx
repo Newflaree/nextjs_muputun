@@ -39,15 +39,17 @@ const ContactPage =() => {
   });
 
   const onSubmitMessage = async ( formData ) => {
-    const response = await fetch('/api/contact', {
+    const response = await fetch( '/api/contact', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify( formData ),
     });
+
     const data = await response.json();
     console.log({ data });
+
     reset( resetForm );
   }
 

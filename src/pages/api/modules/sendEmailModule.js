@@ -1,5 +1,9 @@
-// Database
-// Models
+// Services
+import {
+  prepareEmailOptionsService,
+  sendEmailService, 
+  setUpEmailTemplateService
+} from '../services';
 
 
 /**
@@ -11,31 +15,33 @@
 const sendEmailModule = async ( req ) => {
   // Desestructurate body data
   const {
-    name,
     emailAddress,
-    subject,
-    message
   } = req.body;
 
   // TODO: Read local template and replace placeholders with real values
+  const { template } = setUpEmailTemplateService( req );
+
   // TODO: Set Up email options
+  const { mailOptions, transporter } = prepareEmailOptionsService( template, emailAddress );
 
   try {
     // TODO: Send email
+    const { statusCode, ok, message } = await sendEmailService( transporter, mailOptions );
 
     return {
-      ok: true,
-      message: 'Correo enviado con éxito'
+      statusCode,
+      ok,
+      message
     }
   } catch ( error ) {
     //TODO: Implement errorHandler
     
-    //TODO: Return error case
     return {
+      statusCode: 400,
       ok: false,
       message: 'Error al enviar el correo'
     }
   }
 }
 
-export default sendEmailModule;
+export fault sendEmailModule;
