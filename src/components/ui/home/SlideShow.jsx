@@ -20,9 +20,9 @@ export const SlideShow = () => {
       }}
     >
       <Swiper
-        spaceBetween={30}
-        effect={"fade"}
-        navigation={true}
+        spaceBetween={ 30 }
+        effect={ "fade" }
+        navigation={ true }
         pagination={{
           clickable: true,
         }}

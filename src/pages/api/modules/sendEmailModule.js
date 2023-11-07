@@ -44,4 +44,4 @@ const sendEmailModule = async ( req ) => {
   }
 }
 
-export fault sendEmailModule;
+export default sendEmailModule;

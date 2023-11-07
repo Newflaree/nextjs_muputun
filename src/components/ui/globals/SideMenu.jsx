@@ -1,17 +1,16 @@
 // React
 import { useContext } from 'react';
 // NextJS
-import NextLink from 'next/link';
 import { useRouter } from 'next/router';
 // Material UI
 import {
   Box,
   Drawer,
-  Link,
   List,
-  ListItem,
 } from '@mui/material';
 
+// Components
+import { SideMenuItem, SideMenuSubmenu } from './';
 // Context
 import { UIContext } from '@/context';
 // Database
@@ -35,26 +34,31 @@ export const SideMenu = () => {
       <Box sx={{ width: 250, paddingTop: 5 }}>
         <List >
           {
-            menuPaths.map( ({ id, name, path }) => (
-              <ListItem
-                onClick={ toggleSideMenu }
-                key={ id }
-              >
-                <NextLink
-                  href={ path }
-                  passHref
-                  legacyBehavior
-                >
-                  <Link
-                    ml={ 2 }
-                    fontSize='20px'
-                    color={ ( pathname === path ) ? 'primary' : 'secondary' }
-                    sx={{ ':hover': { color: '#1FBEE8' } }}
-                  >
-                    { name }
-                  </Link>
-                </NextLink>
-              </ListItem>
+            menuPaths.map( ({ id, name, path, submenu, }) => (
+              <>
+                {
+                  ( submenu.length > 0 )
+                    ? (
+                      <SideMenuSubmenu
+                        id={ id }
+                        name={ name }
+                        path={ path }
+                        pathname={ pathname }
+                        submenu={ submenu }
+                        toggleSideMenu={ toggleSideMenu } 
+                      /> 
+                    )
+                    : ( 
+                      <SideMenuItem
+                        id={ id }
+                        name={ name }
+                        path={ path }
+                        pathname={ pathname }
+                        toggleSideMenu={ toggleSideMenu } 
+                      /> 
+                    )
+                }
+              </>
             ))
           }
         </List>

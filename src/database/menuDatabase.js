@@ -2,7 +2,8 @@ export const menuPaths = [
   { 
     id: 'mi01',
     name: 'Inicio',
-    path: '/'
+    path: '/',
+    submenu: []
   },
   /*
   { 
@@ -14,16 +15,48 @@ export const menuPaths = [
   { 
     id: 'mi03',
     name: 'Productos',
-    path: '/productos'
+    path: '/productos',
+    submenu: [
+      // Category
+      {
+        id: 'cpr-001',
+        name: 'Línea X5 Mobile para Celulares',
+        path: '',
+      },
+      // Category
+      // Category
+      {
+        id: 'cpr-002',
+        name: '',
+        path: '',
+      },
+      // Category
+      // Category
+      {
+        id: 'cpr-003',
+        name: '',
+        path: '',
+      },
+      // Category
+      // Category
+      {
+        id: 'cpr-004',
+        name: '',
+        path: '',
+      }
+      // Category
+    ]
   },
   { 
     id: 'mi04',
     name: 'Dónde Estamos',
-    path: '/donde-estamos'
+    path: '/donde-estamos',
+    submenu: []
   },
   { 
     id: 'mi05',
     name: 'Contacto',
-    path: '/contacto'
+    path: '/contacto',
+    submenu: []
   },
 ];

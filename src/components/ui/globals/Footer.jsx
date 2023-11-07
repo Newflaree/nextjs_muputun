@@ -28,8 +28,7 @@ export const Footer = () => {
       }}
     >
       <Container maxWidth="lg">
-        <Grid container spacing={5} textAlign='center'>
-
+        <Grid container spacing={6} textAlign='center'>
           <Grid item xs={12} sm={4}>
             <Typography
               variant="h6"
