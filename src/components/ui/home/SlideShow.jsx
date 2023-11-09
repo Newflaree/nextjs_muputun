@@ -1,12 +1,22 @@
-import { Box } from "@mui/material";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, EffectFade, Navigation, Pagination } from "swiper/modules";
-
+// Next.js
+import Image from 'next/image';
+// Material UI
+import { Box } from '@mui/material';
+// Swiper
+import { Swiper, SwiperSlide } from 'swiper/react';
+import {
+  Autoplay,
+  EffectFade,
+  Navigation,
+  Pagination
+} from 'swiper/modules';
+// Database
+import { headerInfo } from '@/database';
 // Import Swiper styles
-import "swiper/css";
-import "swiper/css/effect-fade";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
+import 'swiper/css';
+import 'swiper/css/effect-fade';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
 
 export const SlideShow = () => {
@@ -14,8 +24,8 @@ export const SlideShow = () => {
     <Box
       sx={{
         height: {
-          //xs: 'calc( 100vh - 100px )',
-          sm: '400px'
+          xs: 'calc( 100vh - 100px )',
+          sm: '500px'
         }
       }}
     >
@@ -30,21 +40,40 @@ export const SlideShow = () => {
           delay: 3500,
           disableOnInteraction: false,
         }}
-        modules={[ Autoplay, EffectFade, Navigation, Pagination ]}
+        modules={[
+          Autoplay,
+          EffectFade,
+          Navigation,
+          Pagination
+        ]}
         className="mySwiper"
       >
-        <SwiperSlide>
-          <img src="https://res.cloudinary.com/newflare/image/upload/c_fill,h_1440,w_1920/v1694637238/demos/muputun/Copia_de_X5_MOBILE_-_METTA_vinculado_a_07_00427_wwrzrn.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://res.cloudinary.com/newflare/image/upload/c_fill,w_1920/v1694637245/demos/muputun/Copia_de_20230210_131928_aq1hro.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://res.cloudinary.com/newflare/image/upload/c_fill,w_1920/v1694637636/demos/muputun/Copia_de_Copia_de_20230210_124315_pmjcb7.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="" />
-        </SwiperSlide>
+        {
+          headerInfo.map( ({ id, imgd, imgm }) => (
+            <SwiperSlide key={ id }>
+              <Box sx={{
+                display: {
+                  xs: 'none',
+                  sm: 'flex'
+                }
+              }}>
+                <img
+                  src={ imgd }
+                />
+              </Box>
+              <Box sx={{
+                display: {
+                  xs: 'flex',
+                  sm: 'none'
+                }
+              }}>
+                <img
+                  src={ imgm }
+                />
+              </Box>
+            </SwiperSlide>
+          ))
+        }
       </Swiper>
     </Box>
   );

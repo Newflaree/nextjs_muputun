@@ -35,15 +35,15 @@ export const lightTheme = createTheme({
     MuiTypography: {
       styleOverrides: {
         h1: {
-          fontSize: 50,
+          fontSize: 45,
           fontWeight: 600
         },
         h2: {
-          fontSize: 30,
+          fontSize: 35,
           fontWeight: 400
         },
         subtitle1: {
-          fontSize: 18,
+          fontSize: 20,
           fontWeight: 600
         }
       }

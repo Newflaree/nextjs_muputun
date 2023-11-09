@@ -21,6 +21,14 @@
   color: #1FBEE8;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.max-height {
+  height: 100%;
+}
+
 @keyframes fadeIn {
   0% {opacity: 0;}
   100% {opacity: 1;}
@@ -40,3 +48,5 @@
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
 }
+
+

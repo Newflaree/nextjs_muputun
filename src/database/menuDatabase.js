@@ -19,9 +19,16 @@ export const menuPaths = [
     submenu: [
       // Category
       {
+        id: 'cpr-000',
+        name: 'Todos los Productos',
+        path: '/',
+      },
+      // Category
+      // Category
+      {
         id: 'cpr-001',
         name: 'Línea X5 Mobile para Celulares',
-        path: '',
+        path: '/linea-x5-mobile',
       },
       // Category
       // Category

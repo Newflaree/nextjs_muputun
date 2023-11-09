@@ -87,15 +87,16 @@ export const SideMenuSubmenu = ({
         }}
       >
         {
-          submenu.map( ({ id, name }) => (
+          submenu.map( ({ id, name, path }) => (
             <MenuItem key={ id }>
               <NextLink
-                href='/'
+                href={ `/productos/${ path }` }
                 passHref
                 legacyBehavior
               >
                 <Typography
                   onClick={ toggleSideMenu }
+                  className='cursor-pointer'
                   color='secondary'
                   border='none'
                   sx={{ ':hover': { color: '#1FBEE8' } }}
