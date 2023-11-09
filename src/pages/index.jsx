@@ -2,7 +2,7 @@
 import { Box, Grid, Typography } from '@mui/material';
 // Layouts
 import { MainLayout } from '@/components/layouts';
-import {SlideShow} from '@/components/ui/home';
+import {SlideHeader, SlideShow} from '@/components/ui/home';
 import {ProductCard} from '@/components/ui';
 
 
@@ -13,7 +13,7 @@ const HomePage = () => {
       pageDesc=''
     >
       <Box>
-        <SlideShow />
+        <SlideHeader />
       </Box>
 
       <Box py={ 10 }>

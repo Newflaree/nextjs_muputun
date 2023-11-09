@@ -153,6 +153,7 @@ const ProductPage = () => {
             <Box>
               <Typography
                 variant='h4'
+                px={2}
               >
                 Documentación Oficial
               </Typography>
