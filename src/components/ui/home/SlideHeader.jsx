@@ -1,4 +1,5 @@
 // Next.js
+import NextLink from 'next/link';
 import Image from 'next/image';
 // Material UI
 import { Box, Button, Typography } from '@mui/material';
@@ -10,13 +11,13 @@ import {
   Navigation,
   Pagination
 } from 'swiper/modules';
-// Database
-import { headerInfo } from '@/database';
-// Import Swiper styles
+// Swiper Styles
 import 'swiper/css';
 import 'swiper/css/effect-fade';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+// Database
+import { headerInfo } from '@/database';
 
 
 export const SlideHeader = () => {
@@ -111,20 +112,52 @@ export const SlideHeader = () => {
                     { desc }
                   </Typography>
 
-                  <Button
-                    
-                    sx={{
-                      mx: '30px',
-                      mt: 7,
-                      fontSize: '22px',
-                      color: 'white',
-                      ':hover': {
-                        backgroundColor: 'primary.dark'
-                      }
-                    }}
-                  >
-                   { btn }
-                  </Button>
+                  {
+                    ( id === 'hi-001' )
+                      ? (
+                        <NextLink
+                          href={ path }
+                          passHref
+                          legacyBehavior
+                        >
+                          <Button
+                            target='_blank'
+                            sx={{
+                              mx: '30px',
+                              mt: 7,
+                              fontSize: '22px',
+                              color: 'white',
+                              ':hover': {
+                                backgroundColor: 'primary.dark'
+                              }
+                            }}
+                          >
+                            { btn }
+                          </Button>
+                        </NextLink>
+                      )
+                      : (
+                        <NextLink
+                          href={ path }
+                          passHref
+                          legacyBehavior
+                        >
+                          <Button
+                            sx={{
+                              mx: '30px',
+                              mt: 7,
+                              fontSize: '22px',
+                              color: 'white',
+                              ':hover': {
+                                backgroundColor: 'primary.dark'
+                              }
+                            }}
+                          >
+                             { btn }
+                          </Button>
+                        </NextLink>
+                      )
+                  }
                 </Box>
               </Box>
             </SwiperSlide>
