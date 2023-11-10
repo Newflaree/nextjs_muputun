@@ -97,14 +97,14 @@ export const menuPaths = [
       // Category
       {
         id: 'cpr-002',
-        name: 'GNSS Receiver XSR + SurPad App',
+        name: 'GNSS Receiver X5R + SurPad App',
         path: '/productos/slug',
       },
       // Category
       // Category
       {
         id: 'cpr-003',
-        name: '02 Units GNSS Receiver XSR + SurPad App',
+        name: '02 Units GNSS Receiver X5R + SurPad App',
         path: '/productos/slug',
       },
       // Category
