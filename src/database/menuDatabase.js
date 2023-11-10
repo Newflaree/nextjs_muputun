@@ -69,7 +69,7 @@ export const menuPaths = [
       // Category
       {
         id: 'cpr-022',
-        name: 'XS Cloud Services',
+        name: 'X5 Cloud Services',
         path: 'https://cloud.mettatec.com',
       },
       // Category
