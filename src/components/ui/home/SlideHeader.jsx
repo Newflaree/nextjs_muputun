@@ -75,7 +75,7 @@ export const SlideHeader = () => {
                 <Box
                   color='white'
                   sx={{
-                    backgroundColor: 'rgba( 0, 0, 0, 0.3 )',
+                    backgroundColor: 'rgba( 0, 0, 0, 0.5 )',
                     top: 0,
                     bottom: 0,
                     padding: '30px',

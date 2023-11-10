@@ -31,10 +31,15 @@ export const SideMenu = () => {
         transition: 'all 0.5s ease-out'
       }}
     >
-      <Box sx={{ width: 250, paddingTop: 5 }}>
+      <Box sx={{ width: 300, paddingTop: 5 }}>
         <List >
           {
-            menuPaths.map( ({ id, name, path, submenu, }) => (
+            menuPaths.map( ({
+              id,
+              name,
+              path,
+              submenu
+            }) => (
               <>
                 {
                   ( submenu.length > 0 )

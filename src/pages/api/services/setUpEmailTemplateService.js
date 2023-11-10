@@ -29,6 +29,7 @@ const setUpEmailTemplateService = async ( req ) => {
     }
 
   } catch ( error ) {
+    console.log( error );
     // TODO: Implement consoleErrorsHandler()
   }
 }

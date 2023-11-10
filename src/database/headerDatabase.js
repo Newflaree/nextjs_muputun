@@ -13,7 +13,7 @@ export const headerInfo = [
     title: 'Conece nuestros productos',
     desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum finibus lacinia. Donec tincidunt suscipit tellus vitae fringilla. In ultricies mauris tellus, sit amet porta lorem rhoncus a',
     btn: 'Ir a Productos',
-    path: '/productos',
+    path: 'productos',
     imgd: 'https://res.cloudinary.com/newflare/image/upload/c_fill,h_1080,w_1920/v1694637245/demos/muputun/Copia_de_20230210_131928_aq1hro.jpg',
     imgm: 'https://res.cloudinary.com/newflare/image/upload/c_fill,h_1920,w_720/v1694637245/demos/muputun/Copia_de_20230210_131928_aq1hro.jpg'
   },
@@ -22,7 +22,7 @@ export const headerInfo = [
     title: '¿Quieres más información?',
     desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum finibus lacinia. Donec tincidunt suscipit tellus vitae fringilla. In ultricies mauris tellus, sit amet porta lorem rhoncus a',
     btn: 'Contáctanos',
-    path: '/contacto',
+    path: 'contacto',
     imgd: 'https://res.cloudinary.com/newflare/image/upload/c_fill,h_1080,w_1920/v1694637636/demos/muputun/Copia_de_Copia_de_20230210_124315_pmjcb7.jpg',
     imgm: 'https://res.cloudinary.com/newflare/image/upload/c_fill,h_1920,w_720/v1694637636/demos/muputun/Copia_de_Copia_de_20230210_124315_pmjcb7.jpg'
   },

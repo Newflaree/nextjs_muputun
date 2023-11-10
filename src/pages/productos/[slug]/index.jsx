@@ -18,7 +18,6 @@ import { PictureAsPdf, FiberManualRecord } from '@mui/icons-material';
 import { productsDB } from '@/database';
 // Layouts
 import { MainLayout } from '@/components/layouts';
-import {getAllProductSlugs} from '@/database/productsDatabaseMethods';
 
 
 const testProduct = productsDB[0];
@@ -76,7 +75,7 @@ const ProductPage = () => {
                 }
               }}
             >
-              Contactar
+              Reservar Ahora
             </Button>
           </NextLink>
         </Box>

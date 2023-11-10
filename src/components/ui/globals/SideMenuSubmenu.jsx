@@ -36,11 +36,6 @@ export const SideMenuSubmenu = ({
     setAnchorEl( null );
   };
 
-  const closeAll = () => {
-    toggleSideMenu();
-    setAnchorEl( null );
-  }
-
   return (
     <>
       <ListItem
@@ -54,9 +49,9 @@ export const SideMenuSubmenu = ({
         <Link
           ml={ 2 }
           fontSize='20px'
-          sx={{ ':hover': { color: '#1FBEE8' } }}
+          sx={{ ':hover': { color: '#1FBEE8', cursor: 'pointer' } }}
           color={ 
-            ( pathname === path )
+            ( open )
               ? 'primary'
               : 'secondary'
           }

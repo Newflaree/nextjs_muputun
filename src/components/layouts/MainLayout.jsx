@@ -27,7 +27,7 @@ export const MainLayout = ({ pageTitle, pageDesc, pageKeywords, children }) => {
   const loadingControl = () => {
     setTimeout( () => {
       setIsLoading( false );
-    }, 600 );
+    }, 700 );
   }
 
 
