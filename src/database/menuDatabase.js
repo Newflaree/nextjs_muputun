@@ -21,7 +21,7 @@ export const menuPaths = [
       {
         id: 'cpr-001',
         name: 'Receptor GNSS multibanda X5',
-        path: '',
+        path: '/slug',
       },
       // Category
     ]
@@ -49,28 +49,28 @@ export const menuPaths = [
       {
         id: 'cpr-000',
         name: 'X5Mobile PRO + SURPAD APP',
-        path: '',
+        path: '/slug',
       },
       // Category
       // Category
       {
         id: 'cpr-001',
         name: 'X5Mobile + SurPad App',
-        path: '',
+        path: '/slug',
       },
       // Category
       // Category
       {
         id: 'cpr-002',
         name: 'GNSS Receiver XSR + SurPad App',
-        path: '',
+        path: '/slug',
       },
       // Category
       // Category
       {
         id: 'cpr-003',
         name: '02 Units GNSS Receiver XSR + SurPad App',
-        path: '',
+        path: '/slug',
       },
       // Category
     ]
