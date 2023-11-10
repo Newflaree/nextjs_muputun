@@ -13,15 +13,43 @@ export const menuPaths = [
       // Category
       {
         id: 'cpr-000',
-        name: 'Serie móvil X5 para teléfonos inteligentes',
-        path: '/slug',
+        name: 'X5 Mobile Series',
+        path: '/x5-mobile-series',
       },
       // Category
       // Category
       {
         id: 'cpr-001',
-        name: 'Receptor GNSS multibanda X5',
-        path: '/slug',
+        name: 'X5 Receiver',
+        path: '/x5-receiver',
+      },
+      // Category
+      // Category
+      {
+        id: 'cpr-002',
+        name: 'X5 PPK Phontom 4 Pro',
+        path: '/x5-ppk-phantom-4-pro',
+      },
+      // Category
+      // Category
+      {
+        id: 'cpr-003',
+        name: 'X5 PPK Mavic 2 Pro',
+        path: '/x5-ppk-mavic-2-pro',
+      },
+      // Category
+      // Category
+      {
+        id: 'cpr-004',
+        name: 'X5 LoRa Radio',
+        path: '/x5-lora-radio',
+      },
+      // Category
+      // Category
+      {
+        id: 'cpr-005',
+        name: 'HeliX5 Antenna',
+        path: '/helix5-antenna',
       },
       // Category
     ]
@@ -35,6 +63,13 @@ export const menuPaths = [
       {
         id: 'cpr-000',
         name: 'SurPad 4.2 GNSS App',
+        path: '/slug',
+      },
+      // Category
+      // Category
+      {
+        id: 'cpr-001',
+        name: 'XS Cloud Services',
         path: '/slug',
       },
       // Category

@@ -15,8 +15,10 @@ import {
 } from '@mui/icons-material';
 
 
+
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
+  const logoUrl = 'https://res.cloudinary.com/newflare/image/upload/v1696360099/demos/muputun/iticvytqrtp6xn8svvzt.svg';
 
   return (
     <Box
@@ -45,6 +47,13 @@ export const Footer = () => {
             >
               Somos una empresa emergente, con equipo de profesionales de espíritu emprendedor, cuyo objetivo es modernizar la operación de la industria en CHILE , expandiendo el acceso a las nuevas tecnologías, brindando acompañamiento en la implementación de estas a quienes sean parte de este grupo humano 🇨🇱
             </Typography>
+
+            <Image
+              alt='logo mettatec'
+              src={ logoUrl }
+              width={ 130 }
+              height={ 30 }
+            />
           </Grid>
 
           <Grid item xs={12} sm={4}>
@@ -121,7 +130,7 @@ export const Footer = () => {
             <Image
               alt='logo mettatec'
               src='/logo-metta.png'
-              width={ 100 }
+              width={ 125 }
               height={ 20 }
             />
           </Grid>
