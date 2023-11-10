@@ -1,3 +1,4 @@
+import {productsDB} from "@/database";
 import {Box, Grid, Typography} from "@mui/material";
 import {ProductCard} from ".";
 
@@ -35,7 +36,7 @@ export const ProductsCategory = ({ cateTitle }) => {
               justifyContent='center'
               alignItems='center'
             >
-              <ProductCard />
+              <ProductCard currentProduct={ productsDB[0] }/>
             </Grid>
           ))
         }
