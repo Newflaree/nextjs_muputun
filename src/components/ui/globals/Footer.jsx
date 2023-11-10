@@ -43,15 +43,8 @@ export const Footer = () => {
               color="text.secondary"  
               pb={ 2 }
             >
-              Distribuidores oficiales de nuestros amigos mettatec en CHILE, pioneros en dar soluciones tecnológicas de punta, a la medida de tus necesidades. convirtiéndose en tu aliado estratégico el cual puede ayudarte a afrontar de mejor manera el presente de tu negocio. 🇵🇪🇨🇱
+              Somos una empresa emergente, con equipo de profesionales de espíritu emprendedor, cuyo objetivo es modernizar la operación de la industria en CHILE , expandiendo el acceso a las nuevas tecnologías, brindando acompañamiento en la implementación de estas a quienes sean parte de este grupo humano 🇨🇱
             </Typography>
-
-            <Image
-              alt='logo mettatec'
-              src='/logo-metta.png'
-              width={ 100 }
-              height={ 20 }
-            />
           </Grid>
 
           <Grid item xs={12} sm={4}>
@@ -84,10 +77,8 @@ export const Footer = () => {
                 +56 9 8775 4953
               </Link>
             </Typography>
-          </Grid>
 
-          <Grid item xs={12} sm={4}>
-            <Typography variant="h5" color="text.primary" gutterBottom>
+            <Typography variant="h6" color="text.primary" gutterBottom mt={4}>
               Síguenos
             </Typography>
             <Link
@@ -109,12 +100,30 @@ export const Footer = () => {
             >
               <Instagram fontSize='large'/>
             </Link>
+          </Grid>
 
-            {/*
-            <Link href="https://www.twitter.com" color="inherit">
-              <LinkedIn />
-            </Link>
-            */}
+          <Grid item xs={12} sm={4}>
+            <Typography
+              variant="h6"
+              color="text.primary"
+              gutterBottom
+            >
+              Nuestra Alianza
+            </Typography>
+            <Typography
+              variant="body1"
+              color="text.secondary"  
+              pb={ 2 }
+            >
+              Distribuidores oficiales de nuestros amigos mettatec en CHILE, pioneros en dar soluciones tecnológicas de punta, a la medida de tus necesidades. convirtiéndose en tu aliado estratégico el cual puede ayudarte a afrontar de mejor manera el presente de tu negocio. 🇵🇪🇨🇱
+            </Typography>
+
+            <Image
+              alt='logo mettatec'
+              src='/logo-metta.png'
+              width={ 100 }
+              height={ 20 }
+            />
           </Grid>
         </Grid>
 
