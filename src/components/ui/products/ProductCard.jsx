@@ -13,15 +13,16 @@ import {productsDB} from '@/database';
 
 const testProduct = productsDB[0];
 
-export const ProductCard = () => {
+export const ProductCard = ({ currentProduct }) => {
   const router = useRouter();
+
   const {
-    name,
-    desc,
-    imgs,
-    price,
-    slug
-  } = testProduct;
+    name = '',
+    desc = '',
+    imgs = [],
+    price = '',
+    slug = ''
+  } = currentProduct;
 
   const onNavigateTo = () => {
     router.push( `/productos/${ slug }` )

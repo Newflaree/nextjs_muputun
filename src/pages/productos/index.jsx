@@ -5,10 +5,9 @@ import {
 } from '@mui/material';
 
 // Components
-import { ProductCard } from '@/components/ui';
+import { ProductCard, ProductsCategory } from '@/components/ui';
 // Layouts
 import { MainLayout } from '@/components/layouts';
-import {ProductsCategory} from '@/components/ui/products/ProductsCategory';
 
 
 const ProductsPage = () => {

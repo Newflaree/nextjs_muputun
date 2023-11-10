@@ -68,6 +68,7 @@ const ProductPage = () => {
               color='primary'
               size='large'
               sx={{
+                fontSize: 20,
                 mt: '16px',
                 color: 'white',
                 ':hover': {
@@ -80,7 +81,16 @@ const ProductPage = () => {
           </NextLink>
         </Box>
 
-        <Divider />
+        <Typography
+          mt={ 4 }
+          fontSize={ 25 }
+          textAlign='center'
+          variant='h3'
+          component='h3'
+          color='red'
+        >
+          * Entrega dependerá del stock disponible y región a la que pertenece
+        </Typography>
 
         {/*Description*/}
         <Box my={ 10 }>
