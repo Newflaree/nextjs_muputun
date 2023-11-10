@@ -14,42 +14,42 @@ export const menuPaths = [
       {
         id: 'cpr-000',
         name: 'X5 Mobile Series',
-        path: '/x5-mobile-series',
+        path: '/productos/x5-mobile-series',
       },
       // Category
       // Category
       {
         id: 'cpr-001',
         name: 'X5 Receiver',
-        path: '/x5-receiver',
+        path: '/productos/x5-receiver',
       },
       // Category
       // Category
       {
         id: 'cpr-002',
         name: 'X5 PPK Phontom 4 Pro',
-        path: '/x5-ppk-phantom-4-pro',
+        path: '/productos/x5-ppk-phantom-4-pro',
       },
       // Category
       // Category
       {
         id: 'cpr-003',
         name: 'X5 PPK Mavic 2 Pro',
-        path: '/x5-ppk-mavic-2-pro',
+        path: '/productos/x5-ppk-mavic-2-pro',
       },
       // Category
       // Category
       {
         id: 'cpr-004',
         name: 'X5 LoRa Radio',
-        path: '/x5-lora-radio',
+        path: '/productos/x5-lora-radio',
       },
       // Category
       // Category
       {
         id: 'cpr-005',
         name: 'HeliX5 Antenna',
-        path: '/helix5-antenna',
+        path: '/productos/helix5-antenna',
       },
       // Category
     ]
@@ -63,14 +63,14 @@ export const menuPaths = [
       {
         id: 'cpr-000',
         name: 'SurPad 4.2 GNSS App',
-        path: '/slug',
+        path: '/productos/slug',
       },
       // Category
       // Category
       {
-        id: 'cpr-001',
+        id: 'cpr-022',
         name: 'XS Cloud Services',
-        path: '/slug',
+        path: 'https://cloud.mettatec.com',
       },
       // Category
     ]
@@ -84,28 +84,28 @@ export const menuPaths = [
       {
         id: 'cpr-000',
         name: 'X5Mobile PRO + SURPAD APP',
-        path: '/slug',
+        path: '/productos/slug',
       },
       // Category
       // Category
       {
         id: 'cpr-001',
         name: 'X5Mobile + SurPad App',
-        path: '/slug',
+        path: '/productos/slug',
       },
       // Category
       // Category
       {
         id: 'cpr-002',
         name: 'GNSS Receiver XSR + SurPad App',
-        path: '/slug',
+        path: '/productos/slug',
       },
       // Category
       // Category
       {
         id: 'cpr-003',
         name: '02 Units GNSS Receiver XSR + SurPad App',
-        path: '/slug',
+        path: '/productos/slug',
       },
       // Category
     ]

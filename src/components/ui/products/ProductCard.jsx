@@ -8,7 +8,7 @@ import {
   CardMedia,
   Typography
 } from '@mui/material';
-import {productsDB} from '@/database';
+import { productsDB } from '@/database';
 
 
 const testProduct = productsDB[0];
@@ -98,7 +98,7 @@ export const ProductCard = ({ currentProduct }) => {
               }
             }}
           >
-            Contactar
+            Reserva Ya
           </Button>
         </NextLink>
       </CardContent>

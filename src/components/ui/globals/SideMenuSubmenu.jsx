@@ -85,7 +85,7 @@ export const SideMenuSubmenu = ({
           submenu.map( ({ id, name, path }) => (
             <MenuItem key={ id }>
               <NextLink
-                href={ `/productos/${ path }` }
+                href={ `${ path }` }
                 passHref
                 legacyBehavior
               >
