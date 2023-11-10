@@ -25,7 +25,7 @@ export const SlideHeader = () => {
     <Box
       sx={{
         height: {
-          xs: 'calc( 100vh - 100px )',
+          xs: 'calc( 100vh )',
           sm: '500px'
         }
       }}
