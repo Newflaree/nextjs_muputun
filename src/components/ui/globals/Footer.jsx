@@ -1,3 +1,4 @@
+import Image from 'next/image';
 // Material UI
 import {
   Box,
@@ -37,9 +38,20 @@ export const Footer = () => {
             >
               Sobre nosotros
             </Typography>
-            <Typography variant="body1" color="text.secondary">
-              Somos una empresa emergente, con equipo de profesionales de espíritu emprendedor, cuyo objetivo es modernizar la operación de la industria en CHILE <img src='download.png' width='17px' />, expandiendo el acceso a las nuevas tecnologías, brindando acompañamiento en la implementación de estas a quienes sean parte de este grupo humano.
+            <Typography
+              variant="body1"
+              color="text.secondary"  
+              pb={ 2 }
+            >
+              Distribuidores oficiales de nuestros amigos mettatec en CHILE, pioneros en dar soluciones tecnológicas de punta, a la medida de tus necesidades. convirtiéndose en tu aliado estratégico el cual puede ayudarte a afrontar de mejor manera el presente de tu negocio. 🇵🇪🇨🇱
             </Typography>
+
+            <Image
+              alt='logo mettatec'
+              src='/logo-metta.png'
+              width={ 100 }
+              height={ 20 }
+            />
           </Grid>
 
           <Grid item xs={12} sm={4}>
