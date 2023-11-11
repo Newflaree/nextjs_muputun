@@ -1,9 +1,9 @@
 export const headerInfo = [
   {
     id: 'hi-000',
-    title: 'X5R Multi-band GNSS Reciver',
+    title: 'X5 Receptor GNSS Multibanda',
     desc: 'Rápida precisión centimétrica. Configuración por Bluetooth y WiFi. Cuenta con el servicio NTRIP LOCAL para enviar correcciones a Drones RTK de las marcas DJI Enterprise, Wingtra, eBee y Autel sin necesidad de conexión a Internet.',
-    btn: 'Ir al X5R',
+    btn: 'Ir al X5 Receptor',
     path: 'productos/x5r-multi-band-gnss-receriver',
     imgd: 'https://res.cloudinary.com/newflare/image/upload/c_fill,h_1080,w_1920/v1694637245/demos/muputun/Copia_de_20230210_131928_aq1hro.jpg',
     imgm: 'https://res.cloudinary.com/newflare/image/upload/c_fill,h_1920,w_720/v1694637245/demos/muputun/Copia_de_20230210_131928_aq1hro.jpg'

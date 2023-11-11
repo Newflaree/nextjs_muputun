@@ -21,6 +21,19 @@ export const SideMenu = () => {
   const { toggleSideMenu, isMenuOpen } = useContext( UIContext );
   const { pathname } = useRouter();
 
+  let n = 1;
+
+  if ( n === 1 ) {
+    return console.log( 1 );
+  }
+
+  if ( n === 1 ) return console.log( 1 );
+
+  ( n === 1 )
+    ? console.log( 1 )
+    : console.log( 0 )
+
+
   return (
      <Drawer
       open={ isMenuOpen }

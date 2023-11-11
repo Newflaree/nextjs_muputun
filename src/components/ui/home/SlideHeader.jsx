@@ -62,6 +62,7 @@ export const SlideHeader = () => {
             <SwiperSlide key={ id }>
               <Box
                 sx={{
+                  borderRadius: '8px',
                   paddingY: '30px',
                   height: '100%',
                   backgroundSize: 'cover',

@@ -111,67 +111,47 @@ export const productsDB = [
     id: 'p-003',
     name: 'X5 PPK Phantom 4 Pro',
     cate: 'gnss-x5',
-    desc: '',
-    banner: '',
+    desc: 'El Módulo X5 PPK para Phantom 4 Pro es un sistema adaptador GNSS no intrusivo para conectarse a un Drone DJI Phantom 4 Pro v.1/v.2 o Advance (no incluido). Posicionamiento con precisión de centímetros en PPK. Para mapeo UAV preciso con menos GCPs. El módulo X5 PPK está listo para usar, y no se necesita configuración, puedes descargar los datos RAW de la tarjeta SD',
+    banner: 'https://mettatec.com/wp-content/uploads/2023/09/GNSS-X5-PPK-Module-for-Phantom-4-Pro-Advance-Implemented.webp',
     techSpecs: [
       {
-        primary: '',
+        primary: 'No es necesario abrir o modificar tu Drone (mantén la garantía original de tu Drone)',
         secondary: ''
       },
       {
-        primary: '',
+        primary: 'El Módulo X5 PPK se acopla y desacopla en segundos',
         secondary: ''
       },
       {
-        primary: '',
+        primary: 'No requiere baterías',
         secondary: ''
       },
       {
-        primary: '',
+        primary: 'Detector sensor de disparo de imágenes ultra rápido',
         secondary: ''
       },
       {
-        primary: '',
-        secondary: ''
-      },
-      {
-        primary: '',
-        secondary: ''
-      },
-      {
-        primary: '',
-        secondary: ''
-      },
-      {
-        primary: '',
-        secondary: ''
-      },
-      {
-        primary: '',
-        secondary: ''
-      },
-      {
-        primary: '',
+        primary: 'Dispositivo ligero: 80 gramos',
         secondary: ''
       },
     ],
     imgs: [
       { 
         name: 'img-1',
-        url: ''
+        url: 'https://mettatec.com/wp-content/uploads/2023/09/GNSS-X5-PPK-Module-for-Phantom-4-Pro-Advance.webp'
       },
       { 
         name: 'img-2',
-        url: ''
+        url: 'https://mettatec.com/wp-content/uploads/2023/09/GNSS-X5-PPK-Module-for-Phantom-4-Pro-Advance-each-parts.webp'
       },
       { 
         name: 'img-3',
-        url: ''
+        url: 'https://mettatec.com/wp-content/uploads/2023/09/GNSS-X5-PPK-Module-for-Phantom-4-Pro-Advance-Module-each-parts-unboxing.webp'
       },
     ],
     price: '$0.000.000',
-    slug: '',
-    doc: ''
+    slug: 'x5-ppk-phantom-4-pro',
+    doc: 'X5-PPK-P4P.pdf'
   },
   {
     id: 'p-004',
