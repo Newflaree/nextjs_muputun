@@ -27,7 +27,7 @@ export const menuPaths = [
       // Category
       {
         id: 'cpr-002',
-        name: 'X5 PPK Phontom 4 Pro',
+        name: 'X5 PPK Phantom 4 Pro',
         path: '/productos/x5-ppk-phantom-4-pro',
       },
       // Category

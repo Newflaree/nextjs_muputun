@@ -109,8 +109,8 @@ export const productsDB = [
   },
   {
     id: 'p-003',
-    name: '',
-    cate: '',
+    name: 'X5 PPK Phantom 4 Pro',
+    cate: 'gnss-x5',
     desc: '',
     banner: '',
     techSpecs: [
