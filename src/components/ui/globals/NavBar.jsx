@@ -37,8 +37,8 @@ export const NavBar = () => {
             color='black'
           >
             <Image 
-              loading='lazy'
               src={ logoUrl }
+              priority={ true }
               alt='Logo Müputun'
               width={ 140 }
               height={ 50 }

@@ -130,8 +130,8 @@ export const Footer = () => {
             <Image
               alt='logo mettatec'
               src='/logo-metta.png'
-              width={ 127 }
-              height={ 20 }
+              width={ 130 }
+              height={ 23 }
             />
           </Grid>
         </Grid>

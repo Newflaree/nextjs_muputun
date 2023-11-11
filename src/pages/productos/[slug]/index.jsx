@@ -28,7 +28,16 @@ const ProductPage = () => {
     desc,
     banner,
     techSpecs,
+    doc
   } = testProduct;
+
+  const handleDownload = ( fileName = '' ) => {
+    const link = document.createElement( 'a' );
+    link.href = `/docs/${ fileName }`;
+    link.download = `documentacion-${ fileName }`;
+    link.click();
+    link.remove();
+  }
 
   return (
     <MainLayout
@@ -58,6 +67,7 @@ const ProductPage = () => {
           >
             { name }
           </Typography>
+
           <NextLink
             href='/contacto'
             passHref
@@ -83,11 +93,12 @@ const ProductPage = () => {
 
         <Typography
           mt={ 4 }
-          fontSize={ 25 }
+          fontSize={ 20 }
+          fontWeight={ 600 }
           textAlign='center'
           variant='h3'
           component='h3'
-          color='red'
+          color='black'
         >
           * Entrega dependerá del stock disponible y región a la que pertenece
         </Typography>
@@ -162,27 +173,39 @@ const ProductPage = () => {
             <Box>
               <Typography
                 variant='h4'
-                px={2}
+                px={ 2 }
+                pb={ 4 }
               >
                 Documentación Oficial
               </Typography>
-              <Box my={ 4 } />
-              <Button
-                variant='contained'
-                size='large'
-                target='_blank'
-                sx={{
-                  mt: '16px',
-                  color: 'white',
-                  ':hover': {
-                    bgcolor: 'primary.dark'
-                  }
-                }}
-                rel='noopener noreferrer'
-                startIcon={ <PictureAsPdf /> }
-              >
-                Descargar PDF
-              </Button>
+
+              <Box>
+                <Typography
+                  variant='h5'
+                  px={2}
+                >
+                  { name }
+                </Typography>
+
+                <Box my={ 3 } />
+
+                <Button
+                  onClick={ () => handleDownload( doc ) }
+                  variant='contained'
+                  size='large'
+                  target='_blank'
+                  sx={{
+                    color: 'white',
+                    ':hover': {
+                      bgcolor: 'primary.dark'
+                    }
+                  }}
+                  rel='noopener noreferrer'
+                  startIcon={ <PictureAsPdf /> }
+                >
+                  Descargar PDF
+                </Button>
+              </Box>
             </Box>
           </Grid>
         </Grid>

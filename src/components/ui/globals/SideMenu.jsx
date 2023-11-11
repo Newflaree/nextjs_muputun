@@ -1,5 +1,5 @@
 // React
-import { useContext } from 'react';
+import React, { useContext } from 'react';
 // NextJS
 import { useRouter } from 'next/router';
 // Material UI
@@ -40,7 +40,7 @@ export const SideMenu = () => {
               path,
               submenu
             }) => (
-              <>
+              <React.Fragment key={ id }>
                 {
                   ( submenu.length > 0 )
                     ? (
@@ -63,7 +63,7 @@ export const SideMenu = () => {
                       /> 
                     )
                 }
-              </>
+              </React.Fragment>
             ))
           }
         </List>

@@ -13,15 +13,15 @@ export const menuPaths = [
       // Category
       {
         id: 'cpr-000',
-        name: 'X5 Mobile Series',
+        name: 'X5 Línea para celulares',
         path: '/productos/x5-mobile-series',
       },
       // Category
       // Category
       {
         id: 'cpr-001',
-        name: 'X5 Receiver',
-        path: '/productos/x5-receiver',
+        name: 'X5 Receptor',
+        path: '/productos/x5-receptor',
       },
       // Category
       // Category
@@ -41,15 +41,15 @@ export const menuPaths = [
       // Category
       {
         id: 'cpr-004',
-        name: 'X5 LoRa Radio',
+        name: 'X5 Radio LoRa',
         path: '/productos/x5-lora-radio',
       },
       // Category
       // Category
       {
         id: 'cpr-005',
-        name: 'HeliX5 Antenna',
-        path: '/productos/helix5-antenna',
+        name: 'HeliX5 Antena',
+        path: '/productos/helix5-antena',
       },
       // Category
     ]
@@ -63,13 +63,13 @@ export const menuPaths = [
       {
         id: 'cpr-000',
         name: 'SurPad 4.2 GNSS App',
-        path: '/productos/slug',
+        path: '/productos/surpad-4.2-gnss-app',
       },
       // Category
       // Category
       {
         id: 'cpr-022',
-        name: 'X5 Cloud Services',
+        name: 'X5 Servicios Cloud',
         path: 'https://cloud.mettatec.com',
       },
       // Category
@@ -83,29 +83,29 @@ export const menuPaths = [
       // Category
       {
         id: 'cpr-000',
-        name: 'X5Mobile PRO + SURPAD APP',
-        path: '/productos/slug',
+        name: 'X5 Mobile PRO + SURPAD APP',
+        path: '/productos/x5-mobile-pro-surpad-app',
       },
       // Category
       // Category
       {
         id: 'cpr-001',
-        name: 'X5Mobile + SurPad App',
-        path: '/productos/slug',
+        name: 'X5 Mobile + SurPad App',
+        path: '/productos/x5-mobile-surpad-app',
       },
       // Category
       // Category
       {
         id: 'cpr-002',
-        name: 'GNSS Receiver X5R + SurPad App',
-        path: '/productos/slug',
+        name: 'GNSS Receptor X5R + SurPad App',
+        path: '/productos/gnss-receptor-x5r-surpad-app',
       },
       // Category
       // Category
       {
         id: 'cpr-003',
-        name: '02 Units GNSS Receiver X5R + SurPad App',
-        path: '/productos/slug',
+        name: '2 Unidades X5 Receptor + SurPad App',
+        path: '/productos/2-unidades-x5-receptor-surpad-app',
       },
       // Category
     ]
