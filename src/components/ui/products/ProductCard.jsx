@@ -20,7 +20,7 @@ import {
 
 export const ProductCard = ({ currentProduct }) => {
   const [ isHovered, setIsHovered ] = useState( false );
-  const [ isImageLoaded, setIsImageLoaded ] = useState( true );
+  const [ isImageLoaded, setIsImageLoaded ] = useState( false );
   const router = useRouter();
 
   const {
@@ -32,8 +32,8 @@ export const ProductCard = ({ currentProduct }) => {
 
   const productImage = useMemo( () => {
     return isHovered
-      ? imgs[1]
-      : imgs[0]
+      ? imgs[1].url || ''
+      : imgs[0].url || '' 
   }, [ isHovered, imgs ]);
 
   const onNavigateTo = () => {
@@ -73,9 +73,10 @@ export const ProductCard = ({ currentProduct }) => {
         />
 
         <CardMedia
+          className='fadeIn'
           component='img'
           onLoad={ () => setIsImageLoaded( true ) }
-          image={ productImage }
+          image={ productImage }  
           alt={ name }
           onClick={ onNavigateTo }
           title={ name }

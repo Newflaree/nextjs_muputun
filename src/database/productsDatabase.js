@@ -105,10 +105,6 @@ export const productsDB = [
         name: 'img-2',
         url: 'https://mettatec.com/wp-content/uploads/2023/09/PPKNTRIP-GNSS-X5Mobile-for-Smartphones-Components.webp'
       },
-      { 
-        name: 'img-3',
-        url: 'https://mettatec.com/wp-content/uploads/2023/09/PPKNTRIP-GNSS-X5Mobile-for-Smartphones-LASER.webp'
-      },
     ],
     price: '$0.000.000',
     slug: 'x5-mobile-series',
@@ -215,10 +211,6 @@ export const productsDB = [
         name: 'img-2',
         url: 'https://mettatec.com/wp-content/uploads/2023/09/X5-Multi-band-GNSS-Receiver-PPK-RTK-NTRIP-POV-Down.webp'
       },
-      { 
-        name: 'img-3',
-        url: 'https://mettatec.com/wp-content/uploads/2023/09/GNSS-Receiver-X5R-Plus-Compatible-with-the-best-RTK-Drones-of-the-Market.webp'
-      },
     ],
     price: '$0.000.000',
     slug: 'x5-receptor',
@@ -323,10 +315,6 @@ export const productsDB = [
       { 
         name: 'img-2',
         url: 'https://mettatec.com/wp-content/uploads/2023/09/GNSS-X5-PPK-Module-for-Phantom-4-Pro-Advance-each-parts.webp'
-      },
-      { 
-        name: 'img-3',
-        url: 'https://mettatec.com/wp-content/uploads/2023/09/GNSS-X5-PPK-Module-for-Phantom-4-Pro-Advance-Module-each-parts-unboxing.webp'
       },
     ],
     price: '$0.000.000',
@@ -467,6 +455,10 @@ export const productsDB = [
         name: 'img-1',
         url: ''
       },
+      { 
+        name: 'img-2',
+        url: ''
+      },
     ],
     price: '$0.000.000',
     slug: 'x5-lora-radio',
@@ -499,6 +491,10 @@ export const productsDB = [
     imgs: [
       { 
         name: 'img-1',
+        url: ''
+      },
+      { 
+        name: 'img-2',
         url: ''
       },
     ],
@@ -535,6 +531,10 @@ export const productsDB = [
         name: 'img-1',
         url: ''
       },
+      { 
+        name: 'img-2',
+        url: ''
+      },
     ],
     price: '$0.000.000',
     slug: 'surpad-4.2-gnss-app',
@@ -567,6 +567,10 @@ export const productsDB = [
     imgs: [
       { 
         name: 'img-1',
+        url: ''
+      },
+      { 
+        name: 'img-2',
         url: ''
       },
     ],
@@ -607,6 +611,10 @@ export const productsDB = [
         name: 'img-1',
         url: ''
       },
+      { 
+        name: 'img-2',
+        url: ''
+      },
     ],
     price: '$0.000.000',
     slug: 'x5-mobile-surpad-app',
@@ -645,6 +653,10 @@ export const productsDB = [
         name: 'img-1',
         url: ''
       },
+      { 
+        name: 'img-2',
+        url: ''
+      },
     ],
     price: '$0.000.000',
     slug: 'gnss-receptor-x5r-surpad-app',
@@ -681,6 +693,10 @@ export const productsDB = [
     imgs: [
       { 
         name: 'img-1',
+        url: ''
+      },
+      { 
+        name: 'img-2',
         url: ''
       },
     ],
