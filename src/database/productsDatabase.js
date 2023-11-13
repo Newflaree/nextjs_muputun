@@ -435,29 +435,57 @@ export const productsDB = [
     id: 'p-005',
     name: 'X5 Radio LoRa',
     cate: 'gnss-x5',
-    desc: '',
-    banner: '',
+    desc: 'Haz que tu X5R sea compatible con Trimble SPS855 y otras Estaciones Base GNSS a través de la comunicación LoRa. El radio X5 LoRa es un sistema adaptador que trabaja con una potencia de 1W para que tu Receptor X5 obtenga correcciones GNSS de cualquier Estación Base GNSS que use este protocolo.',
+    banner: 'https://mettatec.com/wp-content/uploads/2023/09/X5-LoRa-Radio.webp',
     mainAdv: [
       {
-        advItem: ''
+        advItem: 'No es necesario abrir o modificar tu Estación Base'
+      },
+      {
+        advItem: 'Dispositivo ligero: 80 gramos'
+      },
+      {
+        advItem: 'Fácil de transportar y configurar en ubicaciones remotas'
       },
     ],
     techSpecs: [
       {
-        primary: '',
+        primary: 'Mecánicas',
         secondary: [
-          { spec: '' },
+          { spec: 'Dimensiones: 75 × 37 × 20 mm' },
+          { spec: 'Peso: 80 g' },
+          { spec: 'Temperatura de operación: -40 a 85 °C' },
+          { spec: 'Diseño cerrado' },
+        ]
+      },
+      {
+        primary: 'Eléctricas',
+        secondary: [
+          { spec: 'Voltaje de entrada: 2.3 - 5.5 V, ≥ 5.0 V asegura la potencia de salida' },
+          { spec: 'Potencia operativa: 1W' },
+          { spec: 'Consumo de corriente en TX: 610 mA' },
+          { spec: 'Consumo de corriente en RX: 17 mA' },
+          { spec: 'Más de 15h de trabajo autónomo con una batería externa de 10000 mAh' },
+        ]
+      },
+      {
+        primary: 'Configuración de radio',
+        secondary: [
+          { spec: 'Disponible en bandas de frecuencia ISM 433MHz y 915MHz' },
+          { spec: 'Ganancia de antena: 3 dBi' },
+          { spec: 'Distancia máxima: 10 km, en área abierta y clara y línea de vista' },
+          { spec: 'Parámetros de ambos módulos (Estación Base GNSS y X5 LoRa)' },
         ]
       },
     ],
     imgs: [
       { 
         name: 'img-1',
-        url: ''
+        url: 'https://mettatec.com/wp-content/uploads/2023/09/X5-LoRa-Radio-Compatible-with-EMLID-REACH-RS2.webp'
       },
       { 
         name: 'img-2',
-        url: ''
+        url: 'https://mettatec.com/wp-content/uploads/2023/09/X5-LoRa-Radio-Compatible-with-TRIMBLE-SPS855.webp'
       },
     ],
     price: '$0.000.000',
@@ -474,7 +502,7 @@ export const productsDB = [
     name: 'HeliX5 Antena',
     cate: 'gnss-x5',
     desc: '',
-    banner: '',
+    banner: 'https://mettatec.com/wp-content/uploads/2023/09/Multi-band-helical-GNSS-antenna-HeliX5.webp',
     mainAdv: [
       {
         advItem: ''
@@ -491,11 +519,11 @@ export const productsDB = [
     imgs: [
       { 
         name: 'img-1',
-        url: ''
+        url: 'https://mettatec.com/wp-content/uploads/2023/09/Multi-band-helical-GNSS-antenna-HeliX5.webp'
       },
       { 
         name: 'img-2',
-        url: ''
+        url: 'https://mettatec.com/wp-content/uploads/2023/09/Multi-band-helical-GNSS-antenna-HeliX5-Drawing.webp'
       },
     ],
     price: '$0.000.000',
