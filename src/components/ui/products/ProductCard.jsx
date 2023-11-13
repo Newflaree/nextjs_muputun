@@ -14,9 +14,9 @@ import {
 export const ProductCard = ({ currentProduct }) => {
   const router = useRouter();
 
+
   const {
     name = '',
-    desc = '',
     imgs = [],
     price = '',
     slug = ''

@@ -6,15 +6,9 @@ import {
 } from '@mui/material';
 // Components
 import { ProductCard } from './';
-import { productsDB } from '@/database';
 
-const testProductData = [
-  { id: '01', name: 'Test Product 1' },
-  { id: '02', name: 'Test Product 2' },
-  { id: '03', name: 'Test Product 3' },
-]
+export const ProductsCategory = ({ cateTitle, filteredProducts }) => {
 
-export const ProductsCategory = ({ cateTitle }) => {
   return (
     <Box>
       <Typography 
@@ -32,7 +26,7 @@ export const ProductsCategory = ({ cateTitle }) => {
         spacing={ 4 }
       >
         {
-          testProductData.map( ({ id, name }) => (
+          filteredProducts.map( ({ id, name, imgs, price, slug }) => (
             <Grid
               key={ id }
               item
@@ -42,7 +36,15 @@ export const ProductsCategory = ({ cateTitle }) => {
               justifyContent='center'
               alignItems='center'
             >
-              <ProductCard currentProduct={ productsDB[0] }/>
+              <ProductCard
+                currentProduct={{
+                  id,
+                  name,
+                  imgs,
+                  price,
+                  slug
+                }}
+              />
             </Grid>
           ))
         }
