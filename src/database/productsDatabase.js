@@ -112,7 +112,12 @@ export const productsDB = [
     ],
     price: '$0.000.000',
     slug: 'x5-mobile-series',
-    doc: 'X5M.pdf'
+    doc: [
+      {
+        name: 'X5 Linea para celulares',
+        path: 'X5M.pdf'
+      },
+    ]
   },
   {
     id: 'p-002',
@@ -217,7 +222,12 @@ export const productsDB = [
     ],
     price: '$0.000.000',
     slug: 'x5-receptor',
-    doc: 'X5R.pdf'
+    doc: [
+      {
+        name: 'X5 Receptor GNSS Multibanda',
+        path: 'X5R.pdf'
+      },
+    ]
   },
   {
     id: 'p-003',
@@ -321,7 +331,12 @@ export const productsDB = [
     ],
     price: '$0.000.000',
     slug: 'x5-ppk-phantom-4-pro',
-    doc: 'X5-PPK-P4P.pdf'
+    doc: [
+      {
+        name: 'X5 PPK Phantom 4 Pro',
+        path: 'X5-PPK-P4P.pdf'
+      },
+    ]
   },
   {
     id: 'p-004',
@@ -421,7 +436,12 @@ export const productsDB = [
     ],
     price: '$0.000.000',
     slug: 'x5-ppk-mavic-2-pro',
-    doc: 'X5-PPK-M2P.pdf'
+    doc: [
+      {
+        name: 'X5 PPK Mavic 2 Pro',
+        path: 'X5-PPK-M2P.pdf'
+      },
+    ]
   },
   {
     id: 'p-005',
@@ -449,8 +469,13 @@ export const productsDB = [
       },
     ],
     price: '$0.000.000',
-    slug: '',
-    doc: ''
+    slug: 'x5-lora-radio',
+    doc: [
+      {
+        name: 'X5 Radio LoRa',
+        path: 'X5-LoRa.pdf'
+      },
+    ]
   },
   {
     id: 'p-006',
@@ -478,13 +503,18 @@ export const productsDB = [
       },
     ],
     price: '$0.000.000',
-    slug: '',
-    doc: ''
+    slug: 'helix5-antena',
+    doc: [
+      {
+        name: 'HeliX5 Antena',
+        path: 'X5-Helix.pdf'
+      },
+    ]
   },
   {
     id: 'p-007',
-    name: '',
-    cate: '',
+    name: 'Aplicación SurPad 4.2 GNSS',
+    cate: 'soft-se',
     desc: '',
     banner: '',
     mainAdv: [
@@ -507,13 +537,18 @@ export const productsDB = [
       },
     ],
     price: '$0.000.000',
-    slug: '',
-    doc: ''
+    slug: 'surpad-4.2-gnss-app',
+    doc: [
+      {
+        name: 'Aplicación SurPad 4.2 GNSS',
+        path: 'SurPad-4.2.pdf'
+      },
+    ]
   },
   {
     id: 'p-008',
-    name: '',
-    cate: '',
+    name: 'X5 Mobile PRO + SURPAD APP',
+    cate: 'combos',
     desc: '',
     banner: '',
     mainAdv: [
@@ -536,13 +571,22 @@ export const productsDB = [
       },
     ],
     price: '$0.000.000',
-    slug: '',
-    doc: ''
+    slug: 'x5-mobile-pro-surpad-app',
+    doc: [
+      {
+        name: 'X5 Mobile Pro',
+        path: 'X5-PPK-M2P.pdf'
+      },
+      {
+        name: 'Aplicación SurPad 4.2 GNSS',
+        path: 'SurPad-4.2.pdf'
+      },
+    ]
   },
   {
     id: 'p-009',
-    name: '',
-    cate: '',
+    name: 'X5 Mobile + SurPad App',
+    cate: 'combos',
     desc: '',
     banner: '',
     mainAdv: [
@@ -565,13 +609,22 @@ export const productsDB = [
       },
     ],
     price: '$0.000.000',
-    slug: '',
-    doc: ''
+    slug: 'x5-mobile-surpad-app',
+    doc: [
+      {
+        name: 'X5 Linea para celulares',
+        path: 'X5M.pdf'
+      },
+      {
+        name: 'Aplicación SurPad 4.2 GNSS',
+        path: 'SurPad-4.2.pdf'
+      },
+    ]
   },
   {
     id: 'p-010',
-    name: '',
-    cate: '',
+    name: 'GNSS Receptor X5R + SurPad App',
+    cate: 'combos',
     desc: '',
     banner: '',
     mainAdv: [
@@ -594,13 +647,22 @@ export const productsDB = [
       },
     ],
     price: '$0.000.000',
-    slug: '',
-    doc: ''
+    slug: 'gnss-receptor-x5r-surpad-app',
+    doc: [
+      {
+        name: 'X5 Receptor GNSS Multibanda',
+        path: 'X5R.pdf'
+      },
+      {
+        name: 'Aplicación SurPad 4.2 GNSS',
+        path: 'SurPad-4.2.pdf'
+      },
+    ]
   },
   {
     id: 'p-011',
-    name: '',
-    cate: '',
+    name: '2 Unidades X5 Receptor + SurPad App',
+    cate: 'combos',
     desc: '',
     banner: '',
     mainAdv: [
@@ -623,36 +685,16 @@ export const productsDB = [
       },
     ],
     price: '$0.000.000',
-    slug: '',
-    doc: ''
-  },
-  {
-    id: 'p-012',
-    name: '',
-    cate: '',
-    desc: '',
-    banner: '',
-    mainAdv: [
+    slug: '2-unidades-x5-receptor-surpad-app',
+    doc: [
       {
-        advItem: ''
+        name: 'X5 Receptor GNSS Multibanda',
+        path: 'X5R.pdf'
       },
-    ],
-    techSpecs: [
       {
-        primary: '',
-        secondary: [
-          { spec: '' },
-        ]
+        name: 'Aplicación SurPad 4.2 GNSS',
+        path: 'SurPad-4.2.pdf'
       },
-    ],
-    imgs: [
-      { 
-        name: 'img-1',
-        url: ''
-      },
-    ],
-    price: '$0.000.000',
-    slug: '',
-    doc: ''
+    ]
   },
 ];

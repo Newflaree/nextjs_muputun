@@ -116,14 +116,6 @@ export const menuPaths = [
     path: '/productos',
     submenu: []
   },
-  /*
-  { 
-    id: 'mi06',
-    name: 'Dónde Estamos',
-    path: '/donde-estamos',
-    submenu: []
-  },
-  * */
   { 
     id: 'mi07',
     name: 'Contacto',

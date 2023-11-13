@@ -38,7 +38,7 @@ export const HomeSlideHeader = () => {
           clickable: true,
         }}
         autoplay={{
-          delay: 6000,
+          delay: 12000,
           disableOnInteraction: false,
         }}
         modules={[
