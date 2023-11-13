@@ -1,13 +1,7 @@
-// Material UI
-import {
-  Box,
-  Grid,
-} from '@mui/material';
-
-// Components
-import { ProductCard, ProductsCategory } from '@/components/ui';
 // Layouts
 import { MainLayout } from '@/components/layouts';
+// Views
+import { ProductsView } from '@/views';
 
 
 const ProductsPage = () => {
@@ -15,10 +9,7 @@ const ProductsPage = () => {
     <MainLayout
       pageTitle='Nuestros Productos'
     >
-      <Box pt={ 7 } />
-      <ProductsCategory cateTitle='Dispositivos GNSS X5' />
-      <ProductsCategory cateTitle='Software y Servicios' />
-      <ProductsCategory cateTitle='Combos' />
+      <ProductsView />
     </MainLayout>
   );
 }

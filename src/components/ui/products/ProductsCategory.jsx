@@ -1,6 +1,12 @@
-import {productsDB} from "@/database";
-import {Box, Grid, Typography} from "@mui/material";
-import {ProductCard} from ".";
+// Material UI
+import {
+  Box,
+  Grid,
+  Typography
+} from '@mui/material';
+// Components
+import { ProductCard } from './';
+import { productsDB } from '@/database';
 
 const testProductData = [
   { id: '01', name: 'Test Product 1' },
