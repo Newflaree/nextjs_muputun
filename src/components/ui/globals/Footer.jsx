@@ -24,15 +24,15 @@ export const Footer = () => {
     <Box
       component="footer"
       sx={{
-        backgroundColor: (theme) =>
+        backgroundColor: ( theme ) =>
           theme.palette.mode === "light"
-            ? theme.palette.grey[200]
-            : theme.palette.grey[800],
+            ? theme.palette.grey[ 200 ]
+            : theme.palette.grey[ 800 ],
       }}
     >
       <Container maxWidth="lg">
-        <Grid container spacing={6} textAlign='center'>
-          <Grid item xs={12} sm={4}>
+        <Grid container spacing={ 6 } textAlign='center'>
+          <Grid item xs={ 12 } sm={ 4 }>
             <Typography
               variant="h6"
               color="text.primary"
@@ -151,7 +151,7 @@ export const Footer = () => {
             align="center"
           >
             {"Copyright © "}
-            <Link href="/">
+            <Link href="#">
               NWFL Soluciones de Software.
             </Link>{" "}
             { currentYear }
