@@ -1,13 +1,24 @@
 // Database
 import { productsDB } from './productsDatabase'
 
+export const getProductByCategory = ( cate = '' ) => {
+  const filteredProducts = productsDB.filter(
+    product => product.cate === cate 
+  );
 
-export const getAllProductSlugs = () => {
-  const slugs = productsDB.filter( prod => prod.slug );
-
-  return slugs;
+  return filteredProducts;
 }
 
-export const findProductBySlug = ( slug = '' ) => {
+export const getProductBySlug = ( slug = '' ) => {
+  const productBySlug = productsDB.find(
+    product => product.slug === slug
+  );
 
+  return productBySlug;
+}
+
+export const getAllProductSlugs = () => {
+  const slugs = productsDB.map( product => product.slug );
+
+  return slugs;
 }
