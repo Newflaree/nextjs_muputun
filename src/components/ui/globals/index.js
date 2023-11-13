@@ -1,6 +1,7 @@
 export * from './Footer';
 export * from './LoadingPage';
 export * from './NavBar';
+export * from './Particles';
 export * from './SideMenu';
 export * from './SideMenuItem';
 export * from './SideMenuSubmenu';

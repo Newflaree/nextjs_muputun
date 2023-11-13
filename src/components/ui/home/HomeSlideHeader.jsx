@@ -24,6 +24,7 @@ export const HomeSlideHeader = () => {
   return (
     <Box
       sx={{
+        borderRadius: '8px',
         height: {
           xs: 'calc( 100vh )',
           sm: '500px'
@@ -31,6 +32,7 @@ export const HomeSlideHeader = () => {
       }}
     >
       <Swiper
+        style={{ borderRadius: 6 }}
         spaceBetween={ 30 }
         effect={ "fade" }
         navigation={ true }

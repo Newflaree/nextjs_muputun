@@ -5,11 +5,11 @@ export const homeProdusts = [
     imgs: [
       { 
         name: 'img-1',
-        url: 'https://mettatec.com/wp-content/uploads/2023/09/GNSS-X5-PPK-Module-for-Phantom-4-Pro-Advance-each-parts.webp'
+        url: 'https://docs.mettatec.com/assets/images/products/X5PPKP4P.png'
       },
       { 
         name: 'img-2',
-        url: 'https://mettatec.com/wp-content/uploads/2023/09/GNSS-X5-PPK-Module-for-Phantom-4-Pro-Advance-Module-each-parts-unboxing.webp'
+        url: 'https://mettatec.com/wp-content/uploads/2023/09/GNSS-X5-PPK-Module-for-Phantom-4-Pro-Advance-each-parts.webp'
       },
     ],
     price: '$0.000.000',
@@ -69,11 +69,11 @@ export const homeProdusts = [
     imgs: [
       { 
         name: 'img-1',
-        url: 'https://mettatec.com/wp-content/uploads/2023/09/GNSS-X5-PPK-Module-for-Phantom-4-Pro-Advance-each-parts.webp'
+        url: 'https://docs.mettatec.com/assets/images/products/X5PPKM2P.png'
       },
       { 
         name: 'img-2',
-        url: 'https://mettatec.com/wp-content/uploads/2023/09/GNSS-X5-PPK-Module-for-Mavic-2-Pro-Zoom-Referencial-Image.webp'
+        url: 'https://mettatec.com/wp-content/uploads/2023/09/GNSS-X5-PPK-Module-for-Phantom-4-Pro-Advance-each-parts.webp'
       },
     ],
     price: '$0.000.000',
@@ -85,11 +85,11 @@ export const homeProdusts = [
     imgs: [
       { 
         name: 'img-1',
-        url: 'https://mettatec.com/wp-content/uploads/2023/09/X5-Multi-band-GNSS-Receiver-PPK-RTK-NTRIP.webp'
+        url: 'https://docs.mettatec.com/assets/images/products/X5R.png'
       },
       { 
         name: 'img-2',
-        url: 'https://mettatec.com/wp-content/uploads/2023/09/GNSS-Receiver-X5R-Plus-with-Local-NTRIP-Application.webp'
+        url: 'https://mettatec.com/wp-content/uploads/2023/09/X5-Multi-band-GNSS-Receiver-PPK-RTK-NTRIP-POV-Down.webp'
       },
     ],
     price: '$0.000.000',

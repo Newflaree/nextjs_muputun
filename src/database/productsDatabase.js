@@ -99,7 +99,7 @@ export const productsDB = [
     imgs: [
       { 
         name: 'img-1',
-        url: 'https://mettatec.com/wp-content/uploads/2023/09/PPKNTRIP-GNSS-X5Mobile-for-Smartphones.webp'
+        url: 'https://docs.mettatec.com/assets/images/products/X5M.png'
       },
       { 
         name: 'img-2',
@@ -205,7 +205,7 @@ export const productsDB = [
     imgs: [
       { 
         name: 'img-1',
-        url: 'https://mettatec.com/wp-content/uploads/2023/09/X5-Multi-band-GNSS-Receiver-PPK-RTK-NTRIP.webp'
+        url: 'https://docs.mettatec.com/assets/images/products/X5R.png'
       },
       { 
         name: 'img-2',
@@ -310,7 +310,7 @@ export const productsDB = [
     imgs: [
       { 
         name: 'img-1',
-        url: 'https://mettatec.com/wp-content/uploads/2023/09/GNSS-X5-PPK-Module-for-Phantom-4-Pro-Advance.webp'
+        url: 'https://docs.mettatec.com/assets/images/products/X5PPKP4P.png'
       },
       { 
         name: 'img-2',
@@ -415,7 +415,7 @@ export const productsDB = [
     imgs: [
       { 
         name: 'img-1',
-        url: 'https://mettatec.com/wp-content/uploads/2023/09/GNSS-X5-PPK-Module-for-Mavic-2-Pro-Zoom.webp'
+        url: 'https://docs.mettatec.com/assets/images/products/X5PPKM2P.png'
       },
       { 
         name: 'img-2',
@@ -481,7 +481,7 @@ export const productsDB = [
     imgs: [
       { 
         name: 'img-1',
-        url: 'https://mettatec.com/wp-content/uploads/2023/09/X5-LoRa-Radio-Compatible-with-EMLID-REACH-RS2.webp'
+        url: 'https://docs.mettatec.com/assets/images/products/X5L.png'
       },
       { 
         name: 'img-2',
