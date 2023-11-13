@@ -1,6 +1,15 @@
+// Components
+import {
+  HomeProductsGrid,
+  HomeSlideHeader
+} from '@/components/ui';
+
 
 export const HomeView = () => {
   return (
-    <div>HomeView</div>
+    <>
+      <HomeSlideHeader />
+      <HomeProductsGrid />
+    </>
   );
 }

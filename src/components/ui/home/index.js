@@ -1,3 +1,3 @@
-export * from './SlideHeader';
-export * from './SlideShow';
+export * from './HomeSlideHeader';
+export * from './HomeProductsGrid';
 export * from './HomeCard';

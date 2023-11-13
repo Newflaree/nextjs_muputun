@@ -1,6 +1,7 @@
 // Next.js
 import NextLink from 'next/link';
 import {useRouter} from 'next/router';
+// Material UI
 import {
   Button,
   Card,
@@ -8,10 +9,7 @@ import {
   CardMedia,
   Typography
 } from '@mui/material';
-import { productsDB } from '@/database';
 
-
-const testProduct = productsDB[0];
 
 export const ProductCard = ({ currentProduct }) => {
   const router = useRouter();

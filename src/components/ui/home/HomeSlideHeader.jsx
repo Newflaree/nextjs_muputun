@@ -20,7 +20,7 @@ import 'swiper/css/pagination';
 import { headerInfo } from '@/database';
 
 
-export const SlideHeader = () => {
+export const HomeSlideHeader = () => {
   return (
     <Box
       sx={{
