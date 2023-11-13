@@ -24,7 +24,7 @@ export const HomeProductsGrid = () => {
 
       <Grid container spacing={ 4 }>
         {
-          homeProdusts.map( ({ id, name, imgs, desc, slug }) => (
+          homeProdusts.map( ({ id, name, imgs, desc, slug, price }) => (
             <Grid
               key={ id }
               item
@@ -34,7 +34,7 @@ export const HomeProductsGrid = () => {
               justifyContent='center'
               alignItems='center'
             >
-              <ProductCard currentProduct={{ name, imgs, desc, slug }} />
+              <ProductCard currentProduct={{ name, imgs, desc, slug, price }} />
             </Grid>
           ))
         }

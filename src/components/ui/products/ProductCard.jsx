@@ -62,14 +62,6 @@ export const ProductCard = ({ currentProduct }) => {
         </Typography>
 
         <Typography
-          variant='body2'
-          component='p'
-          color='secondary'
-        >
-          { desc }
-        </Typography>
-
-        <Typography
           variant='h5'
           mt='16px'
           color='primary'
