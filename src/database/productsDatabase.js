@@ -1,5 +1,121 @@
 export const productsDB = [
   {
+    id: 'p-000',
+    name: 'X5 PRO Linea para celulares',
+    cate: 'gnss-x5',
+    desc: 'El receptor de antena GNSS externo de alta precisión que funciona con tu smartphone o tableta Android o iOS. La solución perfecta para usuarios profesionales tanto principiantes como con experiencia en campo. Cuenta con un sistema de corrección NTRIP que recibe datos a través de Internet o Bluetooth. Tiene un indicador láser de punto rojo para facilitar el uso en levantamientos geodésicos.',
+    banner: 'https://mettatec.com/wp-content/uploads/2023/09/PPKNTRIP-GNSS-X5Mobile-for-Smartphones-on-field-2.webp',
+    mainAdv: [
+      {
+        advItem: 'Utiliza la misma tecnología GNSS L1/L2/e5 que se encuentra en receptores profesionales con componentes de vanguardia.'
+      },
+      {
+        advItem: 'Recepción simultánea de todas las constelaciones: GPS, GLONASS, GALILEO y BEIDOU.'
+      },
+      {
+        advItem: 'Correcciones NTRIP multibanda con tiempos de convergencia rápidos y rendimiento robusto, ofrece precisión a nivel de centímetros con una solución Fix en segundos.'
+      },
+      {
+        advItem: 'Permite Levantamientos Geodésicos y Fotogrametría con georreferenciación de alta precisión.'
+      },
+      {
+        advItem: 'Incluye su propia antena GNSS helicoidal multibanda.'
+      },
+      {
+        advItem: 'Conexión de transferencia de datos a través de puerto USB y Bluetooth.'
+      },
+      {
+        advItem: 'Compatible con aplicaciones de SIG y Fotogrametría que operan con datos NMEA.'
+      },
+      {
+        advItem: 'Tiene un láser rojo para localizar fácilmente los puntos a georreferenciar en el campo.'
+      },
+      {
+        advItem: 'Compatibilidad con dispositivos Android e iOS.'
+      },
+      {
+        advItem: 'En resumen: Precisión a nivel de centímetros en un módulo pequeño y de muy bajo consumo.'
+      },
+    ],
+    techSpecs: [
+      {
+        primary: 'Mecánicas',
+        secondary: [
+          { spec: 'Dimensiones: 85 × 40 × 15 mm (sin antena)' },
+          { spec: 'Peso: 70g' },
+          { spec: 'Temperatura de operación: -40 a 85 °C' },
+        ]
+      },
+      {
+        primary: 'Eléctricas',
+        secondary: [
+          { spec: 'Voltaje de entrada: 4.75 – 5.5 V' },
+          { spec: 'Sesgo de CC de la antena: 3.3 V' },
+          { spec: 'Consumo máximo de corriente: 5V @ 250 mA' },
+          { spec: 'Consumo promedio de corriente: 5V @ 120 mA' },
+          { spec: 'Límite de corriente en el cable USB: 500 mA' },
+        ]
+      },
+      {
+        primary: 'Conectividad',
+        secondary: [
+          { spec: 'Bluetooth V4.2 BR/EDR' },
+          { spec: 'USB Serial' },
+        ]
+      },
+      {
+        primary: 'GNSS',
+        secondary: [
+          { spec: 'Recepción concurrente de GPS, GLONASS, Galileo y BeiDou' },
+          { spec: 'Recibe bandas L1C/A y L2C' },
+          { spec: 'Señales rastreadas GPS/QZSS L1 C/A, L2 GLONASS L1OF, L2 BeiDou B1l, B2l Galileo E1-B/C, E5b' },
+          { spec: 'Número de canales 184' },
+          { spec: 'Tasa de actualización de navegación: 1 Hz GNSS' },
+          { spec: 'Precisión de posición: NTRIP 0.01 m + 1 ppm CEP' },
+          { spec: 'Tiempo de convergencia: NTRIP < 10 sec' },
+          { spec: 'Tiempo para la Primera Fijación: 25s (frío), 2s (caliente)' },
+          { spec: 'Altitud máxima: 50 km (31 millas)' },
+          { spec: 'Velocidad máxima: 500 m/s (1118 mph)' },
+        ]
+      },
+      {
+        primary: 'Láser',
+        secondary: [
+          { spec: 'Láser de punto rojo' },
+          { spec: 'Precisión: ±10 mm, el indicador rojo varía ligeramente' },
+          { spec: 'Longitud de onda del láser: 650 nm' },
+          { spec: 'Modo de haz' },
+          { spec: 'Dimensiones: 8 * 13.5 mm' },
+          { spec: 'Vida útil: ≥5000h' },
+          { spec: 'Potencia óptica: 1-100mw' },
+          { spec: 'Rango de voltaje: 3V-8V' },
+          { spec: 'Corriente de operación: ≤150mA' },
+          { spec: 'Rango de temperatura de operación: -25~65 °C' },
+          { spec: 'Ángulo de desviación de la luz: ±2°' },
+          { spec: 'Tamaño del punto del haz a 10 m: <15 mm' },
+        ]
+      },
+    ],
+    imgs: [
+      { 
+        name: 'img-1',
+        url: 'https://docs.mettatec.com/assets/images/products/X5MPro.png'
+      },
+      { 
+        name: 'img-2',
+        url: 'https://mettatec.com/wp-content/uploads/2023/09/GNSS-X5Mobile-PRO-for-Smartphones-and-Tablets-RTK1.webp'
+      },
+    ],
+    price: '$0.000.000',
+    slug: 'x5-mobile-series',
+    doc: [
+      {
+        name: 'X5 Linea para celulares',
+        path: 'X5M.pdf'
+      },
+    ]
+  },
+  {
     id: 'p-001',
     name: 'X5 Linea para celulares',
     cate: 'gnss-x5',
