@@ -540,7 +540,7 @@ export const productsDB = [
     name: 'Aplicación SurPad 4.2 GNSS',
     cate: 'soft-se',
     desc: '',
-    banner: '',
+    banner: 'https://mettatec.com/wp-content/uploads/2023/10/SURPAD-1000X1000-3.webp',
     mainAdv: [
       {
         advItem: ''
@@ -557,11 +557,11 @@ export const productsDB = [
     imgs: [
       { 
         name: 'img-1',
-        url: ''
+        url: 'https://mettatec.com/wp-content/uploads/2023/10/SURPAD-1000X1000.webp'
       },
       { 
         name: 'img-2',
-        url: ''
+        url: 'https://mettatec.com/wp-content/uploads/2023/10/SURPAD-1000X1000-2.webp'
       },
     ],
     price: '$0.000.000',
@@ -578,7 +578,7 @@ export const productsDB = [
     name: 'X5 Mobile PRO + SURPAD APP',
     cate: 'combos',
     desc: '',
-    banner: '',
+    banner: 'https://mettatec.com/wp-content/uploads/2023/09/GNSS-X5Mobile-PRO-for-Smartphones-and-Tablets-RTK1.webp',
     mainAdv: [
       {
         advItem: ''
@@ -595,11 +595,11 @@ export const productsDB = [
     imgs: [
       { 
         name: 'img-1',
-        url: ''
+        url: 'https://mettatec.com/wp-content/uploads/2023/10/X5M-PRO-y-SURPAD-1000X1000.webp'
       },
       { 
         name: 'img-2',
-        url: ''
+        url: 'https://mettatec.com/wp-content/uploads/2023/10/X5M-PRO-2.webp'
       },
     ],
     price: '$0.000.000',
@@ -620,7 +620,7 @@ export const productsDB = [
     name: 'X5 Mobile + SurPad App',
     cate: 'combos',
     desc: '',
-    banner: '',
+    banner: 'https://mettatec.com/wp-content/uploads/2023/09/PPKNTRIP-GNSS-X5Mobile-for-Smartphones-using-on-field.webp',
     mainAdv: [
       {
         advItem: ''
@@ -637,11 +637,11 @@ export const productsDB = [
     imgs: [
       { 
         name: 'img-1',
-        url: ''
+        url: 'https://mettatec.com/wp-content/uploads/2023/10/X5M-y-SURPAD-1000X1000.webp'
       },
       { 
         name: 'img-2',
-        url: ''
+        url: 'https://mettatec.com/wp-content/uploads/2023/10/X5M-FEATURES.webp'
       },
     ],
     price: '$0.000.000',
@@ -659,10 +659,10 @@ export const productsDB = [
   },
   {
     id: 'p-010',
-    name: 'GNSS Receptor X5R + SurPad App',
+    name: 'GNSS Receptor X5 + SurPad App',
     cate: 'combos',
     desc: '',
-    banner: '',
+    banner: 'https://mettatec.com/wp-content/uploads/2023/10/X5-RECEIVER-y-SURPAD-1000X1000.webp',
     mainAdv: [
       {
         advItem: ''
@@ -679,11 +679,11 @@ export const productsDB = [
     imgs: [
       { 
         name: 'img-1',
-        url: ''
+        url: 'https://mettatec.com/wp-content/uploads/2023/10/X5-RECEIVER-y-SURPAD-1000X1000.webp'
       },
       { 
         name: 'img-2',
-        url: ''
+        url: 'https://mettatec.com/wp-content/uploads/2023/10/X5-RECEIVER-y-SURPAD-1000X1000.webp'
       },
     ],
     price: '$0.000.000',
@@ -721,11 +721,11 @@ export const productsDB = [
     imgs: [
       { 
         name: 'img-1',
-        url: ''
+        url: 'https://mettatec.com/wp-content/uploads/2023/10/X5-RECEIVER-2-UNITS-y-SURPAD-1000X1000.webp'
       },
       { 
         name: 'img-2',
-        url: ''
+        url: 'https://mettatec.com/wp-content/uploads/2023/10/X5-RECEIVER-2-UNITS-y-SURPAD-1000X1000.webp'
       },
     ],
     price: '$0.000.000',
