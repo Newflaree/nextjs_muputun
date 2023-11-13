@@ -33,7 +33,7 @@ export const homeProdusts = [
   },
   {
     id: 'hp-003',
-    name: 'SurPad 4.2 App - Licencia perpetua',
+    name: 'Aplicación SurPad 4.2',
     imgs: [
       { 
         name: 'img-1',

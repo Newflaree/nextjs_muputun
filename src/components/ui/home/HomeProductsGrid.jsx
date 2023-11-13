@@ -1,3 +1,5 @@
+// React
+import React from 'react';
 // Material UI
 import {
   Box,
@@ -24,18 +26,17 @@ export const HomeProductsGrid = () => {
 
       <Grid container spacing={ 4 }>
         {
-          homeProdusts.map( ({ id, name, imgs, desc, slug, price }) => (
-            <Grid
-              key={ id }
-              item
-              xs={ 12 }
-              sm={ 4 }
-              display='flex'
-              justifyContent='center'
-              alignItems='center'
-            >
-              <ProductCard currentProduct={{ name, imgs, desc, slug, price }} />
-            </Grid>
+          homeProdusts.map( ({ id, name, imgs, slug, price }) => (
+            <React.Fragment key={ id }>
+              <ProductCard
+                currentProduct={{
+                  name,
+                  imgs,
+                  price,
+                  slug
+                }}
+              />
+            </React.Fragment>
           ))
         }
       </Grid>

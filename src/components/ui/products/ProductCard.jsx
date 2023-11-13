@@ -1,19 +1,27 @@
+// React
+import {
+  useMemo,
+  useState
+} from 'react';
 // Next.js
 import NextLink from 'next/link';
-import {useRouter} from 'next/router';
+import Image from 'next/image';
+import { useRouter } from 'next/router';
 // Material UI
 import {
   Button,
   Card,
   CardContent,
   CardMedia,
+  Grid,
   Typography
 } from '@mui/material';
 
 
 export const ProductCard = ({ currentProduct }) => {
+  const [ isHovered, setIsHovered ] = useState( false );
+  const [ isImageLoaded, setIsImageLoaded ] = useState( true );
   const router = useRouter();
-
 
   const {
     name = '',
@@ -22,76 +30,116 @@ export const ProductCard = ({ currentProduct }) => {
     slug = ''
   } = currentProduct;
 
+  const productImage = useMemo( () => {
+    return isHovered
+      ? imgs[1]
+      : imgs[0]
+  }, [ isHovered, imgs ]);
+
   const onNavigateTo = () => {
     router.push( `/productos/${ slug }` )
   }
 
   return (
-    <Card
-      sx={{
-        maxWidth: 300,
-        width: 350,
-        boxShadow: '0 4px 8px rgba(0,0,0,0.1)'
-      }}
+    <Grid
+      item
+      xs={ 12 }
+      sm={ 4 }
+      display='flex'
+      justifyContent='center'
+      alignItems='center'
+      onMouseEnter={ () => setIsHovered( true ) }
+      onMouseLeave={ () => setIsHovered( false ) }
     >
-      <CardMedia
-        onClick={ onNavigateTo }
-        image={ imgs[0].url }
-        title={ name }
+      <Card
         sx={{
-          height: 270,
-          ':hover': {
-            cursor: 'pointer',
-          }
+          maxWidth: 350,
+          width: 350,
+          boxShadow: '0 4px 8px rgba(0,0,0,0.1)'
         }}
-      />
+      >
+        <Image
+          priority={ true }
+          alt={ name }
+          height={ 40 }
+          width={ 110 }
+          src='/logo.png'
+          style={{
+            position: 'absolute',
+            zIndex: '99',
+            marginTop: 10,
+            marginLeft: 10
+          }}
+        />
 
-      <CardContent>
-        <Typography
+        <CardMedia
+          component='img'
+          onLoad={ () => setIsImageLoaded( true ) }
+          image={ productImage }
+          alt={ name }
           onClick={ onNavigateTo }
-          variant='h6'
-          gutterBottom
+          title={ name }
           sx={{
+            height: 270,
             ':hover': {
               cursor: 'pointer',
-              color: '#1FBEE8'
             }
           }}
-        >
-          { name }
-        </Typography>
+        />
 
-        <Typography
-          variant='h5'
-          mt='16px'
-          color='primary'
-          textAlign='end'
+        <CardContent
+          sx={{
+            display: isImageLoaded 
+              ? 'block'
+              : 'none'
+          }}
         >
-          { price }
-        </Typography>
-
-        <NextLink
-          href='/contacto'
-          passHref
-          legacyBehavior
-        >
-          <Button
-            variant='contained'
-            size='large'
-            color='primary'
-            fullWidth
+          <Typography
+            onClick={ onNavigateTo }
+            variant='h6'
+            gutterBottom
             sx={{
-              mt: '16px',
-              color: 'white',
               ':hover': {
-                bgcolor: 'primary.dark'
+                cursor: 'pointer',
+                color: '#1FBEE8'
               }
             }}
           >
-            Reserva Ya
-          </Button>
-        </NextLink>
-      </CardContent>
-    </Card>
+            { name }
+          </Typography>
+
+          <Typography
+            variant='h5'
+            mt='16px'
+            color='primary'
+            textAlign='end'
+          >
+            { price }
+          </Typography>
+
+          <NextLink
+            href='/contacto'
+            passHref
+            legacyBehavior
+          >
+            <Button
+              variant='contained'
+              size='large'
+              color='primary'
+              fullWidth
+              sx={{
+                mt: '16px',
+                color: 'white',
+                ':hover': {
+                  bgcolor: 'primary.dark'
+                }
+              }}
+            >
+              Reserva Ya
+            </Button>
+          </NextLink>
+        </CardContent>
+      </Card>
+    </Grid>
   );
 }

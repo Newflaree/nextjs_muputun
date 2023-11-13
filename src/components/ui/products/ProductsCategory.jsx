@@ -4,6 +4,7 @@ import {
   Grid,
   Typography
 } from '@mui/material';
+import React from 'react';
 // Components
 import { ProductCard } from './';
 
@@ -27,15 +28,7 @@ export const ProductsCategory = ({ cateTitle, filteredProducts }) => {
       >
         {
           filteredProducts.map( ({ id, name, imgs, price, slug }) => (
-            <Grid
-              key={ id }
-              item
-              xs={ 12 }
-              sm={ 4 }
-              display='flex'
-              justifyContent='center'
-              alignItems='center'
-            >
+            <React.Fragment key={ id }>
               <ProductCard
                 currentProduct={{
                   id,
@@ -45,7 +38,7 @@ export const ProductsCategory = ({ cateTitle, filteredProducts }) => {
                   slug
                 }}
               />
-            </Grid>
+            </React.Fragment>
           ))
         }
       </Grid>
