@@ -4,6 +4,8 @@ import {
   sendEmailService, 
   setUpEmailTemplateService
 } from '../services';
+// Utils
+import { consoleErrorsLogger } from '@/utils';
 
 
 /**
@@ -16,16 +18,17 @@ const sendEmailModule = async ( req ) => {
   // Desestructurate body data
   const {
     emailAddress,
+    subject
   } = req.body;
 
-  // TODO: Read local template and replace placeholders with real values
-  const { template } = setUpEmailTemplateService( req );
+  // Read local template and replace placeholders with real values
+  const { template } = await setUpEmailTemplateService( req );
 
-  // TODO: Set Up email options
-  const { mailOptions, transporter } = prepareEmailOptionsService( template, emailAddress );
+  // Set Up email options
+  const { mailOptions, transporter } = await prepareEmailOptionsService( subject, template, emailAddress );
 
   try {
-    // TODO: Send email
+    // Send email
     const { statusCode, ok, message } = await sendEmailService( transporter, mailOptions );
 
     return {
@@ -34,7 +37,7 @@ const sendEmailModule = async ( req ) => {
       message
     }
   } catch ( error ) {
-    //TODO: Implement errorHandler
+    consoleErrorsLogger( 'sendEmailModule', error );
     
     return {
       statusCode: 400,

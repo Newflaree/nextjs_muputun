@@ -1,5 +1,5 @@
-// Database
-// Models
+// Utils
+import { consoleErrorsLogger } from '@/utils';
 
 
 /**
@@ -18,6 +18,7 @@ const sendEmailService = async ( transporter, mailOptions ) => {
       message: 'Mensaje enviado con éxito'
     }
   } catch ( error ) {
+    consoleErrorsLogger( 'sendEmailService', error );
 
     return {
       statusCode: 400,

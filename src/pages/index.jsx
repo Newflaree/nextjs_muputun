@@ -1,7 +1,7 @@
 // Layouts
 import { MainLayout } from '@/components/layouts';
 // Views
-import {HomeView} from '@/views';
+import { HomeView } from '@/views';
 
 
 const HomePage = () => {

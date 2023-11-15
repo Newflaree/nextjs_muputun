@@ -1,6 +1,7 @@
-// Database
-// Models
+// Nodemailer
 import nodemailer from 'nodemailer';
+// Utils
+import { consoleErrorsLogger } from '@/utils';
 
 
 /**
@@ -9,10 +10,14 @@ import nodemailer from 'nodemailer';
  * @param {Object} req - Express request object containing query parameters
  * @returns {Object} - An object containing the total count of products and an array of products
  */
-const prepateEmailOptionsService = async ( template = '', emailAddress ) => {
+const prepateEmailOptionsService = async (
+  subject = '',
+  template = '',
+  emailAddress = ''
+) => {
   try {
     let transporter = nodemailer.createTransport({
-      host: process.env.EMAIL_HOST,
+      host: 'mail.muputun.cl',
       port: 465,
       secure: true,
       auth: {
@@ -24,7 +29,7 @@ const prepateEmailOptionsService = async ( template = '', emailAddress ) => {
     let mailOptions = {
       from: emailAddress,
       to: process.env.EMAIL_USERNAME,
-      subject: `Contacto: ${ subject }`,
+      subject: `Asunto: ${ subject }`,
       html: template
     }
 
@@ -33,7 +38,7 @@ const prepateEmailOptionsService = async ( template = '', emailAddress ) => {
       transporter
     }
   } catch ( error ) {
-    // TODO: Implement consoleErrorsHandler()
+    consoleErrorsLogger( 'prepateEmailOptionsService', error );
   }
 }
 

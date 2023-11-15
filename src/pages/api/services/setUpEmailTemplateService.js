@@ -1,7 +1,8 @@
-// Database
-// Models
+// Node.js
 import fs from 'fs';
 import path from 'path';
+// Utils
+import { consoleErrorsLogger } from '@/utils';
 
 
 /**
@@ -13,14 +14,12 @@ import path from 'path';
 const setUpEmailTemplateService = async ( req ) => {
   const { name, emailAddress, subject, message } = req.body;
 
-
-
   try {
     const templatePath = path.join( process.cwd(), 'email', 'emailTemplate.html' );
 
     let template = fs.readFileSync( templatePath, 'utf8' );
     template = template.replace( '{{name}}', name )
-      .replace( '{{emailTemplate}}', emailAddress )
+      .replace( '{{emailAddress}}', emailAddress )
       .replace( '{{subject}}', subject )
       .replace( '{{message}}', message )
 
@@ -29,8 +28,7 @@ const setUpEmailTemplateService = async ( req ) => {
     }
 
   } catch ( error ) {
-    console.log( error );
-    // TODO: Implement consoleErrorsHandler()
+    consoleErrorsLogger( 'setUpEmailTemplateService', error );
   }
 }
 
