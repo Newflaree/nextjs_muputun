@@ -117,6 +117,12 @@ export const menuPaths = [
     submenu: []
   },
   { 
+    id: 'mi06',
+    name: 'X5 Documentos',
+    path: 'https://docs.mettatec.com',
+    submenu: []
+  },
+  { 
     id: 'mi07',
     name: 'Contacto',
     path: '/contacto',

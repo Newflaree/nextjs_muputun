@@ -12,13 +12,14 @@ import { consoleErrorsLogger } from '@/utils';
  * @returns {Object} - An object containing the total count of products and an array of products
  */
 const setUpEmailTemplateService = async ( req ) => {
-  const { name, emailAddress, subject, message } = req.body;
+  const { name, lastName, emailAddress, subject, message } = req.body;
 
   try {
     const templatePath = path.join( process.cwd(), 'email', 'emailTemplate.html' );
 
     let template = fs.readFileSync( templatePath, 'utf8' );
     template = template.replace( '{{name}}', name )
+      .replace( '{{lastName}}', lastName )
       .replace( '{{emailAddress}}', emailAddress )
       .replace( '{{subject}}', subject )
       .replace( '{{message}}', message )

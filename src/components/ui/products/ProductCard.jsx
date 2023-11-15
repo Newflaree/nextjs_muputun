@@ -109,14 +109,18 @@ export const ProductCard = ({ currentProduct }) => {
             { name }
           </Typography>
 
-          <Typography
-            variant='h5'
-            mt='16px'
-            color='primary'
-            textAlign='end'
-          >
-            { price }
-          </Typography>
+          {
+            ( price > 0 ) && (
+              <Typography
+                variant='h5'
+                mt='16px'
+                color='primary'
+                textAlign='end'
+              >
+                { `$${ price }` }
+              </Typography>
+            )
+          }
 
           <NextLink
             href='/contacto'

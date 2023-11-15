@@ -17,8 +17,8 @@ const prepateEmailOptionsService = async (
 ) => {
   try {
     let transporter = nodemailer.createTransport({
-      host: 'mail.muputun.cl',
-      port: 465,
+      host: process.env.EMAIL_HOST,
+      port: process.env.EMAIL_PORT,
       secure: true,
       auth: {
         user: process.env.EMAIL_USERNAME,

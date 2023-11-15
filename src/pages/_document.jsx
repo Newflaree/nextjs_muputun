@@ -8,20 +8,16 @@ import Document, {
 
 
 class MyDocument extends Document {
-  static async getInitialProps(ctx) {
+  static async getInitialProps( ctx ) {
     const originalRenderPage = ctx.renderPage
 
-    // Run the React rendering logic synchronously
     ctx.renderPage = () =>
       originalRenderPage({
-        // Useful for wrapping the whole react tree
-        enhanceApp: (App) => App,
-        // Useful for wrapping in a per-page basis
-        enhanceComponent: (Component) => Component,
-      })
+        enhanceApp: ( App ) => App,
+        enhanceComponent: ( Component ) => Component,
+      });
 
-    // Run the parent , it now includes the custom 
-    const initialProps = await Document.getInitialProps(ctx)
+    const initialProps = await Document.getInitialProps( ctx )
 
     return initialProps
   }

@@ -1,7 +1,7 @@
 // Material UI
 import { CssBaseline, ThemeProvider } from '@mui/material';
 // Themes
-import { darkTheme, lightTheme } from '@/themes';
+import { lightTheme } from '@/themes';
 // Styles
 import '@/styles/globals.css';
 // Context
