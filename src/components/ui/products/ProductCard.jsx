@@ -110,7 +110,7 @@ export const ProductCard = ({ currentProduct }) => {
           </Typography>
 
           {
-            ( price > 0 ) && (
+            ( price !== '0' ) && (
               <Typography
                 variant='h5'
                 mt='16px'

@@ -12,7 +12,7 @@ export const homeProdusts = [
         url: 'https://mettatec.com/wp-content/uploads/2023/09/GNSS-X5-PPK-Module-for-Phantom-4-Pro-Advance-each-parts.webp'
       },
     ],
-    price: '$0.000.000',
+    price: '0',
     slug: 'x5-ppk-phantom-4-pro',
   },
   {
@@ -28,7 +28,7 @@ export const homeProdusts = [
         url: 'https://mettatec.com/wp-content/uploads/2023/10/X5-RECEIVER-2-UNITS-y-SURPAD-1000X1000.webp'
       },
     ],
-    price: '$0.000.000',
+    price: '0',
     slug: '2-unidades-x5-receptor-surpad-app',
   },
   {
@@ -44,7 +44,7 @@ export const homeProdusts = [
         url: 'https://mettatec.com/wp-content/uploads/2023/10/SURPAD-1000X1000-2.webp'
       },
     ],
-    price: '$0.000.000',
+    price: '0',
     slug: 'surpad-4.2-gnss-app',
   },
   {
@@ -76,7 +76,7 @@ export const homeProdusts = [
         url: 'https://mettatec.com/wp-content/uploads/2023/09/GNSS-X5-PPK-Module-for-Phantom-4-Pro-Advance-each-parts.webp'
       },
     ],
-    price: '$0.000.000',
+    price: '0',
     slug: 'x5-ppk-mavic-2-pro',
   },
   {
@@ -92,7 +92,7 @@ export const homeProdusts = [
         url: 'https://mettatec.com/wp-content/uploads/2023/09/X5-Multi-band-GNSS-Receiver-PPK-RTK-NTRIP-POV-Down.webp'
       },
     ],
-    price: '$0.000.000',
+    price: '0',
     slug: 'x5-receptor',
   },
 ]
