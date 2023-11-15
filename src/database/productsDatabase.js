@@ -110,8 +110,8 @@ export const productsDB = [
     slug: 'x5-mobile-series',
     doc: [
       {
-        name: 'X5 Linea para celulares',
-        path: 'X5M.pdf'
+        name: 'X5 PRO Linea para celulares',
+        path: 'X5M-PRO.pdf'
       },
     ]
   },
@@ -617,18 +617,82 @@ export const productsDB = [
     id: 'p-006',
     name: 'HeliX5 Antena',
     cate: 'gnss-x5',
-    desc: '',
+    desc: 'El receptor de antena GNSS externo de alta precisión que funciona con tu smartphone o tableta Android o iOS. La solución perfecta para usuarios profesionales tanto principiantes como experimentados en campo, con correcciones RTK+PPK+NTRIP. Cuenta con un sistema de corrección NTRIP que recibe datos a través de Internet o Bluetooth y un sistema de corrección RTK que recibe datos a través de LoRa.',
     banner: 'https://mettatec.com/wp-content/uploads/2023/09/Multi-band-helical-GNSS-antenna-HeliX5.webp',
     mainAdv: [
       {
-        advItem: ''
+        advItem: 'RTK multibanda (frecuencias de 433MHz y 915MHz disponibles), correcciones PPK y NTRIP con tiempos de convergencia rápidos y rendimiento robusto, ofrece precisión a nivel de centímetros con una solución Fix en segundos.'
+      },
+      {
+        advItem: 'Utiliza la misma tecnología GNSS L1/L2/e5 encontrada en receptores profesionales con componentes de vanguardia.'
+      },
+      {
+        advItem: 'Recepción simultánea de todas las constelaciones: GPS, GLONASS, GALILEO y BEIDOU.'
+      },
+      {
+        advItem: 'Incluye sus propias antenas helicoidales GNSS y LoRa multibanda.'
+      },
+      {
+        advItem: 'Conexión de transferencia de datos a través de puerto USB y Bluetooth.'
+      },
+      {
+        advItem: 'Compatible con aplicaciones de SIG y Fotogrametría que operan con datos NMEA.'
+      },
+      {
+        advItem: 'Tiene un láser de punto rojo para localizar fácilmente los puntos a georreferenciar en el campo.'
+      },
+      {
+        advItem: 'Compatibilidad con dispositivos Android e iOS.'
       },
     ],
     techSpecs: [
       {
-        primary: '',
+        primary: 'Mecánicas',
         secondary: [
-          { spec: '' },
+          { spec: 'Dimensiones: 85 × 40 × 13 mm (sin antena)' },
+          { spec: 'Peso: 80g' },
+          { spec: 'Temperatura de operación: -40 a 85 °C' },
+        ]
+      },
+      {
+        primary: 'Eléctricas',
+        secondary: [
+          { spec: 'Voltaje de entrada: 4.75 – 5.5 V' },
+          { spec: 'Sesgo de CC de la antena: 3.3 V' },
+          { spec: 'Consumo máximo de corriente: 5V @ 250 mA' },
+          { spec: 'Consumo promedio de corriente: 5V @ 120 mA' },
+          { spec: 'Límite de corriente en el cable USB: 500 mA' },
+        ]
+      },
+      {
+        primary: 'Conectividad',
+        secondary: [
+          { spec: 'Bluetooth V4.2 BR/EDR' },
+          { spec: 'USB Serial' },
+        ]
+      },
+      {
+        primary: 'GNSS',
+        secondary: [
+          { spec: 'Recepción concurrente de GPS, GLONASS, Galileo y BeiDou' },
+          { spec: 'Recibe bandas L1C/A y L2C' },
+          { spec: 'Señales rastreadas GPS/QZSS L1 C/A, L2 GLONASS L1OF, L2 BeiDou B1l, B2l Galileo E1-B/C, E5b' },
+          { spec: 'Número de canales 184' },
+          { spec: 'Tasa de actualización de navegación: 1 Hz GNSS' },
+          { spec: 'Precisión de posición: NTRIP 0.01 m + 1 ppm CEP' },
+          { spec: 'Tiempo de convergencia: NTRIP < 10 sec' },
+          { spec: 'Tiempo para la Primera Fijación: 25s (frío), 2s (caliente)' },
+          { spec: 'Altitud máxima: 50 km (31 millas)' },
+          { spec: 'Velocidad máxima: 500 m/s (1118 mph)' },
+        ]
+      },
+      {
+        primary: 'Configuración de radio',
+        secondary: [
+          { spec: 'Disponible en bandas de frecuencia ISM 433MHz y 915MHz' },
+          { spec: 'Ganancia de antena: 3 dBi' },
+          { spec: 'Distancia máxima: 10 km, en área abierta y clara y línea de vista' },
+          { spec: 'Parámetros de ambos módulos (Estación Base GNSS y X5 LoRa)' },
         ]
       },
     ],
@@ -655,18 +719,30 @@ export const productsDB = [
     id: 'p-007',
     name: 'Aplicación SurPad 4.2 GNSS',
     cate: 'soft-se',
-    desc: '',
+    desc: 'SurPad es una aplicación para Android diseñada para profesionales que utilizan receptores GPS/GNSS RTK y estaciones totales. Es especialmente útil para topógrafos, cartógrafos, ingenieros, arquitectos y planificadores urbanos. Cuenta con una amplia gama de herramientas y capacidades que permiten a los usuarios combinar eficientemente el control RTK, la recolección de datos GIS y la planificación de carreteras en una interfaz amigable para el usuario.',
     banner: 'https://mettatec.com/wp-content/uploads/2023/10/SURPAD-1000X1000-3.webp',
     mainAdv: [
       {
-        advItem: ''
+        advItem: 'Ofrece funcionalidades de alto nivel para receptores GNSS sin necesidad de drivers costosos.'
+      },
+      {
+        advItem: 'Herramienta diseñada para optimizar el trabajo de profesionales en proyectos de topografía y ingeniería de carreteras en el campo.'
+      },
+      {
+        advItem: 'Compatible con el Receptor GNSS X5 de Mettatec.'
+      },
+      {
+        advItem: 'Facilita la importación y exportación de archivos en diversos formatos como CSV, DAT, DXF, SHP, KML, GPX y TXT.'
+      },
+      {
+        advItem: 'Disponible en múltiples idiomas.'
       },
     ],
     techSpecs: [
       {
-        primary: '',
+        primary: 'Plataformas',
         secondary: [
-          { spec: '' },
+          { spec: 'Android' },
         ]
       },
     ],
@@ -693,18 +769,48 @@ export const productsDB = [
     id: 'p-008',
     name: 'X5 Mobile PRO + SURPAD APP',
     cate: 'combos',
-    desc: '',
+    desc: 'El X5 Mobile PRO + SURPAD APP combina el receptor de antena GNSS X5M Pro, optimizado para dispositivos Android e iOS, con la aplicación SurPad, diseñada para profesionales en topografía, cartografía, ingeniería y planificación urbana. Esta combinación ofrece un sistema completo para el control RTK, la recolección de datos GIS y la planificación de carreteras, integrando correcciones RTK+PPK+NTRIP con una interfaz amigable y herramientas avanzadas.',
     banner: 'https://mettatec.com/wp-content/uploads/2023/09/GNSS-X5Mobile-PRO-for-Smartphones-and-Tablets-RTK1.webp',
     mainAdv: [
       {
-        advItem: ''
+        advItem: 'Precisión de nivel centimétrico con soluciones RTK multibanda (433MHz y 915MHz), PPK y NTRIP.'
+      },
+      {
+        advItem: 'Tecnología GNSS L1/L2/e5 avanzada con recepción simultánea de GPS, GLONASS, GALILEO y BEIDOU.'
+      },
+      {
+        advItem: 'Incluye antenas helicoidales GNSS y LoRa multibanda, más un láser de punto rojo para georreferenciación precisa en el campo.'
+      },
+      {
+        advItem: 'Conectividad amplia a través de USB, Bluetooth y LoRa.'
+      },
+      {
+        advItem: 'Compatibilidad con múltiples formatos de archivo como CSV, DAT, DXF, SHP, KML, GPX y TXT, facilitando la importación y exportación de datos.'
+      },
+      {
+        advItem: 'Compatible con una amplia gama de aplicaciones de SIG y Fotogrametría que operan con datos NMEA.'
+      },
+      {
+        advItem: 'Diseño robusto y fácil de usar, ideal para profesionales en el campo.'
       },
     ],
     techSpecs: [
       {
-        primary: '',
+        primary: 'X5M PRO',
         secondary: [
-          { spec: '' },
+          { spec: 'Mecánicas: Dimensiones 85 × 40 × 13 mm, Peso 80g, Temperatura de operación -40 a 85 °C.' },
+          { spec: 'Eléctricas: Voltaje de entrada 4.75 – 5.5 V, Consumo máximo 5V @ 250 mA.' },
+          { spec: 'Conectividad: Bluetooth V4.2 BR/EDR, USB Serial.' },
+          { spec: 'GNSS: 184 canales, Actualización 1 Hz GNSS, Precisión NTRIP 0.01 m + 1 ppm CEP.' },
+          { spec: 'Radio: Bandas ISM 433MHz y 915MHz, Ganancia de antena 3 dBi, Distancia máxima 10 km.' },
+        ]
+      },
+      {
+        primary: 'SurPad App',
+        secondary: [
+          { spec: 'Compatible con Android.' },
+          { spec: 'Funciones avanzadas para la gestión de datos GNSS y SIG.' },
+          { spec: 'Soporte para múltiples idiomas.' },
         ]
       },
     ],
@@ -735,18 +841,50 @@ export const productsDB = [
     id: 'p-009',
     name: 'X5 Mobile + SurPad App',
     cate: 'combos',
-    desc: '',
+    desc: 'El X5 Mobile + SURPAD APP combina la funcionalidad avanzada del receptor de antena GNSS X5M, compatible con dispositivos Android e iOS, con la versatilidad de la aplicación SurPad, diseñada para profesionales en topografía, cartografía, ingeniería y planificación urbana. Este combo ofrece un sistema completo para el control RTK, la recolección de datos GIS y la planificación de carreteras, integrando correcciones NTRIP y RTK con una interfaz amigable y herramientas avanzadas.',
     banner: 'https://mettatec.com/wp-content/uploads/2023/09/PPKNTRIP-GNSS-X5Mobile-for-Smartphones-using-on-field.webp',
     mainAdv: [
       {
-        advItem: ''
+        advItem: 'Tecnología GNSS L1/L2/e5 avanzada con recepción simultánea de todas las constelaciones: GPS, GLONASS, GALILEO y BEIDOU.'
+      },
+      {
+        advItem: 'Correcciones NTRIP multibanda y RTK con tiempos de convergencia rápidos, ofreciendo precisión a nivel de centímetros.'
+      },
+      {
+        advItem: 'Permite Levantamientos Geodésicos y Fotogrametría con georreferenciación de alta precisión.'
+      },
+      {
+        advItem: 'Incluye antena GNSS helicoidal multibanda propia.'
+      },
+      {
+        advItem: 'Conectividad amplia a través de USB, Bluetooth y LoRa.'
+      },
+      {
+        advItem: 'Conectividad amplia a través de USB, Bluetooth y LoRa.'
+      },
+      {
+        advItem: 'Compatible con una amplia gama de aplicaciones de SIG y Fotogrametría que operan con datos NMEA.'
+      },
+      {
+        advItem: 'Diseño robusto y fácil de usar, ideal para profesionales en el campo.'
       },
     ],
     techSpecs: [
       {
-        primary: '',
+        primary: 'X5M',
         secondary: [
-          { spec: '' },
+          { spec: 'Mecánicas: Dimensiones 85 × 40 × 15 mm, Peso 70g, Temperatura de operación -40 a 85 °C.' },
+          { spec: 'Eléctricas: Voltaje de entrada 4.75 – 5.5 V, Consumo máximo 5V @ 250 mA.' },
+          { spec: 'Conectividad: Bluetooth V4.2 BR/EDR, USB Serial.' },
+          { spec: 'Conectividad: Bluetooth V4.2 BR/EDR, USB Serial.' },
+        ]
+      },
+      {
+        primary: 'SurPad App',
+        secondary: [
+          { spec: 'Aplicación Android compatible con receptores GNSS.' },
+          { spec: 'Funciones avanzadas para la gestión de datos GNSS y SIG.' },
+          { spec: 'Soporte para múltiples idiomas.' },
         ]
       },
     ],
@@ -777,18 +915,36 @@ export const productsDB = [
     id: 'p-010',
     name: 'GNSS Receptor X5 + SurPad App',
     cate: 'combos',
-    desc: '',
+    desc: 'El combo GNSS Receptor X5 + SurPad App integra la avanzada tecnología del Receptor GNSS Multibanda X5 con la aplicación SurPad 4.2 para Android, ofreciendo una solución completa y eficiente para profesionales en topografía, cartografía, ingeniería y planificación urbana. Esta combinación es ideal para realizar mediciones de grado centimétrico y optimizar proyectos de campo.',
     banner: 'https://mettatec.com/wp-content/uploads/2023/10/X5-RECEIVER-y-SURPAD-1000X1000.webp',
     mainAdv: [
       {
-        advItem: ''
+        advItem: 'Módulo GNSS independiente con capacidades avanzadas para mediciones de grado centimétrico.'
+      },
+      {
+        advItem: 'Compatible con software GIS común, incluyendo SW Maps, SurvPC, Field Genius y otros.'
+      },
+      {
+        advItem: 'Precisión de posicionamiento GNSS con RTK LoRa y NTRIP para un rendimiento robusto.'
+      },
+      {
+        advItem: 'Facilita la importación y exportación de archivos en diversos formatos como CSV, DAT, DXF, SHP, KML, GPX y TXT.'
+      },
+      {
+        advItem: 'Aplicación SurPad 4.2 compatible con dispositivos Android para una gestión eficiente de proyectos de topografía y planificación urbana.'
       },
     ],
     techSpecs: [
       {
-        primary: '',
+        primary: 'Especificaciones Técnicas Combinadas',
         secondary: [
-          { spec: '' },
+          { spec: 'Dimensiones del Receptor: 138 × 138 × 85 mm; Peso: 650 g' },
+          { spec: 'Temperatura de operación: -40 a 85 °C; Diseño cerrado con carcasa IP67' },
+          { spec: 'Voltaje de entrada: 4.75 – 5.5 V; Consumo de corriente: Hasta 2500 mA' },
+          { spec: 'Conectividad: Wi-Fi 2.4 GHz 802.11b/g/n, Bluetooth V4.2 BR/EDR' },
+          { spec: 'Recepción concurrente de GPS, SBAS, Galileo, BeiDou y GLONASS' },
+          { spec: 'Precisión de posición: NTRIP 0.01 m + 1 ppm CEP; Actualización hasta 10 Hz GNSS' },
+          { spec: 'Plataforma de la Aplicación: Android' },
         ]
       },
     ],
@@ -819,18 +975,36 @@ export const productsDB = [
     id: 'p-011',
     name: '2 Unidades X5 Receptor + SurPad App',
     cate: 'combos',
-    desc: '',
-    banner: '',
+    desc: 'El combo GNSS Receptor X5 + SurPad App integra la avanzada tecnología del Receptor GNSS Multibanda X5 con la aplicación SurPad 4.2 para Android, ofreciendo una solución completa y eficiente para profesionales en topografía, cartografía, ingeniería y planificación urbana. Esta combinación es ideal para realizar mediciones de grado centimétrico y optimizar proyectos de campo.',
+    banner: 'https://mettatec.com/wp-content/uploads/2023/10/X5-RECEIVER-y-SURPAD-1000X1000.webp',
     mainAdv: [
       {
-        advItem: ''
+        advItem: 'Módulo GNSS independiente con capacidades avanzadas para mediciones de grado centimétrico.'
+      },
+      {
+        advItem: 'Compatible con software GIS común, incluyendo SW Maps, SurvPC, Field Genius y otros.'
+      },
+      {
+        advItem: 'Precisión de posicionamiento GNSS con RTK LoRa y NTRIP para un rendimiento robusto.'
+      },
+      {
+        advItem: 'Facilita la importación y exportación de archivos en diversos formatos como CSV, DAT, DXF, SHP, KML, GPX y TXT.'
+      },
+      {
+        advItem: 'Aplicación SurPad 4.2 compatible con dispositivos Android para una gestión eficiente de proyectos de topografía y planificación urbana.'
       },
     ],
     techSpecs: [
       {
-        primary: '',
+        primary: 'Especificaciones Técnicas Combinadas',
         secondary: [
-          { spec: '' },
+          { spec: 'Dimensiones del Receptor: 138 × 138 × 85 mm; Peso: 650 g' },
+          { spec: 'Temperatura de operación: -40 a 85 °C; Diseño cerrado con carcasa IP67' },
+          { spec: 'Voltaje de entrada: 4.75 – 5.5 V; Consumo de corriente: Hasta 2500 mA' },
+          { spec: 'Conectividad: Wi-Fi 2.4 GHz 802.11b/g/n, Bluetooth V4.2 BR/EDR' },
+          { spec: 'Recepción concurrente de GPS, SBAS, Galileo, BeiDou y GLONASS' },
+          { spec: 'Precisión de posición: NTRIP 0.01 m + 1 ppm CEP; Actualización hasta 10 Hz GNSS' },
+          { spec: 'Plataforma de la Aplicación: Android' },
         ]
       },
     ],

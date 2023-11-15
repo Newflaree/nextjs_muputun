@@ -12,7 +12,7 @@ const ProductPage = ({ product }) => {
   const handleDownload = ( fileName = '' ) => {
     const link = document.createElement( 'a' );
     link.href = `/docs/${ fileName }`;
-    link.download = `documentacion-${ fileName }`;
+    link.download = fileName;
     link.click();
     link.remove();
   }
@@ -24,7 +24,7 @@ const ProductPage = ({ product }) => {
     >
       <ProductView
         product={ product } 
-        handleDownload={ () => handleDownload( doc ) }
+        handleDownload={ handleDownload }
       />
     </MainLayout>
   );
