@@ -9,7 +9,7 @@ import { MainLayout } from '@/components/layouts';
 import { ContactView } from '@/views';
 
 
-const MySwal = withReactContent( Swal )
+const MySwal = withReactContent( Swal );
 
 const resetForm = () => {
   return {
