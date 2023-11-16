@@ -12,6 +12,7 @@ import {
   Footer,
   LoadingPage,
   NavBar,
+  ParticlesBackground,
   SideMenu
 } from '../ui';
 
@@ -48,6 +49,8 @@ export const MainLayout = ({ pageTitle, pageDesc, pageKeywords, children }) => {
         <meta property="og:url" content={ '' } />
       </Head>
 
+      
+      <ParticlesBackground />
       <ButtonsBox />
 
       <nav>
@@ -69,7 +72,9 @@ export const MainLayout = ({ pageTitle, pageDesc, pageKeywords, children }) => {
         {
           ( isLoading )
             ? <LoadingPage />
-            : <>{ children }</>
+            : <>
+                { children }
+              </>
         }
       </main>
 

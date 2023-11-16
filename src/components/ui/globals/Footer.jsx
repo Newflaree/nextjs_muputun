@@ -22,8 +22,10 @@ export const Footer = () => {
 
   return (
     <Box
+      zIndex={ 99 }
       component="footer"
       sx={{
+        position: 'relative',
         backgroundColor: ( theme ) =>
           theme.palette.mode === "light"
             ? theme.palette.grey[ 200 ]
