@@ -7,6 +7,7 @@ import withReactContent from 'sweetalert2-react-content'
 import { MainLayout } from '@/components/layouts';
 // Views
 import { ContactView } from '@/views';
+import {useState} from 'react';
 
 
 const MySwal = withReactContent( Swal );
@@ -37,7 +38,10 @@ const ContactPage = () => {
     }
   });
 
+  const [ isSubmitting, setIsSubmitting ] = useState( false );
+
   const onSubmitMessage = async ( formData ) => {
+    setIsSubmitting( true );
     try {
       const response = await fetch( '/api/contact', {
         method: 'POST',
@@ -46,6 +50,7 @@ const ContactPage = () => {
         },
         body: JSON.stringify( formData ),
       });
+
 
       const { ok, message } = await response.json();
 
@@ -63,9 +68,11 @@ const ContactPage = () => {
             confirmButtonText: 'Aceptar',
           });
 
+      setIsSubmitting( false );
       reset( resetForm );
     
     } catch ( error ) {
+      setIsSubmitting( false );
       reset( resetForm );
     }
   }
@@ -80,6 +87,7 @@ const ContactPage = () => {
         register={ register }
         handleSubmit={ handleSubmit }
         errors={ errors }
+        isSubmitting={ isSubmitting }
       />
     </MainLayout>
   );

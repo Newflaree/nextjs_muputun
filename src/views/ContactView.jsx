@@ -13,6 +13,7 @@ export const ContactView = ({
   register,
   handleSubmit,
   errors,
+  isSubmitting
 }) => {
   return (
     <Box
@@ -135,6 +136,7 @@ export const ContactView = ({
             type='submit'
             color='primary'
             size='large'
+            disabled={ isSubmitting }
             sx={{
               color: 'white',
               fontSize: 20,
