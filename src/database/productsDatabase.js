@@ -236,7 +236,7 @@ export const productsDB = [
     name: 'X5 Receptor GNSS Multibanda',
     cate: 'gnss-x5',
     desc: 'Estación base y Rover para soluciones fijas PPK, RTK y NTRIP. Con solo unos minutos de configuración, el X5R es uno de los métodos más rápidos para tomar mediciones de grado centimétrico. Funciona con software GIS común, incluyendo SW Maps, SurvPC, Field Genius y muchos otros.',
-    banner: 'https://mettatec.com/wp-content/uploads/2023/09/X5R-OCT-2023-TIENDA-01.webp',
+    banner: 'https://res.cloudinary.com/newflare/image/upload/v1694637816/demos/muputun/Copia_de_Copia_de_X5_RECEIVER_-_EN_CAMPO_-02_c4sm84.png',
     mainAdv: [
       {
         advItem: 'Módulo GNSS independiente'
@@ -764,6 +764,28 @@ export const productsDB = [
         path: 'SurPad-4.2.pdf'
       },
     ]
+  },
+  {
+    id: 's-001',
+    name: 'X5 Servicios Cloud',
+    cate: 'soft-se',
+    desc: '',
+    banner: '',
+    mainAdv: [],
+    techSpecs: [],
+    imgs: [
+      { 
+        name: 'img-1',
+        url: 'https://cloud.mettatec.com/static/images/services/1.png'
+      },
+      { 
+        name: 'img-2',
+        url: 'https://cloud.mettatec.com/static/images/services/2.png'
+      },
+    ],
+    price: '0',
+    slug: 'https://cloud.mettatec.com',
+    doc: []
   },
   {
     id: 'p-008',

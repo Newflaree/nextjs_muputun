@@ -40,6 +40,10 @@ export const ProductCard = ({ currentProduct }) => {
     router.push( `/productos/${ slug }` )
   }
 
+  const onNavigateToCloud = () => {
+    router.push( slug )
+  }
+
   return (
     <Grid
       item
@@ -78,7 +82,11 @@ export const ProductCard = ({ currentProduct }) => {
           onLoad={ () => setIsImageLoaded( true ) }
           image={ productImage }  
           alt={ name }
-          onClick={ onNavigateTo }
+          onClick={
+            ( name !== 'X5 Servicios Cloud' ) 
+              ? onNavigateTo 
+              : onNavigateToCloud
+          }
           title={ name }
           sx={{
             height: 270,
@@ -96,7 +104,11 @@ export const ProductCard = ({ currentProduct }) => {
           }}
         >
           <Typography
-            onClick={ onNavigateTo }
+            onClick={
+              ( name !== 'X5 Servicios Cloud' ) 
+                ? onNavigateTo 
+                : onNavigateToCloud
+            }
             variant='h6'
             gutterBottom
             sx={{
@@ -123,7 +135,8 @@ export const ProductCard = ({ currentProduct }) => {
           }
 
           <NextLink
-            href='/contacto'
+            //href='/contacto'
+            href={ name === 'X5 Servicios Cloud' ? slug : '/contacto' }
             passHref
             legacyBehavior
           >
@@ -140,7 +153,11 @@ export const ProductCard = ({ currentProduct }) => {
                 }
               }}
             >
-              Reserva Ya
+              {
+                ( name !== 'X5 Servicios Cloud' )
+                  ? 'Contactar'
+                  : 'Servicios Cloud'
+              }
             </Button>
           </NextLink>
         </CardContent>

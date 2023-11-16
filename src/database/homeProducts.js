@@ -60,7 +60,7 @@ export const homeProdusts = [
         url: 'https://mettatec.com/wp-content/uploads/2023/10/X5M-PRO-1-1000X1000.webp'
       },
     ],
-    price: '$0.000.000',
+    price: '0',
     slug: 'x5-mobile-pro-surpad-app',
   },
   {

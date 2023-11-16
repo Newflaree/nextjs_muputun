@@ -5,8 +5,8 @@ export const headerInfo = [
     desc: 'Rápida precisión centimétrica. Configuración por Bluetooth y WiFi. Cuenta con el servicio NTRIP LOCAL para enviar correcciones a Drones RTK de las marcas DJI Enterprise, Wingtra, eBee y Autel sin necesidad de conexión a Internet.',
     btn: 'Ir al X5 Receptor',
     path: 'productos/x5-receptor',
-    imgd: 'https://res.cloudinary.com/newflare/image/upload/c_fill,h_1080,w_1920/v1694637245/demos/muputun/Copia_de_20230210_131928_aq1hro.jpg',
-    imgm: 'https://res.cloudinary.com/newflare/image/upload/c_fill,h_1920,w_720/v1694637245/demos/muputun/Copia_de_20230210_131928_aq1hro.jpg'
+    imgd: 'https://res.cloudinary.com/newflare/image/upload/c_fill,h_1080,w_1920/v1694637816/demos/muputun/Copia_de_Copia_de_X5_RECEIVER_-_EN_CAMPO_-02_c4sm84.png',
+    imgm: 'https://res.cloudinary.com/newflare/image/upload/c_fill,h_1920,w_720/v1694637816/demos/muputun/Copia_de_Copia_de_X5_RECEIVER_-_EN_CAMPO_-02_c4sm84.png'
   },
   {
     id: 'hi-004',
@@ -14,8 +14,8 @@ export const headerInfo = [
     desc: 'Mini Receptores Multibanda GNSS de alta precisión para Celulares, Tablets y Laptops. Sistemas de corrección PPK, NTRIP (y RTK en la versión PRO) a través de conexión USB O Bluetooth.',
     btn: 'Ir al GNSS X5',
     path: 'productos/x5-mobile-series',
-    imgd: 'https://res.cloudinary.com/newflare/image/upload/c_fill,h_1080,w_1920/v1694637245/demos/muputun/Copia_de_20230210_131928_aq1hro.jpg',
-    imgm: 'https://res.cloudinary.com/newflare/image/upload/c_fill,h_1920,w_720/v1694637245/demos/muputun/Copia_de_20230210_131928_aq1hro.jpg'
+    imgd: 'https://res.cloudinary.com/newflare/image/upload/c_fill,h_1080,w_1920/v1700177032/demos/muputun/nnn8xasjvt696zdkxm4x.jpg',
+    imgm: 'https://res.cloudinary.com/newflare/image/upload/c_fill,h_1920,w_720/v1700177032/demos/muputun/nnn8xasjvt696zdkxm4x.jpg'
   },
   {
     id: 'hi-002',

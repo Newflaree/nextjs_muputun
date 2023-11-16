@@ -43,6 +43,7 @@ export const ContactView = ({
             sm={ 6 }
           >
             <TextField
+              sx={{ backgroundColor: '#fff' }}
               label='Nombre'
               variant='filled'
               fullWidth
@@ -60,6 +61,7 @@ export const ContactView = ({
             sm={ 6 }
           >
             <TextField
+              sx={{ backgroundColor: '#fff' }}
               label='Apellido'
               variant='filled'
               fullWidth
@@ -77,6 +79,7 @@ export const ContactView = ({
             sm={ 6 }
           >
             <TextField 
+              sx={{ backgroundColor: '#fff' }}
               label='Correo Electrónico'
               variant='filled'
               fullWidth
@@ -94,6 +97,7 @@ export const ContactView = ({
             sm={ 6 }
           >
             <TextField
+              sx={{ backgroundColor: '#fff' }}
               label='Asunto'
               variant='filled'
               fullWidth
@@ -111,6 +115,7 @@ export const ContactView = ({
             sm={ 12 }
           >
             <TextField 
+              sx={{ backgroundColor: '#fff' }}
               label='Mensaje'
               variant='filled'
               fullWidth

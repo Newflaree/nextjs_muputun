@@ -10,7 +10,6 @@ import React from 'react';
 
 
 export const ProductDocs = ({ doc, handleDownload }) => {
-  console.log({ doc });
   return (
     <Box>
       <Typography

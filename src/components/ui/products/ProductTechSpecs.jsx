@@ -36,16 +36,19 @@ export const ProductTechSpecs = ({ techSpecs }) => {
             <ListItem key={ primary }>
               <ListItemText
                 primary={ primary }
-                secondary={ (<>
-                  { 
-                    secondary.map( ({ spec }) => (
-                      <ListItem key={ spec } sx={{ color: 'white' }}>
-                        <FiberManualRecord sx={{ mr: 2 }}/>
-                        { spec }
-                      </ListItem>
-                    ))
-                  }
-                  </>)
+                secondary={
+                  (
+                    <List>
+                      { 
+                        secondary.map( ({ spec }) => (
+                          <ListItem key={ spec } sx={{ color: 'white' }}>
+                            <FiberManualRecord sx={{ mr: 2 }}/>
+                            { spec }
+                          </ListItem>
+                        ))
+                      }
+                    </List>
+                  )
                 }
               />
             </ListItem>
