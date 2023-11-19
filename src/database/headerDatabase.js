@@ -45,8 +45,8 @@ export const headerInfo = [
     desc: 'Creemos que la innovación que surge de la fusión de diferentes tecnologías puede acelerar nuestra evolución y llevarnos a una mejor calidad de vida, más práctica, más sencilla y eficiente',
     btn: 'Ir a Mettatec',
     path: 'https://mettatec.com/es/',
-    imgd: 'https://res.cloudinary.com/newflare/image/upload/c_fill,h_1080,w_1920/v1700349796/demos/gvidskine5xzlhdpnx9k.jpg',
-    imgm: 'https://res.cloudinary.com/newflare/image/upload/c_fill,h_1920,w_720/v1700349796/demos/gvidskine5xzlhdpnx9k.jpg',
+    imgd: 'https://res.cloudinary.com/newflare/image/upload/v1700349796/demos/gvidskine5xzlhdpnx9k.jpg',
+    imgm: 'https://res.cloudinary.com/newflare/image/upload/v1700349796/demos/gvidskine5xzlhdpnx9k.jpg',
     png: ''
   },
 ];
