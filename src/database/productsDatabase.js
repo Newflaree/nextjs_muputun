@@ -107,11 +107,11 @@ export const productsDB = [
       },
     ],
     price: '0',
-    slug: 'x5-mobile-series',
+    slug: 'x5-mobile-series-pro',
     doc: [
       {
         name: 'X5 PRO Linea para celulares',
-        path: 'X5M-PRO.pdf'
+        path: 'X5M-Pro.pdf'
       },
     ]
   },
