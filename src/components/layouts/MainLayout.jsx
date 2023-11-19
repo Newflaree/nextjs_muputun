@@ -17,7 +17,13 @@ import {
 } from '../ui';
 
 
-export const MainLayout = ({ pageTitle, pageDesc, pageKeywords, children }) => {
+export const MainLayout = ({
+  pageTitle,
+  pageDesc,
+  pageKeywords,
+  pageImage,
+  children
+}) => {
   const layoutPageTitle = `müpütun | ${ pageTitle }`;
   const [ isLoading, setIsLoading ] = useState( true );
 
@@ -45,7 +51,7 @@ export const MainLayout = ({ pageTitle, pageDesc, pageKeywords, children }) => {
 
         <meta property="og:title" content={ layoutPageTitle } />
         <meta property="og:description" content={ pageDesc } />
-        <meta property="og:image" content={ '' } />
+        <meta property="og:image" content={ pageImage } />
         <meta property="og:url" content={ '' } />
       </Head>
 
