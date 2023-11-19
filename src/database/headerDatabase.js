@@ -6,7 +6,8 @@ export const headerInfo = [
     btn: 'Ir al X5 Receptor',
     path: 'productos/x5-receptor',
     imgd: 'https://res.cloudinary.com/newflare/image/upload/c_fill,h_1080,w_1920/v1700237815/demos/muputun/kqm9os4tfnjyyng9lgmv.png',
-    imgm: 'https://res.cloudinary.com/newflare/image/upload/c_fill,h_1920,w_720/v1700237815/demos/muputun/kqm9os4tfnjyyng9lgmv.png'
+    imgm: 'https://res.cloudinary.com/newflare/image/upload/c_fill,h_1920,w_720/v1700237815/demos/muputun/kqm9os4tfnjyyng9lgmv.png',
+    png: 'https://res.cloudinary.com/newflare/image/upload/v1700350093/demos/w3fukghtch4aouopoybm.webp'
   },
   {
     id: 'hi-004',
@@ -15,7 +16,8 @@ export const headerInfo = [
     btn: 'Ir al GNSS X5',
     path: 'productos/x5-mobile-series',
     imgd: 'https://res.cloudinary.com/newflare/image/upload/c_fill,h_1080,w_1920/v1700237815/demos/muputun/kqm9os4tfnjyyng9lgmv.png',
-    imgm: 'https://res.cloudinary.com/newflare/image/upload/c_fill,h_1920,w_720/v1700237815/demos/muputun/kqm9os4tfnjyyng9lgmv.png'
+    imgm: 'https://res.cloudinary.com/newflare/image/upload/c_fill,h_1920,w_720/v1700237815/demos/muputun/kqm9os4tfnjyyng9lgmv.png',
+    png: 'https://res.cloudinary.com/newflare/image/upload/v1700358170/demos/muputun/ng12fakurffmptl7yk2x.webp'
   },
   {
     id: 'hi-002',
@@ -24,7 +26,8 @@ export const headerInfo = [
     btn: 'Ir a X5 PPK P4P',
     path: 'productos/x5-ppk-phantom-4-pro',
     imgd: 'https://res.cloudinary.com/newflare/image/upload/c_fill,h_1080,w_1920/v1700237815/demos/muputun/kqm9os4tfnjyyng9lgmv.png',
-    imgm: 'https://res.cloudinary.com/newflare/image/upload/c_fill,h_1920,w_720/v1700237815/demos/muputun/kqm9os4tfnjyyng9lgmv.png'
+    imgm: 'https://res.cloudinary.com/newflare/image/upload/c_fill,h_1920,w_720/v1700237815/demos/muputun/kqm9os4tfnjyyng9lgmv.png',
+    png: 'https://res.cloudinary.com/newflare/image/upload/v1700358170/demos/muputun/lruehry6bozyxqzanosx.webp'
   },
   {
     id: 'hi-003',
@@ -33,7 +36,8 @@ export const headerInfo = [
     btn: 'Ir a Aplicación SurPad',
     path: 'productos/surpad-4.2-gnss-app',
     imgd: 'https://res.cloudinary.com/newflare/image/upload/c_fill,h_1080,w_1920/v1700237815/demos/muputun/kqm9os4tfnjyyng9lgmv.png',
-    imgm: 'https://res.cloudinary.com/newflare/image/upload/c_fill,h_1920,w_720/v1700237815/demos/muputun/kqm9os4tfnjyyng9lgmv.png'
+    imgm: 'https://res.cloudinary.com/newflare/image/upload/c_fill,h_1920,w_720/v1700237815/demos/muputun/kqm9os4tfnjyyng9lgmv.png',
+    png: 'https://res.cloudinary.com/newflare/image/upload/v1700358170/demos/muputun/hmomvqoiv0cmv7iebahd.png'
   },
   {
     id: 'hi-001',
@@ -41,7 +45,8 @@ export const headerInfo = [
     desc: 'Creemos que la innovación que surge de la fusión de diferentes tecnologías puede acelerar nuestra evolución y llevarnos a una mejor calidad de vida, más práctica, más sencilla y eficiente',
     btn: 'Ir a Mettatec',
     path: 'https://mettatec.com/es/',
-    imgd: 'https://res.cloudinary.com/newflare/image/upload/c_fill,h_1080,w_1920/v1700237815/demos/muputun/kqm9os4tfnjyyng9lgmv.png',
-    imgm: 'https://res.cloudinary.com/newflare/image/upload/c_fill,h_1920,w_720/v1700237815/demos/muputun/kqm9os4tfnjyyng9lgmv.png'
+    imgd: 'https://res.cloudinary.com/newflare/image/upload/c_fill,h_1080,w_1920/v1700349796/demos/gvidskine5xzlhdpnx9k.jpg',
+    imgm: 'https://res.cloudinary.com/newflare/image/upload/c_fill,h_1920,w_720/v1700349796/demos/gvidskine5xzlhdpnx9k.jpg',
+    png: ''
   },
 ];

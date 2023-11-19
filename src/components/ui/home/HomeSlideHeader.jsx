@@ -2,9 +2,16 @@
 import NextLink from 'next/link';
 import Image from 'next/image';
 // Material UI
-import { Box, Button, Typography } from '@mui/material';
+import {
+  Box,
+  Button,
+  Typography
+} from '@mui/material';
 // Swiper
-import { Swiper, SwiperSlide } from 'swiper/react';
+import {
+  Swiper,
+  SwiperSlide
+} from 'swiper/react';
 import {
   Autoplay,
   EffectFade,
@@ -19,7 +26,19 @@ import 'swiper/css/pagination';
 // Database
 import { headerInfo } from '@/database';
 
-
+/**
+ * `HomeSlideHeader` Component
+ * 
+ * Componente que renderiza un carrusel de diapositivas con títulos, descripciones,
+ * botones y una imagen de fondo. Las imágenes PNG entran con una animación.
+ * 
+ * Utiliza Swiper para la funcionalidad del carrusel y Material-UI para el estilo.
+ * 
+ * @example
+ * <HomeSlideHeader />
+ * 
+ * @returns {React.Component} El componente del carrusel de diapositivas para la página principal.
+ */
 export const HomeSlideHeader = () => {
   return (
     <Box
@@ -59,7 +78,8 @@ export const HomeSlideHeader = () => {
             btn,
             path,
             imgd,
-            imgm
+            imgm,
+            png
           }) => (
             <SwiperSlide key={ id }>
               <Box
@@ -75,14 +95,43 @@ export const HomeSlideHeader = () => {
                   }
                 }}
               >
+                {
+                  ( png.length > 0 ) && (
+                    <Box
+                      width={ 400 }
+                      position='absolute'
+                      sx={{
+                        right: {
+                          xs: 4,
+                          md: 40
+                        },
+                        bottom: {
+                          xs: 200,
+                          md: 40
+                        }
+                      }}
+                    >
+                      <Image 
+                        priority={ true }
+                        className='animate__animated animate__fadeInRight'
+                        src={ png }
+                        alt={ title }
+                        width={ 270 }
+                        height={ 420 }
+                      />
+                    </Box>
+                  )
+                }
+
                 <Box
                   color='white'
                   sx={{
-                    backgroundColor: 'rgba( 0, 0, 0, 0.5 )',
+                    backgroundColor: 'rgba( 0, 0, 0, 0.3 )',
                     top: 0,
                     bottom: 0,
                     padding: '30px',
                     position: 'absolute',
+                    zIndex: 1
                   }}
                 >
                   <Typography
@@ -90,6 +139,7 @@ export const HomeSlideHeader = () => {
                     component='h1'
                     my={ 4 }
                     sx={{
+                      zIndex: 10,
                       pt: '40px',
                       px: '30px',
                       fontSize: {

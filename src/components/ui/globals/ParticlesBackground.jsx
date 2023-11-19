@@ -1,8 +1,11 @@
-import {Box} from "@mui/material";
+// React
 import { useCallback } from "react";
+// Material UI
+import { Box } from "@mui/material";
+// React Particles
 import Particles from "react-particles";
-//import { loadFull } from "tsparticles"; // if you are going to use `loadFull`, install the "tsparticles" package too.
-import { loadSlim } from "tsparticles-slim"; // if you are going to use `loadSlim`, install the "tsparticles-slim" package too.
+import { loadSlim } from "tsparticles-slim";
+
 
 export const ParticlesBackground = () => {
     const particlesInit = useCallback(async engine => {
@@ -10,10 +13,10 @@ export const ParticlesBackground = () => {
     }, []);
 
     return (
-      <Box zIndex={0}>
+      <Box zIndex={ 0 }>
         <Particles
           id="tsparticles"
-          init={particlesInit}
+          init={ particlesInit }
           options={{
             background: {
                 color: {
@@ -51,7 +54,7 @@ export const ParticlesBackground = () => {
                     color: "#1FBEE8",
                     distance: 150,
                     enable: true,
-                    opacity: 0.5,
+                    opacity: 0.4,
                     width: 1,
                 },
                 move: {
