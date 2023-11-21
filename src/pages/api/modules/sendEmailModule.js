@@ -7,12 +7,23 @@ import {
 // Utils
 import { consoleErrorsLogger } from '@/utils';
 
-
 /**
- * Service Desciption
- *
- * @param {Object} req - Express request object containing query parameters
- * @returns {Object} - An object containing the total count of products and an array of products
+ * `sendEmailModule`
+ * 
+ * Módulo para manejar la lógica de envío de correos electrónicos en la aplicación.
+ * Procesa la solicitud de envío de correo electrónico, prepara el contenido del correo,
+ * configura las opciones de envío y realiza el envío.
+ * 
+ * Utiliza servicios como `setUpEmailTemplateService`, `prepareEmailOptionsService` y
+ * `sendEmailService` para estructurar el correo, configurar las opciones de envío y realizar
+ * el envío, respectivamente.
+ * 
+ * Registra cualquier error durante el proceso y devuelve un objeto con el estado del envío,
+ * incluyendo un código de estado, un booleano para indicar el éxito o fracaso y un mensaje.
+ * 
+ * @param {Object} req - Objeto de solicitud de Express que contiene los datos de la solicitud.
+ * @returns {Object} - Un objeto que contiene el estado del envío del correo electrónico,
+ *                     incluyendo código de estado, booleano de éxito y mensaje.
  */
 const sendEmailModule = async ( req ) => {
   // Desestructurate body data

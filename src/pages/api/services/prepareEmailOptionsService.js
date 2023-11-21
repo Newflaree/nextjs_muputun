@@ -3,12 +3,26 @@ import nodemailer from 'nodemailer';
 // Utils
 import { consoleErrorsLogger } from '@/utils';
 
-
 /**
- * Service Desciption
- *
- * @param {Object} req - Express request object containing query parameters
- * @returns {Object} - An object containing the total count of products and an array of products
+ * `prepateEmailOptionsService`
+ * 
+ * Servicio para preparar las opciones de envío de correo electrónico utilizando Nodemailer.
+ * Configura el transportador de correo y las opciones de correo necesarias para el envío.
+ * 
+ * Establece la conexión con el servidor de correo electrónico a través de las configuraciones
+ * definidas en las variables de entorno, como host, puerto y credenciales de autenticación.
+ * 
+ * Define las opciones del correo, incluyendo el remitente, destinatario, asunto y contenido
+ * del correo (en formato HTML). Estas opciones se pasan luego al transportador de correo
+ * para realizar el envío.
+ * 
+ * En caso de error en la configuración, registra el error utilizando `consoleErrorsLogger`.
+ * 
+ * @param {string} subject - Asunto del correo electrónico.
+ * @param {string} template - Contenido del correo electrónico en formato HTML.
+ * @param {string} emailAddress - Dirección de correo electrónico del remitente.
+ * 
+ * @returns {Object} Un objeto que contiene las opciones del correo y el transportador de Nodemailer.
  */
 const prepateEmailOptionsService = async (
   subject = '',
