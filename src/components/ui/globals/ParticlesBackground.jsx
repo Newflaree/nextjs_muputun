@@ -4,9 +4,31 @@ import { useCallback } from "react";
 import { Box } from "@mui/material";
 // React Particles
 import Particles from "react-particles";
+// TS Particles
 import { loadSlim } from "tsparticles-slim";
 
-
+/**
+ * `ParticlesBackground` Component
+ * 
+ * Componente que genera un fondo animado de partículas en la interfaz de usuario.
+ * Utiliza la biblioteca React Particles junto con TS Particles para crear efectos visuales
+ * interactivos y atractivos.
+ * 
+ * La configuración de las partículas incluye color, tamaño, cantidad, comportamiento al
+ * hacer clic y al pasar el cursor, y otros parámetros de animación. Este fondo de partículas
+ * añade un elemento dinámico y moderno al diseño de la aplicación.
+ * 
+ * El componente Box de Material-UI se utiliza para contener las partículas, asegurando
+ * su correcta ubicación y z-index en la estructura de la página.
+ * 
+ * Ideal para agregar un toque visualmente atractivo a la aplicación sin abrumar al usuario,
+ * manteniendo un diseño limpio y profesional.
+ * 
+ * @example
+ * <ParticlesBackground />
+ * 
+ * @returns {React.Component} El componente de fondo animado de partículas para la aplicación web.
+ */
 export const ParticlesBackground = () => {
     const particlesInit = useCallback(async engine => {
       await loadSlim(engine);

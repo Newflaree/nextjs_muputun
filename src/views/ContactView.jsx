@@ -7,7 +7,31 @@ import {
   Typography
 } from '@mui/material';
 
-
+/**
+ * `ContactView` Component
+ * 
+ * Componente de vista diseñado para presentar y manejar un formulario de contacto.
+ * Permite a los usuarios enviar mensajes o consultas, facilitando la comunicación directa.
+ * 
+ * Utiliza Box, Grid, TextField, Button y Typography de Material-UI para crear un formulario
+ * estéticamente agradable y funcional. El diseño del formulario se organiza en una cuadrícula
+ * para una mejor disposición y legibilidad de los campos.
+ * 
+ * La vista maneja la lógica de validación y envío del formulario mediante `useForm` de React Hook Form.
+ * Los errores en la entrada del usuario se muestran de forma clara, mejorando la experiencia del usuario
+ * al completar el formulario.
+ * 
+ * El botón de envío se desactiva mientras el formulario se está enviando (`isSubmitting`),
+ * previniendo envíos múltiples.
+ * 
+ * @param {Function} onSubmitMessage - Función para manejar el envío del formulario.
+ * @param {Object} register - Método de React Hook Form para registrar los campos del formulario.
+ * @param {Function} handleSubmit - Método de React Hook Form para manejar la presentación del formulario.
+ * @param {Object} errors - Objeto de errores de React Hook Form.
+ * @param {boolean} isSubmitting - Estado que indica si el formulario se está enviando.
+ * 
+ * @returns {React.Component} Un componente de vista para un formulario de contacto.
+ */
 export const ContactView = ({
   onSubmitMessage,
   register,

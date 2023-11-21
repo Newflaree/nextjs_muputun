@@ -1,3 +1,4 @@
+// Next.js
 import Image from 'next/image';
 // Material UI
 import {
@@ -14,8 +15,28 @@ import {
   LinkedIn,
 } from '@mui/icons-material';
 
-
-
+/**
+ * `Footer` Component
+ * 
+ * Componente de pie de página para la aplicación web. Presenta información
+ * sobre la empresa, contactos y alianzas estratégicas, así como enlaces a redes
+ * sociales y derechos de autor.
+ * 
+ * Utiliza componentes de Material UI como Box, Container, Grid, Link y Typography
+ * para estructurar y estilizar el contenido. Incluye también íconos de redes sociales
+ * de Material Icons.
+ * 
+ * Se divide en tres secciones principales: 'Sobre nosotros', 'Contáctanos' y 'Nuestra Alianza'.
+ * 'Sobre nosotros' describe brevemente la empresa. 'Contáctanos' proporciona enlaces de
+ * correo electrónico y WhatsApp, y 'Nuestra Alianza' destaca socios comerciales.
+ * 
+ * Al final, se incluye una línea de derechos de autor con el año actual.
+ * 
+ * @example
+ * <Footer />
+ * 
+ * @returns {React.Component} El componente de pie de página con información y enlaces relevantes.
+ */
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
   const logoUrl = 'https://res.cloudinary.com/newflare/image/upload/v1696360099/demos/muputun/iticvytqrtp6xn8svvzt.svg';

@@ -17,7 +17,38 @@ import {
   Typography
 } from '@mui/material';
 
-
+/**
+ * `ProductCard` Component
+ * 
+ * Componente que representa una tarjeta individual de producto en una cuadrícula o lista.
+ * Muestra información clave del producto, como su imagen, nombre y precio, y proporciona
+ * enlaces para más detalles o contacto.
+ * 
+ * Utiliza Card, CardMedia, CardContent y Button de Material-UI para estructurar el diseño
+ * de la tarjeta. Image de Next.js se utiliza para mostrar el logo de la empresa en la tarjeta.
+ * 
+ * El componente maneja estados de interacción como hover y carga de imagen para mejorar
+ * la experiencia del usuario. Al pasar el cursor sobre la tarjeta, se muestra una imagen
+ * alternativa si está disponible.
+ * 
+ * La navegación hacia la página detallada del producto o una página de contacto se realiza
+ * mediante enlaces y botones, facilitando la interacción y el acceso a más información.
+ * 
+ * @param {Object} currentProduct - Objeto que contiene la información del producto, incluyendo
+ * nombre, imágenes, precio y slug.
+ * 
+ * @example
+ * <ProductCard 
+ *   currentProduct={{
+ *     name: "Nombre del Producto",
+ *     imgs: [{ url: "url-imagen-1.jpg" }, { url: "url-imagen-2.jpg" }],
+ *     price: "100",
+ *     slug: "slug-del-producto"
+ *   }}
+ * />
+ * 
+ * @returns {React.Component} Una tarjeta interactiva de producto para visualización y navegación.
+ */
 export const ProductCard = ({ currentProduct }) => {
   const [ isHovered, setIsHovered ] = useState( false );
   const [ isImageLoaded, setIsImageLoaded ] = useState( false );

@@ -9,7 +9,34 @@ import {
 // Material Icons
 import { FiberManualRecord } from '@mui/icons-material';
 
-
+/**
+ * `ProductTechSpecs` Component
+ * 
+ * Componente diseñado para mostrar las especificaciones técnicas de un producto,
+ * proporcionando detalles sobre sus características y capacidades.
+ * 
+ * Utiliza Paper de Material-UI para crear un contenedor con sombra y estilos personalizados,
+ * dándole un aspecto distintivo y enfocado en la información técnica. Typography presenta
+ * el título de la sección, y List con ListItem y ListItemText organiza las especificaciones
+ * en un formato claro y legible.
+ * 
+ * Cada especificación técnica se presenta con un título (primary) y una lista de detalles
+ * secundarios (secondary), cada uno precedido por el ícono FiberManualRecord para una
+ * representación visual coherente.
+ * 
+ * Este componente es crucial para informar a los usuarios sobre los aspectos técnicos del
+ * producto, ayudando en la decisión de compra y proporcionando una comprensión detallada
+ * de lo que ofrece el producto.
+ * 
+ * @param {Array} techSpecs - Arreglo de objetos con las especificaciones técnicas del producto.
+ * 
+ * @example
+ * <ProductTechSpecs 
+ *   techSpecs={[{ primary: "Dimensiones", secondary: [{ spec: "10x20x15 cm" }] }]}
+ * />
+ * 
+ * @returns {React.Component} Un componente para mostrar las especificaciones técnicas de un producto.
+ */
 export const ProductTechSpecs = ({ techSpecs }) => {
   return (
     <Paper

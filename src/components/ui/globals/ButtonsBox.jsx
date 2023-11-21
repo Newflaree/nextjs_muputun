@@ -7,10 +7,30 @@ import {
   Link
 } from '@mui/material';
 // Mateial Icons
-import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
-import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import {
+  ArrowUpward,
+  WhatsApp
+} from '@mui/icons-material';
 
-
+/**
+ * `ButtonsBox` Component
+ * 
+ * Componente que muestra una caja fija en la pantalla con botones de acción.
+ * Incluye un botón para desplazarse hacia arriba en la página y otro para
+ * abrir un enlace de WhatsApp en una nueva pestaña.
+ * 
+ * Utiliza IconButton y Link de Material-UI para los botones, y ArrowUpwardIcon
+ * y WhatsAppIcon de Material Icons para los íconos. La caja se mantiene fija
+ * en la parte inferior derecha de la pantalla.
+ * 
+ * El botón de WhatsApp redirige a un chat con un número predefinido.
+ * El botón de desplazamiento hacia arriba lleva al usuario al principio de la página.
+ * 
+ * @example
+ * <ButtonsBox />
+ * 
+ * @returns {React.Component} El componente de caja de botones para acciones rápidas.
+ */
 export const ButtonsBox = () => {
   const scrollToTop = () => {
     window.scrollTo({
@@ -31,8 +51,8 @@ export const ButtonsBox = () => {
       right={ 15 }
       p={ 1 }
     >
-      <IconButton onClick={scrollToTop}>
-          <ArrowUpwardIcon
+      <IconButton onClick={ scrollToTop }>
+          <ArrowUpward
             color='primary'
             sx={{
               paddingBottom: '2px',
@@ -53,7 +73,7 @@ export const ButtonsBox = () => {
           <Link
             target='_blank'
           >
-          <WhatsAppIcon
+          <WhatsApp
             sx={{
               paddingBottom: '2px',
               fontSize: '35px',

@@ -17,7 +17,42 @@ import {
   KeyboardArrowUp
 } from '@mui/icons-material';
 
-
+/**
+ * `SideMenuSubmenu` Component
+ * 
+ * Componente para un submenú desplegable dentro del menú lateral de la aplicación.
+ * Permite agrupar múltiples elementos de menú bajo una categoría común.
+ * 
+ * Utiliza ListItem y Menu de Material-UI para estructurar el submenú y los elementos
+ * individuales dentro de él. El estado de apertura del submenú se maneja mediante
+ * un componente de estado local.
+ * 
+ * Al hacer clic en el título del submenú, se despliega un menú con opciones adicionales,
+ * cada una implementada como un enlace con NextLink. Los íconos KeyboardArrowDown y
+ * KeyboardArrowUp de Material Icons indican visualmente el estado del submenú (abierto o cerrado).
+ * 
+ * Cada elemento del submenú es un enlace que, al hacer clic, navega a su ruta respectiva
+ * y cierra el menú lateral.
+ * 
+ * @param {function} toggleSideMenu - Función para alternar la visibilidad del menú lateral.
+ * @param {string} id - Identificador único del submenú.
+ * @param {string} path - Ruta asociada con el submenú (no siempre utilizada).
+ * @param {string} pathname - Ruta actual en la aplicación.
+ * @param {string} name - Nombre del submenú.
+ * @param {array} submenu - Arreglo de elementos que pertenecen al submenú.
+ * 
+ * @example
+ * <SideMenuSubmenu 
+ *   toggleSideMenu={toggleFunc}
+ *   id="submenu-1"
+ *   path="/category"
+ *   pathname={currentPathname}
+ *   name="Categoría"
+ *   submenu={[{ id: "1", name: "SubItem 1", path: "/subitem1" }]}
+ * />
+ * 
+ * @returns {React.Component} Un submenú desplegable para el menú lateral de la aplicación.
+ */
 export const SideMenuSubmenu = ({
   toggleSideMenu,
   id,
