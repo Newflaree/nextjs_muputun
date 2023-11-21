@@ -1,3 +1,4 @@
+export * from './CountdownTimer';
 export * from './Footer';
 export * from './LoadingPage';
 export * from './NavBar';
