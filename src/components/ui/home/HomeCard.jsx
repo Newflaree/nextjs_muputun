@@ -1,4 +1,10 @@
-import {Card, CardActions, CardContent, CardMedia, Typography} from "@mui/material";
+import {
+  Card,
+  CardContent,
+  CardMedia,
+  Typography
+} from "@mui/material";
+
 
 export const HomeCard = ({ cardTitle = '', cardDesc = '', cardImg }) => {
   return (
