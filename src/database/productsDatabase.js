@@ -998,7 +998,7 @@ export const productsDB = [
     name: '2 Unidades X5 Receptor + SurPad App',
     cate: 'combos',
     desc: 'El combo GNSS Receptor X5 + SurPad App integra la avanzada tecnología del Receptor GNSS Multibanda X5 con la aplicación SurPad 4.2 para Android, ofreciendo una solución completa y eficiente para profesionales en topografía, cartografía, ingeniería y planificación urbana. Esta combinación es ideal para realizar mediciones de grado centimétrico y optimizar proyectos de campo.',
-    banner: 'https://mettatec.com/wp-content/uploads/2023/10/X5-RECEIVER-y-SURPAD-1000X1000.webp',
+    banner: 'https://mettatec.com/wp-content/uploads/2023/10/X5-RECEIVER-2-UNITS-y-SURPAD-1000X1000.webp',
     mainAdv: [
       {
         advItem: 'Módulo GNSS independiente con capacidades avanzadas para mediciones de grado centimétrico.'

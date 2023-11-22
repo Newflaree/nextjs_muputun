@@ -129,8 +129,9 @@ export const HomeSlideHeader = () => {
                               className='animate__animated animate__fadeInLeft'
                               src={ png }
                               alt={ title }
-                              width={ 270 }
-                              height={ 380 }
+                              width={ 400 }
+                              height={ 370 }
+                              style={{ padding: 40 }}
                             />
                           </Box>
                         )

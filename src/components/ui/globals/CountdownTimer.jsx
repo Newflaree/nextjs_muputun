@@ -101,6 +101,8 @@ export const CountdownTimer = () => {
 
   return (
     <Box
+      mb={ 3 }
+      pt={ 5 }
       height='500px'
       display='flex'
       justifyContent='center'
@@ -151,7 +153,7 @@ export const CountdownTimer = () => {
         textAlign='center'
         mt={ 5 }
       >
-        Cotiza y reserva previo al lanzamiento con precios especiales
+        Anticípate, cotiza y reserva previo al lanzamiento con precios especiales
       </Typography>
     </Box>
   );
