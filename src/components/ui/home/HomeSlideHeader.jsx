@@ -5,6 +5,7 @@ import Image from 'next/image';
 import {
   Box,
   Button,
+  Grid,
   Typography
 } from '@mui/material';
 // Swiper
@@ -45,7 +46,7 @@ export const HomeSlideHeader = () => {
       sx={{
         borderRadius: '8px',
         height: {
-          xs: 'calc( 100vh )',
+          xs: 'calc( 100vh + 50px )',
           sm: '500px'
         }
       }}
@@ -95,38 +96,10 @@ export const HomeSlideHeader = () => {
                   }
                 }}
               >
-                {
-                  ( png.length > 0 ) && (
-                    <Box
-                      width={ 400 }
-                      position='absolute'
-                      sx={{
-                        right: {
-                          xs: 4,
-                          md: 40
-                        },
-                        bottom: {
-                          xs: 200,
-                          md: 40
-                        }
-                      }}
-                    >
-                      <Image 
-                        priority={ true }
-                        className='animate__animated animate__fadeInRight'
-                        src={ png }
-                        alt={ title }
-                        width={ 270 }
-                        height={ 420 }
-                      />
-                    </Box>
-                  )
-                }
-
                 <Box
                   color='white'
                   sx={{
-                    backgroundColor: 'rgba( 0, 0, 0, 0.3 )',
+                    backgroundColor: 'rgba( 0, 0, 0, 0.5 )',
                     top: 0,
                     bottom: 0,
                     padding: '30px',
@@ -134,83 +107,120 @@ export const HomeSlideHeader = () => {
                     zIndex: 1
                   }}
                 >
-                  <Typography
-                    variant='h1'
-                    component='h1'
-                    my={ 4 }
-                    sx={{
-                      zIndex: 10,
-                      pt: '40px',
-                      px: '30px',
-                      fontSize: {
-                        xs: 55,
-                        sm: 70
-                      }
-                    }}
-                  >
-                    { title }
-                  </Typography>
-
-                  <Typography
-                    px='30px'
-                    variant='p'
-                    component='p'
-                    sx={{
-                      fontSize: {
-                        xs: 20,
-                        sm: 24
-                      }
-                    }}
-                  >
-                    { desc }
-                  </Typography>
-
-                  {
-                    ( id === 'hi-001' )
-                      ? (
-                        <NextLink
-                          href={ path }
-                          passHref
-                          legacyBehavior
-                        >
-                          <Button
-                            target='_blank'
+                  <Grid container>
+                    <Grid item sx={ 12 } md={ 6 }>
+                      {
+                        ( png.length > 0 ) && (
+                          <Box
+                            width={ 400 }
                             sx={{
-                              mx: '30px',
-                              mt: 7,
-                              fontSize: '22px',
-                              color: 'white',
-                              ':hover': {
-                                backgroundColor: 'primary.dark'
+                              left: {
+                                xs: 4,
+                                md: 40
+                              },
+                              bottom: {
+                                xs: 200,
+                                md: 40
                               }
                             }}
                           >
-                            { btn }
-                          </Button>
-                        </NextLink>
-                      )
-                      : (
-                        <NextLink
-                          href={ path }
-                          passHref
-                          legacyBehavior
-                        >
-                          <Button
-                            sx={{
-                              mx: '30px',
-                              mt: 7,
-                              fontSize: '22px',
-                              color: 'white',
-                              ':hover': {
-                                backgroundColor: 'primary.dark'
-                              }
-                            }}
-                          >
-                             { btn }
-                          </Button>
-                        </NextLink>
-                      )
-                  }
+                            <Image 
+                              priority={ true }
+                              className='animate__animated animate__fadeInLeft'
+                              src={ png }
+                              alt={ title }
+                              width={ 270 }
+                              height={ 380 }
+                            />
+                          </Box>
+                        )
+                      }
+                    </Grid>
+
+                    <Grid item sx={ 12 } md={ 6 }>
+                      <Typography
+                        variant='h1'
+                        component='h1'
+                        color='primary'
+                        my={ 4 }
+                        sx={{
+                          zIndex: 10,
+                          pt: '40px',
+                          px: '30px',
+                          fontSize: {
+                            xs: 35,
+                            sm: 40
+                          }
+                        }}
+                      >
+                        { title }
+                      </Typography>
+
+                      <Typography
+                        px='30px'
+                        variant='p'
+                        component='p'
+                        sx={{
+                          zIndex: 10,
+                          fontSize: {
+                            xs: 16,
+                            sm: 18
+                          }
+                        }}
+                      >
+                        { desc }
+                      </Typography>
+
+                      {
+                        ( id === 'hi-001' )
+                          ? (
+                            <NextLink
+                              href={ path }
+                              passHref
+                              legacyBehavior
+                            >
+                              <Button
+                                target='_blank'
+                                sx={{
+                                  mx: '30px',
+                                  mt: 7,
+                                  fontSize: '22px',
+                                  color: 'white',
+                                  ':hover': {
+                                    backgroundColor: 'primary.dark'
+                                  }
+                                }}
+                              >
+                                { btn }
+                              </Button>
+                            </NextLink>
+                          )
+                          : (
+                            <NextLink
+                              href={ path }
+                              passHref
+                              legacyBehavior
+                            >
+                              <Button
+                                sx={{
+                                  mx: '30px',
+                                  mt: 7,
+                                  fontSize: '22px',
+                                  color: 'white',
+                                  ':hover': {
+                                    backgroundColor: 'primary.dark'
+                                  }
+                                }}
+                              >
+                                 { btn }
+                              </Button>
+                            </NextLink>
+                          )
+                      }
+                      </Grid>
+
+                  </Grid>
+
                 </Box>
               </Box>
             </SwiperSlide>
