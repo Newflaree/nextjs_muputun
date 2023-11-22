@@ -1,5 +1,6 @@
 // React
 import {
+  useContext,
   useEffect,
   useState
 } from 'react';
@@ -9,11 +10,29 @@ import {
   Paper,
   Typography
 } from '@mui/material';
+// Context
+import { UIContext } from '@/context';
 
-
+/**
+ * `CountdownTimer` Component
+ * 
+ * Componente de React que muestra una cuenta regresiva para un evento futuro, como un lanzamiento
+ * o una oferta especial. Ideal para generar expectación y mantener a los usuarios informados sobre
+ * la proximidad de un evento importante.
+ * 
+ * Utiliza Box y Typography de Material-UI para presentar los números y las unidades de tiempo
+ * de la cuenta regresiva de forma visualmente atractiva. Cada unidad de tiempo (días, horas, minutos, segundos)
+ * se muestra en un Paper individual para resaltar cada segmento de tiempo.
+ * 
+ * El componente calcula el tiempo restante hasta una fecha y hora específicas, actualizando la cuenta regresiva
+ * cada segundo. Además, se integra con `UIContext` para gestionar la visibilidad del temporizador, ocultándolo
+ * automáticamente una vez que el contador llega a cero.
+ * 
+ * @returns {React.Component} Un componente de cuenta regresiva para eventos futuros.
+ */
 const timeUnitBoxStyle = {
-  margin: 4,
-  padding: 2,
+  margin: 1,
+  padding: 1,
   flexGrow: 1,
   display: 'flex',
   flexDirection: 'column',
@@ -25,16 +44,19 @@ const timeUnitBoxStyle = {
 };
 
 export const CountdownTimer = () => {
+  const { hideCountdownTimer } = useContext( UIContext );
+
   const calculateTimeLeft = () => {
-    const difference = +new Date( '2023-11-29' ) - +new Date();
+    const endTime = new Date( '2023-11-29T14:00:00' )
+    const difference = endTime - new Date();
     let timeLeft = {};
 
     if ( difference > 0 ) {
       timeLeft = {
-        days: Math.floor( difference / ( 1000 * 60 * 60 * 24 ) ),
-        hours: Math.floor( (difference / ( 1000 * 60 * 60 )) % 24 ),
-        minutes: Math.floor( (difference / 1000 / 60 ) % 24 ),
-        seconds: Math.floor( (difference / 1000) % 60 )
+        dias: Math.floor( difference / ( 1000 * 60 * 60 * 24 ) ),
+        horas: Math.floor( ( difference / ( 1000 * 60 * 60 ) ) % 24 ),
+        minutos: Math.floor( ( difference / 1000 / 60 ) % 24 ),
+        segundos: Math.floor( ( difference / 1000 ) % 60 )
       };
     }
 
@@ -44,12 +66,23 @@ export const CountdownTimer = () => {
   const [ timeLeft, setTimeLeft ] = useState( calculateTimeLeft() );
 
   useEffect( () => {
+    if (
+      timeLeft.dias === 0 && 
+      timeLeft.horas === 0 &&
+      timeLeft.minutos === 0 &&
+      timeLeft.segundos === 0
+    ) {
+      hideCountdownTimer();
+    }
+  }, [ timeLeft, hideCountdownTimer ] );
+
+  useEffect( () => {
     const timer = setTimeout( () => {
       setTimeLeft( calculateTimeLeft() );
     }, 1000 );
 
     return () => clearTimeout( timer );
-  });
+  }, [ timeLeft ]);
 
   const timerComponents = [];
 
@@ -68,7 +101,7 @@ export const CountdownTimer = () => {
 
   return (
     <Box
-      height='100vh'
+      height='500px'
       display='flex'
       justifyContent='center'
       alignItems='center'

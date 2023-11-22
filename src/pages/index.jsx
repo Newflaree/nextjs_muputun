@@ -47,7 +47,7 @@ const HomePage = () => {
       pageKeywords={ pageKeywords }
       pageImage={ pageImage }
     >
-      <CountdownTimer />
+      <HomeView />
     </MainLayout>
   );
 }

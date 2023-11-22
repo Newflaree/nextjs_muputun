@@ -132,6 +132,16 @@ export const Footer = () => {
             >
               <Instagram fontSize='large'/>
             </Link>
+
+            <Link
+              target='_blank'
+              mx={ 1 }
+              href="https://www.linkedin.com/in/m%C3%BCp%C3%BCtun-tecnolog%C3%ADas-0728a629b/"
+              color="inherit"
+              sx={{ ':hover': { color: '#1FBEE8' } }}
+            >
+              <LinkedIn fontSize='large' />
+            </Link>
           </Grid>
 
           <Grid item xs={12} sm={4}>
