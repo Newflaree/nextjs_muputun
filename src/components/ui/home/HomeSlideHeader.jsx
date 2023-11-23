@@ -129,15 +129,14 @@ export const HomeSlideHeader = () => {
                 >
                   <Grid container>
                     <Grid
-                      className='animate__animated animate__fadeIn'
                       item
+                      className='animate__animated animate__fadeIn'
                       xs={ 12 }
                       md={ 6 }
                       sx={{
                         display: 'flex',
                         justifyContent: 'center',
-                        alignItems: 'center',
-                        height: '100%'
+                        height: '100%',
                       }}
                     >
                       {
@@ -145,21 +144,30 @@ export const HomeSlideHeader = () => {
                           <Box
                             sx={{
                               display: 'flex',
+                              alignItems: 'center',
                               justifyContent: 'center',
                               alignItems: 'center',
-                              width: '100%',
-                              height: '100%'
+                              width: {
+                                xs: 320,
+                                md: 320
+                              },
+                              height: {
+                                xs: '100%',
+                                md: '50%'
+                              },
+                              marginTop: {
+                                xs: 1,
+                                md: 7
+                              }
                             }}
                           >
                             <Image 
-                              
                               priority
                               className='animate__animated animate__fadeInLeft'
                               src={ png }
                               alt={ title }
                               width={ 400 }
-                              height={ 370 }
-                              style={{ py: 70 }}
+                              height={ 300 }
                             />
                           </Box>
                         )
@@ -174,7 +182,7 @@ export const HomeSlideHeader = () => {
                         my={ 4 }
                         sx={{
                           zIndex: 10,
-                          pt: '40px',
+                          pt: '20px',
                           px: '30px',
                           fontSize: {
                             xs: 35,
