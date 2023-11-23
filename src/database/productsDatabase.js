@@ -5,6 +5,7 @@ export const productsDB = [
     cate: 'gnss-x5',
     desc: 'El receptor de antena GNSS externo de alta precisión que funciona con tu smartphone o tableta Android o iOS. La solución perfecta para usuarios profesionales tanto principiantes como con experiencia en campo. Cuenta con un sistema de corrección NTRIP que recibe datos a través de Internet o Bluetooth. Tiene un indicador láser de punto rojo para facilitar el uso en levantamientos geodésicos.',
     banner: 'https://mettatec.com/wp-content/uploads/2023/10/X5M-PRO-2.webp',
+    bannerM: '',
     mainAdv: [
       {
         advItem: 'Utiliza la misma tecnología GNSS L1/L2/e5 que se encuentra en receptores profesionales con componentes de vanguardia.'
@@ -121,6 +122,7 @@ export const productsDB = [
     cate: 'gnss-x5',
     desc: 'El receptor de antena GNSS externo de alta precisión que funciona con tu smartphone o tableta Android o iOS. La solución perfecta para usuarios profesionales tanto principiantes como con experiencia en campo. Cuenta con un sistema de corrección NTRIP que recibe datos a través de Internet o Bluetooth. Tiene un indicador láser de punto rojo para facilitar el uso en levantamientos geodésicos.',
     banner: 'https://mettatec.com/wp-content/uploads/2023/09/PPKNTRIP-GNSS-X5Mobile-for-Smartphones-on-field-2.webp',
+    bannerM: '',
     mainAdv: [
       {
         advItem: 'Utiliza la misma tecnología GNSS L1/L2/e5 que se encuentra en receptores profesionales con componentes de vanguardia.'
@@ -343,6 +345,7 @@ export const productsDB = [
     cate: 'gnss-x5',
     desc: 'El Módulo X5 PPK para Phantom 4 Pro es un sistema adaptador GNSS no intrusivo para conectarse a un Drone DJI Phantom 4 Pro v.1/v.2 o Advance (no incluido). Posicionamiento con precisión de centímetros en PPK. Para mapeo UAV preciso con menos GCPs. El módulo X5 PPK está listo para usar, y no se necesita configuración, puedes descargar los datos RAW de la tarjeta SD',
     banner: 'https://mettatec.com/wp-content/uploads/2023/09/GNSS-X5-PPK-Module-for-Phantom-4-Pro-Advance-Implemented.webp',
+    bannerM: '',
     mainAdv: [
       {
         advItem: 'No es necesario abrir o modificar tu Drone (mantén la garantía original de tu Drone)'
@@ -553,6 +556,7 @@ export const productsDB = [
     cate: 'gnss-x5',
     desc: 'Haz que tu X5R sea compatible con Trimble SPS855 y otras Estaciones Base GNSS a través de la comunicación LoRa. El radio X5 LoRa es un sistema adaptador que trabaja con una potencia de 1W para que tu Receptor X5 obtenga correcciones GNSS de cualquier Estación Base GNSS que use este protocolo.',
     banner: 'https://mettatec.com/wp-content/uploads/2023/09/X5-LoRa-Radio.webp',
+    bannerM: '',
     mainAdv: [
       {
         advItem: 'No es necesario abrir o modificar tu Estación Base'
@@ -619,6 +623,7 @@ export const productsDB = [
     cate: 'gnss-x5',
     desc: 'El receptor de antena GNSS externo de alta precisión que funciona con tu smartphone o tableta Android o iOS. La solución perfecta para usuarios profesionales tanto principiantes como experimentados en campo, con correcciones RTK+PPK+NTRIP. Cuenta con un sistema de corrección NTRIP que recibe datos a través de Internet o Bluetooth y un sistema de corrección RTK que recibe datos a través de LoRa.',
     banner: 'https://mettatec.com/wp-content/uploads/2023/09/Multi-band-helical-GNSS-antenna-HeliX5.webp',
+    bannerM: '',
     mainAdv: [
       {
         advItem: 'RTK multibanda (frecuencias de 433MHz y 915MHz disponibles), correcciones PPK y NTRIP con tiempos de convergencia rápidos y rendimiento robusto, ofrece precisión a nivel de centímetros con una solución Fix en segundos.'
@@ -721,6 +726,7 @@ export const productsDB = [
     cate: 'soft-se',
     desc: 'SurPad es una aplicación para Android diseñada para profesionales que utilizan receptores GPS/GNSS RTK y estaciones totales. Es especialmente útil para topógrafos, cartógrafos, ingenieros, arquitectos y planificadores urbanos. Cuenta con una amplia gama de herramientas y capacidades que permiten a los usuarios combinar eficientemente el control RTK, la recolección de datos GIS y la planificación de carreteras en una interfaz amigable para el usuario.',
     banner: 'https://mettatec.com/wp-content/uploads/2023/10/SURPAD-1000X1000-3.webp',
+    bannerM: '',
     mainAdv: [
       {
         advItem: 'Ofrece funcionalidades de alto nivel para receptores GNSS sin necesidad de drivers costosos.'
@@ -793,6 +799,7 @@ export const productsDB = [
     cate: 'combos',
     desc: 'El X5 Mobile PRO + SURPAD APP combina el receptor de antena GNSS X5M Pro, optimizado para dispositivos Android e iOS, con la aplicación SurPad, diseñada para profesionales en topografía, cartografía, ingeniería y planificación urbana. Esta combinación ofrece un sistema completo para el control RTK, la recolección de datos GIS y la planificación de carreteras, integrando correcciones RTK+PPK+NTRIP con una interfaz amigable y herramientas avanzadas.',
     banner: 'https://mettatec.com/wp-content/uploads/2023/09/GNSS-X5Mobile-PRO-for-Smartphones-and-Tablets-RTK1.webp',
+    bannerM: '',
     mainAdv: [
       {
         advItem: 'Precisión de nivel centimétrico con soluciones RTK multibanda (433MHz y 915MHz), PPK y NTRIP.'
@@ -865,6 +872,7 @@ export const productsDB = [
     cate: 'combos',
     desc: 'El X5 Mobile + SURPAD APP combina la funcionalidad avanzada del receptor de antena GNSS X5M, compatible con dispositivos Android e iOS, con la versatilidad de la aplicación SurPad, diseñada para profesionales en topografía, cartografía, ingeniería y planificación urbana. Este combo ofrece un sistema completo para el control RTK, la recolección de datos GIS y la planificación de carreteras, integrando correcciones NTRIP y RTK con una interfaz amigable y herramientas avanzadas.',
     banner: 'https://mettatec.com/wp-content/uploads/2023/09/PPKNTRIP-GNSS-X5Mobile-for-Smartphones-using-on-field.webp',
+    bannerM: '',
     mainAdv: [
       {
         advItem: 'Tecnología GNSS L1/L2/e5 avanzada con recepción simultánea de todas las constelaciones: GPS, GLONASS, GALILEO y BEIDOU.'
@@ -939,6 +947,7 @@ export const productsDB = [
     cate: 'combos',
     desc: 'El combo GNSS Receptor X5 + SurPad App integra la avanzada tecnología del Receptor GNSS Multibanda X5 con la aplicación SurPad 4.2 para Android, ofreciendo una solución completa y eficiente para profesionales en topografía, cartografía, ingeniería y planificación urbana. Esta combinación es ideal para realizar mediciones de grado centimétrico y optimizar proyectos de campo.',
     banner: 'https://mettatec.com/wp-content/uploads/2023/10/X5-RECEIVER-y-SURPAD-1000X1000.webp',
+    bannerM: '',
     mainAdv: [
       {
         advItem: 'Módulo GNSS independiente con capacidades avanzadas para mediciones de grado centimétrico.'
@@ -999,6 +1008,7 @@ export const productsDB = [
     cate: 'combos',
     desc: 'El combo GNSS Receptor X5 + SurPad App integra la avanzada tecnología del Receptor GNSS Multibanda X5 con la aplicación SurPad 4.2 para Android, ofreciendo una solución completa y eficiente para profesionales en topografía, cartografía, ingeniería y planificación urbana. Esta combinación es ideal para realizar mediciones de grado centimétrico y optimizar proyectos de campo.',
     banner: 'https://mettatec.com/wp-content/uploads/2023/10/X5-RECEIVER-2-UNITS-y-SURPAD-1000X1000.webp',
+    bannerM: '',
     mainAdv: [
       {
         advItem: 'Módulo GNSS independiente con capacidades avanzadas para mediciones de grado centimétrico.'
