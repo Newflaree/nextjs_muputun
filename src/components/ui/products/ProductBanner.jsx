@@ -40,50 +40,66 @@ export const ProductBanner = ({
   name
 }) => {
   return (
-      <Box
+    <Box
       sx={{
         borderRadius: '8px',
         backgroundImage: `url(${banner})`,
-        backgroundColor: 'gray',
-        backgroundSize: 'cover',
+        backgroundSize: {
+          xs: 'cover',
+          md: 'cover'
+        },
         backgroundPosition: 'center',
         height: '50vh',
         display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        alignItems: 'center',
         color: 'white'
       }}
     >
-      <Typography
-        variant='h1'
-        align='center'
-        my={ 4 }
+      <Box
+        sx={{
+          borderRadius: '8px',
+          backgroundColor: 'rgba( 0, 0, 0, 0.6 )',
+          top: 0,
+          bottom: 0,
+          width: '100%',
+          height: '100%',
+          padding: '30px',
+          zIndex: 1,
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'center',
+          alignItems: 'center',
+        }}
       >
-        { name }
-      </Typography>
-
-      <NextLink
-        href='/contacto'
-        passHref
-        legacyBehavior
-      >
-        <Button
-          variant='contained'
-          color='primary'
-          size='large'
-          sx={{
-            fontSize: 20,
-            mt: '16px',
-            color: 'white',
-            ':hover': {
-              bgcolor: 'primary.dark'
-            }
-          }}
+        <Typography
+          variant='h1'
+          align='center'
+          my={ 4 }
         >
-          Reservar Ahora
-        </Button>
-      </NextLink>
+          { name }
+        </Typography>
+
+        <NextLink
+          href='/contacto'
+          passHref
+          legacyBehavior
+        >
+          <Button
+            variant='contained'
+            color='primary'
+            size='large'
+            sx={{
+              fontSize: 20,
+              mt: '16px',
+              color: 'white',
+              ':hover': {
+                bgcolor: 'primary.dark'
+              }
+            }}
+          >
+            Reservar Ahora
+          </Button>
+        </NextLink>
+      </Box>
     </Box>
   );
 }

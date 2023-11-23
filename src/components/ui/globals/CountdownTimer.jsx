@@ -153,7 +153,7 @@ export const CountdownTimer = () => {
         textAlign='center'
         mt={ 5 }
       >
-        Anticípate, cotiza y reserva previo al lanzamiento con precios especiales
+        Anticípate, cotiza y reserva con precios especiales
       </Typography>
     </Box>
   );

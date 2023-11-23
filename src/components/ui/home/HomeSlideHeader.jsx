@@ -30,17 +30,36 @@ import { headerInfo } from '@/database';
 /**
  * `HomeSlideHeader` Component
  * 
- * Componente que renderiza un carrusel de diapositivas con títulos, descripciones,
- * botones y una imagen de fondo. Las imágenes PNG entran con una animación.
+ * Componente de React que muestra un carrusel de diapositivas en la página de inicio,
+ * proporcionando una presentación visualmente atractiva de contenido destacado como
+ * promociones, productos o servicios especiales.
  * 
- * Utiliza Swiper para la funcionalidad del carrusel y Material-UI para el estilo.
+ * Utiliza `Swiper` de Swiper React para crear un carrusel interactivo con efectos de
+ * transición suaves y navegación intuitiva. Incluye funcionalidades como autoplay, navegación
+ * manual y paginación clickeable.
  * 
- * @example
- * <HomeSlideHeader />
+ * El componente integra imágenes, textos y botones en cada diapositiva, permitiendo una
+ * presentación rica y dinámica. Cada diapositiva puede contener información específica,
+ * como título, descripción y un botón para acciones específicas.
  * 
- * @returns {React.Component} El componente del carrusel de diapositivas para la página principal.
+ * La animación de las imágenes se actualiza en cada cambio de diapositiva para mantener
+ * la interactividad y el interés visual.
+ * 
+ * Este componente es clave para capturar la atención de los usuarios y promover la exploración
+ * de productos, servicios o promociones destacadas en la aplicación.
+ * 
+ * @returns {React.Component} Un componente carrusel para la presentación destacada en la página de inicio.
  */
 export const HomeSlideHeader = () => {
+  const onSlideChange = () => {
+    const images = document.querySelectorAll( '.mySwiper .animate__animated' );
+
+    images.forEach( img => {
+      img.classList.remove( 'animate__fadeInLeft' );
+      setTimeout( () => img.classList.add( 'animate__fadeInLeft' ), 50 );
+    });
+  }
+
   return (
     <Box
       sx={{
@@ -52,6 +71,7 @@ export const HomeSlideHeader = () => {
       }}
     >
       <Swiper
+        onSlideChange={ onSlideChange }
         style={{ borderRadius: 6 }}
         spaceBetween={ 30 }
         effect={ "fade" }
@@ -108,37 +128,44 @@ export const HomeSlideHeader = () => {
                   }}
                 >
                   <Grid container>
-                    <Grid item sx={ 12 } md={ 6 }>
+                    <Grid
+                      item
+                      xs={ 12 }
+                      md={ 6 }
+                      sx={{
+                        display: 'flex',
+                        justifyContent: 'center',
+                        alignItems: 'center',
+                        height: '100%'
+                      }}
+                    >
                       {
                         ( png.length > 0 ) && (
                           <Box
-                            width={ 400 }
                             sx={{
-                              left: {
-                                xs: 4,
-                                md: 40
-                              },
-                              bottom: {
-                                xs: 200,
-                                md: 40
-                              }
+                              display: 'flex',
+                              justifyContent: 'center',
+                              alignItems: 'center',
+                              width: '100%',
+                              height: '100%'
                             }}
                           >
                             <Image 
-                              priority={ true }
+                              
+                              priority
                               className='animate__animated animate__fadeInLeft'
                               src={ png }
                               alt={ title }
                               width={ 400 }
                               height={ 370 }
-                              style={{ padding: 40 }}
+                              style={{ py: 70 }}
                             />
                           </Box>
                         )
                       }
                     </Grid>
 
-                    <Grid item sx={ 12 } md={ 6 }>
+                    <Grid item xs={ 12 } md={ 6 }>
                       <Typography
                         variant='h1'
                         component='h1'
@@ -219,9 +246,7 @@ export const HomeSlideHeader = () => {
                           )
                       }
                       </Grid>
-
                   </Grid>
-
                 </Box>
               </Box>
             </SwiperSlide>
