@@ -716,7 +716,7 @@ export const productsDB = [
     doc: [
       {
         name: 'HeliX5 Antena',
-        path: 'X5-Helix.pdf'
+        path: 'Helix5-Antenna.pdf'
       },
     ]
   },
