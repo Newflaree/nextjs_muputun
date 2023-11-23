@@ -43,11 +43,12 @@ const timeUnitBoxStyle = {
   backgroundColor: '#f5f5f5', 
 };
 
+
 export const CountdownTimer = () => {
   const { hideCountdownTimer } = useContext( UIContext );
 
   const calculateTimeLeft = () => {
-    const endTime = new Date( '2023-11-29T14:00:00' )
+    const endTime = new Date( '2023-12-04T10:00:00' )
     const difference = endTime - new Date();
     let timeLeft = {};
 
