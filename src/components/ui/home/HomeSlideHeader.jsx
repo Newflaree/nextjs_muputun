@@ -129,6 +129,7 @@ export const HomeSlideHeader = () => {
                 >
                   <Grid container>
                     <Grid
+                      className='animate__animated animate__fadeIn'
                       item
                       xs={ 12 }
                       md={ 6 }
