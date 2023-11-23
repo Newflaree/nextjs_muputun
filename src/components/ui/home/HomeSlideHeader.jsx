@@ -65,7 +65,7 @@ export const HomeSlideHeader = () => {
       sx={{
         borderRadius: '8px',
         height: {
-          xs: 'calc( 100vh + 50px )',
+          xs: 'calc( 100vh + 70px )',
           sm: '500px'
         }
       }}
