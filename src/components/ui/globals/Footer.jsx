@@ -66,10 +66,24 @@ export const Footer = () => {
             <Typography
               variant="body1"
               color="text.secondary"  
-              pb={ 2 }
             >
-              Somos una empresa emergente, con equipo de profesionales de espíritu emprendedor, cuyo objetivo es modernizar la operación de la industria en CHILE, expandiendo el acceso a las nuevas tecnologías, brindando acompañamiento en la implementación de estas a quienes sean parte de este grupo humano 🇨🇱
+              Somos una empresa emergente, con equipo de profesionales de espíritu emprendedor, cuyo objetivo es modernizar la operación de la industria en CHILE, expandiendo el acceso a las nuevas tecnologías, brindando acompañamiento en la implementación de estas a quienes sean parte de este grupo humano
             </Typography>
+
+            <Box pb={ 2 } />
+            <Box
+              sx={{
+                display: {
+                  xs: 'block',
+                  md: 'none'
+                }
+              }}
+            >
+              <Typography textAlign='center'>
+                🇨🇱
+              </Typography>
+
+            </Box>
 
             <Image
               alt='logo mettatec'
@@ -155,10 +169,24 @@ export const Footer = () => {
             <Typography
               variant="body1"
               color="text.secondary"  
-              pb={ 2 }
             >
-              Distribuidores oficiales de nuestros amigos mettatec en CHILE, pioneros en dar soluciones tecnológicas de punta, a la medida de tus necesidades. convirtiéndose en tu aliado estratégico el cual puede ayudarte a afrontar de mejor manera el presente de tu negocio. 🇵🇪🇨🇱
+              Distribuidores oficiales de nuestros amigos mettatec en CHILE, pioneros en dar soluciones tecnológicas de punta, a la medida de tus necesidades. convirtiéndose en tu aliado estratégico el cual puede ayudarte a afrontar de mejor manera el presente de tu negocio. 
             </Typography>
+
+            <Box pb={ 2 } />
+            <Box
+              sx={{
+                display: {
+                  xs: 'block',
+                  md: 'none'
+                }
+              }}
+            >
+              <Typography>
+                🇵🇪🇨🇱
+              </Typography>
+
+            </Box>
 
             <Image
               alt='logo mettatec'
