@@ -37,13 +37,17 @@ import {
  */
 export const ProductBanner = ({
   banner,
+  bannerMobile,
   name
 }) => {
   return (
     <Box
       sx={{
         borderRadius: '8px',
-        backgroundImage: `url(${banner})`,
+        backgroundImage: {
+          xs: `url(${bannerMobile})`,
+          md: `url(${banner})`,
+        },
         backgroundSize: {
           xs: 'cover',
           md: 'cover'

@@ -44,9 +44,9 @@ export const ProductView = ({ product, handleDownload }) => {
     name,
     desc,
     banner,
+    bannerM,
     mainAdv,
     techSpecs,
-    imgs,
     price,
     doc
   } = product;
@@ -56,6 +56,7 @@ export const ProductView = ({ product, handleDownload }) => {
         {/* Banner */}
         <ProductBanner 
           banner={ banner }
+          bannerMobile={ bannerM }
           name={ name }
         />
         {/* Banner */}
