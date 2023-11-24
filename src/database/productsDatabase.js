@@ -4,7 +4,7 @@ export const productsDB = [
     name: 'X5 PRO Linea para celulares',
     cate: 'gnss-x5',
     desc: 'El receptor de antena GNSS externo de alta precisión que funciona con tu smartphone o tableta Android o iOS. La solución perfecta para usuarios profesionales tanto principiantes como con experiencia en campo. Cuenta con un sistema de corrección NTRIP que recibe datos a través de Internet o Bluetooth. Tiene un indicador láser de punto rojo para facilitar el uso en levantamientos geodésicos.',
-    banner: 'https://res.cloudinary.com/newflare/image/upload/v1700845065/demos/muputun/nxozprlazhnubfvquuz4.jpg',
+    banner: 'https://res.cloudinary.com/newflare/image/upload/v1700853359/demos/muputun/ov2as0kzogm8afuwlvnk.jpg',
     bannerM: 'https://res.cloudinary.com/newflare/image/upload/v1700845176/demos/muputun/utmjhwxgxulgkzmkeshu.jpg',
     mainAdv: [
       {
