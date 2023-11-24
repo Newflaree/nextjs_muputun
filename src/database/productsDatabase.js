@@ -800,8 +800,8 @@ export const productsDB = [
     name: 'X5 Mobile PRO + SURPAD APP',
     cate: 'combos',
     desc: 'El X5 Mobile PRO + SURPAD APP combina el receptor de antena GNSS X5M Pro, optimizado para dispositivos Android e iOS, con la aplicación SurPad, diseñada para profesionales en topografía, cartografía, ingeniería y planificación urbana. Esta combinación ofrece un sistema completo para el control RTK, la recolección de datos GIS y la planificación de carreteras, integrando correcciones RTK+PPK+NTRIP con una interfaz amigable y herramientas avanzadas.',
-    banner: 'https://res.cloudinary.com/newflare/image/upload/v1700848825/demos/muputun/lgkpsvdeidkvbasvvpie.jpg',
-    bannerM: 'https://res.cloudinary.com/newflare/image/upload/v1700849057/demos/muputun/t4jaarnvp249afn4ngdx.jpg',
+    banner: 'https://res.cloudinary.com/newflare/image/upload/v1700852816/demos/muputun/eorxymstnksfzrc3bz9g.jpg',
+    bannerM: 'https://res.cloudinary.com/newflare/image/upload/v1700851629/demos/muputun/dnhccpnvzly6ezqgya5k.jpg',
     mainAdv: [
       {
         advItem: 'Precisión de nivel centimétrico con soluciones RTK multibanda (433MHz y 915MHz), PPK y NTRIP.'
@@ -873,8 +873,8 @@ export const productsDB = [
     name: 'X5 Mobile + SurPad App',
     cate: 'combos',
     desc: 'El X5 Mobile + SURPAD APP combina la funcionalidad avanzada del receptor de antena GNSS X5M, compatible con dispositivos Android e iOS, con la versatilidad de la aplicación SurPad, diseñada para profesionales en topografía, cartografía, ingeniería y planificación urbana. Este combo ofrece un sistema completo para el control RTK, la recolección de datos GIS y la planificación de carreteras, integrando correcciones NTRIP y RTK con una interfaz amigable y herramientas avanzadas.',
-    banner: 'https://res.cloudinary.com/newflare/image/upload/v1700849252/demos/muputun/ebwegfjmzguvin8lvehp.jpg',
-    bannerM: 'https://res.cloudinary.com/newflare/image/upload/v1700849332/demos/muputun/amwktbhyiskvidwnoqbc.jpg',
+    banner: 'https://res.cloudinary.com/newflare/image/upload/v1700852618/demos/muputun/xvevtu1ligzratibeuek.jpg',
+    bannerM: 'https://res.cloudinary.com/newflare/image/upload/v1700851908/demos/muputun/ku6r1k7ravx2xywjqyqn.jpg',
     mainAdv: [
       {
         advItem: 'Tecnología GNSS L1/L2/e5 avanzada con recepción simultánea de todas las constelaciones: GPS, GLONASS, GALILEO y BEIDOU.'
