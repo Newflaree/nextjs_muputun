@@ -1,13 +1,14 @@
+// React
+import { useState } from 'react';
 // React Hook Form
 import { useForm } from 'react-hook-form';
 // Sweet Alert
-import Swal from 'sweetalert2'
-import withReactContent from 'sweetalert2-react-content'
+import Swal from 'sweetalert2';
+import withReactContent from 'sweetalert2-react-content';
 // Layouts
 import { MainLayout } from '@/components/layouts';
 // Views
 import { ContactView } from '@/views';
-import {useState} from 'react';
 
 /**
  * `ContactPage` Page Component
@@ -67,6 +68,7 @@ const ContactPage = () => {
 
   const onSubmitMessage = async ( formData ) => {
     setIsSubmitting( true );
+
     try {
       const response = await fetch( '/api/contact', {
         method: 'POST',

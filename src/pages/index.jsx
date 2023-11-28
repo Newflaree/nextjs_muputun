@@ -4,7 +4,6 @@ import { MainLayout } from '@/components/layouts';
 import { HomeView } from '@/views';
 // Database
 import { seoDatabase } from '@/database';
-import {CountdownTimer} from '@/components/ui';
 
 /**
  * `HomePage` Page Component

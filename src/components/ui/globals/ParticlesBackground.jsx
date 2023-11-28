@@ -31,7 +31,7 @@ import { loadSlim } from "tsparticles-slim";
  */
 export const ParticlesBackground = () => {
     const particlesInit = useCallback(async engine => {
-      await loadSlim(engine);
+      await loadSlim( engine );
     }, []);
 
     return (
@@ -41,69 +41,69 @@ export const ParticlesBackground = () => {
           init={ particlesInit }
           options={{
             background: {
-                color: {
-                    value: "#fff",
-                },
+              color: {
+                value: "#fff",
+              },
             },
             fpsLimit: 120,
             interactivity: {
-                events: {
-                    onClick: {
-                        enable: true,
-                        mode: "push",
-                    },
-                    onHover: {
-                        enable: true,
-                        mode: "repulse",
-                    },
-                    resize: true,
+              events: {
+                onClick: {
+                  enable: false,
+                  mode: "push",
                 },
-                modes: {
-                    push: {
-                        quantity: 4,
-                    },
-                    repulse: {
-                        distance: 70,
-                        duration: 0.4,
-                    },
+                onHover: {
+                  enable: true,
+                  mode: "repulse",
                 },
+                resize: true,
+              },
+              modes: {
+                push: {
+                  quantity: 4,
+                },
+                repulse: {
+                  distance: 70,
+                  duration: 0.4,
+                },
+              },
             },
             particles: {
               color: {
-                    value: "#1FBEE8",
+                value: "#1FBEE8",
               },
               links: {
-                    color: "#1FBEE8",
-                    distance: 150,
-                    enable: true,
-                    opacity: 0.4,
-                    width: 1,
+                color: "#1FBEE8",
+                distance: 150,
+                enable: true,
+                opacity: 0.4,
+                width: 1,
               },
               move: {
-                    direction: "none",
-                    enable: true,
-                    outModes: {
-                        default: "bounce",
-                    },
-                    random: false,
-                    speed: 1,
-                    straight: false,
+                direction: "none",
+                enable: true,
+                outModes: {
+                  default: "bounce",
+                },
+                random: false,
+                speed: 1,
+                straight: false,
               },
               number: {
-                    density: {
-                        enable: true,
-                        area: 800,
-                    },
-                    value: 40,
+                density: {
+                  enable: true,
+                  area: 800,
+                },
+                value: 40,
               },
               opacity: {
-                    value: 0.7,
+                value: 0.7,
               },
               shape: {
-                    type: "circle",
+                type: "circle",
               },
               size: {
-                    value: { min: 1, max: 3 },
+                value: { min: 1, max: 3 },
               },
             },
             detectRetina: true,
