@@ -31,14 +31,14 @@ import { UIContext } from '@/context';
  * @returns {React.Component} Un componente de cuenta regresiva para eventos futuros.
  */
 const timeUnitBoxStyle = {
-  margin: 1,
-  padding: 1,
+  margin: 0.5,
+  padding: 0.5,
   flexGrow: 1,
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'center',
   justifyContent: 'center',
-  minWidth: 100,
+  minWidth: 80,
   borderRadius: '15px',
   backgroundColor: '#f5f5f5', 
 };

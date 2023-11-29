@@ -25,14 +25,16 @@
         color: #ffffff;
         justify-content: space-between;
         align-items: center;
-        padding: 40px;
+        padding: 20px;
         font-size: 24px;
       }
-      .header img {
-        padding: 12px;
-        top: 20px;
-        left: 20px;
-        height: 40px; /* Puedes ajustar según el tamaño de tu logo */
+      .text-header {
+        width: 50%;
+        text-align: center;
+      }
+      .logo-header {
+        width: 50%;
+        text-align: center;
       }
       .content {
         padding: 20px 40px;
@@ -62,15 +64,24 @@
           padding: 10px;
           font-size: 12px;
       }
+      @media (max-width: 768px) {
+        .header {
+          flex-direction: column;
+        }
+        .text-header,
+        .logo-header {
+          width: 100%;
+        }
+      }
     </style>
   </head>
   <body>
     <div class="email-container">
       <div class="header">
-        <p>Nuevo Mensaje</p>
-        <div>
+        <div class="logo-header">
           <p>m<span style="color:#5C5D5F;">ü</span>p<span style="color:#5C5D5F;">ü</span>tun</p>
         </div>
+        <p class="text-header">Nuevo Mensaje</p>
       </div>
       <div class="content">
         <div class="label">De:</div>

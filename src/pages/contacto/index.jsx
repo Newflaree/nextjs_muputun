@@ -78,7 +78,6 @@ const ContactPage = () => {
         body: JSON.stringify( formData ),
       });
 
-
       const { ok, message } = await response.json();
 
       ( ok === true )
