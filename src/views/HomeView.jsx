@@ -35,9 +35,6 @@ export const HomeView = () => {
 
   return (
     <>
-      {
-        showCountdownTimer && <CountdownTimer />
-      }
       <HomeSlideHeader />
       <HomeProductsGrid />
     </>
