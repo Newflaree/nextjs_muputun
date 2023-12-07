@@ -764,7 +764,7 @@ export const productsDB = [
         url: 'https://mettatec.com/wp-content/uploads/2023/10/SURPAD-1000X1000-2.webp'
       },
     ],
-    price: '217.890',
+    price: '269.000',
     slug: 'surpad-4.2-gnss-app',
     doc: [
       {
