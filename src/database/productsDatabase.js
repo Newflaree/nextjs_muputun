@@ -107,7 +107,7 @@ export const productsDB = [
         url: 'https://mettatec.com/wp-content/uploads/2023/09/GNSS-X5Mobile-PRO-for-Smartphones-and-Tablets-RTK1.webp'
       },
     ],
-    price: '0',
+    price: '1.799.000',
     slug: 'x5-mobile-series-pro',
     doc: [
       {
@@ -224,7 +224,7 @@ export const productsDB = [
         url: 'https://mettatec.com/wp-content/uploads/2023/09/PPKNTRIP-GNSS-X5Mobile-for-Smartphones-Components.webp'
       },
     ],
-    price: '0',
+    price: '1.399.000',
     slug: 'x5-mobile-series',
     doc: [
       {
@@ -331,7 +331,7 @@ export const productsDB = [
         url: 'https://mettatec.com/wp-content/uploads/2023/09/X5-Multi-band-GNSS-Receiver-PPK-RTK-NTRIP-POV-Down.webp'
       },
     ],
-    price: '0',
+    price: '2.099.000',
     slug: 'x5-receptor',
     doc: [
       {
@@ -437,7 +437,7 @@ export const productsDB = [
         url: 'https://mettatec.com/wp-content/uploads/2023/09/GNSS-X5-PPK-Module-for-Phantom-4-Pro-Advance-each-parts.webp'
       },
     ],
-    price: '0',
+    price: '1.499.000',
     slug: 'x5-ppk-phantom-4-pro',
     doc: [
       {
@@ -543,7 +543,7 @@ export const productsDB = [
         url: 'https://mettatec.com/wp-content/uploads/2023/09/GNSS-X5-PPK-Module-for-Phantom-4-Pro-Advance-each-parts.webp'
       },
     ],
-    price: '0',
+    price: '1.499.000',
     slug: 'x5-ppk-mavic-2-pro',
     doc: [
       {
@@ -610,7 +610,7 @@ export const productsDB = [
         url: 'https://mettatec.com/wp-content/uploads/2023/09/X5-LoRa-Radio-Compatible-with-TRIMBLE-SPS855.webp'
       },
     ],
-    price: '0',
+    price: '485.000',
     slug: 'x5-lora-radio',
     doc: [
       {
@@ -764,7 +764,7 @@ export const productsDB = [
         url: 'https://mettatec.com/wp-content/uploads/2023/10/SURPAD-1000X1000-2.webp'
       },
     ],
-    price: '0',
+    price: '217.890',
     slug: 'surpad-4.2-gnss-app',
     doc: [
       {
@@ -855,7 +855,7 @@ export const productsDB = [
         url: 'https://mettatec.com/wp-content/uploads/2023/10/X5M-PRO-2.webp'
       },
     ],
-    price: '0',
+    price: '1.999.000',
     slug: 'x5-mobile-pro-surpad-app',
     doc: [
       {
@@ -930,7 +930,7 @@ export const productsDB = [
         url: 'https://mettatec.com/wp-content/uploads/2023/10/X5M-FEATURES.webp'
       },
     ],
-    price: '0',
+    price: '1.599.000',
     slug: 'x5-mobile-surpad-app',
     doc: [
       {
@@ -991,7 +991,7 @@ export const productsDB = [
         url: 'https://mettatec.com/wp-content/uploads/2023/10/X5-RECEIVER-y-SURPAD-1000X1000.webp'
       },
     ],
-    price: '0',
+    price: '2.299.000',
     slug: 'gnss-receptor-x5r-surpad-app',
     doc: [
       {
@@ -1052,7 +1052,7 @@ export const productsDB = [
         url: 'https://mettatec.com/wp-content/uploads/2023/10/X5-RECEIVER-2-UNITS-y-SURPAD-1000X1000.webp'
       },
     ],
-    price: '0',
+    price: '4.149.000',
     slug: '2-unidades-x5-receptor-surpad-app',
     doc: [
       {
