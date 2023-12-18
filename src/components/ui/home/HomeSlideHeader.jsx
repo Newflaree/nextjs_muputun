@@ -164,6 +164,7 @@ export const HomeSlideHeader = () => {
                             <Image 
                               priority
                               className='animate__animated animate__fadeInLeft'
+                              style={{ width: '100%', height: 'auto' }}
                               src={ png }
                               alt={ title }
                               width={ 400 }
