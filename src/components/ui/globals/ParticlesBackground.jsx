@@ -45,6 +45,10 @@ export const ParticlesBackground = () => {
                 value: "#fff",
               },
             },
+            fullScreen: {
+              enable: true,
+              zIndex: -10
+            },
             fpsLimit: 120,
             interactivity: {
               events: {

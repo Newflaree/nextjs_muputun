@@ -83,7 +83,8 @@ export const MainLayout = ({
       </Head>
 
       
-      { /*<ParticlesBackground />*/ }
+      <ParticlesBackground />
+
       <ButtonsBox />
 
     
