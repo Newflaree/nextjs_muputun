@@ -149,7 +149,7 @@ export const HomeSlideHeader = () => {
                               alignItems: 'center',
                               width: {
                                 xs: 320,
-                                md: 320
+                                md: 400
                               },
                               height: {
                                 xs: '100%',

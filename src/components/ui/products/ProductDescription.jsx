@@ -3,6 +3,7 @@ import {
   Box,
   Typography
 } from "@mui/material";
+import {ProductIncludes} from ".";
 
 /**
  * `ProductDescription` Component
@@ -27,7 +28,8 @@ import {
  * 
  * @returns {React.Component} Un componente para mostrar la descripción de un producto.
  */
-export const ProductDescription = ({ desc }) => {
+export const ProductDescription = ({ desc, includeItems }) => {
+  console.log( includeItems );
   return (
     <Box my={ 10 }>
       <Typography
@@ -37,6 +39,10 @@ export const ProductDescription = ({ desc }) => {
       >
         { desc }
       </Typography>
+
+      {
+        ( includeItems.length > 0 ) && <ProductIncludes items={ includeItems } /> 
+      }
     </Box>
   );
 }

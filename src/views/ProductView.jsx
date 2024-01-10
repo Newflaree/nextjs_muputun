@@ -47,6 +47,7 @@ export const ProductView = ({ product, handleDownload }) => {
     bannerM,
     mainAdv,
     techSpecs,
+    includes,
     price,
     doc
   } = product;
@@ -68,6 +69,7 @@ export const ProductView = ({ product, handleDownload }) => {
         {/* Description */}
         <ProductDescription
           desc={ desc }
+          includeItems= { includes }
         />
         {/* Description */}
 
@@ -77,42 +79,47 @@ export const ProductView = ({ product, handleDownload }) => {
         />
         {/* Main Advantages */}
 
-        <Grid
-          container
-          spacing={ 4 }
-          mb={ 5 }
-        >
-          <Grid
-            item
-            xs={ 12 }
-            sm={ 6 }
-          >
-            {/*Tech Spec*/}
-            <ProductTechSpecs
-              techSpecs={ techSpecs }
-            />
-            {/*Tech Spec*/}
-          </Grid>
+        {
+          ( techSpecs.length > 0 ) && 
+            <>
+              <Grid
+                container
+                spacing={ 4 }
+                mb={ 5 }
+              >
+                <Grid
+                  item
+                  xs={ 12 }
+                  sm={ 6 }
+                >
+                  {/*Tech Spec*/}
+                  <ProductTechSpecs
+                    techSpecs={ techSpecs }
+                  />
+                  {/*Tech Spec*/}
+                </Grid>
 
-          <Grid
-            item
-            xs={ 12 }
-            sm={ 6 }
-            my={ 20 }
-            display='flex'
-            textAlign='center'
-            justifyContent='center'
-            alignItems='center'
-          >
-            {/*Tech Docs*/}
-            <ProductDocs
-              name={ name }
-              doc={ doc } 
-              handleDownload={ handleDownload }
-            />
-            {/*Tech Docs*/}
-          </Grid>
-        </Grid>
+                <Grid
+                  item
+                  xs={ 12 }
+                  sm={ 6 }
+                  my={ 20 }
+                  display='flex'
+                  textAlign='center'
+                  justifyContent='center'
+                  alignItems='center'
+                >
+                  {/*Tech Docs*/}
+                  <ProductDocs
+                    name={ name }
+                    doc={ doc } 
+                    handleDownload={ handleDownload }
+                  />
+                  {/*Tech Docs*/}
+                </Grid>
+              </Grid>
+            </>
+          }
     </Container>
   );
 }

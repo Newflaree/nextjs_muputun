@@ -37,24 +37,29 @@ import { FiberManualRecord } from '@mui/icons-material';
  */export const ProductMainAdvantages = ({ mainAdv }) => {
   return (
     <Box my={ 10 }>
-      <Typography
-        variant='h5'
-        textAlign='center'
-        paragraph
-      >
-        Principales Ventajas
-      </Typography>
+      {
+        ( mainAdv.length > 0 ) && 
+          <>
+            <Typography
+              variant='h5'
+              textAlign='center'
+              paragraph
+            >
+              Principales Ventajas
+            </Typography>
 
-      <List>
-        {
-          mainAdv.map( ({ advItem }) =>(
-            <ListItem key={ advItem }>
-              <FiberManualRecord sx={{ mr: 2 }}/>
-              { advItem }
-            </ListItem>
-          ))
+            <List>
+              {
+                mainAdv.map( ({ advItem }) =>(
+                  <ListItem key={ advItem }>
+                    <FiberManualRecord sx={{ mr: 2 }}/>
+                    { advItem }
+                  </ListItem>
+                ))
+              }
+            </List>
+          </>
         }
-      </List>
     </Box>
   );
 }

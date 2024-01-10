@@ -29,6 +29,7 @@ export const ProductsView = () => {
   const gnssProducts = prdMethods.getProductByCategory( 'gnss-x5' );
   const softProducts = prdMethods.getProductByCategory( 'soft-se' );
   const combosProducts = prdMethods.getProductByCategory( 'combos' );
+  const acceProducts = prdMethods.getProductByCategory( 'acce' );
 
   return (
     <>
@@ -47,6 +48,11 @@ export const ProductsView = () => {
       <ProductsCategory
         cateTitle='Combos'
         filteredProducts={ combosProducts }
+      />
+
+      <ProductsCategory
+        cateTitle='Accesorios Müpütun'
+        filteredProducts={ acceProducts }
       />
     </>
   );

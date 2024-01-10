@@ -115,6 +115,48 @@ export const menuPaths = [
         path: '/productos/2-unidades-x5-receptor-surpad-app',
       },
       // Category
+      // Category
+      {
+        id: 'cpr-004',
+        name: 'Pack de Accesorios',
+        path: '/productos/pack-accesorios',
+      },
+      // Category
+    ]
+  },
+  { 
+    id: 'mi03',
+    name: 'Accesorios Müpütun',
+    path: '',
+    submenu: [
+      // Category
+      {
+        id: 'cpr-000',
+        name: 'Trípode de Madera Plato Redondo',
+        path: '/productos/tripode-madera-plato-redondo',
+      },
+      // Category
+      // Category
+      {
+        id: 'cpr-001',
+        name: 'Jalón de Fibra de Carbono',
+        path: '/productos/jalon-fibra-de-carbono',
+      },
+      // Category
+      // Category
+      {
+        id: 'cpr-002',
+        name: 'Adaptador Base Tribrach Negra',
+        path: '/productos/adaptador-base-tribrach-negra',
+      },
+      // Category
+      // Category
+      {
+        id: 'cpr-003',
+        name: 'Base Tribrach Negra',
+        path: '/productos/base-tribrach-negra',
+      },
+      // Category
     ]
   },
   { 
@@ -125,12 +167,18 @@ export const menuPaths = [
   },
   { 
     id: 'mi06',
+    name: 'Nuestros Blogs',
+    path: '/blogs',
+    submenu: []
+  },
+  { 
+    id: 'mi07',
     name: 'X5 Documentos',
     path: 'https://docs.mettatec.com',
     submenu: []
   },
   { 
-    id: 'mi07',
+    id: 'mi08',
     name: 'Contacto',
     path: '/contacto',
     submenu: []
