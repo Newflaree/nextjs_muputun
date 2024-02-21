@@ -108,6 +108,7 @@ export const RTKDronesWorkView = () => {
         variant='p'
         component='p'
         marginTop={ 4 }
+        mb={ 7 }
       >
         Para iniciar el servicio LOCAL NTRIP con el <NextLink href='/productos/x5-receptor' passHref legacyBehavior><Link color='primary' variant='p'>X5R PLUS</Link></NextLink>, solo es necesario indicar el modo de funcionamiento “LOCAL NTRIP” en la aplicación de configuración de la App FindX5 de Mettatec.
       </Typography>
