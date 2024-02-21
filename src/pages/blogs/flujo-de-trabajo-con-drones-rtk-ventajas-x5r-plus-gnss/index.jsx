@@ -7,7 +7,7 @@ import { RTKDronesWorkView } from '@/views/blogs';
 const BlogPage = () => {
   return (
     <MainLayout
-      pageTitle='HOLA' 
+      pageTitle='Flujo de Trabajo con Drones RTK' 
     >
       <RTKDronesWorkView />
     </MainLayout>
