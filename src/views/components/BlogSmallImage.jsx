@@ -3,7 +3,7 @@ import Image from "next/image";
 // Material UI
 import { Box } from "@mui/material";
 
-export const BlogImage = ({
+export const BlogSmallImage = ({
   source = '',
   alt = '',
   isShort = false,
@@ -33,12 +33,12 @@ export const BlogImage = ({
             width={
               isShort
                 ? 250
-                : 1000
+                : 600
             }
             height={
               isBanner
                 ? 400
-                : 500
+                : 300
             }
             style={{
               borderRadius: 8,

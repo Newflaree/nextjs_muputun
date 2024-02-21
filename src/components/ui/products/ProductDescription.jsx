@@ -28,7 +28,7 @@ import {ProductIncludes} from ".";
  * 
  * @returns {React.Component} Un componente para mostrar la descripción de un producto.
  */
-export const ProductDescription = ({ desc, includeItems }) => {
+export const ProductDescription = ({ desc, includeItems, price}) => {
   console.log( includeItems );
   return (
     <Box my={ 10 }>
@@ -39,6 +39,17 @@ export const ProductDescription = ({ desc, includeItems }) => {
       >
         { desc }
       </Typography>
+
+      {
+        price !== 0 && <Typography
+          mt={ 4 }
+          color='primary'
+          fontSize={ 30 }
+          textAlign='end'
+        >
+          ${ price }
+        </Typography>
+      }
 
       {
         ( includeItems.length > 0 ) && <ProductIncludes items={ includeItems } /> 

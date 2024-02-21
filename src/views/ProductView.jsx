@@ -70,6 +70,7 @@ export const ProductView = ({ product, handleDownload }) => {
         <ProductDescription
           desc={ desc }
           includeItems= { includes }
+          price={ price }
         />
         {/* Description */}
 

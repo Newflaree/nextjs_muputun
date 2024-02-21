@@ -75,17 +75,6 @@ export const CanalesGNSSView = () => {
         Entonces, los satélites GNSS transmiten continuamente señales de navegación en dos o más frecuencias en una banda conocida como la Banda “L”. Estas señales contienen códigos de alcance y datos de navegación para permitir a los receptores calcular el tiempo de viaje desde el satélite al receptor y las coordenadas del satélite en cualquier momento. Los principales componentes de esta señal se describen a continuación:
       </Typography>
 
-      {/*
-      <List>
-        <ListItem>
-          <FiberManualRecord sx={{ marginRight: 2 }} color='primary' />
-          <Typography>
-            Fase portadora: La diferencia entre la señal portadora generada por el oscilador interno de un receptor y la señal portadora proveniente del satélite.
-          </Typography>
-        </ListItem>
-      </List>
-      */}
-
       <Typography
         variant='h2'
         component='h2'
