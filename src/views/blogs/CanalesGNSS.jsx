@@ -15,6 +15,7 @@ export const CanalesGNSSView = () => {
       <BlogImage
         source='https://res.cloudinary.com/newflare/image/upload/v1704678787/demos/muputun/blogs/lsvcnmzioqmkuzemcgud.jpg'
         alt='Banner Blog'
+        isBanner={ true }
       />
 
       <Typography

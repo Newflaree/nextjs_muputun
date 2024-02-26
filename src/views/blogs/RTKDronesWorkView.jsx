@@ -28,6 +28,7 @@ export const RTKDronesWorkView = () => {
       <BlogImage
         source='https://res.cloudinary.com/newflare/image/upload/v1708466326/demos/muputun/blogs/utquhhd4w1wtsbqrhxvg.png'
         alt='Banner Blog'
+        isBanner={ true }
       />
 
       <Typography
