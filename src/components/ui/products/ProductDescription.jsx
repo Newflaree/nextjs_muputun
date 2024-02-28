@@ -41,7 +41,7 @@ export const ProductDescription = ({ desc, includeItems, price}) => {
       </Typography>
 
       {
-        price !== 0 && <Typography
+        ( price > 0 ) && <Typography
           mt={ 4 }
           color='primary'
           fontSize={ 30 }

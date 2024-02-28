@@ -109,7 +109,7 @@ export const productsDB = [
         url: 'https://res.cloudinary.com/newflare/image/upload/v1704657996/demos/muputun/new-products/X5%20PRO%20PARA%20CELULARES/gjyi0qoj2hwkq1z5oyut.jpg'
       },
     ],
-    price: '1.799.000',
+    price: '0',
     slug: 'x5-mobile-series-pro',
     doc: [
       {
@@ -227,7 +227,7 @@ export const productsDB = [
         url: 'https://res.cloudinary.com/newflare/image/upload/v1704657984/demos/muputun/new-products/X5%20LINEA%20PARA%20CELULARES/vw9a0ag8cj7hukcchfqe.jpg'
       },
     ],
-    price: '1.399.000',
+    price: '0',
     slug: 'x5-mobile-series',
     doc: [
       {
@@ -335,7 +335,7 @@ export const productsDB = [
         url: 'https://res.cloudinary.com/newflare/image/upload/v1704765862/demos/muputun/new-products-cretificated/X5%20Receptor%20GNSS%20Multibanda%20-%20CON%20CERTIFICACION/uiuxwxh3scvptwuvgevw.jpg'
       },
     ],
-    price: '2.099.000',
+    price: '0',
     slug: 'x5-receptor',
     doc: [
       {
@@ -442,7 +442,7 @@ export const productsDB = [
         url: 'https://res.cloudinary.com/newflare/image/upload/v1704657991/demos/muputun/new-products/X5%20PPK%20Phantom%204%20Pro/mk5jfgj1syxj1kmmflod.jpg'
       },
     ],
-    price: '1.499.000',
+    price: '0',
     slug: 'x5-ppk-phantom-4-pro',
     doc: [
       {
@@ -549,7 +549,7 @@ export const productsDB = [
         url: 'https://res.cloudinary.com/newflare/image/upload/v1704657992/demos/muputun/new-products/X5%20PPK%20Mavic%202%20Pro/zcbswwm5x9x4pgaounav.jpg'
       },
     ],
-    price: '1.499.000',
+    price: '0',
     slug: 'x5-ppk-mavic-2-pro',
     doc: [
       {
@@ -617,7 +617,7 @@ export const productsDB = [
         url: 'https://res.cloudinary.com/newflare/image/upload/v1704657997/demos/muputun/new-products/X5%20Radio%20LoRa/ia9qbjniushbyvdv69ky.jpg'
       },
     ],
-    price: '485.000',
+    price: '0',
     slug: 'x5-lora-radio',
     doc: [
       {
@@ -773,7 +773,7 @@ export const productsDB = [
         url: 'https://res.cloudinary.com/newflare/image/upload/v1704657978/demos/muputun/new-products/SurPad%204.2%20App/wkxxig14pfje2w2r6tr4.jpg'
       },
     ],
-    price: '320.000',
+    price: '0',
     slug: 'surpad-4.2-gnss-app',
     doc: [
       {
@@ -866,7 +866,7 @@ export const productsDB = [
         url: 'https://res.cloudinary.com/newflare/image/upload/v1704658000/demos/muputun/new-products/X5Mobile%20PRO%20%2B%20SURPAD%20APP/doxlqnmv6q10ead2ucpy.jpg'
       },
     ],
-    price: '1.999.000',
+    price: '0',
     slug: 'x5-mobile-pro-surpad-app',
     doc: [
       {
@@ -942,7 +942,7 @@ export const productsDB = [
         url: 'https://res.cloudinary.com/newflare/image/upload/v1704657987/demos/muputun/new-products/X5%20Mobile%20%2B%20SurPad%20App/xwkckdgpe66c4gx8f6xo.jpg'
       },
     ],
-    price: '1.599.000',
+    price: '0',
     slug: 'x5-mobile-surpad-app',
     doc: [
       {
@@ -1004,7 +1004,7 @@ export const productsDB = [
         url: 'https://res.cloudinary.com/newflare/image/upload/v1704765855/demos/muputun/new-products-cretificated/GNSS%20Receptor%20X5%20%2B%20SurPad%20App%20-%20CON%20CERTIFICACION/y7kjfsv2lmworsecdd24.jpg'
       },
     ],
-    price: '2.299.000',
+    price: '0',
     slug: 'gnss-receptor-x5r-surpad-app',
     doc: [
       {
@@ -1066,7 +1066,7 @@ export const productsDB = [
         url: 'https://res.cloudinary.com/newflare/image/upload/v1704765852/demos/muputun/new-products-cretificated/2%20Unidades%20X5%20Receptor%20%2B%20SurPad%20App%20-%20CON%20CERTIFICACION/jvqe3kt0uzmuw1z6kfbx.jpg'
       },
     ],
-    price: '4.149.000',
+    price: '0',
     slug: '2-unidades-x5-receptor-surpad-app',
     doc: [
       {
@@ -1105,7 +1105,7 @@ export const productsDB = [
         url: 'https://res.cloudinary.com/newflare/image/upload/v1704765857/demos/muputun/new-products-cretificated/ICONO%20PACK%20ACCESORIOS/p2whoyjtdftuumrqsmby.jpg'
       },
     ],
-    price: '440.000',
+    price: '0',
     slug: 'pack-accesorios',
     doc: []
   },
@@ -1130,7 +1130,7 @@ export const productsDB = [
         url: 'https://res.cloudinary.com/newflare/image/upload/v1704765863/demos/muputun/new-products-cretificated/ICONO%20TRIPODE/mj13rqtxgsfhvfmlm6qi.jpg'
       },
     ],
-    price: '145.000',
+    price: '0',
     slug: 'tripode-madera-plato-redondo',
     doc: []
   },
@@ -1154,7 +1154,7 @@ export const productsDB = [
         url: 'https://res.cloudinary.com/newflare/image/upload/v1704765858/demos/muputun/new-products-cretificated/ICONO%20JALON/xlscyscufwbrcfvkfpqr.jpg'
       },
     ],
-    price: '145.000',
+    price: '0',
     slug: 'jalon-fibra-de-carbono',
     doc: []
   },
@@ -1178,7 +1178,7 @@ export const productsDB = [
         url: 'https://res.cloudinary.com/newflare/image/upload/v1704765853/demos/muputun/new-products-cretificated/ICONO%20ADAPTADOR/vsiok9dxf7szfvn8kqeo.jpg'
       },
     ],
-    price: '35.000',
+    price: '0',
     slug: 'adaptador-base-tribrach-negra',
     doc: []
   },
@@ -1202,7 +1202,7 @@ export const productsDB = [
         url: 'https://res.cloudinary.com/newflare/image/upload/v1704765855/demos/muputun/new-products-cretificated/ICONO%20BASE%20NIVELANTE/j9ja83b4kzpeuq5bvhzw.jpg'
       },
     ],
-    price: '100.000',
+    price: '0',
     slug: 'base-tribrach-negra',
     doc: []
   },

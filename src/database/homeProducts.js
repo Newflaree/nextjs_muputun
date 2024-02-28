@@ -12,7 +12,7 @@ export const homeProdusts = [
         url: 'https://res.cloudinary.com/newflare/image/upload/v1704657991/demos/muputun/new-products/X5%20PPK%20Phantom%204%20Pro/mk5jfgj1syxj1kmmflod.jpg'
       },
     ],
-    price: '1.499.000',
+    price: '0',
     slug: 'x5-ppk-phantom-4-pro',
   },
   {
@@ -28,7 +28,7 @@ export const homeProdusts = [
         url: 'https://res.cloudinary.com/newflare/image/upload/v1704765852/demos/muputun/new-products-cretificated/2%20Unidades%20X5%20Receptor%20%2B%20SurPad%20App%20-%20CON%20CERTIFICACION/jvqe3kt0uzmuw1z6kfbx.jpg'
       },
     ],
-    price: '4.149.000',
+    price: '0',
     slug: '2-unidades-x5-receptor-surpad-app',
   },
   {
@@ -44,7 +44,7 @@ export const homeProdusts = [
         url: 'https://res.cloudinary.com/newflare/image/upload/v1704657978/demos/muputun/new-products/SurPad%204.2%20App/wkxxig14pfje2w2r6tr4.jpg'
       },
     ],
-    price: '320.000',
+    price: '0',
     slug: 'surpad-4.2-gnss-app',
   },
   {
@@ -60,7 +60,7 @@ export const homeProdusts = [
         url: 'https://res.cloudinary.com/newflare/image/upload/v1704658000/demos/muputun/new-products/X5Mobile%20PRO%20%2B%20SURPAD%20APP/doxlqnmv6q10ead2ucpy.jpg'
       },
     ],
-    price: '1.999.000',
+    price: '0',
     slug: 'x5-mobile-pro-surpad-app',
   },
   {
@@ -76,7 +76,7 @@ export const homeProdusts = [
         url: 'https://res.cloudinary.com/newflare/image/upload/v1704657992/demos/muputun/new-products/X5%20PPK%20Mavic%202%20Pro/zcbswwm5x9x4pgaounav.jpg'
       },
     ],
-    price: '1.499.000',
+    price: '0',
     slug: 'x5-ppk-mavic-2-pro',
   },
   {
@@ -92,7 +92,7 @@ export const homeProdusts = [
         url: 'https://res.cloudinary.com/newflare/image/upload/v1704765862/demos/muputun/new-products-cretificated/X5%20Receptor%20GNSS%20Multibanda%20-%20CON%20CERTIFICACION/uiuxwxh3scvptwuvgevw.jpg'
       },
     ],
-    price: '2.099.000',
+    price: '0',
     slug: 'x5-receptor',
   },
 ]
