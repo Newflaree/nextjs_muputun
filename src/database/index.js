@@ -1,7 +1,4 @@
-export * from './headerDatabase';
-export * from './homeProducts';
-export * from './menuDatabase';
-export * from './productsDatabase';
-export * from './seoDatabase';
-
-export * as prdMethods from './productsDatabaseMethods';
+export * from './blogs';
+export * from './menu';
+export * from './products';
+export * from './slide-show';

@@ -1,17 +1,9 @@
-// Layouts
-import { MainLayout } from '@/components/layouts';
-// Views
-import {CanalesGNSSView} from '@/views/blogs';
+import { CanalesGNSSView } from '@/ui/views';
 
 
-const BlogPage = () => {
-  return (
-    <MainLayout
-      pageTitle='Canales GNSS' 
-    >
-      <CanalesGNSSView />
-    </MainLayout>
-  );
+const CanalesGNSSPage = () => {
+  return <CanalesGNSSView />
+    
 }
 
-export default BlogPage;
+export default CanalesGNSSPage;

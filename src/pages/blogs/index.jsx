@@ -1,17 +1,13 @@
-// Layouts
-import { MainLayout } from '@/components/layouts';
+// Database
+import { blogsDatabase } from '@/database';
 // Views
-import { BlogsView } from '@/views';
+import { BlogsView } from '@/ui/views';
 
+
+const data = blogsDatabase;
 
 const BlogsPage = () => {
-  return (
-    <MainLayout
-      pageTitle='Blogs' 
-    >
-      <BlogsView />
-    </MainLayout>
-  );
+  return <BlogsView blogs={ data } />
 }
 
 export default BlogsPage;
