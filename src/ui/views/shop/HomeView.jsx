@@ -21,10 +21,10 @@ export const HomeView = () => {
       <HomeSlider />
       <HomeSliderMobile />
 
-      <Title label='Videos destacados' />
+      <Title label='Contenido' />
       <HomeVideo />
 
-      <Title label='Nuevos productos destacados' />
+      <Title label='Equipos X5' />
       <ProductGrid products={ products } />
     </ShopLayout>
   );
