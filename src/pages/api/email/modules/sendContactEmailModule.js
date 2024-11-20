@@ -50,7 +50,7 @@ const sendContactEmailModule = async ( req ) => {
       message: 'Error'
     }
 
-    return sendEmailResult;
+   return sendEmailResult;
 
   } catch ( error ) {
     logger.consoleErrorHandler( error, 'sendContactEmailModule' );

@@ -21,10 +21,14 @@ import {
  */
 const sendContactEmailController = async ( req, res ) => {
   try {
-    const { message } = await sendContactEmailModule( req );
+    const {
+      statusCode,
+      ok,
+      message
+    } = await sendContactEmailModule( req );
 
-    res.status( statusCodes.SUCCESS ).json({
-      ok: true,
+    res.status( statusCode ).json({
+      ok,
       message
     });
   
