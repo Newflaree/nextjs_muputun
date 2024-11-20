@@ -5,7 +5,6 @@ import { ContactView } from '@/ui/views';
 
 
 const ContactPage = () => {
-  // TODO: Implementation for forms custom hook
   const {
     register,
     handleSubmit,

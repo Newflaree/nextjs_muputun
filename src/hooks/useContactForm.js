@@ -10,6 +10,15 @@ import { useAlert } from './useAlert';
 // Store
 import { useProductStore } from '@/store';
 
+const resetForm = () => {
+  return {
+    name: '',
+    lastName: '',
+    emailAddress: '',
+    subject: '',
+    message: ''
+  }
+}
 
 export const useContactForm = () => {
   const { productName, clearProductName } = useProductStore();
@@ -38,7 +47,6 @@ export const useContactForm = () => {
     setIsSubmitting( true );
 
     try {
-      /*
       const response = await fetch( '/api/email/contact', {
         method: 'POST',
         headers: {
@@ -47,25 +55,18 @@ export const useContactForm = () => {
         body: JSON.stringify( formData ),
       });
 
-      const {
-        ok,
-        message
-      } = await response.json();
-        * */
-      const ok = true;
-      const message = 'Mensaje enviado con éxito'
+      const { ok, message } = await response.json();
 
-      setTimeout( () => {
-        ( ok )
-          ? showSuccess( message )
-          : showError( message )
-      }, 2000 );
+      ( ok )
+        ? showSuccess( message )
+        : showError( message )
 
-      reset( resetForm );
-    } catch ( error ) {
-      showError( 'Ocurrió un error al enviar el mensaje' );
-    } finally {
       setIsSubmitting( false );
+      reset( resetForm );
+
+    } catch ( error ) {
+      setIsSubmitting( false );
+      showError( 'Ocurrió un error al enviar el mensaje' );
     }
   }
 
