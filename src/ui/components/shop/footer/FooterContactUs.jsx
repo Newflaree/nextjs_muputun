@@ -13,10 +13,19 @@ export const FooterContactUs = () => {
       <h2 className={ `text-xl mb-5` }>Contáctanos</h2>
 
       <div className='flex flex-col'>
-        <span className={`cursor-pointer mb-2 hover:text-cyan-600 transition-all text-mupu`}>
+        <a
+          href='mailto:info@muputun.cl'
+          className={`cursor-pointer mb-2 hover:text-cyan-600 transition-all text-mupu`}
+        >
           info@muputun.cl
-        </span>
-        <span className='cursor-pointer mb-2 hover:text-cyan-600 transition-all text-mupu'>+56 9 87754953</span>
+        </a>
+        <a
+          target='_blank'
+          href="https://wa.me/+56987754953"
+          className={`cursor-pointer mb-2 hover:text-cyan-600 transition-all text-mupu`}
+        >
+          +56 9 87754953
+        </a>
       </div>
       <span></span>
 
