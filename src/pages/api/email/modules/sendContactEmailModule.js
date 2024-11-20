@@ -1,3 +1,9 @@
+// Services
+import {
+  prepareEmailOptionsService,
+  sendEmailService,
+  setUpContactEmailService
+} from '../services';
 // Utils
 import {
   logger,
@@ -11,15 +17,41 @@ const sendContactEmailModule = async ( req ) => {
     subject
   } = req.body;
 
-  // TODO: Set up email
-  // TODO: Prepare email options
+  const emailTemplateResult = await setUpContactEmailService( req );
+
+  if ( !emailTemplateResult ) return {
+    ok: false,
+    statusCode: statusCodes.BAD_REQUEST,
+    message: 'Error'
+  }
+
+  const { template } = emailTemplateResult;
+
+  const emailOptionsResult = await prepareEmailOptionsService(
+    subject,
+    template,
+    emailAddress
+  );
+
+  if ( !emailOptionsResult ) return {
+    ok: false,
+    statusCode: statusCodes.BAD_REQUEST,
+    message: 'Error'
+  }
+
+  const { mailOptions, transporter } = emailOptionsResult;
 
   try {
-    // TODO: Send email
+    const sendEmailResult = await sendEmailService( mailOptions, transporter );
 
-    return {
-      message: 'sendContactEmailModule'
+    if ( !sendEmailResult ) return {
+      ok: false,
+      statusCode: statusCodes.BAD_REQUEST,
+      message: 'Error'
     }
+
+    return sendEmailResult;
+
   } catch ( error ) {
     logger.consoleErrorHandler( error, 'sendContactEmailModule' );
 
