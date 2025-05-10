@@ -1,4 +1,5 @@
 export const homeProducts = [
+  /*
   {
     id: 'hp-001',
     name: 'X5 PPK Phantom 4 Pro',
@@ -15,6 +16,7 @@ export const homeProducts = [
     price: 0,
     slug: 'x5-ppk-phantom-4-pro',
   },
+  * */
   {
     id: 'hp-002',
     name: '2 x X5R Receptor + SurPad 4.2',
@@ -63,6 +65,8 @@ export const homeProducts = [
     price: 0,
     slug: 'x5-mobile-pro-surpad-app',
   },
+  //
+  /*
   {
     id: 'hp-005',
     name: 'X5 PPK Mavic 2 Pro',
@@ -79,6 +83,7 @@ export const homeProducts = [
     price: 0,
     slug: 'x5-ppk-mavic-2-pro',
   },
+  * */
   {
     id: 'hp-006',
     name: 'X5 GNSS Receptor',

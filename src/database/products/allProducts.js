@@ -453,6 +453,7 @@ export const productsDB = [
       },
     ]
   },
+  /*
   {
     id: 'p-003',
     name: 'X5 PPK Phantom 4 Pro',
@@ -667,6 +668,7 @@ export const productsDB = [
       },
     ]
   },
+  */
   {
     id: 'p-005',
     name: 'X5 Radio LoRa',
