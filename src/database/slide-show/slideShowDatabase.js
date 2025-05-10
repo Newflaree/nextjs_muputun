@@ -29,6 +29,7 @@ export const headerInfo = [
     imgm: 'https://res.cloudinary.com/newflare/image/upload/v1704658029/demos/muputun/new-products/lnhfxfizips46f5mkbwz.jpg',
     png: 'https://res.cloudinary.com/newflare/image/upload/v1700667506/demos/muputun/ur4kevhbfx1b3gprtxz4.webp'
   },
+  /*
   {
     id: 'hi-002',
     title: 'X5 PPK Phantom 4 Pro',
@@ -39,6 +40,7 @@ export const headerInfo = [
     imgm: 'https://res.cloudinary.com/newflare/image/upload/v1704658029/demos/muputun/new-products/lnhfxfizips46f5mkbwz.jpg',
     png: 'https://res.cloudinary.com/newflare/image/upload/v1700667506/demos/muputun/j67blialmdmn5vegnoif.webp'
   },
+  * */
   {
     id: 'hi-003',
     title: 'SurPad 4.2 GNSS',

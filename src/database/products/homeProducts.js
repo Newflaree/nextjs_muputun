@@ -18,6 +18,22 @@ export const homeProducts = [
   },
   * */
   {
+    id: 'hp-001',
+    name: 'X5 RT Multibanda',
+    imgs: [
+      { 
+        name: 'img-1',
+        url: 'https://res.cloudinary.com/newflare/image/upload/v1728566146/demos/muputun/new-products-cretificated/X5-RT/le4rrz592rgbzasav44w.jpg'
+      },
+      { 
+        name: 'img-2',
+        url: 'https://res.cloudinary.com/newflare/image/upload/v1728566146/demos/muputun/new-products-cretificated/X5-RT/myakwxu1gazivekiiirb.jpg'
+      },
+    ],
+    price: 0,
+    slug: 'x5-rt-multibanda',
+  },
+  {
     id: 'hp-002',
     name: '2 x X5R Receptor + SurPad 4.2',
     imgs: [
