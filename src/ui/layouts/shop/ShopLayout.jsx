@@ -1,17 +1,23 @@
 // Next
 import Head from 'next/head';
+import dynamic from 'next/dynamic';
 // Components
 import {
   Footer,
-  ParticlesBackground,
   Sidebar,
   TopMenu,
 } from '../../components';
 
 
+const ParticlesBackground = dynamic(
+  () =>
+    import( '../../components/shop/particles-bg/ParticlesBackground' )
+      .then( ( m ) => m.ParticlesBackground ),
+  { ssr: false }
+);
+
 export const ShopLayout = ({
   children,
-
   pageTitle = '',
   pageDesc = '',
   pageKeywords = '',

@@ -3,7 +3,7 @@ import {
   HomeSlider,
   HomeSliderMobile,
   HomeVideo,
-  HomeSlideVideos,
+  //HomeSlideVideos,
   ProductGrid,
   Title
 } from '../../components';

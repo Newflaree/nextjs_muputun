@@ -26,7 +26,7 @@ export const ParticlesBackground = () => {
             enable: true,
             zIndex: -10
           },
-          fpsLimit: 120,
+          fpsLimit: 60,
           interactivity: {
             events: {
               onClick: {
@@ -87,7 +87,7 @@ export const ParticlesBackground = () => {
               value: { min: 1, max: 2 },
             },
           },
-          detectRetina: true,
+          detectRetina: false,
         }}
       />
     </div>
