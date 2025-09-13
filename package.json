@@ -25,6 +25,7 @@
     "zustand": "^4.5.5"
   },
   "devDependencies": {
+    "autoprefixer": "^10.4.21",
     "eslint": "^8",
     "eslint-config-next": "14.2.7",
     "postcss": "^8",
