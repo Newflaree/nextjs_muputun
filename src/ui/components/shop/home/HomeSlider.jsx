@@ -21,7 +21,7 @@ import { headerInfo } from '@/database';
 
 export const HomeSlider = () => {
   const onSlideChange = () => {
-    const images = document.querySelectorAll( '.mySwiper .animate__animated' );
+    const images = document.querySelectorAll( '.mySwiper2 .animate__animated' );
 
     images.forEach( img => {
       img.classList.remove( 'animate__fadeInLeft' );
@@ -29,7 +29,7 @@ export const HomeSlider = () => {
     });
   }
 
-  if ( !headerInfo ) <></>
+  if ( !Array.isArray( headerInfo ) || headerInfo.length === 0 ) return null;
 
   return (
     <div className='rounded-lg mb-20 hidden sm:block'>
@@ -60,8 +60,10 @@ export const HomeSlider = () => {
                     className='rounded-lg'
                     src={ item.imgm }
                     alt={ item.title }
-                    height={ 700 }
-                    width={ 700 }
+                    fill
+                    sizes='(min-width: 640px) 1000px, 100vw' 
+                    style={{ objectFit: 'cover' }}
+                    priority
                   />
                 </div>
                 <div className='w-full h-full bg-black opacity-50 absolute z-20' />
@@ -84,7 +86,6 @@ export const HomeSlider = () => {
                     <h2 className='text-3xl text-mupu mb-5 font-bold'>{ item.title }</h2>
                     <p className='text-white mb-10'>{ item.desc }</p>
 
-                    <button className='btn-primary'>
                       {
                         ( item.title == 'Conoce a Mettatec' )
                           ? <a href={ item.path } target='_blank'>
@@ -94,7 +95,6 @@ export const HomeSlider = () => {
                               { item.btn }
                             </NextLink>
                       }
-                    </button>
                   </div>
                 </div>
               </div>

@@ -21,7 +21,7 @@ import { headerInfo } from '@/database';
 
 export const HomeSliderMobile = () => {
   const onSlideChange = () => {
-    const images = document.querySelectorAll( '.mySwiper .animate__animated' );
+    const images = document.querySelectorAll( '.mySwiper2 .animate__animated' );
 
     images.forEach( img => {
       img.classList.remove( 'animate__fadeInLeft' );
@@ -29,7 +29,7 @@ export const HomeSliderMobile = () => {
     });
   }
 
-  if ( !headerInfo ) <></>
+  if ( !Array.isArray( headerInfo ) || headerInfo.length === 0 ) return null;
 
   return (
     <div className='rounded-lg mb-20 sm:hidden'>
@@ -60,6 +60,9 @@ export const HomeSliderMobile = () => {
                       src={ item.imgd }
                       alt={ item.title }
                       fill  
+                      size='100vw'
+                      style={{ objectFit: 'cover' }}
+                      priority
                     />
                   </div>
 
@@ -87,7 +90,6 @@ export const HomeSliderMobile = () => {
                       <h2 className='text-3xl text-mupu mb-5 font-bold'>{ item.title }</h2>
                       <p className='text-white mb-10'>{ item.desc }</p>
 
-                      <button className='btn-primary'>
                         {
                           ( item.title == 'Conoce a Mettatec' )
                             ? <a href={ item.path } target='_blank'>
@@ -97,7 +99,6 @@ export const HomeSliderMobile = () => {
                                 { item.btn }
                               </NextLink>
                         }
-                      </button>
                     </div>
                   </div>
                 </div>
