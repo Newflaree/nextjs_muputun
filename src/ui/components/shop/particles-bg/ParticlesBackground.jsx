@@ -6,15 +6,14 @@ import Particles from "react-particles";
 import { loadSlim } from "tsparticles-slim";
 
 export const ParticlesBackground = () => {
-  const isIOS =
-    typeof navigator !== "undefined" &&
-    /iPad|iPhone|iPod/.test(navigator.userAgent);
-
-  if (isIOS) return null;
-
-  const particlesInit = useCallback(async (engine) => {
-    await loadSlim(engine);
+  const particlesInit = useCallback( async ( engine ) => {
+    await loadSlim( engine );
   }, []);
+
+  const isIOS =
+    typeof navigator !== 'undefined' &&
+    /iPad|iPhone|iPod/.test( navigator.userAgent );
+  if ( isIOS ) return null;
 
   return (
     <div>
