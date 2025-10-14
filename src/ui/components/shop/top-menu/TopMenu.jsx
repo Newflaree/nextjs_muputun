@@ -44,8 +44,8 @@ export const TopMenu = () => {
             src='/logo.png'
             alt='mupütun'
             className='p-2 sm:p-0'
-            width={ 150 }
-            height={ 75 }
+            width={ 150*1.6 }
+            height={ 75*1.6 }
           />
         </NextLink>
       </div>
