@@ -944,23 +944,23 @@ export const productsDB = [
       },
       { 
         name: 'img-2',
-        url: '/images/x5-stick/x5-stick-2.jpg'
+        url: '/images/x5-stick/x5-stick-2-trimmed.png'
       },
       { 
         name: 'img-3',
-        url: '/images/x5-stick/x5-stick-3.jpg'
+        url: '/images/x5-stick/x5-stick-3-trimmed.png'
       },
       { 
         name: 'img-4',
-        url: '/images/x5-stick/x5-stick-4.webp'
+        url: '/images/x5-stick/x5-stick-4-trimmed.png'
       },
       { 
         name: 'img-5',
-        url: '/images/x5-stick/x5-stick-5.jpg'
+        url: '/images/x5-stick/x5-stick-5-trimmed.png'
       },
       { 
         name: 'img-6',
-        url: '/images/x5-stick/x5-stick-6.png'
+        url: '/images/x5-stick/x5-stick-6-trimmed.png'
       },
     ],
     price: 0,
@@ -1070,23 +1070,23 @@ export const productsDB = [
       },
       { 
         name: 'img-2',
-        url: '/images/x5-cors/x5-cors-2.webp'
+        url: '/images/x5-cors/x5-cors-2-trimmed.png'
       },
       { 
         name: 'img-3',
-        url: '/images/x5-cors/x5-cors-3.jpg'
+        url: '/images/x5-cors/x5-cors-3-trimmed.png'
       },
       { 
         name: 'img-4',
-        url: '/images/x5-cors/x5-cors-4.png'
+        url: '/images/x5-cors/x5-cors-4-trimmed.png'
       },
       { 
         name: 'img-5',
-        url: '/images/x5-cors/x5-cors-5.jpg'
+        url: '/images/x5-cors/x5-cors-5-trimmed.png'
       },
       { 
         name: 'img-6',
-        url: '/images/x5-cors/x5-cors-6.jpg'
+        url: '/images/x5-cors/x5-cors-6-trimmed.png'
       },
     ],
     price: 0,
