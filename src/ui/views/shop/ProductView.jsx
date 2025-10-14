@@ -18,7 +18,7 @@ export const ProductView = ({ product, handleDownload }) => {
     <ShopLayout
       pageTitle={ product.name }
     >
-      <div className='mt-5 mb-20 grid grid-cols-1 md:grid-cols-3 gap-3 pt-10'>
+      <div className='mt-5 mb-20 grid grid-cols-1 md:grid-cols-3 gap-3'>
         {/*SlideShow*/}
         <div className='col-span-1 md:col-span-2'>
           {/*Mobile Slideshow*/}
