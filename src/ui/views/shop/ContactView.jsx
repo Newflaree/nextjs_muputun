@@ -19,7 +19,7 @@ export const ContactView = ({
     <ShopLayout
       pageTitle='Contacto'
     >
-      <div className="flex flex-col pt-10 sm:pt-10 sm:mx-20 pb-10 mx-2">
+      <div className="flex flex-col sm:mx-20 pb-10 mx-2 mt-10">
         <Title label='Contáctanos' />
 
         <form
