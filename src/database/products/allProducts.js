@@ -350,8 +350,8 @@ export const productsDB = [
     name: 'X5 Receptor GNSS Multibanda',
     cate: 'gnss-x5',
     desc: 'Estación base y Rover para soluciones fijas PPK, RTK y NTRIP. Con solo unos minutos de configuración, el X5R es uno de los métodos más rápidos para tomar mediciones de grado centimétrico. Funciona con software GIS común, incluyendo SW Maps, SurvPC, Field Genius y muchos otros.',
-    banner: 'https://res.cloudinary.com/newflare/image/upload/v1704765865/demos/muputun/new-products-cretificated/X5%20Receptor%20GNSS%20Multibanda%20-%20CON%20CERTIFICACION/cmqvmmelrc8psumrws03.jpg',
-    bannerM: 'https://res.cloudinary.com/newflare/image/upload/v1704765865/demos/muputun/new-products-cretificated/X5%20Receptor%20GNSS%20Multibanda%20-%20CON%20CERTIFICACION/cmqvmmelrc8psumrws03.jpg',
+    banner: '/images/gnss-x5r/gnss-x5r-1-trimmed.png',
+    bannerM: '/images/gnss-x5r/gnss-x5r-1-trimmed.png',
     mainAdv: [
       {
         advItem: 'Módulo GNSS independiente'
@@ -437,11 +437,35 @@ export const productsDB = [
     imgs: [
       { 
         name: 'img-1',
-        url: 'https://res.cloudinary.com/newflare/image/upload/v1704765864/demos/muputun/new-products-cretificated/X5%20Receptor%20GNSS%20Multibanda%20-%20CON%20CERTIFICACION/czfq5oy4q7eh5gwq7gzw.jpg'
+        url: '/images/gnss-x5r/gnss-x5r-1-trimmed.png'
       },
       { 
         name: 'img-2',
-        url: 'https://res.cloudinary.com/newflare/image/upload/v1704765862/demos/muputun/new-products-cretificated/X5%20Receptor%20GNSS%20Multibanda%20-%20CON%20CERTIFICACION/uiuxwxh3scvptwuvgevw.jpg'
+        url: '/images/gnss-x5r/gnss-x5r-2-trimmed.png'
+      },
+      { 
+        name: 'img-3',
+        url: '/images/gnss-x5r/gnss-x5r-3-trimmed.png'
+      },
+      { 
+        name: 'img-4',
+        url: '/images/gnss-x5r/gnss-x5r-4-trimmed.png'
+      },
+      { 
+        name: 'img-5',
+        url: '/images/gnss-x5r/gnss-x5r-5-trimmed.png'
+      },
+      { 
+        name: 'img-6',
+        url: '/images/gnss-x5r/gnss-x5r-6-trimmed.png'
+      },
+      { 
+        name: 'img-7',
+        url: '/images/gnss-x5r/gnss-x5r-7-trimmed.png'
+      },
+      { 
+        name: 'img-8',
+        url: '/images/gnss-x5r/gnss-x5r-8-trimmed.png'
       },
     ],
     price: 0,
