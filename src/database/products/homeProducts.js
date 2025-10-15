@@ -33,6 +33,24 @@ export const homeProducts = [
     price: 0,
     slug: 'x5-rt-multibanda',
   },
+  
+  {
+    id: 'hp-006',
+    name: 'X5 GNSS Receptor',
+    imgs: [
+      { 
+        name: 'img-1',
+        url: '/images/gnss-x5r/gnss-x5r-1-trimmed.png'
+      },
+      { 
+        name: 'img-2',
+        url: '/images/gnss-x5r/gnss-x5r-2-trimmed.png'
+      },
+    ],
+    price: 0,
+    slug: 'x5-receptor',
+  },
+
   {
     id: 'hp-002',
     name: 'X5 CORS',
@@ -100,20 +118,4 @@ export const homeProducts = [
     slug: 'x5-ppk-mavic-2-pro',
   },
   * */
-  {
-    id: 'hp-006',
-    name: 'X5 GNSS Receptor',
-    imgs: [
-      { 
-        name: 'img-1',
-        url: '/images/gnss-x5r/gnss-x5r-1-trimmed.png'
-      },
-      { 
-        name: 'img-2',
-        url: '/images/gnss-x5r/gnss-x5r-2-trimmed.png'
-      },
-    ],
-    price: 0,
-    slug: 'x5-receptor',
-  },
 ]

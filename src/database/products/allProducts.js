@@ -1,123 +1,6 @@
 export const productsDB = [
   // GNSS X5
-  {
-    id: 'p-000',
-    name: 'X5 PRO Linea para celulares',
-    cate: 'gnss-x5',
-    desc: 'El receptor de antena GNSS externo de alta precisión que funciona con tu smartphone o tableta Android o iOS. La solución perfecta para usuarios profesionales tanto principiantes como con experiencia en campo. Cuenta con un sistema de corrección NTRIP que recibe datos a través de Internet o Bluetooth. Tiene un indicador láser de punto rojo para facilitar el uso en levantamientos geodésicos.',
-    banner: 'https://res.cloudinary.com/newflare/image/upload/v1704657994/demos/muputun/new-products/X5%20PRO%20PARA%20CELULARES/wwolvyroo35asnuekqmz.jpg',
-    bannerM: 'https://res.cloudinary.com/newflare/image/upload/v1704657995/demos/muputun/new-products/X5%20PRO%20PARA%20CELULARES/h2boyfu0d1fbitmemka7.jpg',
-    mainAdv: [
-      {
-        advItem: 'Utiliza la misma tecnología GNSS L1/L2/e5 que se encuentra en receptores profesionales con componentes de vanguardia.'
-      },
-      {
-        advItem: 'Recepción simultánea de todas las constelaciones: GPS, GLONASS, GALILEO y BEIDOU.'
-      },
-      {
-        advItem: 'Correcciones NTRIP multibanda con tiempos de convergencia rápidos y rendimiento robusto, ofrece precisión a nivel de centímetros con una solución Fix en segundos.'
-      },
-      {
-        advItem: 'Permite Levantamientos Geodésicos y Fotogrametría con georreferenciación de alta precisión.'
-      },
-      {
-        advItem: 'Incluye su propia antena GNSS helicoidal multibanda.'
-      },
-      {
-        advItem: 'Conexión de transferencia de datos a través de puerto USB y Bluetooth.'
-      },
-      {
-        advItem: 'Compatible con aplicaciones de SIG y Fotogrametría que operan con datos NMEA.'
-      },
-      {
-        advItem: 'Tiene un láser rojo para localizar fácilmente los puntos a georreferenciar en el campo.'
-      },
-      {
-        advItem: 'Compatibilidad con dispositivos Android e iOS.'
-      },
-      {
-        advItem: 'En resumen: Precisión a nivel de centímetros en un módulo pequeño y de muy bajo consumo.'
-      },
-    ],
-    techSpecs: [
-      {
-        primary: 'Mecánicas',
-        secondary: [
-          { spec: 'Dimensiones: 85 × 40 × 15 mm (sin antena)' },
-          { spec: 'Peso: 70g' },
-          { spec: 'Temperatura de operación: -40 a 85 °C' },
-        ]
-      },
-      {
-        primary: 'Eléctricas',
-        secondary: [
-          { spec: 'Voltaje de entrada: 4.75 – 5.5 V' },
-          { spec: 'Sesgo de CC de la antena: 3.3 V' },
-          { spec: 'Consumo máximo de corriente: 5V @ 250 mA' },
-          { spec: 'Consumo promedio de corriente: 5V @ 120 mA' },
-          { spec: 'Límite de corriente en el cable USB: 500 mA' },
-        ]
-      },
-      {
-        primary: 'Conectividad',
-        secondary: [
-          { spec: 'Bluetooth V4.2 BR/EDR' },
-          { spec: 'USB Serial' },
-        ]
-      },
-      {
-        primary: 'GNSS',
-        secondary: [
-          { spec: 'Recepción concurrente de GPS, GLONASS, Galileo y BeiDou' },
-          { spec: 'Recibe bandas L1C/A y L2C' },
-          { spec: 'Señales rastreadas GPS/QZSS L1 C/A, L2 GLONASS L1OF, L2 BeiDou B1l, B2l Galileo E1-B/C, E5b' },
-          { spec: 'Número de canales 184' },
-          { spec: 'Tasa de actualización de navegación: 1 Hz GNSS' },
-          { spec: 'Precisión de posición: NTRIP 0.01 m + 1 ppm CEP' },
-          { spec: 'Tiempo de convergencia: NTRIP < 10 sec' },
-          { spec: 'Tiempo para la Primera Fijación: 25s (frío), 2s (caliente)' },
-          { spec: 'Altitud máxima: 50 km (31 millas)' },
-          { spec: 'Velocidad máxima: 500 m/s (1118 mph)' },
-        ]
-      },
-      {
-        primary: 'Láser',
-        secondary: [
-          { spec: 'Láser de punto rojo' },
-          { spec: 'Precisión: ±10 mm, el indicador rojo varía ligeramente' },
-          { spec: 'Longitud de onda del láser: 650 nm' },
-          { spec: 'Modo de haz' },
-          { spec: 'Dimensiones: 8 * 13.5 mm' },
-          { spec: 'Vida útil: ≥5000h' },
-          { spec: 'Potencia óptica: 1-100mw' },
-          { spec: 'Rango de voltaje: 3V-8V' },
-          { spec: 'Corriente de operación: ≤150mA' },
-          { spec: 'Rango de temperatura de operación: -25~65 °C' },
-          { spec: 'Ángulo de desviación de la luz: ±2°' },
-          { spec: 'Tamaño del punto del haz a 10 m: <15 mm' },
-        ]
-      },
-    ],
-    includes: [],
-    imgs: [
-      { 
-        name: 'img-1',
-        url: 'https://res.cloudinary.com/newflare/image/upload/v1704657995/demos/muputun/new-products/X5%20PRO%20PARA%20CELULARES/h2boyfu0d1fbitmemka7.jpg'
-      },
-      { 
-        name: 'img-2',
-        url: 'https://res.cloudinary.com/newflare/image/upload/v1704657996/demos/muputun/new-products/X5%20PRO%20PARA%20CELULARES/gjyi0qoj2hwkq1z5oyut.jpg'
-      },
-    ],
-    price: 0,
-    slug: 'x5-mobile-series-pro',
-    doc: [
-      {
-        name: 'X5 PRO Linea para celulares',
-        path: 'X5M-Pro.pdf'
-      },
-    ]
-  },
+  /*
   {
     id: 'p-001',
     name: 'X5 Linea para celulares',
@@ -235,7 +118,8 @@ export const productsDB = [
         path: 'X5M.pdf'
       },
     ]
-  },
+  },*/
+  
   {
     id: 'p-101',
     name: 'X5 RT Multibanda',
@@ -327,11 +211,11 @@ export const productsDB = [
     ],
     includes: [],
     imgs: [
-      { 
+      {
         name: 'img-1',
         url: 'https://res.cloudinary.com/newflare/image/upload/v1728566146/demos/muputun/new-products-cretificated/X5-RT/le4rrz592rgbzasav44w.jpg'
       },
-      { 
+      {
         name: 'img-2',
         url: 'https://res.cloudinary.com/newflare/image/upload/v1728566146/demos/muputun/new-products-cretificated/X5-RT/myakwxu1gazivekiiirb.jpg'
       },
@@ -345,6 +229,7 @@ export const productsDB = [
       },
     ]
   },
+
   {
     id: 'p-002',
     name: 'X5 Receptor GNSS Multibanda',
@@ -435,35 +320,35 @@ export const productsDB = [
     ],
     includes: [],
     imgs: [
-      { 
+      {
         name: 'img-1',
         url: '/images/gnss-x5r/gnss-x5r-1-trimmed.png'
       },
-      { 
+      {
         name: 'img-2',
         url: '/images/gnss-x5r/gnss-x5r-2-trimmed.png'
       },
-      { 
+      {
         name: 'img-3',
         url: '/images/gnss-x5r/gnss-x5r-3-trimmed.png'
       },
-      { 
+      {
         name: 'img-4',
         url: '/images/gnss-x5r/gnss-x5r-4-trimmed.png'
       },
-      { 
+      {
         name: 'img-5',
         url: '/images/gnss-x5r/gnss-x5r-5-trimmed.png'
       },
-      { 
+      {
         name: 'img-6',
         url: '/images/gnss-x5r/gnss-x5r-6-trimmed.png'
       },
-      { 
+      {
         name: 'img-7',
         url: '/images/gnss-x5r/gnss-x5r-7-trimmed.png'
       },
-      { 
+      {
         name: 'img-8',
         url: '/images/gnss-x5r/gnss-x5r-8-trimmed.png'
       },
@@ -477,6 +362,126 @@ export const productsDB = [
       },
     ]
   },
+
+  {
+    id: 'p-000',
+    name: 'X5 PRO Linea para celulares',
+    cate: 'gnss-x5',
+    desc: 'El receptor de antena GNSS externo de alta precisión que funciona con tu smartphone o tableta Android o iOS. La solución perfecta para usuarios profesionales tanto principiantes como con experiencia en campo. Cuenta con un sistema de corrección NTRIP que recibe datos a través de Internet o Bluetooth. Tiene un indicador láser de punto rojo para facilitar el uso en levantamientos geodésicos.',
+    banner: 'https://res.cloudinary.com/newflare/image/upload/v1704657994/demos/muputun/new-products/X5%20PRO%20PARA%20CELULARES/wwolvyroo35asnuekqmz.jpg',
+    bannerM: 'https://res.cloudinary.com/newflare/image/upload/v1704657995/demos/muputun/new-products/X5%20PRO%20PARA%20CELULARES/h2boyfu0d1fbitmemka7.jpg',
+    mainAdv: [
+      {
+        advItem: 'Utiliza la misma tecnología GNSS L1/L2/e5 que se encuentra en receptores profesionales con componentes de vanguardia.'
+      },
+      {
+        advItem: 'Recepción simultánea de todas las constelaciones: GPS, GLONASS, GALILEO y BEIDOU.'
+      },
+      {
+        advItem: 'Correcciones NTRIP multibanda con tiempos de convergencia rápidos y rendimiento robusto, ofrece precisión a nivel de centímetros con una solución Fix en segundos.'
+      },
+      {
+        advItem: 'Permite Levantamientos Geodésicos y Fotogrametría con georreferenciación de alta precisión.'
+      },
+      {
+        advItem: 'Incluye su propia antena GNSS helicoidal multibanda.'
+      },
+      {
+        advItem: 'Conexión de transferencia de datos a través de puerto USB y Bluetooth.'
+      },
+      {
+        advItem: 'Compatible con aplicaciones de SIG y Fotogrametría que operan con datos NMEA.'
+      },
+      {
+        advItem: 'Tiene un láser rojo para localizar fácilmente los puntos a georreferenciar en el campo.'
+      },
+      {
+        advItem: 'Compatibilidad con dispositivos Android e iOS.'
+      },
+      {
+        advItem: 'En resumen: Precisión a nivel de centímetros en un módulo pequeño y de muy bajo consumo.'
+      },
+    ],
+    techSpecs: [
+      {
+        primary: 'Mecánicas',
+        secondary: [
+          { spec: 'Dimensiones: 85 × 40 × 15 mm (sin antena)' },
+          { spec: 'Peso: 70g' },
+          { spec: 'Temperatura de operación: -40 a 85 °C' },
+        ]
+      },
+      {
+        primary: 'Eléctricas',
+        secondary: [
+          { spec: 'Voltaje de entrada: 4.75 – 5.5 V' },
+          { spec: 'Sesgo de CC de la antena: 3.3 V' },
+          { spec: 'Consumo máximo de corriente: 5V @ 250 mA' },
+          { spec: 'Consumo promedio de corriente: 5V @ 120 mA' },
+          { spec: 'Límite de corriente en el cable USB: 500 mA' },
+        ]
+      },
+      {
+        primary: 'Conectividad',
+        secondary: [
+          { spec: 'Bluetooth V4.2 BR/EDR' },
+          { spec: 'USB Serial' },
+        ]
+      },
+      {
+        primary: 'GNSS',
+        secondary: [
+          { spec: 'Recepción concurrente de GPS, GLONASS, Galileo y BeiDou' },
+          { spec: 'Recibe bandas L1C/A y L2C' },
+          { spec: 'Señales rastreadas GPS/QZSS L1 C/A, L2 GLONASS L1OF, L2 BeiDou B1l, B2l Galileo E1-B/C, E5b' },
+          { spec: 'Número de canales 184' },
+          { spec: 'Tasa de actualización de navegación: 1 Hz GNSS' },
+          { spec: 'Precisión de posición: NTRIP 0.01 m + 1 ppm CEP' },
+          { spec: 'Tiempo de convergencia: NTRIP < 10 sec' },
+          { spec: 'Tiempo para la Primera Fijación: 25s (frío), 2s (caliente)' },
+          { spec: 'Altitud máxima: 50 km (31 millas)' },
+          { spec: 'Velocidad máxima: 500 m/s (1118 mph)' },
+        ]
+      },
+      {
+        primary: 'Láser',
+        secondary: [
+          { spec: 'Láser de punto rojo' },
+          { spec: 'Precisión: ±10 mm, el indicador rojo varía ligeramente' },
+          { spec: 'Longitud de onda del láser: 650 nm' },
+          { spec: 'Modo de haz' },
+          { spec: 'Dimensiones: 8 * 13.5 mm' },
+          { spec: 'Vida útil: ≥5000h' },
+          { spec: 'Potencia óptica: 1-100mw' },
+          { spec: 'Rango de voltaje: 3V-8V' },
+          { spec: 'Corriente de operación: ≤150mA' },
+          { spec: 'Rango de temperatura de operación: -25~65 °C' },
+          { spec: 'Ángulo de desviación de la luz: ±2°' },
+          { spec: 'Tamaño del punto del haz a 10 m: <15 mm' },
+        ]
+      },
+    ],
+    includes: [],
+    imgs: [
+      {
+        name: 'img-1',
+        url: 'https://res.cloudinary.com/newflare/image/upload/v1704657995/demos/muputun/new-products/X5%20PRO%20PARA%20CELULARES/h2boyfu0d1fbitmemka7.jpg'
+      },
+      {
+        name: 'img-2',
+        url: 'https://res.cloudinary.com/newflare/image/upload/v1704657996/demos/muputun/new-products/X5%20PRO%20PARA%20CELULARES/gjyi0qoj2hwkq1z5oyut.jpg'
+      },
+    ],
+    price: 0,
+    slug: 'x5-mobile-series-pro',
+    doc: [
+      {
+        name: 'X5 PRO Linea para celulares',
+        path: 'X5M-Pro.pdf'
+      },
+    ]
+  },
+
   /*
   {
     id: 'p-003',
@@ -693,6 +698,266 @@ export const productsDB = [
     ]
   },
   */
+
+  {
+    id: 'p-new-001',
+    name: 'X5 Stick',
+    cate: 'gnss-x5',
+    desc: 'Receptor GNSS de alta precisión, portátil, ligero y compatible con Android e iOS. Ideal para trabajos de campo que requieren exactitud centimétrica en segundos. Incluye antena GNSS helicoidal multibanda L1/L2/E5, rosca inferior de 5/8″ para instalar en bastón, estuche de protección y cables USB-C. Compatible con Apps y Softwares con protocolo de datos NMEA.',
+    banner: '',
+    bannerM: '',
+    mainAdv: [
+      {
+        advItem: 'Constelaciones de Satélites: GPS, GLONASS, Galileo, Beidou, QZSS para máxima precisión.'
+      },
+      {
+        advItem: 'Compatible con Apps y Softwares con protocolo de datos NMEA.'
+      },
+      {
+        advItem: 'Wi-Fi y Bluetooth para la conexión con otros dispositivos.'
+      },
+      {
+        advItem: 'Geoetiquetado: Permite Levantamientos Geodésicos y Fotogrametría con geoetiquetado de alta precisión.'
+      },
+      {
+        advItem: 'Correcciones NTRIP para precisión centimétrica inmediata (RTK).'
+      },
+      {
+        advItem: 'Tecnología profesional GNSS L1/L2.'
+      },
+      {
+        advItem: 'Bluetooth 4.2 BLE para Android e iOS.'
+      },
+      {
+        advItem: 'Principales aplicaciones: Topografía, Construcción, Agricultura de precisión, Infraestructura vial, Cartografía y GIS.'
+      },
+      {
+        advItem: 'Soporte de formatos estándar: RTCM3.X, NMEA y RINEX.'
+      },
+    ],
+    techSpecs: [
+      {
+        primary: 'GNSS',
+        secondary: [
+          { spec: 'Constelaciones: GPS, GLONASS, Galileo, Beidou, QZSS' },
+          { spec: 'Tecnología profesional GNSS L1/L2/E5' },
+          { spec: 'Correcciones NTRIP para precisión centimétrica inmediata (RTK)' },
+          { spec: 'Antena GNSS helicoidal multibanda L1/L2/E5 incluida' },
+        ]
+      },
+      {
+        primary: 'Conectividad',
+        secondary: [
+          { spec: 'Wi-Fi integrado' },
+          { spec: 'Bluetooth 4.2 BLE para Android e iOS' },
+          { spec: 'Protocolo de datos NMEA compatible' },
+          { spec: 'Cables USB-C incluidos' },
+        ]
+      },
+      {
+        primary: 'Aplicaciones',
+        secondary: [
+          { spec: 'Topografía y levantamientos geodésicos' },
+          { spec: 'Construcción e infraestructura vial' },
+          { spec: 'Agricultura de precisión' },
+          { spec: 'Cartografía y GIS' },
+          { spec: 'Fotogrametría con geoetiquetado de alta precisión' },
+        ]
+      },
+      {
+        primary: 'Formatos y Software',
+        secondary: [
+          { spec: 'Formatos estándar: RTCM3.X, NMEA y RINEX' },
+          { spec: 'MettaGO App: Configuración, Levantamiento y Replanteo' },
+          { spec: 'MettaGO 360 App x 15 días sin costo (Demo)' },
+          { spec: 'Metta Office App x 3 meses: Ajustes Geodésicos' },
+          { spec: 'Metta CORS x 3 meses incluido' },
+        ]
+      },
+      {
+        primary: 'Incluye',
+        secondary: [
+          { spec: 'Antena GNSS helicoidal multibanda L1/L2/E5' },
+          { spec: 'Rosca inferior de 5/8″ para instalar en bastón' },
+          { spec: 'Estuche de protección' },
+          { spec: 'Cables USB-C' },
+          { spec: 'Licencias de software incluidas' },
+        ]
+      },
+    ],
+    includes: [
+      { name: 'Antena GNSS helicoidal multibanda L1/L2/E5' },
+      { name: 'Rosca inferior de 5/8″ para instalar en bastón' },
+      { name: 'Estuche de protección' },
+      { name: 'Cables USB-C' },
+      { name: 'MettaGO App: Configuración, Levantamiento y Replanteo' },
+      { name: 'MettaGO 360 App x 15 días sin costo (Demo)' },
+      { name: 'Metta Office App x 3 meses: Ajustes Geodésicos' },
+      { name: 'Metta CORS x 3 meses' },
+    ],
+    imgs: [
+      {
+        name: 'img-1',
+        url: '/images/x5-stick/x5-stick-1.png'
+      },
+      {
+        name: 'img-2',
+        url: '/images/x5-stick/x5-stick-2-trimmed.png'
+      },
+      {
+        name: 'img-3',
+        url: '/images/x5-stick/x5-stick-3-trimmed.png'
+      },
+      {
+        name: 'img-4',
+        url: '/images/x5-stick/x5-stick-4-trimmed.png'
+      },
+      {
+        name: 'img-5',
+        url: '/images/x5-stick/x5-stick-5-trimmed.png'
+      },
+      {
+        name: 'img-6',
+        url: '/images/x5-stick/x5-stick-6-trimmed.png'
+      },
+    ],
+    price: 0,
+    slug: 'receptor-gnss-x5-stick',
+    doc: [
+      {
+        name: 'X5 Stick',
+        path: 'X5-Stick.pdf'
+      },
+    ]
+  },
+
+  {
+    id: 'p-new-002',
+    name: 'X5 CORS',
+    cate: 'gnss-x5',
+    desc: 'Estación GNSS de Rastreo Permanente para diversas aplicaciones como: Geodesia, Topografía, Cartografía, GIS, Drones, Transporte, Construcción y Catastro. Sistema CORS GNSS que es una plataforma AIO (All-in-One) con eficiencia operacional para gestión de datos geoespaciales, seguridad con precisión centimétrica en la zona efectiva y accesibilidad con soporte cartográfico para diferentes áreas.',
+    banner: '',
+    bannerM: '',
+    mainAdv: [
+      {
+        advItem: 'Sistema CORS GNSS es una plataforma AIO (All-in-One) completa.'
+      },
+      {
+        advItem: 'Eficiencia Operacional: Gestión de Datos Geoespaciales avanzada.'
+      },
+      {
+        advItem: 'Seguridad: Precisión centimétrica en la Zona Efectiva.'
+      },
+      {
+        advItem: 'Accesibilidad: Soporte cartográfico para diferentes áreas.'
+      },
+      {
+        advItem: 'Administración de Datos Geoespaciales integrada.'
+      },
+      {
+        advItem: 'Aplicaciones múltiples: Geodesia, Topografía, Cartografía, GIS, Drones, Transporte, Construcción y Catastro.'
+      },
+      {
+        advItem: 'Operación continua 24/7 para estaciones de rastreo permanente.'
+      },
+      {
+        advItem: 'Integración completa con infraestructura CORS existente.'
+      },
+    ],
+    techSpecs: [
+      {
+        primary: 'Sistema CORS',
+        secondary: [
+          { spec: 'Plataforma AIO (All-in-One) completa' },
+          { spec: 'Estación GNSS de Rastreo Permanente' },
+          { spec: 'Operación continua 24/7' },
+          { spec: 'Precisión centimétrica en la Zona Efectiva' },
+        ]
+      },
+      {
+        primary: 'Componentes Incluidos',
+        secondary: [
+          { spec: 'Antena GNSS de alto rendimiento' },
+          { spec: 'Receptor GNSS profesional' },
+          { spec: 'CPU integrado' },
+          { spec: 'Software de Gestión especializado' },
+          { spec: 'Puesta en Marcha incluida' },
+        ]
+      },
+      {
+        primary: 'Aplicaciones',
+        secondary: [
+          { spec: 'Geodesia y levantamientos geodésicos' },
+          { spec: 'Topografía y cartografía' },
+          { spec: 'GIS y sistemas de información geográfica' },
+          { spec: 'Drones y fotogrametría' },
+          { spec: 'Transporte y logística' },
+          { spec: 'Construcción e infraestructura' },
+          { spec: 'Catastro y registro de propiedades' },
+        ]
+      },
+      {
+        primary: 'Gestión de Datos',
+        secondary: [
+          { spec: 'Administración de Datos Geoespaciales' },
+          { spec: 'Eficiencia Operacional avanzada' },
+          { spec: 'Soporte cartográfico para diferentes áreas' },
+          { spec: 'Integración con redes CORS existentes' },
+        ]
+      },
+      {
+        primary: 'Servicios Incluidos',
+        secondary: [
+          { spec: 'Puesta en Marcha del sistema' },
+          { spec: 'Configuración inicial completa' },
+          { spec: 'Capacitación en uso del sistema' },
+          { spec: 'Soporte técnico especializado' },
+        ]
+      },
+    ],
+    includes: [
+      { name: 'Antena GNSS de alto rendimiento' },
+      { name: 'Receptor GNSS profesional' },
+      { name: 'CPU integrado' },
+      { name: 'Software de Gestión especializado' },
+      { name: 'Puesta en Marcha del sistema (Cantidad de horas depende del plan)' },
+    ],
+    imgs: [
+      {
+        name: 'img-1',
+        url: '/images/x5-cors/x5-cors-1.png'
+      },
+      {
+        name: 'img-2',
+        url: '/images/x5-cors/x5-cors-2-trimmed.png'
+      },
+      {
+        name: 'img-3',
+        url: '/images/x5-cors/x5-cors-3-trimmed.png'
+      },
+      {
+        name: 'img-4',
+        url: '/images/x5-cors/x5-cors-4-trimmed.png'
+      },
+      {
+        name: 'img-5',
+        url: '/images/x5-cors/x5-cors-5-trimmed.png'
+      },
+      {
+        name: 'img-6',
+        url: '/images/x5-cors/x5-cors-6-trimmed.png'
+      },
+    ],
+    price: 0,
+    slug: 'receptor-gnss-x5-cors',
+    doc: [
+      {
+        name: 'X5 CORS',
+        path: 'X5-CORS.pdf'
+      },
+    ]
+  },
+
   {
     id: 'p-005',
     name: 'X5 Radio LoRa',
@@ -743,11 +1008,11 @@ export const productsDB = [
     ],
     includes: [],
     imgs: [
-      { 
+      {
         name: 'img-1',
         url: 'https://res.cloudinary.com/newflare/image/upload/v1704657995/demos/muputun/new-products/X5%20Radio%20LoRa/x6nzgjw7eqt9atdkjo8r.jpg'
       },
-      { 
+      {
         name: 'img-2',
         url: 'https://res.cloudinary.com/newflare/image/upload/v1704657997/demos/muputun/new-products/X5%20Radio%20LoRa/ia9qbjniushbyvdv69ky.jpg'
       },
@@ -847,11 +1112,11 @@ export const productsDB = [
     ],
     includes: [],
     imgs: [
-      { 
+      {
         name: 'img-1',
         url: 'https://res.cloudinary.com/newflare/image/upload/v1704657978/demos/muputun/new-products/HeliX5%20Antena/pv6dtqbfbnjij6dy8lb8.jpg'
       },
-      { 
+      {
         name: 'img-2',
         url: 'https://res.cloudinary.com/newflare/image/upload/v1704657978/demos/muputun/new-products/HeliX5%20Antena/yvrr7vuxkfqrfyguxzqj.jpg'
       },
@@ -862,263 +1127,6 @@ export const productsDB = [
       {
         name: 'HeliX5 Antena',
         path: 'Helix5-Antenna.pdf'
-      },
-    ]
-  },
-  {
-    id: 'p-new-001',
-    name: 'X5 Stick',
-    cate: 'gnss-x5',
-    desc: 'Receptor GNSS de alta precisión, portátil, ligero y compatible con Android e iOS. Ideal para trabajos de campo que requieren exactitud centimétrica en segundos. Incluye antena GNSS helicoidal multibanda L1/L2/E5, rosca inferior de 5/8″ para instalar en bastón, estuche de protección y cables USB-C. Compatible con Apps y Softwares con protocolo de datos NMEA.',
-    banner: '',
-    bannerM: '',
-    mainAdv: [
-      {
-        advItem: 'Constelaciones de Satélites: GPS, GLONASS, Galileo, Beidou, QZSS para máxima precisión.'
-      },
-      {
-        advItem: 'Compatible con Apps y Softwares con protocolo de datos NMEA.'
-      },
-      {
-        advItem: 'Wi-Fi y Bluetooth para la conexión con otros dispositivos.'
-      },
-      {
-        advItem: 'Geoetiquetado: Permite Levantamientos Geodésicos y Fotogrametría con geoetiquetado de alta precisión.'
-      },
-      {
-        advItem: 'Correcciones NTRIP para precisión centimétrica inmediata (RTK).'
-      },
-      {
-        advItem: 'Tecnología profesional GNSS L1/L2.'
-      },
-      {
-        advItem: 'Bluetooth 4.2 BLE para Android e iOS.'
-      },
-      {
-        advItem: 'Principales aplicaciones: Topografía, Construcción, Agricultura de precisión, Infraestructura vial, Cartografía y GIS.'
-      },
-      {
-        advItem: 'Soporte de formatos estándar: RTCM3.X, NMEA y RINEX.'
-      },
-    ],
-    techSpecs: [
-      {
-        primary: 'GNSS',
-        secondary: [
-          { spec: 'Constelaciones: GPS, GLONASS, Galileo, Beidou, QZSS' },
-          { spec: 'Tecnología profesional GNSS L1/L2/E5' },
-          { spec: 'Correcciones NTRIP para precisión centimétrica inmediata (RTK)' },
-          { spec: 'Antena GNSS helicoidal multibanda L1/L2/E5 incluida' },
-        ]
-      },
-      {
-        primary: 'Conectividad',
-        secondary: [
-          { spec: 'Wi-Fi integrado' },
-          { spec: 'Bluetooth 4.2 BLE para Android e iOS' },
-          { spec: 'Protocolo de datos NMEA compatible' },
-          { spec: 'Cables USB-C incluidos' },
-        ]
-      },
-      {
-        primary: 'Aplicaciones',
-        secondary: [
-          { spec: 'Topografía y levantamientos geodésicos' },
-          { spec: 'Construcción e infraestructura vial' },
-          { spec: 'Agricultura de precisión' },
-          { spec: 'Cartografía y GIS' },
-          { spec: 'Fotogrametría con geoetiquetado de alta precisión' },
-        ]
-      },
-      {
-        primary: 'Formatos y Software',
-        secondary: [
-          { spec: 'Formatos estándar: RTCM3.X, NMEA y RINEX' },
-          { spec: 'MettaGO App: Configuración, Levantamiento y Replanteo' },
-          { spec: 'MettaGO 360 App x 15 días sin costo (Demo)' },
-          { spec: 'Metta Office App x 3 meses: Ajustes Geodésicos' },
-          { spec: 'Metta CORS x 3 meses incluido' },
-        ]
-      },
-      {
-        primary: 'Incluye',
-        secondary: [
-          { spec: 'Antena GNSS helicoidal multibanda L1/L2/E5' },
-          { spec: 'Rosca inferior de 5/8″ para instalar en bastón' },
-          { spec: 'Estuche de protección' },
-          { spec: 'Cables USB-C' },
-          { spec: 'Licencias de software incluidas' },
-        ]
-      },
-    ],
-    includes: [
-      { name: 'Antena GNSS helicoidal multibanda L1/L2/E5' },
-      { name: 'Rosca inferior de 5/8″ para instalar en bastón' },
-      { name: 'Estuche de protección' },
-      { name: 'Cables USB-C' },
-      { name: 'MettaGO App: Configuración, Levantamiento y Replanteo' },
-      { name: 'MettaGO 360 App x 15 días sin costo (Demo)' },
-      { name: 'Metta Office App x 3 meses: Ajustes Geodésicos' },
-      { name: 'Metta CORS x 3 meses' },
-    ],
-    imgs: [
-      { 
-        name: 'img-1',
-        url: '/images/x5-stick/x5-stick-1.png'
-      },
-      { 
-        name: 'img-2',
-        url: '/images/x5-stick/x5-stick-2-trimmed.png'
-      },
-      { 
-        name: 'img-3',
-        url: '/images/x5-stick/x5-stick-3-trimmed.png'
-      },
-      { 
-        name: 'img-4',
-        url: '/images/x5-stick/x5-stick-4-trimmed.png'
-      },
-      { 
-        name: 'img-5',
-        url: '/images/x5-stick/x5-stick-5-trimmed.png'
-      },
-      { 
-        name: 'img-6',
-        url: '/images/x5-stick/x5-stick-6-trimmed.png'
-      },
-    ],
-    price: 0,
-    slug: 'receptor-gnss-x5-stick',
-    doc: [
-      {
-        name: 'X5 Stick',
-        path: 'X5-Stick.pdf'
-      },
-    ]
-  },
-  {
-    id: 'p-new-002',
-    name: 'X5 CORS',
-    cate: 'gnss-x5',
-    desc: 'Estación GNSS de Rastreo Permanente para diversas aplicaciones como: Geodesia, Topografía, Cartografía, GIS, Drones, Transporte, Construcción y Catastro. Sistema CORS GNSS que es una plataforma AIO (All-in-One) con eficiencia operacional para gestión de datos geoespaciales, seguridad con precisión centimétrica en la zona efectiva y accesibilidad con soporte cartográfico para diferentes áreas.',
-    banner: '',
-    bannerM: '',
-    mainAdv: [
-      {
-        advItem: 'Sistema CORS GNSS es una plataforma AIO (All-in-One) completa.'
-      },
-      {
-        advItem: 'Eficiencia Operacional: Gestión de Datos Geoespaciales avanzada.'
-      },
-      {
-        advItem: 'Seguridad: Precisión centimétrica en la Zona Efectiva.'
-      },
-      {
-        advItem: 'Accesibilidad: Soporte cartográfico para diferentes áreas.'
-      },
-      {
-        advItem: 'Administración de Datos Geoespaciales integrada.'
-      },
-      {
-        advItem: 'Aplicaciones múltiples: Geodesia, Topografía, Cartografía, GIS, Drones, Transporte, Construcción y Catastro.'
-      },
-      {
-        advItem: 'Operación continua 24/7 para estaciones de rastreo permanente.'
-      },
-      {
-        advItem: 'Integración completa con infraestructura CORS existente.'
-      },
-    ],
-    techSpecs: [
-      {
-        primary: 'Sistema CORS',
-        secondary: [
-          { spec: 'Plataforma AIO (All-in-One) completa' },
-          { spec: 'Estación GNSS de Rastreo Permanente' },
-          { spec: 'Operación continua 24/7' },
-          { spec: 'Precisión centimétrica en la Zona Efectiva' },
-        ]
-      },
-      {
-        primary: 'Componentes Incluidos',
-        secondary: [
-          { spec: 'Antena GNSS de alto rendimiento' },
-          { spec: 'Receptor GNSS profesional' },
-          { spec: 'CPU integrado' },
-          { spec: 'Software de Gestión especializado' },
-          { spec: 'Puesta en Marcha incluida' },
-        ]
-      },
-      {
-        primary: 'Aplicaciones',
-        secondary: [
-          { spec: 'Geodesia y levantamientos geodésicos' },
-          { spec: 'Topografía y cartografía' },
-          { spec: 'GIS y sistemas de información geográfica' },
-          { spec: 'Drones y fotogrametría' },
-          { spec: 'Transporte y logística' },
-          { spec: 'Construcción e infraestructura' },
-          { spec: 'Catastro y registro de propiedades' },
-        ]
-      },
-      {
-        primary: 'Gestión de Datos',
-        secondary: [
-          { spec: 'Administración de Datos Geoespaciales' },
-          { spec: 'Eficiencia Operacional avanzada' },
-          { spec: 'Soporte cartográfico para diferentes áreas' },
-          { spec: 'Integración con redes CORS existentes' },
-        ]
-      },
-      {
-        primary: 'Servicios Incluidos',
-        secondary: [
-          { spec: 'Puesta en Marcha del sistema' },
-          { spec: 'Configuración inicial completa' },
-          { spec: 'Capacitación en uso del sistema' },
-          { spec: 'Soporte técnico especializado' },
-        ]
-      },
-    ],
-    includes: [
-      { name: 'Antena GNSS de alto rendimiento' },
-      { name: 'Receptor GNSS profesional' },
-      { name: 'CPU integrado' },
-      { name: 'Software de Gestión especializado' },
-      { name: 'Puesta en Marcha del sistema (Cantidad de horas depende del plan)' },
-    ],
-    imgs: [
-      { 
-        name: 'img-1',
-        url: '/images/x5-cors/x5-cors-1.png'
-      },
-      { 
-        name: 'img-2',
-        url: '/images/x5-cors/x5-cors-2-trimmed.png'
-      },
-      { 
-        name: 'img-3',
-        url: '/images/x5-cors/x5-cors-3-trimmed.png'
-      },
-      { 
-        name: 'img-4',
-        url: '/images/x5-cors/x5-cors-4-trimmed.png'
-      },
-      { 
-        name: 'img-5',
-        url: '/images/x5-cors/x5-cors-5-trimmed.png'
-      },
-      { 
-        name: 'img-6',
-        url: '/images/x5-cors/x5-cors-6-trimmed.png'
-      },
-    ],
-    price: 0,
-    slug: 'receptor-gnss-x5-cors',
-    doc: [
-      {
-        name: 'X5 CORS',
-        path: 'X5-CORS.pdf'
       },
     ]
   },
@@ -1156,11 +1164,11 @@ export const productsDB = [
     ],
     includes: [],
     imgs: [
-      { 
+      {
         name: 'img-1',
         url: 'https://res.cloudinary.com/newflare/image/upload/v1704657982/demos/muputun/new-products/SurPad%204.2%20App/bcx7ff9p52bydq5r5uix.jpg'
       },
-      { 
+      {
         name: 'img-2',
         url: 'https://res.cloudinary.com/newflare/image/upload/v1704657978/demos/muputun/new-products/SurPad%204.2%20App/wkxxig14pfje2w2r6tr4.jpg'
       },
@@ -1498,11 +1506,11 @@ export const productsDB = [
       { name: 'Extensor aluminio 25cm' },
     ],
     imgs: [
-      { 
+      {
         name: 'img-1',
         url: 'https://res.cloudinary.com/newflare/image/upload/v1704765859/demos/muputun/new-products-cretificated/ICONO%20PACK%20ACCESORIOS/hzs598syxgzubj3vdb9s.jpg'
       },
-      { 
+      {
         name: 'img-2',
         url: 'https://res.cloudinary.com/newflare/image/upload/v1704765857/demos/muputun/new-products-cretificated/ICONO%20PACK%20ACCESORIOS/p2whoyjtdftuumrqsmby.jpg'
       },
@@ -1523,11 +1531,11 @@ export const productsDB = [
     techSpecs: [],
     includes: [],
     imgs: [
-      { 
+      {
         name: 'img-1',
         url: 'https://res.cloudinary.com/newflare/image/upload/v1704765861/demos/muputun/new-products-cretificated/ICONO%20TRIPODE/djtadmn5ltofcrpzddc1.jpg'
       },
-      { 
+      {
         name: 'img-2',
         url: 'https://res.cloudinary.com/newflare/image/upload/v1704765863/demos/muputun/new-products-cretificated/ICONO%20TRIPODE/mj13rqtxgsfhvfmlm6qi.jpg'
       },
@@ -1547,11 +1555,11 @@ export const productsDB = [
     techSpecs: [],
     includes: [],
     imgs: [
-      { 
+      {
         name: 'img-1',
         url: 'https://res.cloudinary.com/newflare/image/upload/v1704765857/demos/muputun/new-products-cretificated/ICONO%20JALON/ydnpnwnjpuwzocgkmguu.jpg'
       },
-      { 
+      {
         name: 'img-2',
         url: 'https://res.cloudinary.com/newflare/image/upload/v1704765858/demos/muputun/new-products-cretificated/ICONO%20JALON/xlscyscufwbrcfvkfpqr.jpg'
       },
@@ -1571,11 +1579,11 @@ export const productsDB = [
     techSpecs: [],
     includes: [],
     imgs: [
-      { 
+      {
         name: 'img-1',
         url: 'https://res.cloudinary.com/newflare/image/upload/v1704765853/demos/muputun/new-products-cretificated/ICONO%20ADAPTADOR/st6qamfnk3xm3fympjza.jpg'
       },
-      { 
+      {
         name: 'img-2',
         url: 'https://res.cloudinary.com/newflare/image/upload/v1704765853/demos/muputun/new-products-cretificated/ICONO%20ADAPTADOR/vsiok9dxf7szfvn8kqeo.jpg'
       },
@@ -1595,11 +1603,11 @@ export const productsDB = [
     techSpecs: [],
     includes: [],
     imgs: [
-      { 
+      {
         name: 'img-1',
         url: 'https://res.cloudinary.com/newflare/image/upload/v1704765860/demos/muputun/new-products-cretificated/ICONO%20BASE%20NIVELANTE/jobqbzvpozo3gvybncku.jpg'
       },
-      { 
+      {
         name: 'img-2',
         url: 'https://res.cloudinary.com/newflare/image/upload/v1704765855/demos/muputun/new-products-cretificated/ICONO%20BASE%20NIVELANTE/j9ja83b4kzpeuq5bvhzw.jpg'
       },
