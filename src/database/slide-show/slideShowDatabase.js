@@ -17,7 +17,7 @@ export const headerInfo = [
     path: 'productos/x5-receptor',
     imgd: 'https://res.cloudinary.com/newflare/image/upload/v1704658029/demos/muputun/new-products/lnhfxfizips46f5mkbwz.jpg',
     imgm: 'https://res.cloudinary.com/newflare/image/upload/v1704658029/demos/muputun/new-products/lnhfxfizips46f5mkbwz.jpg',
-    png: 'https://res.cloudinary.com/newflare/image/upload/v1704768195/demos/muputun/new-products-cretificated/PORTADA%20CON%20CERTIFICACION%20EN%20PNG/szeppjcm8d7ve8cu23hs.png'
+    png:  '/images/gnss-x5r/gnss-x5r-1-slide.png'
   },
   {
     id: 'hi-004',
@@ -43,13 +43,13 @@ export const headerInfo = [
   * */
   {
     id: 'hi-003',
-    title: 'SurPad 4.2 GNSS',
-    desc: 'SurPad es una aplicación para Android diseñada para profesionales que utilizan receptores GPS/GNSS RTK. Es especialmente útil para topógrafos, cartógrafos, ingenieros, arquitectos y planificadores urbanos',
-    btn: 'Ir a Aplicación SurPad',
-    path: 'productos/surpad-4.2-gnss-app',
+    title: 'X5 Stick',
+    desc: 'Receptor GNSS de alta precisión, portátil, ligero y compatible con Android e iOS. Ideal para trabajos de campo que requieren exactitud centimétrica en segundos. Incluye antena GNSS helicoidal multibanda L1/L2/E5, rosca inferior de 5/8″ para instalar en bastón, estuche de protección y cables USB-C.',
+    btn: 'Ir al X5 Stick',
+    path: 'productos/receptor-gnss-x5-stick',
     imgd: 'https://res.cloudinary.com/newflare/image/upload/v1704658029/demos/muputun/new-products/lnhfxfizips46f5mkbwz.jpg',
     imgm: 'https://res.cloudinary.com/newflare/image/upload/v1704658029/demos/muputun/new-products/lnhfxfizips46f5mkbwz.jpg',
-    png: 'https://res.cloudinary.com/newflare/image/upload/v1700667506/demos/muputun/wmed160kg7kahah430wo.png'
+    png: '/images/x5-stick/x5-stick-transparent3.png'
   },
   {
     id: 'hi-001',
