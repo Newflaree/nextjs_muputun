@@ -31,6 +31,7 @@ export const TopMenu = () => {
         sm:px-5
         lg:py-3
         justify-between
+        lg:justify-start
         items-center
         w-full
         bg-white
@@ -39,7 +40,7 @@ export const TopMenu = () => {
         z-40
       `}
     >
-      <div>
+      <div className="lg:w-[25%] lg:flex lg:justify-start">
         <NextLink href='/'>
           <Image
             src='/logo.png'
@@ -51,14 +52,14 @@ export const TopMenu = () => {
         </NextLink>
       </div>
 
-      <div className='hidden sm:block'>
+      <div className='hidden sm:flex lg:w-[50%] lg:justify-center lg:items-center'>
         {
           menu.map( ({ id, name, external, path }) => (
             <NextLink
               key={ id }
               href={ path }
               target={ external ? '_blank' : '' }
-              className='m-2 p-2 rounded-md transition-all hover:bg-gray-100'
+              className='lg:mx-2 p-2 rounded-md transition-all hover:bg-gray-100'
             >
               { name }
             </NextLink>
@@ -66,7 +67,7 @@ export const TopMenu = () => {
         }
       </div>
 
-      <div className='flex items-center'>
+      <div className='flex items-center lg:w-[25%] lg:justify-end'>
       {/*
         <NextLink
           href='/buscar/sdfkjsadkfj'
