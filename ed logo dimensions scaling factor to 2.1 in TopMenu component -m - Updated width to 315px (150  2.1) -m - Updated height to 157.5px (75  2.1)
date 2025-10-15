@@ -1,0 +1,28 @@
+[1mdiff --git a/public/logo.png b/public/logo.png[m
+[1mindex 2fc95d4..a518c30 100644[m
+Binary files a/public/logo.png and b/public/logo.png differ
+[1mdiff --git a/src/ui/components/shop/top-menu/TopMenu.jsx b/src/ui/components/shop/top-menu/TopMenu.jsx[m
+[1mindex d46a176..a351d0e 100644[m
+[1m--- a/src/ui/components/shop/top-menu/TopMenu.jsx[m
+[1m+++ b/src/ui/components/shop/top-menu/TopMenu.jsx[m
+[36m@@ -29,6 +29,7 @@[m [mexport const TopMenu = () => {[m
+       className={`[m
+         flex[m
+         sm:px-5[m
+[32m+[m[32m        lg:py-3[m
+         justify-between[m
+         items-center[m
+         w-full[m
+[36m@@ -43,9 +44,9 @@[m [mexport const TopMenu = () => {[m
+           <Image[m
+             src='/logo.png'[m
+             alt='mupütun'[m
+[31m-            className='p-2 sm:p-0'[m
+[31m-            width={ 150 * 1.52 }[m
+[31m-            height={ 75 * 1.52 }[m
+[32m+[m[32m            className='p-4 sm:p-0'[m
+[32m+[m[32m            width={ 150 * 2.1 }[m
+[32m+[m[32m            height={ 75 * 2.1 }[m
+           />[m
+         </NextLink>[m
+       </div>[m

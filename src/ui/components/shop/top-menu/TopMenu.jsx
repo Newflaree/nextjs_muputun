@@ -29,6 +29,7 @@ export const TopMenu = () => {
       className={`
         flex
         sm:px-5
+        lg:py-3
         justify-between
         items-center
         w-full
@@ -43,9 +44,9 @@ export const TopMenu = () => {
           <Image
             src='/logo.png'
             alt='mupütun'
-            className='p-2 sm:p-0'
-            width={ 150 * 1.52 }
-            height={ 75 * 1.52 }
+            className='p-4 sm:p-0'
+            width={ 150 * 2.1 }
+            height={ 75 * 2.1 }
           />
         </NextLink>
       </div>
