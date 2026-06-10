@@ -1,0 +1,2 @@
+export { consoleErrorHandler } from "./logger";
+

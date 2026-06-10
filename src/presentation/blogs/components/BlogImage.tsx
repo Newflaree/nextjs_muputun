@@ -1,0 +1,45 @@
+import Image from "next/image";
+
+type BlogImageProps = {
+  source?: string;
+  alt?: string;
+  isShort?: boolean;
+  isBanner?: boolean;
+};
+
+export const BlogImage = ({
+  source = '',
+  alt = '',
+  isShort = false,
+  isBanner = false
+}: BlogImageProps) => {
+  return (
+    <>
+      {/* Desktop view */}
+      <div className="my-4 hidden md:flex w-full">
+        <div className="flex items-center justify-center w-full">
+          <Image
+            src={ source }
+            alt={ alt }
+            width={ isShort ? 250 : 1000 }
+            height={ isBanner ? 400 : 500 }
+            style={{ borderRadius: '8px' }}
+          />
+        </div>
+      </div>
+
+      {/* Mobile view */}
+      <div className="flex md:hidden">
+        <div className="flex items-center justify-center w-full">
+          <Image
+            src={ source }
+            alt={ alt }
+            width={ isShort ? 220 : 330 }
+            height={ isShort ? 450 : 150 }
+            style={{ borderRadius: '8px' }}
+          />
+        </div>
+      </div>
+    </>
+  );
+};

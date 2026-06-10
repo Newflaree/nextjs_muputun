@@ -1,11 +1,9 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 :root {
   --primary: #1FBEE8;
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
+  --foreground-rgb: 17, 24, 39;
+  --background-start-rgb: 246, 248, 251;
   --background-end-rgb: 255, 255, 255;
 }
 /* 
@@ -19,12 +17,13 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
+  background:
+    linear-gradient(
       to bottom,
-      transparent,
-      rgb(var(--background-start-rgb))
-      )
-      rgb(var(--background-end-rgb))
+      rgb(var(--background-start-rgb)),
+      rgb(var(--background-end-rgb)) 34rem
+    );
+  min-height: 100vh;
 }
 
 
@@ -58,33 +57,10 @@ body {
 }
 
 .btn-primary {
-  @apply bg-blue-600 hover:bg-cyan-600 text-white py-2 px-4 rounded transition-all;
+  @apply inline-flex items-center justify-center rounded-full px-5 py-2.5 text-sm font-semibold text-white shadow-sm shadow-cyan-500/20 transition-all hover:-translate-y-0.5 hover:shadow-lg hover:shadow-cyan-500/25 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-cyan-200;
   background-color: #1FBEE8;
 }
 
 .btn-secondary {
-  @apply bg-gray-200 hover:bg-gray-300 text-black py-2 px-4 rounded transition-all;
-}
-
-.swiper {
-  width: 100%;
-  height: 100%;
-}
-
-.swiper-slide {
-  background-position: center;
-  background-size: cover;
-}
-
-.swiper-slide img {
-  display: block;
-  width: 100%;
-}
-
-.swiper-button-prev:after {
-  color: #1FBEE8;
-}
-
-.swiper-button-next:after {
-  color: #1FBEE8;
+  @apply inline-flex items-center justify-center rounded-full border border-slate-200 bg-white px-5 py-2.5 text-sm font-semibold text-slate-900 shadow-sm transition-all hover:-translate-y-0.5 hover:border-slate-300 hover:shadow-md focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-slate-200;
 }
