@@ -14,32 +14,17 @@ export const BlogImage = ({
   isBanner = false
 }: BlogImageProps) => {
   return (
-    <>
-      {/* Desktop view */}
-      <div className="my-4 hidden md:flex w-full">
-        <div className="flex items-center justify-center w-full">
-          <Image
-            src={ source }
-            alt={ alt }
-            width={ isShort ? 250 : 1000 }
-            height={ isBanner ? 400 : 500 }
-            style={{ borderRadius: '8px' }}
-          />
-        </div>
+    <figure className={`my-10 ${ isShort ? 'mx-auto max-w-sm' : 'w-full' }`}>
+      <div className={`relative overflow-hidden rounded-[2rem] bg-white/50 shadow-[inset_0_1px_0_rgba(255,255,255,0.74),0_24px_80px_rgba(15,23,42,0.10)] backdrop-blur-2xl ${ isShort ? 'aspect-[3/4]' : isBanner ? 'aspect-[16/8]' : 'aspect-[16/9]' }`}>
+        <Image
+          src={ source }
+          alt={ alt }
+          fill
+          sizes={ isShort ? '(min-width: 768px) 360px, 90vw' : '(min-width: 1024px) 820px, 100vw' }
+          className='h-full w-full object-cover'
+        />
+        <div className='pointer-events-none absolute inset-0 bg-[linear-gradient(145deg,rgba(255,255,255,0.14)_0%,transparent_42%,rgba(255,255,255,0.10)_100%)]' />
       </div>
-
-      {/* Mobile view */}
-      <div className="flex md:hidden">
-        <div className="flex items-center justify-center w-full">
-          <Image
-            src={ source }
-            alt={ alt }
-            width={ isShort ? 220 : 330 }
-            height={ isShort ? 450 : 150 }
-            style={{ borderRadius: '8px' }}
-          />
-        </div>
-      </div>
-    </>
+    </figure>
   );
 };

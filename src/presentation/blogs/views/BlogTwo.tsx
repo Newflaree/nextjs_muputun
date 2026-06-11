@@ -2,12 +2,11 @@
 import NextLink from 'next/link';
 // Componets
 import {
+  BlogArticleLayout,
   BlogImage,
   BlogList,
   BlogMettaLink
 } from '@/presentation';
-// Layouts
-import { ShopLayout } from '@/presentation/shop';
 import type { BlogListItem } from '@/core';
 
 type BlogTwoViewProps = {
@@ -23,21 +22,17 @@ export const BlogTwoView = ({
   thirdList,
   fourthList,
 }: BlogTwoViewProps) => {
+  const title = 'La Importancia de obtener el Reporte de Calibración del National Geodetic Survey (NGS) del NOAA para un Receptor GNSS';
+  const description = 'Por qué la calibración NGS/NOAA es clave para la confianza técnica, la precisión y la interoperabilidad de receptores GNSS multibanda.';
+  const image = 'https://res.cloudinary.com/newflare/image/upload/v1705499029/demos/muputun/blogs/bpnzfiznbpfbyssbah7r.png';
+
   return (
-    <ShopLayout
-      pageTitle='La Importancia de obtener el Reporte de Calibración del National Geodetic Survey (NGS) del NOAA para un Receptor GNS'
+    <BlogArticleLayout
+      pageTitle={ title }
+      title={ title }
+      description={ description }
+      image={ image }
     >
-      <div className='px-4 my-14'>
-        <BlogImage
-          source='https://res.cloudinary.com/newflare/image/upload/v1705499029/demos/muputun/blogs/bpnzfiznbpfbyssbah7r.png'
-          alt='Banner Blog'
-          isBanner={ true }
-        />
-
-        <h1 className="text-4xl font-bold text-center mt-7 pb-10">
-          La Importancia de obtener el Reporte de Calibración del National Geodetic Survey (NGS) del NOAA para un Receptor GNSS
-        </h1>
-
         <h2 className="text-2xl font-semibold mt-8">
           Introducción
         </h2>
@@ -185,7 +180,6 @@ export const BlogTwoView = ({
         </p>
 
         <BlogMettaLink />
-      </div>
-    </ShopLayout>
+    </BlogArticleLayout>
   );
 }

@@ -31,7 +31,7 @@ export const Sidebar = () => {
   }
 
   return (
-    <div className='fixed z-50'>
+    <div className='pointer-events-none fixed inset-0 z-50 overflow-hidden'>
       {/* Background */}
       {
         isSideMenuOpen && (
@@ -44,6 +44,7 @@ export const Sidebar = () => {
               h-screen
               z-10
               bg-slate-950/35
+              pointer-events-auto
             `}
           />
         )
@@ -64,6 +65,7 @@ export const Sidebar = () => {
               z-10
               backdrop-filter
               backdrop-blur-sm
+              pointer-events-auto
             `}
           />
         )
@@ -88,7 +90,8 @@ export const Sidebar = () => {
             duration-300
             `,
             {
-              "translate-x-full": !isSideMenuOpen
+              "translate-x-0 pointer-events-auto": isSideMenuOpen,
+              "translate-x-[calc(100%+1.5rem)] pointer-events-none": !isSideMenuOpen
             }
           )
         }

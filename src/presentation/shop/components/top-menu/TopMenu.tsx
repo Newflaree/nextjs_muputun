@@ -31,11 +31,11 @@ export const TopMenu = () => {
       <div className='mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8'>
         <NextLink href='/' className='flex shrink-0 items-center'>
           <Image
-            src='/logo.png'
+            src='/logo-muputun-store.png'
             alt='mupütun'
-            className='h-11 w-auto'
-            width={ 180 }
-            height={ 90 }
+            className='h-12 w-auto'
+            width={ 260 }
+            height={ 92 }
             priority
           />
         </NextLink>

@@ -7,7 +7,7 @@ type BlogListProps = {
 
 export const BlogList = ({ listItems }: BlogListProps) => {
   return (
-    <ul className="list-disc list-inside mt-4 space-y-4">
+    <ul className="mt-6 grid gap-3">
       {
         listItems.map( ( listItem ) => (
           <BlogListItem

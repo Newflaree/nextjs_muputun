@@ -32,11 +32,11 @@ export const AuthLayout = ({
           <div>
             <NextLink href='/' className='inline-flex'>
               <Image
-                src='/logo.png'
+                src='/logo-muputun-store.png'
                 alt='mupütun'
-                className='h-14 w-auto'
-                width={ 180 }
-                height={ 90 }
+                className='h-16 w-auto'
+                width={ 260 }
+                height={ 92 }
                 priority
               />
             </NextLink>

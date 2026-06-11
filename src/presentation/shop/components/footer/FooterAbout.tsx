@@ -28,12 +28,12 @@ export const FooterAbout = ({
   flagH = 0
 }: FooterAboutProps) => {
   return (
-    <div>
+    <div className='flex h-full flex-col items-center text-center md:items-start md:text-left'>
       <h2 className='mb-4 text-sm font-semibold uppercase tracking-[0.22em] text-cyan-300'>
         { aboutTitle }
       </h2>
       
-      <div className='mb-6'>
+      <div className='flex flex-1 flex-col items-center md:items-start'>
         <p className='max-w-sm text-sm leading-6 text-slate-300'>
           { aboutText }
         </p>
@@ -53,14 +53,14 @@ export const FooterAbout = ({
         href={ brandPath }
         target={ isExternal ? '_blank' : '' }
         rel={ isExternal ? 'noopener noreferrer' : undefined }
-        className='inline-flex'
+        className='mt-7 inline-flex h-14 max-w-[12rem] items-center justify-center rounded-full bg-white/[0.07] px-5 shadow-[inset_0_1px_0_rgba(255,255,255,0.16),0_12px_34px_rgba(0,0,0,0.14)] backdrop-blur-2xl transition hover:bg-white/[0.12]'
       >
         <Image
           src={ aboutFooterImage }
           alt='mupütun'
-          className={`h-auto max-h-16 w-auto rounded-2xl bg-white/80 p-2 opacity-90 shadow-[inset_0_1px_0_rgba(255,255,255,0.7),0_12px_32px_rgba(0,0,0,0.14)] backdrop-blur transition hover:bg-white/95 hover:opacity-100 ${ imageStyle }`}
-          width={ 125 }
-          height={ 90 }
+          className={`h-auto max-h-8 w-auto max-w-[9rem] object-contain opacity-95 transition hover:opacity-100 ${ imageStyle }`}
+          width={ 180 }
+          height={ 72 }
         />
       </NextLink>
     </div>

@@ -1,7 +1,7 @@
 // Components
 import {
   IoCheckmarkCircleOutline,
-  IoChevronForwardOutline,
+  IoLogoWhatsapp,
 } from 'react-icons/io5';
 import {
   ProductDetailTable,
@@ -25,6 +25,9 @@ type ProductViewProps = {
 };
 
 export const ProductView = ({ product, handleDownload }: ProductViewProps) => {
+  const whatsappMessage = encodeURIComponent(`Hola, quiero hablar con ventas por el producto ${ product.name }.`);
+  const whatsappHref = `https://wa.me/56987754953?text=${ whatsappMessage }`;
+
   return (
     <ShopLayout
       pageTitle={ product.name }
@@ -33,8 +36,8 @@ export const ProductView = ({ product, handleDownload }: ProductViewProps) => {
         <div className='absolute inset-0 -z-10 bg-[linear-gradient(180deg,#ffffff_0%,#f7fbfd_42%,#ffffff_100%)]' />
         <div className='absolute left-1/2 top-16 -z-10 h-[34rem] w-[34rem] -translate-x-1/2 rounded-full bg-cyan-200/18 blur-3xl' />
 
-        <section className='mx-auto grid max-w-7xl gap-10 px-6 pb-20 pt-16 lg:grid-cols-[minmax(0,1.35fr)_minmax(380px,0.65fr)] lg:px-8 lg:pb-28 lg:pt-20'>
-          <div className='min-w-0'>
+        <section className='mx-auto grid max-w-7xl items-start gap-10 px-6 pb-20 pt-16 lg:grid-cols-[minmax(0,1.35fr)_minmax(380px,0.65fr)] lg:px-8 lg:pb-28 lg:pt-20'>
+          <div className='min-w-0 self-start'>
             <ProductMobileSlideshow
               title={ product.name }
               images={ product.imgs }
@@ -75,8 +78,9 @@ export const ProductView = ({ product, handleDownload }: ProductViewProps) => {
                 className='w-full'
               />
               <MupuButton
-                href='/contacto'
-                iconRight={ <IoChevronForwardOutline size={ 18 } /> }
+                external
+                href={ whatsappHref }
+                iconRight={ <IoLogoWhatsapp size={ 18 } /> }
                 size='lg'
                 variant='glass'
                 className='w-full'

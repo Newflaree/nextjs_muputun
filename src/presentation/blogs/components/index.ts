@@ -1,3 +1,4 @@
+export { BlogArticleLayout } from "./BlogArticleLayout";
 export { BlogCard } from "./BlogCard";
 export { BlogGrid } from "./BlogGrid";
 export { BlogImage } from "./BlogImage";
@@ -7,4 +8,3 @@ export { BlogMettaLink } from "./BlogMettaLink";
 export { BlogSmallImage } from "./BlogSmallImage";
 export { BlogTable } from "./BlogTable";
 export { GNSSTable } from "./BlogGNSSTable";
-

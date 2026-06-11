@@ -1,14 +1,13 @@
 
 // Components
 import {
+  BlogArticleLayout,
   BlogImage,
   BlogTable,
   BlogList,
   BlogMettaLink,
   GNSSTable,
 } from '@/presentation';
-// Layouts
-import { ShopLayout } from '@/presentation/shop';
 import type { BlogListItem } from '@/core';
 
 type CanalesGNSSViewProps = {
@@ -16,21 +15,17 @@ type CanalesGNSSViewProps = {
 };
 
 export const CanalesGNSSView = ({ firstList }: CanalesGNSSViewProps) => {
+  const title = '¿Cuántos canales necesita un Receptor GNSS? Los 184 canales del Receptor X5 son más que suficientes';
+  const description = 'Un análisis práctico sobre constelaciones, frecuencias, canales y precisión real en receptores GNSS multibanda.';
+  const image = 'https://res.cloudinary.com/newflare/image/upload/v1704678787/demos/muputun/blogs/lsvcnmzioqmkuzemcgud.jpg';
+
   return (
-    <ShopLayout
+    <BlogArticleLayout
       pageTitle='Canales GNSS'
+      title={ title }
+      description={ description }
+      image={ image }
     >
-      <div className="px-4 my-14">
-        <BlogImage
-          source="https://res.cloudinary.com/newflare/image/upload/v1704678787/demos/muputun/blogs/lsvcnmzioqmkuzemcgud.jpg"
-          alt="Banner Blog"
-          isBanner={true}
-        />
-
-        <h1 className="text-4xl font-bold text-center mt-7 pb-10">
-          ¿Cuántos canales necesita un Receptor GNSS? Los 184 canales del Receptor X5 son más que suficientes
-        </h1>
-
         <p className="pb-4">
           ¿Cómo influye el número de canales en un receptor GNSS? ¿Obtengo la misma precisión al medir la posición con un receptor GNSS multibanda de 80 ó 600 canales? ¿Tener más canales es necesario para obtener mejor precisión?
         </p>
@@ -159,7 +154,6 @@ export const CanalesGNSSView = ({ firstList }: CanalesGNSSViewProps) => {
         </p>
 
         <BlogMettaLink />
-      </div>
-    </ShopLayout>
+    </BlogArticleLayout>
   );
 };

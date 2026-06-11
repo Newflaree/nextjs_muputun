@@ -6,12 +6,13 @@ const rows = [
 
 export const BlogTable = () => {
   return (
-    <div className="w-full overflow-x-auto">
-      <table className="min-w-full bg-white border border-gray-200">
+    <div className="my-10 overflow-hidden rounded-[2rem] bg-white/54 shadow-[inset_0_1px_0_rgba(255,255,255,0.76),0_22px_70px_rgba(15,23,42,0.08)] backdrop-blur-2xl">
+      <div className='overflow-x-auto'>
+      <table className="min-w-[720px] w-full">
         <thead>
           <tr>
-            <th className="bg-black text-white px-4 py-2 text-left">Nombre</th>
-            <th className="bg-black text-white px-4 py-2 text-left">Descripción</th>
+            <th className="bg-slate-950/90 px-5 py-4 text-left text-sm font-semibold uppercase tracking-[0.18em] text-white">Nombre</th>
+            <th className="bg-slate-950/90 px-5 py-4 text-left text-sm font-semibold uppercase tracking-[0.18em] text-white">Descripción</th>
           </tr>
         </thead>
         <tbody>
@@ -19,15 +20,16 @@ export const BlogTable = () => {
             rows.map((row, index) => (
               <tr
                 key={ row.name }
-                className={ index % 2 === 0 ? "bg-gray-100" : "bg-white" }
+                className={ index % 2 === 0 ? "bg-white/56" : "bg-cyan-50/32" }
               >
-                <td className="border px-4 py-2 font-medium">{ row.name }</td>
-                <td className="border px-4 py-2 text-right">{ row.description }</td>
+                <td className="px-5 py-4 font-semibold text-slate-950">{ row.name }</td>
+                <td className="px-5 py-4 leading-7 text-slate-600">{ row.description }</td>
               </tr>
             ))
           }
         </tbody>
       </table>
+      </div>
     </div>
   );
 };

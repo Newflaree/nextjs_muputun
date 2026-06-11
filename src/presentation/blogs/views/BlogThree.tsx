@@ -2,31 +2,26 @@
 import NextLink from 'next/link';
 // Components
 import {
+  BlogArticleLayout,
   BlogImage,
   BlogSmallImage,
   BlogSeparator,
   BlogMettaLink,
 } from '@/presentation';
-// Layouts
-import { ShopLayout } from '@/presentation/shop';
 
 
 export const BlogThreeView = () => {
+  const title = 'Flujo de Trabajo con Drones RTK: Ventajas del X5R Plus GNSS con LOCAL NTRIP';
+  const description = 'Cómo el servicio LOCAL NTRIP y un receptor GNSS profesional elevan la precisión y flexibilidad en operaciones con drones RTK.';
+  const image = 'https://res.cloudinary.com/newflare/image/upload/v1708466326/demos/muputun/blogs/utquhhd4w1wtsbqrhxvg.png';
+
   return (
-    <ShopLayout
+    <BlogArticleLayout
       pageTitle='Flujo de trabajo con drones RTK'
+      title={ title }
+      description={ description }
+      image={ image }
     >
-      <div className="px-4 my-14">
-        <BlogImage
-          source="https://res.cloudinary.com/newflare/image/upload/v1708466326/demos/muputun/blogs/utquhhd4w1wtsbqrhxvg.png"
-          alt="Banner Blog"
-          isBanner={true}
-        />
-
-        <h1 className="text-4xl font-bold text-center mt-7 pb-10">
-          Flujo de Trabajo con Drones RTK: Ventajas del X5R Plus GNSS con LOCAL NTRIP
-        </h1>
-
         <p className="pb-4">
           En el ámbito de la topografía con drones, la precisión es la piedra angular de una recopilación de datos exitosa. Entre la diversa gama de herramientas disponibles para mejorar la precisión topográfica, los receptores GNSS juegan un papel fundamental. En este ecosistema, el nuevo receptor <NextLink href='/productos/x5-receptor' className='text-mupu hover:text-cyan-600 transition-all'>METTATEC X5R PLUS GNSS</NextLink> con LOCAL NTRIP ofrece claras ventajas en el campo, en comparación con otros productos GNSS del mercado de drones como el receptor DJI D-RTK 2 GNSS y otros receptores. En este artículo, exploraremos las ventajas del X5R PLUS con servicio LOCAL NTRIP en términos de versatilidad cuando se usa con drones de la marca DJI Enterprise y Autel RTK.
         </p>
@@ -205,7 +200,6 @@ Datos de corrección “Hiper” Locales:
         </p>
 
         <BlogMettaLink />
-      </div>
-    </ShopLayout>
+    </BlogArticleLayout>
   );
 };
