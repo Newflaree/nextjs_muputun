@@ -1,15 +1,13 @@
-import { CategoryView, useCategoryProducts } from '@/presentation';
+import { CategoryView } from '@/presentation/shop/products';
 
 const CombosPage = () => {
-  const category = useCategoryProducts({
-    productCategory: 'combos',
-    category: 'Combos',
-    title: 'Combos mupütün',
-    subtitle: 'Nuestros combos',
-    description: 'Nuestros Dispositivos GNSS X5 ofrecen una precisión incomparable al convertir señales GPS, Glonass, Galileo y Beidou en ubicaciones terrestres exactas. Con capacidad de múltiples constelaciones, garantizan un posicionamiento superior, ideal para navegación vehicular, mapeo detallado y aplicaciones que exigen alta precisión en cualquier entorno como la topografía.',
-  });
-
-  return <CategoryView { ...category } />
+  return <CategoryView
+    productCategory='combos'
+    category='Combos'
+    title='Combos GNSS X5 para campo'
+    subtitle='Receptor, software y accesorios listos para operar'
+    description='Combos Müpütun para levantar datos centimétricos con receptores X5, SurPad 4.2, radio LoRa, NTRIP, PPK y accesorios de terreno. Configuraciones pensadas para topografía, GIS, ingeniería y planificación urbana.'
+  />
 }
 
 export default CombosPage;

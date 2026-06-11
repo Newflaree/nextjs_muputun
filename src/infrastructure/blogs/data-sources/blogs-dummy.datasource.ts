@@ -4,21 +4,21 @@ export const blogsDatabase: Blog[] = [
   {
     id: 'b-001',
     title: 'Flujo de Trabajo con Drones RTK: Ventajas del X5R Plus GNSS con LOCAL NTRIP',
-    desc: 'En el ámbito de la topografía con drones, la precisión es la piedra angular de una recopilación de datos exitosa. Entre la diversa gama de herramientas disponibles para mejorar la precisión topográfica, los receptores GNSS juegan un papel fundamental.',
+    desc: 'Cómo usar un receptor GNSS X5R como base NTRIP Local para entregar correcciones RTK a drones DJI Enterprise, Autel, Wingtra o eBee y mejorar el flujo topográfico.',
     img: 'https://res.cloudinary.com/newflare/image/upload/v1708466326/demos/muputun/blogs/utquhhd4w1wtsbqrhxvg.png',
     slug: 'ventajas-x5r-plus-gnss-con-local-ntrip'
   },
   {
     id: 'b-002',
     title: 'La Importancia de obtener el Reporte de Calibración del National Geodetic Survey (NGS) del NOAA para un Receptor GNSS',
-    desc: 'Los receptores Multi-banda GNSS desempeñan un papel esencial en la determinación precisa de posiciones y en la obtención de datos de ubicación en aplicaciones como la navegación, la topografía y la agricultura de precisión.',
+    desc: 'Por qué la calibración NGS/NOAA, el centro de fase y el formato ANTEX son claves para confiar en una antena GNSS multibanda de uso profesional.',
     img: 'https://res.cloudinary.com/newflare/image/upload/v1705499029/demos/muputun/blogs/bpnzfiznbpfbyssbah7r.png',
     slug: 'la-importancia-de-obtener-el-reporte-de-calibracion-del-ngs',
   },
   {
     id: 'b-003',
     title: '¿Cuantos canales necesita un receptor GNSS? Los 184 canales del X5R son más que suficientes',
-    desc: '¿Cómo influye el número de canales en un receptor GNSS? ¿Obtengo la misma precisión al medir la posición con un receptor GNSS multibanda de 80 ó 600 canales? ¿Tener más canales es necesario para obtener mejor precisión?',
+    desc: 'Una explicación práctica sobre canales, constelaciones, frecuencias y por qué 184 canales pueden ser suficientes para obtener alta precisión GNSS en RTK, PPK y NTRIP.',
     img: 'https://res.cloudinary.com/newflare/image/upload/v1704678787/demos/muputun/blogs/lsvcnmzioqmkuzemcgud.jpg',
     slug: 'canales-gnss'
   },

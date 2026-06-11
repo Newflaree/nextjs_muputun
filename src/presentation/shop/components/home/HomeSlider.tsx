@@ -58,7 +58,7 @@ export const HomeSlider = ({ slides }: HomeSliderProps) => {
                 <p className="mt-6 max-w-xl text-lg leading-8 text-slate-100">{item.desc}</p>
 
                 <div className="mt-10 flex items-center gap-4">
-                  {item.title === 'Conoce a Mettatec' ? (
+                  {item.path.startsWith('http') ? (
                     <MupuButton
                       href={item.path}
                       external

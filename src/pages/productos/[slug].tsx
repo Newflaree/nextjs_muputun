@@ -2,8 +2,7 @@ import type { GetServerSideProps, InferGetServerSidePropsType } from 'next';
 import {
   getProductBySlugFromBackend,
   ProductView,
-  useProductDetail,
-} from '@/presentation';
+} from '@/presentation/shop/products';
 import type { Product } from '@/core';
 
 type ProductPageProps = {
@@ -11,12 +10,7 @@ type ProductPageProps = {
 };
 
 const ProductPage = ({ product }: InferGetServerSidePropsType<typeof getServerSideProps>) => {
-  const productDetail = useProductDetail({ initialProduct: product });
-
-  return <ProductView
-    product={ productDetail.product }
-    handleDownload={ productDetail.handleDownload }
-  />
+  return <ProductView initialProduct={ product } />
 }
 
 export const getServerSideProps: GetServerSideProps<ProductPageProps> = async ({ params }) => {

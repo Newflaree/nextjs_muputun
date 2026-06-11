@@ -102,6 +102,18 @@ body {
   animation: pageRouteEnter 260ms cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 
+@media (min-width: 640px) {
+  .admin-sidebar {
+    filter: none !important;
+    height: calc(100vh - 2.5rem);
+    opacity: 1 !important;
+    overflow-y: auto;
+    position: static !important;
+    transform: none !important;
+    width: 280px;
+  }
+}
+
 .loading-screen {
   align-items: center;
   background:

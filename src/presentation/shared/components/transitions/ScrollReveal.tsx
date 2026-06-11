@@ -52,6 +52,7 @@ export const ScrollReveal = () => {
         document.querySelectorAll<HTMLElement>(revealSelector),
       ).filter((element) => {
         if (!element.closest('main')) return false;
+        if (element.closest('[data-admin-layout="true"]')) return false;
         if (element.closest('footer')) return false;
         if (element.closest('nav')) return false;
         if (element.classList.contains('scroll-reveal')) return false;

@@ -1,5 +1,5 @@
 // Views
-import { NotFoundView } from '@/presentation';
+import { NotFoundView } from '@/presentation/shared';
 
 
 const NotFoundPage = () => {

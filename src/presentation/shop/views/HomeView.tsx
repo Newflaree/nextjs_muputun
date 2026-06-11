@@ -16,24 +16,20 @@ import {
   HomeSliderMobile,
   HomeVideo,
 } from '../components';
-import { ProductGrid } from "@/presentation/products";
+import { ProductGrid } from "@/presentation/shop/products";
 import { MupuButton } from '@/presentation/shared';
 import { ShopLayout } from '../layouts';
-import type { HeaderInfo, HomeProduct } from "@/core";
+import { useHomePage } from '../hooks';
 
-type HomeViewProps = {
-  headerSlides: HeaderInfo[];
-  products: HomeProduct[];
-};
-
-export const HomeView = ({ headerSlides, products }: HomeViewProps) => {
+export const HomeView = () => {
+  const { headerSlides, products } = useHomePage();
   const heroSlide = headerSlides[0];
   const heroProduct = products[0];
 
   return (
     <ShopLayout
       pageTitle='Inicio'
-      pageDesc='Soluciones GNSS multibanda, RTK, PPK y NTRIP para topografía, drones y operación geoespacial profesional en Chile.'
+      pageDesc='Receptores GNSS X5 multibanda para topografía, drones RTK, PPK, NTRIP Local y CORS. Precisión centimétrica, soporte técnico local y compatibilidad GIS en Chile.'
     >
       <HomeSlider slides={ headerSlides } />
       <HomeSliderMobile slides={ headerSlides } />
@@ -44,13 +40,13 @@ export const HomeView = ({ headerSlides, products }: HomeViewProps) => {
         <div className='mx-auto grid w-full max-w-7xl items-center gap-14 px-6 lg:grid-cols-[0.9fr_1.1fr] lg:px-8'>
           <div className='max-w-2xl'>
             <p className='mb-5 text-sm font-semibold uppercase tracking-[0.28em] text-cyan-600'>
-              GNSS profesional en Chile
+              GNSS multibanda para terreno real
             </p>
             <h1 className='text-5xl font-semibold tracking-normal text-slate-950 sm:text-6xl'>
-              Precisión centimétrica para operar con confianza.
+              Precisión centimétrica, lista para operar.
             </h1>
             <p className='mt-7 max-w-xl text-lg leading-8 text-slate-600'>
-              Receptores X5 multibanda, flujos RTK/PPK/NTRIP y soporte técnico local para equipos que levantan datos críticos en terreno.
+              Equipos X5 con constelaciones GPS, GLONASS, Galileo y BeiDou, flujos RTK/PPK/NTRIP y soporte local para topografía, drones RTK y GIS.
             </p>
 
             <div className='mt-10 flex flex-col gap-3 sm:flex-row'>
@@ -68,9 +64,9 @@ export const HomeView = ({ headerSlides, products }: HomeViewProps) => {
 
             <div className='mt-12 grid max-w-xl grid-cols-1 gap-3 sm:grid-cols-3'>
               {[
-                ['RTK', 'Corrección en tiempo real'],
-                ['PPK', 'Postproceso confiable'],
-                ['NTRIP', 'Integración en campo'],
+                ['RTK', 'Fix en segundos'],
+                ['PPK', 'RAW UBX/RINEX para postproceso'],
+                ['NTRIP', 'Correcciones a drones y rover'],
               ].map(([value, label]) => (
                 <div key={ value } className='group/chip relative overflow-hidden rounded-[1.7rem] bg-white/62 px-5 py-4 shadow-[inset_0_1px_0_rgba(255,255,255,0.65),0_16px_44px_rgba(15,23,42,0.07)] backdrop-blur-2xl transition hover:-translate-y-0.5 hover:bg-white/78 hover:shadow-[inset_0_1px_0_rgba(255,255,255,0.78),0_20px_56px_rgba(8,145,178,0.12)]'>
                   <div className='absolute -right-5 -top-6 h-16 w-16 rounded-full bg-cyan-300/18 blur-xl transition group-hover/chip:bg-cyan-300/28' />
@@ -118,7 +114,7 @@ export const HomeView = ({ headerSlides, products }: HomeViewProps) => {
             <div className='absolute -bottom-5 left-4 right-4 z-20 rounded-[2rem] bg-white/50 px-6 py-5 shadow-[inset_0_1px_0_rgba(255,255,255,0.68),0_26px_80px_rgba(15,23,42,0.14)] backdrop-blur-2xl sm:left-auto sm:right-[-1.5rem] sm:bottom-4 sm:w-80 lg:right-[-2.5rem]'>
               <p className='text-xs font-semibold uppercase tracking-[0.24em] text-slate-500'>Destacado</p>
               <p className='mt-2 text-lg font-semibold text-slate-950'>{ heroProduct?.name ?? heroSlide?.title }</p>
-              <p className='mt-1 text-sm leading-6 text-slate-600'>Configuración ágil, multibanda y lista para trabajo profesional.</p>
+              <p className='mt-1 text-sm leading-6 text-slate-600'>Base, rover, multibanda y listo para trabajo profesional.</p>
             </div>
           </div>
         </div>
@@ -129,9 +125,9 @@ export const HomeView = ({ headerSlides, products }: HomeViewProps) => {
         <div className='absolute inset-x-8 top-0 h-px bg-gradient-to-r from-transparent via-white/35 to-transparent' />
         <div className='mx-auto grid max-w-7xl grid-cols-1 gap-8 px-6 md:grid-cols-3 lg:px-8'>
           {[
-            [IoShieldCheckmarkOutline, 'Medición crítica', 'Soluciones para levantamientos topográficos, geodesia y control de obra.'],
-            [IoRadioOutline, 'Flujos conectados', 'Base, rover, NTRIP local y compatibilidad con drones RTK empresariales.'],
-            [IoGlobeOutline, 'Soporte cercano', 'Acompañamiento técnico para configurar, integrar y mantener continuidad operativa.'],
+            [IoShieldCheckmarkOutline, 'Medición crítica', 'RTK, PPK y NTRIP para topografía, control de obra y georreferenciación centimétrica.'],
+            [IoRadioOutline, 'Flujos conectados', 'Base, rover, CORS, radio LoRa 433/915 MHz y NTRIP Local para drones RTK.'],
+            [IoGlobeOutline, 'Soporte cercano', 'Configuración de SurPad, SW Maps, NMEA, RTCM3, RINEX y operación de campo.'],
           ].map(([Icon, title, description]) => {
             const FeatureIcon = Icon as typeof IoShieldCheckmarkOutline;
 
@@ -157,11 +153,11 @@ export const HomeView = ({ headerSlides, products }: HomeViewProps) => {
                 Operación en terreno
               </p>
               <h2 className='text-4xl font-semibold tracking-normal text-slate-950 sm:text-5xl'>
-                Tecnología compacta para días largos, datos precisos y decisiones rápidas.
+                Equipos compactos para registrar, corregir y entregar datos confiables.
               </h2>
             </div>
             <p className='text-base leading-8 text-slate-600'>
-              Desde una base fija hasta un rover conectado por Bluetooth o WiFi, el ecosistema X5 está pensado para integrarse sin fricción a software GIS, drones RTK y rutinas de medición profesional.
+              Desde una base fija hasta un rover conectado por Bluetooth, WiFi o USB, el ecosistema X5 trabaja con registros RAW, NMEA, RTCM3 y flujos GIS para días de medición exigentes.
             </p>
           </div>
           <HomeVideo />
@@ -180,10 +176,10 @@ export const HomeView = ({ headerSlides, products }: HomeViewProps) => {
         <div className='mx-auto max-w-7xl px-6 lg:px-8'>
           <div className='grid gap-5 md:grid-cols-2 lg:grid-cols-4'>
             {[
-              ['Topografía', 'Levantamientos centimétricos, control y replanteo.'],
-              ['Drones RTK', 'Correcciones para DJI Enterprise, Wingtra, eBee y Autel.'],
-              ['GIS móvil', 'Trabajo con SW Maps, SurvPC, Field Genius y otros.'],
-              ['Base local', 'NTRIP local para operar sin depender de Internet.'],
+              ['Topografía', 'RTK/PPK/NTRIP con precisión centimétrica y base-rover.'],
+              ['Drones RTK', 'NTRIP Local para DJI Enterprise, Wingtra, eBee y Autel.'],
+              ['GIS móvil', 'NMEA por Bluetooth/WiFi para SurPad, SW Maps y Android/iOS.'],
+              ['Base y CORS', 'Correcciones estables para zonas efectivas de trabajo.'],
             ].map(([title, description]) => (
               <article key={ title } className='rounded-[2rem] bg-white/42 p-7 shadow-[inset_0_1px_0_rgba(255,255,255,0.72),0_24px_70px_rgba(15,23,42,0.08)] backdrop-blur-2xl'>
                 <div className='flex h-12 w-12 items-center justify-center rounded-full bg-white/48 text-cyan-600 shadow-[inset_0_1px_0_rgba(255,255,255,0.75)] backdrop-blur'>
@@ -210,7 +206,7 @@ export const HomeView = ({ headerSlides, products }: HomeViewProps) => {
           <div className='flex items-end gap-4'>
             <IoLayersOutline className='hidden text-cyan-600 md:block' size={ 42 } />
             <p className='max-w-xl text-base leading-8 text-slate-600'>
-              Receptores, estaciones y dispositivos móviles para levantar datos confiables, configurar rápido y escalar desde proyectos puntuales a operación continua.
+              Compara X5RT con IMU, X5R, X5 Mobile, kits PPK para drones, radio LoRa, CORS y accesorios para montar un flujo completo de captura GNSS.
             </p>
           </div>
         </div>

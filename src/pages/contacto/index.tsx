@@ -1,25 +1,7 @@
-// Hooks
-import { useContactForm } from '@/presentation';
-// Views
-import { ContactView } from '@/presentation';
-
+import { ContactView } from '@/presentation/shop/contact';
 
 const ContactPage = () => {
-  const {
-    register,
-    handleSubmit,
-    errors,
-    onSubmitMessage,
-    isSubmitting
-  } = useContactForm();
-
-  return <ContactView
-    onSubmitMessage={ onSubmitMessage }
-    register={ register }
-    handleSubmit={ handleSubmit }
-    errors={ errors }
-    isSubmitting={ isSubmitting }
-  />
+  return <ContactView />
 }
 
 export default ContactPage;

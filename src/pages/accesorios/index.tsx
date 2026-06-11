@@ -1,15 +1,13 @@
-import { CategoryView, useCategoryProducts } from '@/presentation';
+import { CategoryView } from '@/presentation/shop/products';
 
 const AccesoriesPage = () => {
-  const category = useCategoryProducts({
-    productCategory: 'acce',
-    category: 'Accesorios',
-    title: 'Accesorios mupütün',
-    subtitle: 'Nuestros accesorios',
-    description: 'Nuestros Dispositivos GNSS X5 ofrecen una precisión incomparable al convertir señales GPS, Glonass, Galileo y Beidou en ubicaciones terrestres exactas. Con capacidad de múltiples constelaciones, garantizan un posicionamiento superior, ideal para navegación vehicular, mapeo detallado y aplicaciones que exigen alta precisión en cualquier entorno como la topografía.',
-  });
-
-  return <CategoryView { ...category } />
+  return <CategoryView
+    productCategory='acce'
+    category='Accesorios'
+    title='Accesorios GNSS y radio RTK'
+    subtitle='Antenas, trípodes, jalones, bases y radio LoRa'
+    description='Accesorios para estabilizar y extender flujos GNSS profesionales: antenas multibanda HeliX5, radio LoRa 433/915 MHz, RTCM3, montajes 5/8 y equipos para base-rover, CORS y operación RTK.'
+  />
 }
 
 export default AccesoriesPage;

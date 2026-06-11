@@ -1,11 +1,7 @@
-import { CanalesGNSSView, useCanalesGnssArticle } from '@/presentation';
-
+import { CanalesGNSSView } from '@/presentation/shop/blogs';
 
 const CanalesGNSSPage = () => {
-  const article = useCanalesGnssArticle();
-
-  return <CanalesGNSSView firstList={ article.firstList } />
-    
+  return <CanalesGNSSView />
 }
 
 export default CanalesGNSSPage;

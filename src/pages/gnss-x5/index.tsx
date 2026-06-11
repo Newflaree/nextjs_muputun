@@ -1,15 +1,13 @@
-import { CategoryView, useCategoryProducts } from '@/presentation';
+import { CategoryView } from '@/presentation/shop/products';
 
 const GNSSPage = () => {
-  const category = useCategoryProducts({
-    productCategory: 'gnss-x5',
-    category: 'GNSS X5',
-    title: 'Dispositivos GNSS X5',
-    subtitle: 'Nuestros Productos GNSS X5',
-    description: 'Nuestros Dispositivos GNSS X5 ofrecen una precisión incomparable al convertir señales GPS, Glonass, Galileo y Beidou en ubicaciones terrestres exactas. Con capacidad de múltiples constelaciones, garantizan un posicionamiento superior, ideal para navegación vehicular, mapeo detallado y aplicaciones que exigen alta precisión en cualquier entorno como la topografía.',
-  });
-
-  return <CategoryView { ...category } />
+  return <CategoryView
+    productCategory='gnss-x5'
+    category='GNSS X5'
+    title='Receptores GNSS X5 multibanda'
+    subtitle='Equipos X5 para RTK, PPK, NTRIP y NTRIP Local'
+    description='Receptores GNSS X5 para topografía, GIS y drones RTK. Multiconstelación GPS, GLONASS, Galileo y BeiDou, señales L1/L2/E5, datos RAW UBX/RINEX, NMEA/RTCM3 y precisión centimétrica según modo de trabajo.'
+  />
 }
 
 export default GNSSPage;

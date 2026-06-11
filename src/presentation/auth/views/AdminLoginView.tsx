@@ -16,15 +16,20 @@ export const AdminLoginView = () => {
 
   const onSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    await login({ email, password });
-    await router.push('/admin/home');
+
+    try {
+      await login({ email, password });
+      await router.push('/admin/home');
+    } catch {
+      // El mensaje ya queda en AuthStore.lastError para la UI.
+    }
   };
 
   return (
     <AuthLayout
       eyebrow='Administración'
-      title='Controla la tienda con precisión.'
-      subtitle='Un acceso privado para ordenar catálogo, usuarios, comunicaciones y configuración comercial desde el nuevo panel de Müpütun.'
+      title='Administra el catálogo GNSS.'
+      subtitle='Acceso interno para ordenar productos X5, fichas técnicas, usuarios, solicitudes y comunicaciones comerciales del nuevo store.'
     >
       <form className='space-y-5' onSubmit={ onSubmit }>
         <div>

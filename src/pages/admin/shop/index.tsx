@@ -1,8 +1,8 @@
 import type { NextPage } from 'next';
-import { AdminPlaceholderView } from '@/presentation/admin';
+import { AdminShopView } from '@/presentation/admin';
 
 const AdminShopPage: NextPage = () => {
-  return <AdminPlaceholderView title='Tienda' />;
+  return <AdminShopView />;
 };
 
 export default AdminShopPage;

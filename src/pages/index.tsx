@@ -1,11 +1,7 @@
-// Views
-import { HomeView, useHomePage } from '@/presentation';
-
+import { HomeView } from '@/presentation/shop';
 
 const HomePage = () => {
-  const homePage = useHomePage();
-
-  return <HomeView { ...homePage } />
+  return <HomeView />
 }
 
 export default HomePage;

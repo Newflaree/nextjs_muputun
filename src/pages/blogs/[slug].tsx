@@ -2,8 +2,7 @@ import type { GetServerSideProps, InferGetServerSidePropsType } from 'next';
 import {
   BlogView,
   getBlogBySlugFromBackend,
-  useBlogDetail,
-} from '@/presentation';
+} from '@/presentation/shop/blogs';
 import type { Blog } from '@/core';
 
 type BlogPageProps = {
@@ -11,11 +10,7 @@ type BlogPageProps = {
 };
 
 const BlogPage = ({ blog }: InferGetServerSidePropsType<typeof getServerSideProps>) => {
-  const blogDetail = useBlogDetail({ initialBlog: blog });
-
-  return <BlogView
-    blog={ blogDetail.blog }
-  />
+  return <BlogView initialBlog={ blog } />
 }
 
 export const getServerSideProps: GetServerSideProps<BlogPageProps> = async ({ params }) => {

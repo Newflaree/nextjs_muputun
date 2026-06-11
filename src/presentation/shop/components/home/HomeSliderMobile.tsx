@@ -57,7 +57,7 @@ export const HomeSliderMobile = ({ slides }: HomeSliderMobileProps) => {
               <p className="mt-5 text-base leading-7 text-slate-100">{item.desc}</p>
 
               <div className="mt-7 flex flex-wrap gap-3">
-                {item.title === 'Conoce a Mettatec' ? (
+                {item.path.startsWith('http') ? (
                   <MupuButton
                     href={item.path}
                     external

@@ -1,9 +1,7 @@
-import { BlogsView, useBlogs } from '@/presentation';
+import { BlogsView } from '@/presentation/shop/blogs';
 
 const BlogsPage = () => {
-  const { blogs } = useBlogs();
-
-  return <BlogsView blogs={ blogs } />
+  return <BlogsView />
 }
 
 export default BlogsPage;

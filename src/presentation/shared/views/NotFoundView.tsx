@@ -11,7 +11,7 @@ export const NotFoundView = () => {
   return (
     <ShopLayout
       pageTitle='Página no encontrada'
-      pageDesc='La página solicitada no existe o fue movida.'
+      pageDesc='No encontramos esta ruta. Vuelve al catálogo GNSS X5, soluciones RTK, PPK, NTRIP, CORS y accesorios de Müpütun.'
     >
       <section className='relative isolate flex min-h-[calc(100vh-5rem)] items-center overflow-hidden bg-white px-6 py-24 lg:px-8'>
         <Image
@@ -43,10 +43,10 @@ export const NotFoundView = () => {
               Página no encontrada
             </p>
             <h1 className='mt-5 text-5xl font-semibold leading-tight tracking-normal text-slate-950 sm:text-6xl'>
-              Esta coordenada no existe.
+              Esta coordenada no tiene fix.
             </h1>
             <p className='mt-6 text-lg leading-8 text-slate-600'>
-              La ruta pudo cambiar, quedar incompleta o salir del mapa. Volvamos a un punto seguro para seguir explorando soluciones GNSS.
+              La ruta pudo cambiar o quedar incompleta. Vuelve al catálogo X5 o al inicio para seguir explorando receptores, kits PPK, CORS y accesorios GNSS.
             </p>
 
             <div className='mt-8 flex flex-col justify-center gap-3 sm:flex-row lg:justify-start'>

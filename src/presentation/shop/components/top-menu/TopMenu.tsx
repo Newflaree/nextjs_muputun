@@ -7,12 +7,11 @@ import {
   IoSearchOutline,
 } from 'react-icons/io5';
 // Hooks
-import { useMenuItems, useSearch } from '@/presentation';
+import { useSearch } from '@/presentation/shop/search';
+import { useMenuItems } from '../../hooks';
 import { MupuButton } from '@/presentation/shared';
 // Store
-import {
-  useUIStore
-} from '@/presentation';
+import { useUIStore } from '../../state';
 
 
 export const TopMenu = () => {

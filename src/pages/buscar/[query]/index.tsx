@@ -1,9 +1,8 @@
 import type { GetServerSideProps, InferGetServerSidePropsType } from 'next';
 import {
   SearchView,
-  searchProductsFromBackend,
-  useSearchResults,
-} from '@/presentation';
+} from '@/presentation/shop/search';
+import { searchProductsFromBackend } from '@/presentation/shop/products';
 import type { Product } from '@/core';
 
 type SearchPageProps = {
@@ -17,16 +16,10 @@ const SearchPage = ({
   productsExists,
   query
 }: InferGetServerSidePropsType<typeof getServerSideProps>) => {
-  const searchResults = useSearchResults({
-    query,
-    initialProducts: products,
-    initialProductsExists: productsExists,
-  });
-
   return <SearchView
-    products={ searchResults.products }
-    productsExists={ searchResults.productsExists }
-    query={ searchResults.query }
+    initialProducts={ products }
+    initialProductsExists={ productsExists }
+    query={ query }
   />
 }
 

@@ -1,0 +1,2 @@
+export { useAdminProducts } from './useAdminProducts';
+

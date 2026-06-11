@@ -3,17 +3,22 @@ import clsx from 'clsx';
 // React Icons
 import {
   IoCloseOutline,
+  IoExitOutline,
   IoLockClosedOutline,
   IoSearchOutline,
   IoSpeedometerOutline,
 } from 'react-icons/io5';
-// Hooks
-import { useMenuItems, useSearch } from '@/presentation';
-// Store
 import {
-  useUIStore,
-} from '@/presentation';
+  AuthSessionStorageService,
+  useAuthStore,
+} from '@/presentation/auth';
+// Hooks
+import { useSearch } from '@/presentation/shop/search';
+import { useMenuItems } from '../../hooks';
+// Store
+import { useUIStore } from '../../state';
 
+const authSessionStorage = new AuthSessionStorageService();
 
 export const Sidebar = () => {
   const {
@@ -23,12 +28,22 @@ export const Sidebar = () => {
   } = useSearch();
   const isSideMenuOpen = useUIStore( state => state.isSideMenuOpen );
   const closeMenu = useUIStore( state => state.closeSideMenu );
+  const authStatus = useAuthStore((state) => state.status);
+  const logout = useAuthStore((state) => state.logout);
+  const user = useAuthStore((state) => state.user);
   const { menuItems } = useMenuItems();
+  const isAuthenticated = authStatus === 'authenticated' && Boolean(user);
 
   const searchAndClose = () => {
     onSearchTerm();
     closeMenu();
   }
+
+  const logoutAndClose = () => {
+    authSessionStorage.clear();
+    logout();
+    closeMenu();
+  };
 
   return (
     <div className='pointer-events-none fixed inset-0 z-50 overflow-hidden'>
@@ -149,29 +164,59 @@ export const Sidebar = () => {
         </div>
 
         <div className='mt-8 space-y-2'>
-          <NextLink
-            href='/auth/login'
-            onClick={ closeMenu }
-            className={`
-              flex
-              items-center
-              gap-3
-              rounded-2xl
-              px-4
-              py-3
-              text-base
-              font-semibold
-              text-slate-700
-              bg-white/34
-              shadow-[inset_0_1px_0_rgba(255,255,255,0.58)]
-              hover:bg-white/72
-              hover:text-slate-950
-              transition-all
-            `}
-          >
-            <IoLockClosedOutline size={ 20 } />
-            <span>Ingresar</span>
-          </NextLink>
+          {
+            isAuthenticated ? (
+              <button
+                type='button'
+                onClick={ logoutAndClose }
+                className={`
+                  flex
+                  w-full
+                  items-center
+                  gap-3
+                  rounded-2xl
+                  px-4
+                  py-3
+                  text-left
+                  text-base
+                  font-semibold
+                  text-slate-700
+                  bg-white/34
+                  shadow-[inset_0_1px_0_rgba(255,255,255,0.58)]
+                  hover:bg-white/72
+                  hover:text-slate-950
+                  transition-all
+                `}
+              >
+                <IoExitOutline size={ 20 } />
+                <span>Cerrar sesión</span>
+              </button>
+            ) : (
+              <NextLink
+                href='/auth/login'
+                onClick={ closeMenu }
+                className={`
+                  flex
+                  items-center
+                  gap-3
+                  rounded-2xl
+                  px-4
+                  py-3
+                  text-base
+                  font-semibold
+                  text-slate-700
+                  bg-white/34
+                  shadow-[inset_0_1px_0_rgba(255,255,255,0.58)]
+                  hover:bg-white/72
+                  hover:text-slate-950
+                  transition-all
+                `}
+              >
+                <IoLockClosedOutline size={ 20 } />
+                <span>Ingresar</span>
+              </NextLink>
+            )
+          }
 
           <NextLink
             href='/admin/login'

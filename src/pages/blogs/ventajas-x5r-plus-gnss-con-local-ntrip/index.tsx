@@ -1,4 +1,4 @@
-import { BlogThreeView } from '@/presentation';
+import { BlogThreeView } from '@/presentation/shop/blogs';
 
 const BlogThreePage = () => {
   return <BlogThreeView />

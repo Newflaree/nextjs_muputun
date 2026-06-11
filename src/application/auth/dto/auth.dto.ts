@@ -1,23 +1,9 @@
-export type UserRole = 'customer' | 'admin';
-
-export type AuthUserDTO = {
-  id: string;
-  email: string;
-  displayName: string;
-  roles: UserRole[];
-};
-
-export type AccessTokenDTO = {
-  token: string;
-  expiresAt: number;
-};
-
-export type AuthResultDTO = {
-  user: AuthUserDTO;
-  accessToken: AccessTokenDTO;
-};
-
-export type LoginCommand = {
-  email: string;
-  password: string;
-};
+export type {
+  AccessTokenDTO,
+  AuthResultDTO,
+  AuthUserDTO,
+  UserRole,
+} from './auth-result.dto';
+export { LoginUserDto as LoginCommand } from './login-user.dto';
+export { RegisterUserDto as RegisterCommand } from './register-user.dto';
+export { RenewAuthTokenDto as RenewTokenCommand } from './renew-auth-token.dto';

@@ -1,11 +1,9 @@
 // Components
-import {
-  FooterAbout,
-  FooterContactUs,
-  FooterCopyright,
-  MupuButton,
-  Separator
-} from '@/presentation';
+import { MupuButton } from '@/presentation/shared';
+import { Separator } from '../separator';
+import { FooterAbout } from './FooterAbout';
+import { FooterContactUs } from './FooterContactUs';
+import { FooterCopyright } from './FooterCopyright';
 
 
 export const Footer = () => {
@@ -21,13 +19,13 @@ export const Footer = () => {
           <div className='pointer-events-none absolute inset-0 bg-gradient-to-br from-white/[0.08] via-transparent to-cyan-300/[0.04]' />
           <div className='relative'>
             <p className='text-sm font-semibold uppercase tracking-[0.28em] text-cyan-300'>
-              Precisión para tu próximo proyecto
+              Configuración GNSS para tu próximo proyecto
             </p>
             <h2 className='mt-4 max-w-3xl text-4xl font-semibold tracking-normal text-white md:text-5xl'>
-              Diseñemos una configuración GNSS para tu operación en terreno.
+              Aterricemos el flujo GNSS que necesitas en terreno.
             </h2>
             <p className='mt-5 max-w-2xl text-sm leading-6 text-slate-300'>
-              Revisa equipos, compatibilidad y flujo de trabajo con un equipo técnico que conoce la operación local.
+              Revisamos precisión requerida, zona de trabajo, base/rover, CORS, drone RTK, SurPad y formatos de datos antes de recomendar equipo.
             </p>
           </div>
           <MupuButton href='/contacto' className='relative' variant='accent'>
@@ -43,7 +41,7 @@ export const Footer = () => {
           <div className='p-7 md:p-8'>
             <FooterAbout
               aboutTitle='Müpütun'
-              aboutText='Tecnología GNSS profesional para topografía, agricultura de precisión y operación geoespacial en Chile. Acompañamos a equipos técnicos que necesitan precisión, continuidad y soporte cercano.'
+              aboutText='Especialistas en soluciones GNSS X5 para topografía, drones RTK, GIS y operación geoespacial en Chile. Aterrizamos RTK, PPK, NTRIP, CORS y accesorios a flujos reales de campo.'
               aboutFooterImage='/logo-muputun-store.png'
               brandPath='/'
               flagImage='https://res.cloudinary.com/newflare/image/upload/v1700866079/demos/muputun/vqcdpmqlyrflsdirkigh.png'
@@ -60,7 +58,7 @@ export const Footer = () => {
           <div className='p-7 md:p-8'>
             <FooterAbout
               aboutTitle='Alianza Mettatec'
-              aboutText='Distribuidores oficiales de Mettatec en Chile, acercando soluciones GNSS multibanda, RTK, PPK y NTRIP a proyectos que requieren alto estándar técnico.'
+              aboutText='Partner Mettatec para receptores GNSS multibanda, antenas HeliX5, radio LoRa, CORS y software de campo orientado a precisión centimétrica.'
               aboutFooterImage='/logo-metta.png'
               isExternal={ true }
               brandPath='https://mettatec.com/es/'

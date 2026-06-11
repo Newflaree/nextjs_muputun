@@ -1,8 +1,8 @@
 import type { NextPage } from 'next';
-import { AdminPlaceholderView } from '@/presentation/admin';
+import { AdminMailingView } from '@/presentation/admin';
 
 const AdminMailingPage: NextPage = () => {
-  return <AdminPlaceholderView title='Mailing' />;
+  return <AdminMailingView />;
 };
 
 export default AdminMailingPage;

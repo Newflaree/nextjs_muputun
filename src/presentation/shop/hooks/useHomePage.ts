@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import type { HeaderInfo, HomeProduct } from "@/core";
-import { useProductsStore } from "@/presentation/products";
+import { useProductsStore } from "@/presentation/shop/products";
 import { useShopDataStore } from "../state";
 
 export const useHomePage = () => {

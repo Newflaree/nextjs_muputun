@@ -1,88 +1,119 @@
 import {
   type ReactNode,
+  useCallback,
   useEffect,
   useMemo,
-  useReducer,
 } from 'react';
-import type {
-  AuthResultDTO,
-  LoginCommand,
-} from '@/application';
-import {
-  readAuthToken,
-  readStoredUser,
-  removeAuthToken,
-  storeAuthToken,
-  storeAuthUser,
-} from '@/infrastructure';
 import { AuthContext } from './AuthContext';
-import { authReducer } from './authReducer';
-import type { AuthState } from './authTypes';
-
-const TOKEN_TTL_MS = 60 * 60 * 1000;
-
-const initialAuthState: AuthState = {
-  accessToken: null,
-  lastError: null,
-  status: 'idle',
-  user: null,
-};
+import {
+  AuthSessionStorageService,
+  PublicAuthApiClient,
+} from '../services';
+import { useAuthStore } from '../state';
+import type {
+  AuthResult,
+  LoginCommand,
+  RegisterCommand,
+} from '../types';
 
 type AuthProviderProps = {
   children: ReactNode;
 };
 
+const authApiClient = new PublicAuthApiClient();
+const authSessionStorage = new AuthSessionStorageService();
+
 export const AuthProvider = ({ children }: AuthProviderProps) => {
-  const [state, dispatch] = useReducer(authReducer, initialAuthState);
+  const accessToken = useAuthStore((store) => store.accessToken);
+  const bootstrap = useAuthStore((store) => store.bootstrap);
+  const fail = useAuthStore((store) => store.fail);
+  const lastError = useAuthStore((store) => store.lastError);
+  const logoutFromStore = useAuthStore((store) => store.logout);
+  const start = useAuthStore((store) => store.start);
+  const status = useAuthStore((store) => store.status);
+  const succeed = useAuthStore((store) => store.succeed);
+  const user = useAuthStore((store) => store.user);
 
   useEffect(() => {
-    const token = readAuthToken();
-    const user = readStoredUser();
+    const storedAccessToken = authSessionStorage.readAccessToken();
+    const storedUser = authSessionStorage.readUser();
 
-    dispatch({
-      type: 'AUTH_BOOTSTRAP',
-      payload: {
-        accessToken: token ? { token, expiresAt: Date.now() + TOKEN_TTL_MS } : null,
-        user,
-      },
+    bootstrap({
+      accessToken: storedAccessToken,
+      user: storedUser,
     });
-  }, []);
 
-  const login = async ({ email }: LoginCommand): Promise<AuthResultDTO> => {
-    dispatch({ type: 'AUTH_START' });
+    if (!storedAccessToken) return;
 
-    const user = {
-      id: 'local-admin',
-      email: email || 'demo@muputun.cl',
-      displayName: (email || 'demo@muputun.cl').split('@')[0] || 'Administrador',
-      roles: ['admin' as const],
-    };
-    const accessToken = {
-      token: `local-admin-${Date.now()}`,
-      expiresAt: Date.now() + TOKEN_TTL_MS,
-    };
-    const result: AuthResultDTO = { accessToken, user };
+    authApiClient
+      .renewToken({ token: storedAccessToken.token })
+      .then((result) => {
+        authSessionStorage.store(result);
+        succeed(result);
+      })
+      .catch(() => {
+        authSessionStorage.clear();
+        logoutFromStore();
+      });
+  }, [bootstrap, logoutFromStore, succeed]);
 
-    storeAuthToken(accessToken.token);
-    storeAuthUser(user);
-    dispatch({ type: 'AUTH_SUCCESS', payload: result });
+  const login = useCallback(async (command: LoginCommand): Promise<AuthResult> => {
+    start();
 
-    return result;
-  };
+    try {
+      const result = await authApiClient.login(command);
 
-  const logout = () => {
-    removeAuthToken();
-    dispatch({ type: 'AUTH_LOGOUT' });
-  };
+      authSessionStorage.store(result);
+      succeed(result);
+
+      return result;
+    } catch (error) {
+      const message = error instanceof Error ? error.message : 'No fue posible iniciar sesion.';
+
+      fail(message);
+
+      throw error;
+    }
+  }, [fail, start, succeed]);
+
+  const register = useCallback(async (command: RegisterCommand): Promise<AuthResult> => {
+    start();
+
+    try {
+      const result = await authApiClient.register(command);
+
+      authSessionStorage.store(result);
+      succeed(result);
+
+      return result;
+    } catch (error) {
+      const message = error instanceof Error ? error.message : 'No fue posible crear la cuenta.';
+
+      fail(message);
+
+      throw error;
+    }
+  }, [fail, start, succeed]);
+
+  const logout = useCallback(() => {
+    authSessionStorage.clear();
+    logoutFromStore();
+  }, [logoutFromStore]);
 
   const value = useMemo(
     () => ({
-      state,
-      isAdmin: state.user?.roles.includes('admin') ?? false,
+      state: {
+        accessToken,
+        lastError,
+        status,
+        user,
+      },
+      isAdmin: user?.roles.includes('admin') ?? false,
       login,
       logout,
+      register,
     }),
-    [state],
+    [accessToken, lastError, login, logout, register, status, user],
   );
 
   return (
