@@ -1,7 +1,12 @@
 import NextLink from 'next/link';
 import { useRouter } from 'next/router';
+import { useState } from 'react';
 import { useForm } from 'react-hook-form';
-import { IoArrowForwardOutline } from 'react-icons/io5';
+import {
+  IoArrowForwardOutline,
+  IoEyeOffOutline,
+  IoEyeOutline,
+} from 'react-icons/io5';
 import { MupuButton } from '@/presentation/shared';
 import { useAuth } from '../hooks';
 import { AuthLayout } from '../layouts';
@@ -14,6 +19,8 @@ type RegisterFormValues = RegisterCommand & {
 export const AuthRegisterView = () => {
   const router = useRouter();
   const { register: registerUser, state } = useAuth();
+  const [showPassword, setShowPassword] = useState(false);
+  const [showPasswordRepeat, setShowPasswordRepeat] = useState(false);
   const {
     formState: { errors, isSubmitting },
     getValues,
@@ -21,10 +28,10 @@ export const AuthRegisterView = () => {
     register,
   } = useForm<RegisterFormValues>({
     defaultValues: {
-      displayName: 'Usuario Demo',
-      email: 'demo@muputun.cl',
-      password: 'Muputun2026',
-      passwordRepeat: 'Muputun2026',
+      displayName: '',
+      email: '',
+      password: '',
+      passwordRepeat: '',
     },
   });
 
@@ -65,7 +72,7 @@ export const AuthRegisterView = () => {
 
         <div>
           <label className='text-sm font-semibold text-slate-700' htmlFor='register-email'>
-            Correo
+            Correo electrónico
           </label>
           <input
             id='register-email'
@@ -83,19 +90,29 @@ export const AuthRegisterView = () => {
           <label className='text-sm font-semibold text-slate-700' htmlFor='register-password'>
             Contraseña
           </label>
-          <input
-            id='register-password'
-            type='password'
-            className='mt-2 h-14 w-full rounded-full bg-white/58 px-5 text-sm text-slate-950 shadow-[inset_0_1px_0_rgba(255,255,255,0.78),0_14px_36px_rgba(15,23,42,0.08)] outline-none backdrop-blur-2xl transition placeholder:text-slate-400 focus:bg-white/78 focus:ring-4 focus:ring-cyan-100/80'
-            placeholder='••••••••'
-            { ...register('password', {
-              minLength: {
-                message: 'La contraseña debe tener al menos 6 caracteres.',
-                value: 6,
-              },
-              required: 'Ingresa una contraseña.',
-            }) }
-          />
+          <div className='relative mt-2'>
+            <input
+              id='register-password'
+              type={ showPassword ? 'text' : 'password' }
+              className='h-14 w-full rounded-full bg-white/58 px-5 pr-14 text-sm text-slate-950 shadow-[inset_0_1px_0_rgba(255,255,255,0.78),0_14px_36px_rgba(15,23,42,0.08)] outline-none backdrop-blur-2xl transition placeholder:text-slate-400 focus:bg-white/78 focus:ring-4 focus:ring-cyan-100/80'
+              placeholder='••••••••'
+              { ...register('password', {
+                minLength: {
+                  message: 'La contraseña debe tener al menos 6 caracteres.',
+                  value: 6,
+                },
+                required: 'Ingresa una contraseña.',
+              }) }
+            />
+            <button
+              type='button'
+              aria-label={ showPassword ? 'Ocultar contraseña' : 'Mostrar contraseña' }
+              onClick={ () => setShowPassword((current) => !current) }
+              className='absolute right-4 top-1/2 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full text-slate-500 transition hover:bg-white/70 hover:text-slate-900 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-cyan-100/80'
+            >
+              { showPassword ? <IoEyeOffOutline size={ 20 } /> : <IoEyeOutline size={ 20 } /> }
+            </button>
+          </div>
           { errors.password?.message && <p className='mt-2 text-sm text-red-600'>{ errors.password.message }</p> }
         </div>
 
@@ -103,16 +120,26 @@ export const AuthRegisterView = () => {
           <label className='text-sm font-semibold text-slate-700' htmlFor='register-password-repeat'>
             Repetir contraseña
           </label>
-          <input
-            id='register-password-repeat'
-            type='password'
-            className='mt-2 h-14 w-full rounded-full bg-white/58 px-5 text-sm text-slate-950 shadow-[inset_0_1px_0_rgba(255,255,255,0.78),0_14px_36px_rgba(15,23,42,0.08)] outline-none backdrop-blur-2xl transition placeholder:text-slate-400 focus:bg-white/78 focus:ring-4 focus:ring-cyan-100/80'
-            placeholder='••••••••'
-            { ...register('passwordRepeat', {
-              required: 'Repite la contraseña.',
-              validate: (value) => value === getValues('password') || 'Las contraseñas no coinciden.',
-            }) }
-          />
+          <div className='relative mt-2'>
+            <input
+              id='register-password-repeat'
+              type={ showPasswordRepeat ? 'text' : 'password' }
+              className='h-14 w-full rounded-full bg-white/58 px-5 pr-14 text-sm text-slate-950 shadow-[inset_0_1px_0_rgba(255,255,255,0.78),0_14px_36px_rgba(15,23,42,0.08)] outline-none backdrop-blur-2xl transition placeholder:text-slate-400 focus:bg-white/78 focus:ring-4 focus:ring-cyan-100/80'
+              placeholder='••••••••'
+              { ...register('passwordRepeat', {
+                required: 'Repite la contraseña.',
+                validate: (value) => value === getValues('password') || 'Las contraseñas no coinciden.',
+              }) }
+            />
+            <button
+              type='button'
+              aria-label={ showPasswordRepeat ? 'Ocultar contraseña repetida' : 'Mostrar contraseña repetida' }
+              onClick={ () => setShowPasswordRepeat((current) => !current) }
+              className='absolute right-4 top-1/2 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full text-slate-500 transition hover:bg-white/70 hover:text-slate-900 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-cyan-100/80'
+            >
+              { showPasswordRepeat ? <IoEyeOffOutline size={ 20 } /> : <IoEyeOutline size={ 20 } /> }
+            </button>
+          </div>
           { errors.passwordRepeat?.message && <p className='mt-2 text-sm text-red-600'>{ errors.passwordRepeat.message }</p> }
         </div>
 

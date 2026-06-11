@@ -33,6 +33,7 @@ export const Sidebar = () => {
   const user = useAuthStore((state) => state.user);
   const { menuItems } = useMenuItems();
   const isAuthenticated = authStatus === 'authenticated' && Boolean(user);
+  const displayName = user?.displayName?.trim() || user?.email || 'Usuario';
 
   const searchAndClose = () => {
     onSearchTerm();
@@ -133,7 +134,7 @@ export const Sidebar = () => {
           </p>
         </div>
 
-        <div className='relative'>
+        <div className='relative lg:hidden'>
           <IoSearchOutline
             size={ 20 }
             className='absolute left-4 top-1/2 -translate-y-1/2 text-slate-400'
@@ -162,6 +163,19 @@ export const Sidebar = () => {
             `}
           />
         </div>
+
+        {
+          isAuthenticated && (
+            <div className='mt-5 rounded-2xl bg-white/34 px-4 py-3 shadow-[inset_0_1px_0_rgba(255,255,255,0.58)]'>
+              <p className='text-xs font-semibold uppercase tracking-[0.18em] text-slate-400'>
+                Bienvenido,
+              </p>
+              <p className='mt-1 truncate text-base font-semibold leading-tight text-slate-700'>
+                { displayName }
+              </p>
+            </div>
+          )
+        }
 
         <div className='mt-8 space-y-2'>
           {

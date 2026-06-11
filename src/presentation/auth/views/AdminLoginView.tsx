@@ -34,7 +34,7 @@ export const AdminLoginView = () => {
       <form className='space-y-5' onSubmit={ onSubmit }>
         <div>
           <label className='text-sm font-semibold text-slate-700' htmlFor='admin-email'>
-            Correo
+            Correo electrónico
           </label>
           <input
             id='admin-email'
